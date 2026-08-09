@@ -116,3 +116,17 @@ This supersedes the known limit recorded in the entry above.
 **Why.** The two roles are different. `## Sources` records what a note actually drew on, and for orientation on a script or a site Wikipedia frequently is that, honestly. `references/` is the authoritative bibliography, the thing the vault's academic use rests on, and it holds works of record: papers, books, chapters, datasets, corpora. Wikipedia is a finding aid pointing into that literature, so the correct move on encountering it is to follow its citations to the work of record and reference that.
 
 **Consequence.** Where a fact is available only from Wikipedia, cite Wikipedia in `## Sources` and say in the note that the primary source has not been located. That is the absent-fact case from the entry above, not a license to skip the search.
+
+## 2026-08-09: Sweeps are advisory, and separate from enforcement
+
+**Decided.** `scripts/check-vault.py --report` lists unlinked mentions of existing notes, and capitalized names recurring across two or more notes with no note of their own. It exits 0 whatever it finds and prints nothing during a normal run.
+
+**Rejected.** Folding these into the enforcing checks, and running them as a periodic manual reread of the vault.
+
+**Why.** The enforcing checks resolve every link that exists. They are blind in exactly one direction: nothing detects a link that is *missing*, because a missing link is indistinguishable from a deliberate silence. That is the direction in which a graph decays quietly, and it gets worse as the vault grows, since each new entity note creates unlinked mentions in every note written before it.
+
+Enforcement and advice are kept apart because they behave differently under doubt. An enforcing check must have no false positives or it gets ignored, and being ignored is how the earlier permissive checker did damage. An advisory sweep should over-report, because a false positive costs a glance and a miss costs a broken join. Mixing them would force one standard on both.
+
+**Consequence.** The second list is a worklist, not a to-do list. It is a heuristic over capitalization and it says so in its own output. Entries are judged against the inclusion tests in `types/person.md` and `types/place.md`, which is the point: it lets the vault say who it already needs rather than working from a wishlist.
+
+**House style it assumes.** Link on first mention per note. A note that already links a target is treated as satisfied however often the name recurs, because linking every mention is noise and is harder to undo than to not do.

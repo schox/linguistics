@@ -78,6 +78,14 @@ Tolaria is a desktop app that reads and writes these same files while Andrew has
 
 **Before you finish**, run the checker again and make sure it exits clean. It checks required fields per type, enum values, subfield membership against each area's stated vocabulary, wikilink quoting, wikilink resolution, `## Sources` presence, relative link resolution, and house style.
 
+**After adding an entity note**, run the sweep:
+
+```sh
+python3 scripts/check-vault.py --report
+```
+
+The checks above are enforcement and they resolve every link that exists. They are blind in one direction: nothing detects a link that is *missing*, which is how the graph decays quietly. `--report` covers that direction and never fails, listing notes that name an existing note in prose without linking it, and capitalized names recurring across two or more notes with no note of their own. The second list feeds the `Person` and `Place` inclusion tests. It is a heuristic worklist with false positives, not a to-do list: judge each entry against the inclusion test rather than writing a note for everything it prints. Link on first mention per note only.
+
 Commit with descriptive messages. Ask Andrew before pushing unless he has said otherwise.
 
 ### If you are running in Cowork rather than locally

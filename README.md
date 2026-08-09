@@ -48,6 +48,12 @@ python3 scripts/check-vault.py
 
 Checks required fields per type, enum values, `subfield` membership against each area's stated vocabulary, wikilink quoting, wikilink resolution, presence of a `## Sources` section, relative link resolution, and house style.
 
+```sh
+python3 scripts/check-vault.py --report
+```
+
+The advisory sweep, which never fails. The checks above resolve every link that exists but cannot see a link that is missing, so this lists unlinked mentions of existing notes, and recurring names that have no note yet. Run it after adding an entity note.
+
 ## Git
 
 Git repository, remote `https://github.com/schox/linguistics.git`. Commit with descriptive messages; ask Andrew before pushing unless he has said otherwise.

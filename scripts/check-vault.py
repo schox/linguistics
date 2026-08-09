@@ -18,6 +18,13 @@ Standard library only. Run from anywhere:
 
     python3 scripts/check-vault.py
     python3 scripts/check-vault.py --quiet    # failures only
+    python3 scripts/check-vault.py --report   # advisory sweep worklist, never fails
+
+The checks above are enforcement: they resolve every link that exists. They
+are blind in one direction, because nothing detects a link that is *missing*,
+and that is how the graph decays quietly. --report covers that direction. It
+is advisory, exits 0 whatever it finds, and is deliberately tuned to
+over-report: a false positive costs a glance, a miss costs a broken join.
 """
 
 import os
@@ -272,10 +279,233 @@ def check(path, vocabs, targets):
     return out
 
 
+# ---------------------------------------------------------------- sweep ----
+
+# Notes worth linking to from prose. References are reached through `cites`
+# rather than by name, and structural notes are scaffolding.
+LINKABLE = CONTENT
+
+# Words that open a capitalized phrase without making it a proper noun.
+ARTICLES = {"The", "A", "An", "This", "That", "These", "Those", "Its", "Their"}
+
+# Vault furniture and section headings, which are capitalized but are not
+# subjects anyone would want a note about.
+SWEEP_STOP = {
+    "Sources", "Open questions", "Subfields", "Notes", "Documents", "Images",
+    "Scripts", "Fields", "Identifiers", "Subfield vocabulary", "Current entries",
+    "Obvious gaps", "See", "Compare", "Where", "Worked", "Prefer", "Every",
+    "Use", "Do", "Read", "Run", "Keep", "Give", "Never", "Write", "Mark",
+    "Wikipedia", "Markdown", "YAML", "Unicode", "Tolaria",
+    "BCE", "CE", "ISO", "DOI", "CC", "MOC", "CLDF",
+}
+
+# Accented letters are part of a name: Vigenère must not truncate to 'Vigen'.
+NAME_CHAR = r"[a-zA-ZÀ-ÿ'’\-]"
+
+PROPER = re.compile(
+    rf"\b(?:al-|el-|ibn )?[A-ZÀ-Þ]{NAME_CHAR}+"   # al-Kindi keeps its prefix
+    rf"(?:\s+(?:of|the|and|von|van|de|du|di)\s+[A-ZÀ-Þ]{NAME_CHAR}+"
+    rf"|\s+[A-ZÀ-Þ]{NAME_CHAR}+){{0,3}}"
+)
+
+POSSESSIVE = re.compile(r"['’]s$")
+
+SENTENCE_START = re.compile(r"(?:^|[.!?:;]\s+|[-*>|]\s+|\*\*|\"|\()\s*$")
+
+
+def blank_frontmatter(raw):
+    """Blank the frontmatter block, keeping line numbers stable."""
+    if not raw.startswith("---\n"):
+        return raw
+    end = raw.find("\n---\n", 3)
+    if end == -1:
+        return raw
+    head = raw[:end + 5]
+    return "\n" * head.count("\n") + raw[end + 5:]
+
+
+def blank_section(text, heading):
+    """Blank one '## Heading' section. Citations are not prose."""
+    out, dropping = [], False
+    for line in text.split("\n"):
+        if line.startswith("## "):
+            dropping = line.strip() == heading
+        out.append("" if dropping else line)
+    return "\n".join(out)
+
+
+def prose_of(raw):
+    """Body prose, line numbers preserved.
+
+    Markdown links keep their display text rather than being blanked, so a
+    link pointing somewhere other than the note it names still reads as a
+    mention. That is the case worth catching: linear-b.md links the words
+    'Linear A' at the Decipherment index because no Linear A note existed yet.
+    """
+    text = blank_frontmatter(raw)
+    text = strip_fenced(text)
+    text = blank_section(text, "## Sources")
+    text = INLINE_CODE.sub(" ", text)
+    text = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text)
+    text = re.sub(r"\[\[([^\]|]+)(?:\|[^\]]*)?\]\]", r"\1", text)
+    return text
+
+
+def outbound(raw, base):
+    """Everything this note already links, by resolved path and by wikilink.
+
+    Frontmatter is deliberately included: `related_to: "[[X]]"` is a link.
+    """
+    paths, wikis = set(), set()
+    text = strip_fenced(raw)
+    for m in LINK.finditer(text):
+        target = m.group(1).split("#")[0]
+        if target and not target.startswith(("http", "mailto:")):
+            paths.add(os.path.normpath(os.path.join(base, target)))
+    for m in re.finditer(r"\[\[([^\]]+)\]\]", text):
+        wikis.add(m.group(1).split("|")[0].strip())
+    return paths, wikis
+
+
+def note_index(files):
+    """Title, path and type for every note."""
+    notes = []
+    for path in files:
+        raw = open(path, encoding="utf-8").read()
+        data, err = parse_frontmatter(raw)
+        m = re.search(r"^#\s+(.+)$", raw, re.M)
+        notes.append({
+            "path": path,
+            "rel": os.path.relpath(path, ROOT),
+            "title": m.group(1).strip() if m else os.path.basename(path)[:-3],
+            "type": (data or {}).get("type"),
+            "raw": raw,
+        })
+    return notes
+
+
+def unlinked_mentions(notes):
+    """Notes naming an existing note in prose without linking to it anywhere.
+
+    'Anywhere' is deliberate: the house style is to link on first mention, so
+    a note that already links a target is satisfied however often it repeats
+    the name afterwards.
+    """
+    targets = [n for n in notes
+               if n["type"] in LINKABLE and len(n["title"]) >= 4]
+    rows = []
+    for note in notes:
+        # Doc and Type notes name entities to illustrate a rule, not to make a
+        # claim about them, so linking those mentions would be noise. DECISIONS
+        # is append-only besides. References are reached through `cites`.
+        if note["type"] in {"Type", "Reference", "Doc"}:
+            continue
+        paths, wikis = outbound(note["raw"], os.path.dirname(note["path"]))
+        lines = prose_of(note["raw"]).split("\n")
+        hits = []
+        for target in targets:
+            if target["path"] == note["path"] or target["path"] in paths:
+                continue
+            if target["title"] in wikis:
+                continue
+            if os.path.basename(target["path"])[:-3] in wikis:
+                continue
+            pattern = re.compile(r"\b" + re.escape(target["title"]) + r"\b", re.I)
+            for i, line in enumerate(lines, 1):
+                found = pattern.search(line)
+                if found:
+                    hits.append((i, found.start(), found.end(), target))
+                    break
+        # 'Etruscan' inside 'Etruscan alphabet' is one mention, not two
+        for hit in hits:
+            i, start, end, target = hit
+            if any(o is not hit and o[0] == i and o[1] <= start and o[2] >= end
+                   and len(o[3]["title"]) > len(target["title"]) for o in hits):
+                continue
+            rows.append((note["rel"], i, target["title"], target["rel"]))
+    return sorted(rows)
+
+
+def recurring_proper_nouns(notes):
+    """Capitalized phrases in two or more notes that have no note of their own.
+
+    Heuristic, and it says so. A single-word candidate is dropped if the same
+    word appears lowercase somewhere in the vault, which is a cheap stand-in
+    for a dictionary. A candidate that only ever appears at the start of a
+    sentence is dropped too, since that capital carries no information.
+    """
+    known = set()
+    for note in notes:
+        known.add(note["title"].lower())
+        known.add(os.path.basename(note["path"])[:-3].replace("-", " ").lower())
+
+    lowercase_vocab = set()
+    for note in notes:
+        lowercase_vocab.update(re.findall(r"\b[a-zà-ÿ]{2,}\b", note["raw"]))
+
+    seen, mid_sentence = {}, set()
+    for note in notes:
+        if note["type"] not in LINKABLE | {"MOC"}:
+            continue
+        for line in prose_of(note["raw"]).split("\n"):
+            if line.startswith("#"):
+                continue
+            for m in PROPER.finditer(line):
+                phrase = m.group(0).strip()
+                words = phrase.split()
+                while words and words[0] in ARTICLES:
+                    words.pop(0)
+                if not words:
+                    continue
+                # "Ventris's" and "Ventris" are the same name
+                words[-1] = POSSESSIVE.sub("", words[-1])
+                phrase = " ".join(w for w in words if w)
+                if not phrase or phrase.lower() in known or phrase in SWEEP_STOP:
+                    continue
+                if len(words) == 1 and phrase.lower() in lowercase_vocab:
+                    continue
+                seen.setdefault(phrase, set()).add(note["rel"])
+                if not SENTENCE_START.search(line[:m.start()]):
+                    mid_sentence.add(phrase)
+
+    rows = [(len(where), phrase, sorted(where))
+            for phrase, where in seen.items()
+            if len(where) >= 2 and phrase in mid_sentence]
+    return sorted(rows, key=lambda r: (-r[0], r[1]))
+
+
+def report(files):
+    notes = note_index(files)
+
+    rows = unlinked_mentions(notes)
+    print("Unlinked mentions")
+    print("  A note names an existing note in prose but never links to it.")
+    print("  House style is to link on first mention only.\n")
+    if not rows:
+        print("  (none)\n")
+    for rel, line, title, target in rows:
+        print(f"  {rel}:{line}: '{title}' -> {target}")
+
+    rows = recurring_proper_nouns(notes)
+    print("\nRecurring names with no note")
+    print("  Capitalized phrases in two or more notes. Feeds the inclusion")
+    print("  tests in types/person.md and types/place.md. Heuristic: expect")
+    print("  false positives, and judge each against the test rather than")
+    print("  writing a note for everything listed.\n")
+    if not rows:
+        print("  (none)")
+    for count, phrase, where in rows:
+        print(f"  {count:2d}  {phrase}")
+        print(f"      {', '.join(where)}")
+    return 0
+
+
 def main():
     quiet = "--quiet" in sys.argv
     vocabs = {a: subfield_vocab(os.path.join(ROOT, p)) for a, p in AREA_INDEX.items()}
     files = list(markdown_files())
+    if "--report" in sys.argv:
+        return report(files)
     targets = resolvable_targets(files)
     problems = []
     for path in files:
