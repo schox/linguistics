@@ -48,4 +48,5 @@ The computational decipherment literature is widely misreported, including by re
 - Vault path for Read/Write/Edit: `/Users/andrew/Documents/Tolaria/Linguistics/`.
 - In the bash sandbox the files appear under `/sessions/<session>/mnt/...`; translate paths.
 - `git` is available. Always check `git status` before assuming the working tree state.
-- Run `python3 scripts/check-vault.py` before committing.
+- Run `python3 scripts/check-vault.py` before committing. It checks required fields per type, enum values, subfield membership, wikilink quoting, `## Sources` presence, link resolution and house style. It does **not** resolve wikilink targets, so a `belongs_to` pointing at a non-existent note still passes.
+- Every type now has a worked example, named in its type file. Copy the example, do not invent the shape.

@@ -13,6 +13,11 @@ period:
 decipherment_status: undeciphered
 writes:
 found_at:
+corpus_size:
+subfield:
+belongs_to:
+related_to:
+cites:
 iso15924:
 iso15924_num:
 unicode_block:
@@ -21,18 +26,38 @@ wikidata:
 
 # Script
 
-A writing system, which is not the same thing as a language. Cuneiform wrote five unrelated languages; Linear A is a script whose language is unknown; Etruscan is readable but not understood.
+A writing system, which is not the same thing as a language. Cuneiform wrote five unrelated languages; Linear A is a script whose language is unknown; Etruscan is a language readable in a script we can pronounce but do not fully understand.
 
-Class: alphabet | abjad | abugida | syllabary | logographic | mixed | undetermined.
-Decipherment status: deciphered | partial | contested | undeciphered.
-`writes` links to the `Language` notes the script records, where known.
-`found_at` links to the `Place` notes for the sites the corpus came from, which is what determines corpus size and therefore decipherability.
+**Script notes live in `Decipherment/`**, whatever their status, because the script-versus-language argument lives there. This is a filing decision, not a claim that every script is undeciphered.
+
+## Fields
+
+- `class`: `alphabet` | `abjad` | `abugida` | `syllabary` | `logographic` | `mixed` | `undetermined`.
+- `decipherment_status`: `deciphered` | `partial` | `contested` | `undeciphered`.
+- `writes`: wikilinks to the `Language` notes it records, where known. Inverse of `written_in`.
+- `found_at`: wikilinks to `Place` notes for the sites the corpus came from.
+- `corpus_size`: free text, e.g. `c. 6,058 inscriptions`. **Record this wherever known.** Corpus size is the variable that decides decipherability, so it is a first-class fact here rather than trivia.
 
 ## Identifiers
 
-- `iso15924`: the four-letter script code, e.g. `Lina` (Linear A), `Linb` (Linear B), `Cpmn` (Cypro-Minoan), `Egyp` (Egyptian hieroglyphs), `Xsux` (Sumero-Akkadian cuneiform), `Inds` (Indus), `Latn` (Latin).
-- `iso15924_num`: the numeric code. Its ranges are themselves informative: 000-099 hieroglyphic and cuneiform, 400-499 syllabic, and **600-699 undeciphered**. The standard encodes the distinction this vault is organized around.
-- `unicode_block`: e.g. `U+10600-U+1077F` for Linear A.
-- `wikidata`: Q-number.
+- `iso15924`: four-letter code, e.g. `Linb` (Linear B), `Lina` (Linear A), `Ital` (Old Italic).
+- `iso15924_num`: numeric code. The ranges are a typology in themselves, and 600-699 is reserved for undeciphered scripts.
+- `unicode_block`: e.g. `U+10000-U+1007F`.
+- `wikidata`.
 
-The registry is maintained by the Unicode Consortium as ISO's Registration Authority.
+Worked example: `Decipherment/linear-b.md`.
+
+## Fields required on every content note
+
+These are mandatory and are checked by `scripts/check-vault.py`:
+
+```yaml
+subfield:                  # one or more values from the owning area's _index.md
+  - Some Subfield
+belongs_to: "[[Area Hub]]" # exactly one area hub, quoted
+status: open               # open | draft | settled
+```
+
+Optional but usual: `related_to` (lateral links), `cites` (Reference notes this note draws on).
+
+**Wikilink values must be quoted.** `belongs_to: "[[Cryptography]]"` is a string; `belongs_to: [[Cryptography]]` is a nested YAML list and silently fails. Always use double quotes.

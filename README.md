@@ -30,6 +30,7 @@ attachments/           images referenced from notes
 scripts/               check-vault.py, the consistency checker
 _junctions.md          index of cross-cutting notes
 _data-sources.md       what external data exists, and how the vault relates to it
+DECISIONS.md           why the vault is shaped this way, and what was rejected
 ```
 
 Folders are shallow and stay that way. The taxonomy lives in the `subfield` frontmatter field, with the controlled vocabulary held in each area's `_index.md`, so a branch can be re-cut without moving files.
@@ -44,7 +45,7 @@ Cryptography is the backdrop to decipherment, not its parent. The two share a st
 python3 scripts/check-vault.py
 ```
 
-Validates frontmatter, resolves every relative link, and checks house style. The vault uses International English (US spelling), with an allowlist so quoted titles keep their own spelling.
+Checks required fields per type, enum values, `subfield` membership against each area's stated vocabulary, wikilink quoting, presence of a `## Sources` section, relative link resolution, and house style. It does not resolve wikilink targets.
 
 ## Git
 

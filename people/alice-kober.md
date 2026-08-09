@@ -19,7 +19,7 @@ American classicist (23 December 1906 to 16 May 1950), who taught at Brooklyn Co
 
 ## The work
 
-Kober analysed Linear B distributionally, without attempting to assign sound values, and this restraint is the whole point of her method. By tracking sign groups that varied only in their endings, she identified sets of related forms (her "triplets") and the phenomenon of **bridging syllables**, where a single sign spans the end of a root and the start of an inflectional suffix. Because Linear B is a syllabary, the sign at that boundary changes when the ending changes, and mapping which signs alternate with which established phonetic *relationships* between signs while their actual values remained unknown.
+Kober analyzed Linear B distributionally, without attempting to assign sound values, and this restraint is the whole point of her method. By tracking sign groups that varied only in their endings, she identified sets of related forms (her "triplets") and the phenomenon of **bridging syllables**, where a single sign spans the end of a root and the start of an inflectional suffix. Because Linear B is a syllabary, the sign at that boundary changes when the ending changes, and mapping which signs alternate with which established phonetic *relationships* between signs while their actual values remained unknown.
 
 In three papers (1945, 1946, 1948) she used this to demonstrate that the script recorded an **inflected language**. That is a structural finding extracted from distribution alone, and it is the direct ancestor of Ventris's grid.
 

@@ -1,0 +1,48 @@
+---
+type: Script
+class: syllabary
+period: c. 1450-1200 BCE
+decipherment_status: deciphered
+status: open
+writes:
+  - "[[Mycenaean Greek]]"
+found_at:
+  - "[[Knossos]]"
+corpus_size: c. 6,058 inscriptions, of which some 5,000 tablets
+subfield:
+  - Solved decipherments
+  - The problem space
+belongs_to: "[[Decipherment]]"
+related_to:
+  - "[[Script versus language]]"
+  - "[[The evidentiary threshold and unicity distance]]"
+cites:
+  - "[[Ventris and Chadwick 1953]]"
+  - "[[Chadwick 1958]]"
+iso15924: Linb
+iso15924_num: 401
+unicode_block: U+10000-U+1007F (syllabary), U+10080-U+100FF (ideograms)
+wikidata:
+---
+
+# Linear B
+
+The syllabary of Mycenaean administration, about 87 syllabic signs and over 100 ideographic signs, used from roughly 1450 to 1200 BCE. Deciphered by Michael Ventris in 1952, with [John Chadwick](../people/john-chadwick.md).
+
+## Why it was solvable
+
+Three conditions held simultaneously, and their conjunction is rare.
+
+**Corpus.** Around 6,058 inscriptions survive, some 5,000 of them tablets, from Knossos, Pylos, Thebes, Mycenae, Kydonia and elsewhere. That is enough text for distributional argument to bite.
+
+**Structure recoverable without meaning.** [Alice Kober](../people/alice-kober.md) demonstrated inflection from the distribution alone, without assigning a single sound value, building the sign relationships that became Ventris's grid. See [frequency analysis](frequency-analysis.md).
+
+**A known language underneath.** The language turned out to be Greek, which meant an entire comparative apparatus was waiting once the identification was granted. This is the *different script, same language* case.
+
+Compare [Linear A](_index.md), which shares the second condition partly (Linear B supplies probable values for many signs) and fails the other two. Roughly 1,400 readable inscriptions and no identified language. The contrast is the cleanest available illustration of [the evidentiary threshold](evidentiary-threshold-and-unicity-distance.md): the same scholars, the same island, the same script family, and one is read while the other is not, largely because of what survived.
+
+## Sources
+
+- [Linear B, Wikipedia](https://en.wikipedia.org/wiki/Linear_B)
+- [Chadwick 1958](../references/chadwick-1958.md), *The Decipherment of Linear B*
+- [ISO 15924](../references/iso15924.md) for the script code

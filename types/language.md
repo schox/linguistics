@@ -10,9 +10,13 @@ _pinned_properties:
   - glottocode
 family:
 branch:
-script:
+written_in:
 era: living
 status: interested
+subfield:
+belongs_to:
+related_to:
+cites:
 glottocode:
 iso639_3:
 wals_code:
@@ -21,17 +25,38 @@ wikidata:
 
 # Language
 
-A specific human language. `family` and `branch` place it genealogically, which is the canonical spine of the Human Languages area.
+A specific human language. Lives in `Human-Languages/`.
 
-Era: living | historical | extinct | reconstructed.
-Status: interested | learning | reference | reading | fluent.
-Use `written_in` to link the `Script` notes that record it.
+## Fields
+
+- `family`: top-level genealogical family, from the **Family vocabulary** in `Human-Languages/_index.md` (e.g. `Indo-European`, `Tyrsenian`, `Afro-Asiatic`).
+- `branch`: the branch within that family (e.g. `Germanic`, `Semitic`). Leave empty for an isolate or a single-member family.
+- `era`: `living` | `historical` | `extinct` | `reconstructed`.
+- `status`: your relationship to it. `interested` | `learning` | `reference` | `reading` | `fluent`.
+- `written_in`: wikilinks to the `Script` notes that record it. **This is the join field.** There is no `script:` field; scripts are notes, not strings.
+- `subfield`: from the **Subfield vocabulary** in `Human-Languages/_index.md`, which is a separate list from the family vocabulary.
 
 ## Identifiers
 
-Fill these wherever they exist. They are what join a note to the external catalogs rather than duplicating them.
+Fill wherever they exist; they join the note to external catalogs rather than duplicating them. Leave the key present and empty if you have checked and none exists.
 
-- `glottocode`: Glottolog's stable identifier for the languoid, e.g. `stan1293`. Resolves at `https://glottolog.org/resource/languoid/id/<code>`.
-- `iso639_3`: the three-letter ISO code, e.g. `deu`.
-- `wals_code`: WALS language code, where the language is covered.
-- `wikidata`: Q-number, the universal join key across everything else.
+- `glottocode`: Glottolog identifier, e.g. `etru1241`. Resolves at `https://glottolog.org/resource/languoid/id/<code>`.
+- `iso639_3`: three-letter code, e.g. `ett`.
+- `wals_code`, `wikidata`.
+
+Worked example: `Human-Languages/etruscan.md`.
+
+## Fields required on every content note
+
+These are mandatory and are checked by `scripts/check-vault.py`:
+
+```yaml
+subfield:                  # one or more values from the owning area's _index.md
+  - Some Subfield
+belongs_to: "[[Area Hub]]" # exactly one area hub, quoted
+status: open               # open | draft | settled
+```
+
+Optional but usual: `related_to` (lateral links), `cites` (Reference notes this note draws on).
+
+**Wikilink values must be quoted.** `belongs_to: "[[Cryptography]]"` is a string; `belongs_to: [[Cryptography]]` is a nested YAML list and silently fails. Always use double quotes.

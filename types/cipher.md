@@ -9,17 +9,45 @@ _pinned_properties:
   - category
 era:
 category:
+first_described:
 status: reference
 broken_by:
+subfield:
+belongs_to:
+related_to:
+cites:
 wikidata:
 ---
 
 # Cipher
 
-A specific cipher, cryptographic algorithm or system, e.g. Caesar cipher, Enigma, RSA, AES. Category: classical | symmetric | asymmetric | hash | protocol.
+A cipher, cryptographic algorithm or system. Lives in `Cryptography/`.
 
-`broken_by` links to the `Method` or person notes that defeated it, which is how the cryptanalytic influence graph gets built. Note that no external catalog supplies this: unlike languages and scripts, ciphers have no curated relational dataset, so anything recorded here is original structuring work. See `_data-sources.md`.
+## Fields
+
+- `category`: `classical` | `mechanical` | `symmetric` | `asymmetric` | `hash` | `protocol`.
+- `era`: broad period, from this list: `ancient` | `medieval` | `early modern` | `industrial` | `mechanical` | `computer` | `post-quantum`. Use `first_described` for the actual year.
+- `first_described`: year or approximate year, e.g. `1553`.
+- `status`: `reference` (studied here) | `historical` (obsolete) | `current` (in live use) | `broken`.
+- `broken_by`: wikilinks to the `Method` or `Person` notes that defeated it. No external catalog supplies this, so it is original structuring work. See `_data-sources.md`.
 
 ## Identifiers
 
-- `wikidata`: Q-number. There is no domain-specific identifier scheme for ciphers.
+- `wikidata` only. There is no domain-specific identifier scheme for ciphers.
+
+Worked example: `Cryptography/vigenere-cipher.md`.
+
+## Fields required on every content note
+
+These are mandatory and are checked by `scripts/check-vault.py`:
+
+```yaml
+subfield:                  # one or more values from the owning area's _index.md
+  - Some Subfield
+belongs_to: "[[Area Hub]]" # exactly one area hub, quoted
+status: open               # open | draft | settled
+```
+
+Optional but usual: `related_to` (lateral links), `cites` (Reference notes this note draws on).
+
+**Wikilink values must be quoted.** `belongs_to: "[[Cryptography]]"` is a string; `belongs_to: [[Cryptography]]` is a nested YAML list and silently fails. Always use double quotes.

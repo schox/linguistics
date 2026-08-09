@@ -40,33 +40,34 @@ Linguistics/
 
 ## Types
 
-Every Markdown note declares a `type` in frontmatter. Supported types (defined in `types/`):
+**The schema lives in `types/`, not here.** Each type file declares the frontmatter template, the allowed values for every field, and a worked example. This document gives rules and rationale; it deliberately does not restate field lists, because maintaining a schema in two places guarantees drift.
 
-- `MOC`: a map-of-content / index note for an area or subfolder.
-- `Language`: a specific human language. Fields: `family`, `script`, `status`, `era`.
-- `Script`: a writing system, which is **not** the same thing as a language (see below). Fields: `class`, `period`, `decipherment_status`, `writes`.
-- `ComputerLanguage`: a programming, markup, query or formal language. Fields: `paradigm`, `first_appeared`, `lineage`, `status`.
-- `Cipher`: a cipher, cryptographic algorithm or system. Fields: `era`, `category`.
-- `Method`: a technique, manual or computational, that transfers between areas. Fields: `category`, `origin`, `applies_to`.
-- `Concept`: a term or idea worth its own note, from any area. Field: `subfield`.
-- `Person`: a seminal figure in one of the areas. Fields: `born`, `died`, `field`, `known_for`, `key_works`, `worked_at`.
-- `Place`: an institution where expertise concentrated, or a site that produced the evidence. Fields: `kind`, `country`, `flourished`.
-- `Reference`: a bibliographic entry, one per source. Fields: `authors`, `year`, `container`, `doi`, `url`, `ref_type`, `status`.
-- `Note`: a general working note that doesn't yet belong under a more specific type.
-- `Media`: a photo, diagram, plate or image kept for reference.
-- `Doc`: utility/meta documents like this one, the README, AGENTS.
+Entity types: `Language`, `Script`, `ComputerLanguage`, `Cipher`, `Person`, `Place`.
+Content types: `Concept`, `Method`, `Note`, `Media`, `Reference`.
+Structural types: `MOC`, `Doc`, `Type`.
 
-Attachments (PDF, docx, images) carry no frontmatter. They are referenced from MOC or content notes.
+Every content note carries `subfield`, `belongs_to` and `status`, usually `related_to` and `cites`, and ends with a `## Sources` section. `MOC`, `Doc` and `Type` notes are exempt.
+
+### Wikilinks must be quoted
+
+```yaml
+belongs_to: "[[Cryptography]]"    # correct, a string
+belongs_to: [[Cryptography]]      # wrong, YAML reads a nested list, silently
+```
+
+This is the easiest mistake to make and the hardest to notice, because nothing looks broken. The checker catches it.
 
 ### Script is not Language
 
-Scripts and languages are many-to-many, and conflating them makes the decipherment material incoherent. Cuneiform wrote Sumerian, Akkadian, Hittite, Elamite and Old Persian, which are unrelated languages. Japanese uses four scripts at once. Linear A is a script whose underlying language is unknown. Etruscan is a language we can pronounce but not understand.
+Scripts and languages are many-to-many, joined by `writes` and `written_in`. Cuneiform wrote five unrelated languages. Linear A is a script whose language is unknown. Etruscan is a language readable in a script we can pronounce but do not fully understand. "Is X deciphered?" is always two questions.
 
-So "is X deciphered?" is always two questions: do we have the script, and do we have the language? Keep them in separate notes, joined by `writes` / `written_in`.
+### Unverified facts
+
+If you cannot verify something, do not write it. Mark the note `status: draft` and state in prose what is missing and what would settle it. Do not invent a placeholder format; `status: draft` plus a sentence is the convention.
 
 ## Taxonomy and subfields
 
-Each area's `_index.md` carries the controlled vocabulary of subfields for that area. Content notes declare one or more via `subfield:`. This is what makes the taxonomy re-cuttable: to reorganise a branch, change the vocabulary and the frontmatter, and no file moves.
+Each area's `_index.md` carries the controlled vocabulary of subfields for that area. Content notes declare one or more via `subfield:`. This is what makes the taxonomy re-cuttable: to reorganize a branch, change the vocabulary and the frontmatter, and no file moves.
 
 ```yaml
 subfield:

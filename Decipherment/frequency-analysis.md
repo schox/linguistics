@@ -1,6 +1,9 @@
 ---
 type: Method
 category: statistical
+subfield:
+  - Manual method
+  - Computational method
 origin: Cryptanalysis
 applies_to:
   - "[[Cryptography]]"

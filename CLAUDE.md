@@ -1,6 +1,6 @@
 ---
-type: Note
-_organized: true
+type: Doc
+status: living
 ---
 
 @AGENTS.md

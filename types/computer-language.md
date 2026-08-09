@@ -13,19 +13,46 @@ lineage:
 first_appeared:
 status: reference
 influenced_by:
+implemented_in:
+subfield:
+belongs_to:
+related_to:
+cites:
 hopl_id:
 wikidata:
 ---
 
 # ComputerLanguage
 
-A programming, markup, query or formal language, e.g. Python, SQL, Lisp, APL. `lineage` records descent (ALGOL, Lisp, ML, C, Smalltalk).
+A programming, markup, query or formal language. Lives in `Computer-Languages/`.
 
-Status: using | reference | historical | learning.
+## Fields
 
-`influenced_by` carries the genealogy as wikilinks, and its computed inverse gives the influence graph. This mirrors what HOPL records as influence links and what languagelineage.org draws.
+- `paradigm`: free text, may be several, e.g. `functional, procedural, reflective`.
+- `lineage`: the descent group, e.g. `Lisp`, `ALGOL`, `ML`, `C`, `Smalltalk`.
+- `first_appeared`: year.
+- `status`: `using` | `reference` | `historical` | `learning`.
+- `influenced_by`: wikilinks to other `ComputerLanguage` notes. The computed inverse gives the influence graph, mirroring what HOPL records.
+- `implemented_in`: wikilinks for compiler bootstrapping, the relation languagelineage.org records. Distinct from influence.
 
 ## Identifiers
 
 - `hopl_id`: entry in the Online Historical Encyclopaedia of Programming Languages.
-- `wikidata`: Q-number.
+- `wikidata`.
+
+Worked example: `Computer-Languages/lisp.md`.
+
+## Fields required on every content note
+
+These are mandatory and are checked by `scripts/check-vault.py`:
+
+```yaml
+subfield:                  # one or more values from the owning area's _index.md
+  - Some Subfield
+belongs_to: "[[Area Hub]]" # exactly one area hub, quoted
+status: open               # open | draft | settled
+```
+
+Optional but usual: `related_to` (lateral links), `cites` (Reference notes this note draws on).
+
+**Wikilink values must be quoted.** `belongs_to: "[[Cryptography]]"` is a string; `belongs_to: [[Cryptography]]` is a nested YAML list and silently fails. Always use double quotes.

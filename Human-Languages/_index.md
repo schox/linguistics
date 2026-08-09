@@ -10,9 +10,28 @@ The particular languages, organized genealogically. Genealogy is the canonical s
 
 A dagger marks an extinct language. Classification below follows mainstream consensus; contested groupings are flagged as such, because in this area the disputes matter and a taxonomy that hides them is misleading.
 
-## Subfields
+## Two separate vocabularies
 
-Controlled vocabulary for the `family` and `subfield` fields on notes in this area.
+This index carries **two** controlled vocabularies, and they are not the same list.
+
+**`family`** takes a top-level family name: the bold heading of a numbered section below, or a bolded family within it where that family is top-level in its own right. Examples: `Indo-European`, `Afro-Asiatic`, `Sino-Tibetan`, `Uralic`, `Turkic`, `Dravidian`, `Austronesian`, `Atlantic-Congo`, `Pama-Nyungan`, `Tyrsenian`, `Kartvelian`. Use `branch` for the level below (`Germanic`, `Semitic`, `Hellenic`, `Iranian`), and leave `branch` empty for an isolate or a single-member family.
+
+**`subfield`** takes one of the ten section headings listed here, which is a coarser cut used for filtering across the area:
+
+1. Indo-European
+2. Afro-Asiatic
+3. Sino-Tibetan
+4. Other Eurasian families
+5. Austronesian and Papuan
+6. African families
+7. Languages of the Americas
+8. Australian languages
+9. Isolates and small families
+10. Non-genealogical groupings
+
+A language may carry more than one `subfield`, most usefully adding **Ancient corpus languages** from section 10 where it is a dead language known only from a fixed corpus, since that is the property the Decipherment area cares about.
+
+## Sections
 
 ### 1. Indo-European
 
@@ -85,9 +104,17 @@ Controlled vocabulary for the `family` and `subfield` fields on notes in this ar
 - **Documentation and revival**: the Noongar and Kaurna revival programs, archival sources, the ethics of working with community-held material
 - **Structural interest**: kinship systems, avoidance registers, absolute spatial reference, initiation languages
 
-### 9. Isolates and unclassified
+### 9. Isolates and small families
 
-Basque, Sumerian †, Elamite †, Etruscan †, Ainu, Burushaski, Nivkh, Kusunda, Zuni, Hadza, Sandawe. Several are junctions with Decipherment: an isolate offers no relatives to lean on, which is exactly what makes a script recording one so hard to read.
+Bolded here like every other section, so that each yields a usable `family` value.
+
+- **Basque** (Euskara), the only surviving pre-Indo-European language of western Europe
+- **Sumerian †**, **Elamite †**, **Hurro-Urartian †**
+- **Tyrsenian †**: Etruscan, Raetic, Lemnian. Note that Etruscan is frequently described as an isolate in older literature; the current mainstream view makes it Tyrsenian, a small family.
+- **Ainu**, **Burushaski**, **Nivkh**, **Kusunda**, **Zuni**
+- **Hadza**, **Sandawe**, formerly lumped under "Khoisan"
+
+These are junctions with Decipherment. An isolate offers no comparative leverage at all, and a small family of fragmentary relatives offers very little, which is precisely what makes a script recording one hard to read. See [Etruscan](etruscan.md) for the worked case.
 
 ### 10. Non-genealogical groupings
 
@@ -96,9 +123,29 @@ Basque, Sumerian †, Elamite †, Etruscan †, Ainu, Burushaski, Nivkh, Kusund
 - **Constructed languages**: auxiliary (Esperanto, Interlingua, Volapük), engineered (Lojban, Ithkuil), artistic (Quenya and Sindarin, Klingon, Dothraki). Junction with Decipherment via the Voynich hypotheses.
 - **Ancient corpus languages**: the practical question of what is actually readable, and how much text survives for each. This is where corpus size, and therefore decipherability, is recorded.
 
+## Subfield vocabulary
+
+The exact permitted values for the `subfield` field on notes in this area. `scripts/check-vault.py` reads this list verbatim. To add a value, add it here in the same change.
+
+- Indo-European
+- Afro-Asiatic
+- Sino-Tibetan
+- Other Eurasian families
+- Austronesian and Papuan
+- African families
+- Languages of the Americas
+- Australian languages
+- Isolates and small families
+- Non-genealogical groupings
+- Ancient corpus languages
+- Sign languages
+- Pidgins and creoles
+- Constructed languages
+
 ## Notes
 
-(none yet)
+- [Etruscan](etruscan.md) †, Tyrsenian
+- [Mycenaean Greek](mycenaean-greek.md) †, Indo-European / Hellenic
 
 ## Documents
 

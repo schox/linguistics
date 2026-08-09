@@ -25,9 +25,26 @@ Controlled vocabulary for the `subfield` field on notes in this area.
 9. **Post-quantum**: Shor and Grover, lattice-based schemes, the NIST process, harvest-now-decrypt-later.
 10. **History and politics**: black chambers, the NSA and GCHQ, the crypto wars, export control, Clipper, Snowden, the current lawful-access argument.
 
+## Subfield vocabulary
+
+The exact permitted values for the `subfield` field on notes in this area. `scripts/check-vault.py` reads this list verbatim. To add a value, add it here in the same change.
+
+- Classical ciphers
+- Mechanical and electromechanical
+- Cryptanalysis
+- Modern symmetric
+- Asymmetric
+- Hashes and integrity
+- Protocols and deployment
+- Theory
+- Post-quantum
+- History and politics
+
 ## Notes
 
-(none yet)
+- [Vigenère cipher](vigenere-cipher.md), classical
+- [Kasiski examination](kasiski-examination.md), method
+- [Index of coincidence](index-of-coincidence.md), method
 
 ## Documents
 

@@ -17,11 +17,26 @@ Controlled vocabulary for the `subfield` field on notes in this area.
 3. **Typology and universals**: word order, morphosyntactic alignment (nominative-accusative, ergative-absolutive, split systems), Greenbergian universals, WALS, areal features and Sprachbund.
 4. **Sociolinguistics**: variation and change, dialectology and isoglosses, register and code-switching, pidgins and creoles, standardization and language policy, endangerment, documentation and revival.
 5. **Psycholinguistics and acquisition**: first and second language acquisition, processing, aphasia and neurolinguistics, the critical period, sign language acquisition.
-6. **Writing systems**: typology of scripts, the history of the alphabet, literacy and orthographic depth, script reform, transliteration and romanisation standards. Junction with Decipherment.
+6. **Writing systems**: typology of scripts, the history of the alphabet, literacy and orthographic depth, script reform, transliteration and romanization standards. Junction with Decipherment.
 7. **Computational linguistics**: corpus methods, distributional semantics and embeddings, parsing, machine translation, LLMs as linguistic objects and as linguistic evidence. Junction with Computer Languages and Decipherment.
 8. **Formal foundations**: generative grammar, the Chomsky hierarchy, formal semantics, dependency versus constituency. Junction with Computer Languages.
 9. **Semiotics and philosophy of language**: Saussure, Peirce, sense and reference, speech acts, linguistic relativity and its defensible versions.
 10. **Etymology and lexicography**: dictionary-making, corpora, false friends and folk etymology, loanword strata.
+
+## Subfield vocabulary
+
+The exact permitted values for the `subfield` field on notes in this area. `scripts/check-vault.py` reads this list verbatim. To add a value, add it here in the same change.
+
+- Levels of analysis
+- Historical and comparative
+- Typology and universals
+- Sociolinguistics
+- Psycholinguistics and acquisition
+- Writing systems
+- Computational linguistics
+- Formal foundations
+- Semiotics and philosophy of language
+- Etymology and lexicography
 
 ## Notes
 

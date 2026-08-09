@@ -30,6 +30,20 @@ Controlled vocabulary for the `subfield` field on notes in this area.
 7. **Practitioners**: Champollion, Rawlinson, Kober, Ventris, Chadwick, Knorozov, Proskouriakoff, Barber, and the cryptanalysts who crossed over in both directions.
 8. **Infrastructure**: sign lists and their disputes, transliteration conventions, Unicode encoding of ancient scripts, digital corpora and their gaps, dating and provenance, forgeries.
 
+## Subfield vocabulary
+
+The exact permitted values for the `subfield` field on notes in this area. `scripts/check-vault.py` reads this list verbatim. To add a value, add it here in the same change.
+
+- The problem space
+- Solved decipherments
+- Unsolved, partial and contested
+- Manual method
+- Computational method
+- Epistemics
+- Practitioners
+- Infrastructure
+- Writing systems
+
 ## Notes
 
 - [The evidentiary threshold and unicity distance](evidentiary-threshold-and-unicity-distance.md)
@@ -38,6 +52,11 @@ Controlled vocabulary for the `subfield` field on notes in this area.
 - [Frequency analysis](frequency-analysis.md)
 - [Is it writing at all? The Indus entropy debate](is-it-writing-at-all.md)
 - [Computational decipherment: three distinct tasks](computational-decipherment-three-tasks.md)
+
+## Scripts
+
+- [Linear B](linear-b.md), deciphered
+- [Etruscan alphabet](etruscan-alphabet.md), deciphered script, partly understood language
 
 ## Documents
 

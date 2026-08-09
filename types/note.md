@@ -7,10 +7,15 @@ _order: 70
 _pinned_properties:
   - status
   - related_to
-status: open
+subfield:
+belongs_to:
 related_to:
+cites:
+status: open
 ---
 
 # Note
 
-A general working note or observation that doesn't yet belong under a more specific type.
+A general working note or observation that does not yet belong under a more specific type. If it acquires a clear subject, retype it.
+
+`status`: `open` (live, being worked on) | `draft` (incomplete, sources still missing) | `settled` (finished, sourced, unlikely to change).
