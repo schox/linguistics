@@ -28,6 +28,7 @@ Linguistics/
   attachments/              images referenced from notes
   references/               the bibliography, one note per source
   people/                   seminal figures, one note each
+  places/                   seminal institutions and sites
   General-Linguistics/      the theory
   Human-Languages/          particular languages, organised genealogically
   Computer-Languages/       programming, markup, query and formal languages
@@ -48,7 +49,8 @@ Every Markdown note declares a `type` in frontmatter. Supported types (defined i
 - `Cipher`: a cipher, cryptographic algorithm or system. Fields: `era`, `category`.
 - `Method`: a technique, manual or computational, that transfers between areas. Fields: `category`, `origin`, `applies_to`.
 - `Concept`: a term or idea worth its own note, from any area. Field: `subfield`.
-- `Person`: a seminal figure in one of the areas. Fields: `born`, `died`, `field`, `known_for`, `key_works`.
+- `Person`: a seminal figure in one of the areas. Fields: `born`, `died`, `field`, `known_for`, `key_works`, `worked_at`.
+- `Place`: an institution where expertise concentrated, or a site that produced the evidence. Fields: `kind`, `country`, `flourished`.
 - `Reference`: a bibliographic entry, one per source. Fields: `authors`, `year`, `container`, `doi`, `url`, `ref_type`, `status`.
 - `Note`: a general working note that doesn't yet belong under a more specific type.
 - `Media`: a photo, diagram, plate or image kept for reference.
@@ -129,6 +131,16 @@ belongs_to: "[[Cryptography]]"
 
 **Credit is part of the record.** Where a contribution has been historically misattributed or overlooked, say so with sources. Alice Kober's relationship to the Linear B decipherment is the standing example.
 
+## Places
+
+`Place` notes cover institutions and sites. They live in `places/` alongside `people/` because they are cross-cutting entities rather than subject matter.
+
+The two kinds sit at opposite ends of the same process. **Institutions** are where interpretation happens and are linked from `Person` notes via `worked_at`. **Sites** are where the material comes from and are linked from `Script` notes via `found_at`.
+
+Sites are not background colour. The size of a surviving corpus decides whether a script can be read, and corpus size is set by excavation, so provenance is causally upstream of the central argument in Decipherment. Knossos is why Linear B was decipherable.
+
+**Inclusion test.** Expertise concentrated there in a way that explains a breakthrough, or it is the provenance of a significant corpus, or it is referenced from two or more notes. Not every university anyone attended, and not every find-spot.
+
 ## External data sources and identifiers
 
 Mature curated datasets already exist for some of this material, unevenly across the areas. The vault's stance is **adopt their identifiers, link out, do not mirror**. See `_data-sources.md` for the survey and the reasoning.
@@ -140,6 +152,7 @@ Every entity note carries the external identifiers that exist for it, because th
 - `ComputerLanguage`: `hopl_id`, `wikidata`
 - `Cipher`: `wikidata` only, since no domain scheme exists
 - `Person`: `viaf` (library standard, best for historical figures), `orcid` (living researchers), `wikidata`
+- `Place`: `geonames`, `pleiades` (ancient sites), `ror` (research institutions), `wikidata`
 
 Wikidata Q-numbers are the universal fallback.
 

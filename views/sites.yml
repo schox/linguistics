@@ -1,0 +1,12 @@
+name: Sites (provenance)
+icon: null
+color: null
+sort: property:flourished:asc
+filters:
+  all:
+  - field: type
+    op: equals
+    value: Place
+  - field: kind
+    op: equals
+    value: site

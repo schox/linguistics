@@ -23,6 +23,7 @@ Cryptography/          ciphers, algorithms, cryptanalysis, crypto history
 Decipherment/          reading lost scripts and unknown languages
 references/            the bibliography, one note per source
 people/                seminal figures, one note each
+places/                seminal institutions and sites
 types/                 Tolaria type definitions
 views/                 saved sidebar views
 attachments/           images referenced from notes

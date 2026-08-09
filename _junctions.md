@@ -36,6 +36,13 @@ Seminal figures are often the join between areas, and `field` taking more than o
 - [Claude Shannon](people/claude-shannon.md): Cryptography and information theory into Decipherment
 - [John Chadwick](people/john-chadwick.md): wartime cryptanalysis and Greek philology, with the usual telling of that story corrected
 
+## Places as junctions
+
+Where the transfer physically happened. See `places/`.
+
+- [Bletchley Park](places/bletchley-park.md): mathematicians, linguists, classicists and crossword solvers in one place, and Colossus at the end of it
+- [Institutional concentration](places/institutional-concentration.md): why some places punch above their weight, and whether decipherment is the exception
+
 ## Still to write
 
 - Embeddings and distributional semantics, as the mechanism behind neural decipherment

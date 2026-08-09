@@ -12,6 +12,7 @@ class:
 period:
 decipherment_status: undeciphered
 writes:
+found_at:
 iso15924:
 iso15924_num:
 unicode_block:
@@ -25,6 +26,7 @@ A writing system, which is not the same thing as a language. Cuneiform wrote fiv
 Class: alphabet | abjad | abugida | syllabary | logographic | mixed | undetermined.
 Decipherment status: deciphered | partial | contested | undeciphered.
 `writes` links to the `Language` notes the script records, where known.
+`found_at` links to the `Place` notes for the sites the corpus came from, which is what determines corpus size and therefore decipherability.
 
 ## Identifiers
 

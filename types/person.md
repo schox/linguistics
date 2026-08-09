@@ -13,6 +13,7 @@ died:
 field:
 known_for:
 key_works:
+worked_at:
 viaf:
 orcid:
 wikidata:
@@ -39,6 +40,8 @@ Otherwise they stay as an author string in the `authors` field of a `Reference` 
 - `viaf`: Virtual International Authority File, the library-standard identifier, best for historical figures.
 - `orcid`: for living researchers.
 - `wikidata`: Q-number, the universal fallback.
+
+Use `worked_at` to link the `Place` notes where they did the relevant work.
 
 ## Living people
 

@@ -8,6 +8,8 @@ field:
 known_for: "Collaborator on the Linear B decipherment; Documents in Mycenaean Greek"
 key_works:
   - "[[Chadwick 1958]]"
+worked_at:
+  - "[[Bletchley Park]]"
 wikidata:
 belongs_to: "[[Decipherment]]"
 related_to:
@@ -22,7 +24,7 @@ English classicist and philologist (21 May 1920 to 24 November 1998), Michael Ve
 
 ## Wartime cryptography
 
-Chadwick did codebreaking work in both theatres of the war. At Alexandria in 1942 he was set to breaking lower-level Italian naval codes, which he approached without Italian by leaning on his Latin. In 1944 he was given a crash course in Japanese at Bletchley Park and worked on messages from Japanese naval representatives in Stockholm and Berlin.
+Chadwick did codebreaking work in both theatres of the war. At Alexandria in 1942 he was set to breaking lower-level Italian naval codes, which he approached without Italian by leaning on his Latin. In 1944 he was given a crash course in Japanese at [Bletchley Park](../places/bletchley-park.md) and worked on messages from Japanese naval representatives in Stockholm and Berlin.
 
 ## Linear B
 
