@@ -192,7 +192,7 @@ If a file's status is unclear, leave it out and flag it rather than guess.
 
 ## Style
 
-Australian English. No em-dashes (use commas, parentheses, semicolons). Extinct or dead languages are marked with a dagger in prose lists. Give dates as BCE/CE.
+Australian English. No em-dashes (use commas, parentheses, semicolons). Proper nouns keep their own spelling: the Research Organization Registry (ROR) and the Association for Computational Linguistics are named that way and are not to be "corrected". Extinct or dead languages are marked with a dagger in prose lists. Give dates as BCE/CE.
 
 ## Git
 
