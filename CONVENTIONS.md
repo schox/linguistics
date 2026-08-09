@@ -75,6 +75,22 @@ Three situations, three treatments, and collapsing them loses information:
 
 `## Open questions` sits after `## Sources`. It is optional, and it is not a to-do list for the note's prose; it is for questions the sources themselves do not answer.
 
+**Phrase an open question as an actionable lookup.** Distinguish what is unknown from what was merely unreachable, and say which source would settle it. "The Pleiades ID was not confirmed because the site was behind bot detection on 2026-08-09" can be picked up and closed by someone with access; "no Pleiades ID" cannot. Andrew runs a separate fact and link checking service periodically, and a well-phrased gap is work it can do.
+
+### Derived numbers
+
+A ratio, percentage, average, unit conversion or absolute date that you computed is your own claim, however well sourced its inputs. It inherits the appearance of authority from the citation beside it without inheriting the authority itself.
+
+State the inputs and where they came from, so the arithmetic is checkable and not just the reference. `Decipherment/linear-a.md` does this: the corpus percentages and the signs-per-document averages are given alongside the raw counts they derive from and the paper those counts come from, and the note says which figures are lower bounds.
+
+This is where mistakes actually occur. Verification instinct points at quotations, and quotations are the part already under control.
+
+### Required fields with no verifiable value
+
+Some schema fields are mandatory for a type and some facts simply do not exist: an undated web resource still needs `year`. The field takes the nearest verifiable proxy, and the note says in prose that it is a proxy and what it does and does not establish.
+
+Never a plausible guess. A schema slot is not evidence that a fact exists, and a required field is the most reliable way to talk yourself into inventing one. Worked example: `references/rutter-aegean-prehistory.md`.
+
 ## Taxonomy and subfields
 
 Each area's `_index.md` carries the controlled vocabulary of subfields for that area. Content notes declare one or more via `subfield:`. This is what makes the taxonomy re-cuttable: to reorganize a branch, change the vocabulary and the frontmatter, and no file moves.

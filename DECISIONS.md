@@ -130,3 +130,27 @@ Enforcement and advice are kept apart because they behave differently under doub
 **Consequence.** The second list is a worklist, not a to-do list. It is a heuristic over capitalization and it says so in its own output. Entries are judged against the inclusion tests in `types/person.md` and `types/place.md`, which is the point: it lets the vault say who it already needs rather than working from a wishlist.
 
 **House style it assumes.** Link on first mention per note. A note that already links a target is treated as satisfied however often the name recurs, because linking every mention is noise and is harder to undo than to not do.
+
+## 2026-08-09: Derived numbers are claims, and required fields are not evidence
+
+**Decided.** Two additions to the evidentiary standard, both from reviewing what nearly went wrong in the first content batch.
+
+A number computed rather than quoted (ratio, percentage, average, unit conversion, absolute date from a relative phase) must state its inputs and their source in the note. A required schema field with no verifiable value takes the nearest verifiable proxy and says so; never a plausible guess.
+
+**Why.** Both failure modes were caught in batch 1 and neither was a citation problem, which is the point. Every quotation and identifier verified clean, because that is where the discipline was aimed.
+
+The first draft of `Decipherment/linear-a.md` stated that Linear A has 13 percent of Linear B's documents and 13 percent of its signs. The document ratio is about 31 percent. The two numbers came from a correctly cited source and the arithmetic in between was mine, so the error sat inside a properly referenced sentence. Worse, the corrected version is a better note: the gap between 31 and 13 percent is average document length, which is the substantive point about why Linear A resists distributional attack.
+
+The second: `places/hagia-triada.md` was drafted with `flourished: c. 1600-1450 BCE`, converted by me from the ceramic phases the sources actually give. Aegean High and Low chronologies put LM IB about a century apart, so that conversion silently took a side in a live dispute. It now records the phase.
+
+And `references/rutter-aegean-prehistory.md` was first written with `year: 2000`, invented purely to fill a required field on an undated web resource. It now carries the site's copyright year with a statement that this dates the access rather than the work.
+
+**Rejected.** Relaxing the required fields so the second case cannot arise. The fields earn their place; the fix is a stated convention for the empty case, not a weaker schema.
+
+## 2026-08-09: Linear B is `mixed`, not `syllabary`
+
+**Decided.** `Decipherment/linear-b.md` carries `class: mixed`, matching `Decipherment/linear-a.md`, on the authority of Salgarella and Castellan, who classify both together as logo-syllabic.
+
+**Why.** The note already contained the evidence against its own classification: its first sentence gives about 87 syllabic signs and over 100 ideographic signs, and a script with more semantic signs than phonetic ones is not a syllabary. The two notes also disagreed with each other while describing one script family.
+
+**Known limit.** The `class` enum has no `logo-syllabic` value, which is the standard term in the Aegean literature. `mixed` is the closest available and the distinction is carried in prose instead. Adding a vocabulary value for one script family was judged a poor trade, but it is open.

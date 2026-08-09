@@ -41,6 +41,18 @@ Three failure modes, three different treatments, and they must not be collapsed 
 
 This applies to a note's whole content, not only to its citations. It applies with particular force to numbers (corpus sizes, dates, sign counts) and to external identifiers, both of which look authoritative on the page and are easy to produce from recall rather than from a source.
 
+### How to verify
+
+**Order.** Registries and primary documents first; search engines only to locate them, never to answer. Resolve every identifier for a batch before writing any prose: ISO 15924 from the Unicode Consortium code list, Unicode blocks from `Blocks.txt`, Q-numbers from the Wikidata API, `glottocode` from Glottolog. This is fast, it is authoritative, and it usually turns up facts for later batches at no extra cost.
+
+**A search-result summary is not a source.** No number reaches frontmatter from one. Get to the paper, the registry or the database record. If a PDF resists fetching it is still saved to disk and can be read directly, which is the reliable route for papers and should be the first attempt rather than the fallback.
+
+**Repetition is not corroboration.** A figure appearing in five search results is usually one tertiary source quoted five times. Count distinct primary sources, not distinct URLs, and say which one you actually read.
+
+**Derived numbers must show their working.** A ratio, percentage, average, unit conversion or absolute date computed from sourced inputs is *your* claim, not the source's, and it carries the source's authority without having earned it. State the inputs and their origin in the note so the arithmetic is checkable and not merely the citation. This is where errors actually happen: verification instinctively points at quotations, and quotations are the part already under control.
+
+**A required field with no verifiable value** takes the nearest verifiable proxy and says in the note that it is a proxy, with what it does and does not establish. It never takes a plausible guess. `references/rutter-aegean-prehistory.md` is the worked example: an undated web resource whose `year` is its copyright notice, stated as dating the access rather than the work. A schema slot is not evidence that a fact exists.
+
 ## Rules
 
 1. **International English (US spelling)** in this vault: organize, standardize, center, color, license, program, catalog, paleographic. This is a deliberate exception to Andrew's usual Australian English, set for this project. No em-dashes (use commas, parentheses, semicolons).
