@@ -8,6 +8,7 @@ Checks, per markdown file:
   * subfield values valid against the owning area's _index.md
   * wikilink values quoted (unquoted [[X]] is a nested YAML list and fails silently)
   * every relative markdown link resolves
+  * every [[wikilink]] resolves to an H1 title or filename
   * content notes end with a ## Sources section
   * house style: International English, no em-dashes
 
@@ -158,6 +159,29 @@ def subfield_vocab(path):
     }
 
 
+def resolvable_targets(files):
+    """Every wikilink target Tolaria can resolve: H1 titles and bare filenames."""
+    targets = set()
+    for path in files:
+        targets.add(os.path.basename(path)[:-3])
+        m = re.search(r"^#\s+(.+)$", open(path, encoding="utf-8").read(), re.M)
+        if m:
+            targets.add(m.group(1).strip())
+    return targets
+
+
+def strip_fenced(raw):
+    """Blank out fenced code blocks, keeping line numbers stable."""
+    out, fenced = [], False
+    for line in raw.split("\n"):
+        if line.lstrip().startswith("```"):
+            fenced = not fenced
+            out.append("")
+            continue
+        out.append("" if fenced else line)
+    return "\n".join(out)
+
+
 def markdown_files():
     for dirpath, dirnames, filenames in os.walk(ROOT):
         dirnames[:] = [d for d in dirnames if d != ".git"]
@@ -172,7 +196,7 @@ def mask(text):
     return text
 
 
-def check(path, vocabs):
+def check(path, vocabs, targets):
     rel = os.path.relpath(path, ROOT)
     raw = open(path, encoding="utf-8").read()
     out = []
@@ -215,6 +239,12 @@ def check(path, vocabs):
             if "—" in line:
                 out.append((rel, i, "em-dash"))
 
+    # wikilink targets must resolve; examples inside fenced blocks are exempt
+    for i, line in enumerate(strip_fenced(raw).split("\n"), 1):
+        for m in re.finditer(r"\[\[([^\]]+)\]\]", line):
+            if m.group(1).strip() not in targets:
+                out.append((rel, i, f"dangling wikilink [[{m.group(1).strip()}]]"))
+
     base = os.path.dirname(path)
     for i, line in enumerate(raw.splitlines(), 1):
         prose = INLINE_CODE.sub("", mask(line))
@@ -234,9 +264,10 @@ def main():
     quiet = "--quiet" in sys.argv
     vocabs = {a: subfield_vocab(os.path.join(ROOT, p)) for a, p in AREA_INDEX.items()}
     files = list(markdown_files())
+    targets = resolvable_targets(files)
     problems = []
     for path in files:
-        problems.extend(check(path, vocabs))
+        problems.extend(check(path, vocabs, targets))
     for rel, line, msg in problems:
         print(f"{rel}:{line}: {msg}")
     if problems:

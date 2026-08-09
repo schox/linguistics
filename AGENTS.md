@@ -43,10 +43,23 @@ Five areas: `General-Linguistics/`, `Human-Languages/`, `Computer-Languages/`, `
 
 The computational decipherment literature is widely misreported, including by reputable outlets. Before writing that a script has been deciphered by a model, check which of the three tasks in `Decipherment/computational-decipherment-three-tasks.md` the work actually performs. Restoration is not decipherment, and cognate search is not decipherment.
 
-## Cowork / Claude Code notes
+## Environment
 
-- Vault path for Read/Write/Edit: `/Users/andrew/Documents/Tolaria/Linguistics/`.
-- In the bash sandbox the files appear under `/sessions/<session>/mnt/...`; translate paths.
-- `git` is available. Always check `git status` before assuming the working tree state.
-- Run `python3 scripts/check-vault.py` before committing. It checks required fields per type, enum values, subfield membership, wikilink quoting, `## Sources` presence, link resolution and house style. It does **not** resolve wikilink targets, so a `belongs_to` pointing at a non-existent note still passes.
-- Every type now has a worked example, named in its type file. Copy the example, do not invent the shape.
+The vault root is the git repository root. All paths in this document are relative to it. Work from the repo root and use relative paths; do not hard-code an absolute path, because this vault is worked on from more than one environment.
+
+**Before you start**, always:
+
+```sh
+git status
+python3 scripts/check-vault.py
+```
+
+Tolaria is a desktop app that reads and writes these same files while Andrew has the vault open, and it has its own in-app git client. Assume the working tree may have changed under you, and never assume your last-known state is current.
+
+**Before you finish**, run the checker again and make sure it exits clean. It checks required fields per type, enum values, subfield membership against each area's stated vocabulary, wikilink quoting, wikilink resolution, `## Sources` presence, relative link resolution, and house style.
+
+Commit with descriptive messages. Ask Andrew before pushing unless he has said otherwise.
+
+### If you are running in Cowork rather than locally
+
+Cowork reaches the vault through a device bridge, which has two quirks worth knowing. Files appear under a session mount path rather than the real one, so translate paths. More importantly the bridge cannot delete files, so `git` leaves `.git/index.lock` behind after every `git add` and the next command fails with "another git process seems to be running". The workaround is to rename the lock in place (`mv .git/index.lock .git/index.lock.stale`) between git commands. Running locally, none of this applies.

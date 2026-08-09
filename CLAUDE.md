@@ -1,6 +1,7 @@
 ---
 type: Doc
 status: living
+_organized: true
 ---
 
 @AGENTS.md

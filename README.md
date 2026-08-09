@@ -31,6 +31,7 @@ scripts/               check-vault.py, the consistency checker
 _junctions.md          index of cross-cutting notes
 _data-sources.md       what external data exists, and how the vault relates to it
 DECISIONS.md           why the vault is shaped this way, and what was rejected
+STATUS.md              where the project is up to, and what to do next
 ```
 
 Folders are shallow and stay that way. The taxonomy lives in the `subfield` frontmatter field, with the controlled vocabulary held in each area's `_index.md`, so a branch can be re-cut without moving files.
