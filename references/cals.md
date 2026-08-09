@@ -19,7 +19,7 @@ related_to:
 
 A deliberate parallel to WALS built by the constructed-language community, applying typological feature description to invented languages. Alongside it sit the Conlang Database and the FrathWiki reference wiki.
 
-Less rigorous than the natural-language catalogues, and community-maintained rather than institutionally curated, but interesting precisely as evidence that the WALS model is portable: a hobbyist community independently reached for the same structure, which suggests the structure is doing real work rather than merely reflecting academic convention.
+Less rigorous than the natural-language catalogs, and community-maintained rather than institutionally curated, but interesting precisely as evidence that the WALS model is portable: a hobbyist community independently reached for the same structure, which suggests the structure is doing real work rather than merely reflecting academic convention.
 
 ## Sources
 

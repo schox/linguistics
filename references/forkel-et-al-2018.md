@@ -17,9 +17,9 @@ belongs_to: "[[General Linguistics]]"
 
 # Forkel et al. 2018 (CLDF)
 
-The specification paper for **Cross-Linguistic Data Formats**, the interchange standard underpinning the CLLD ecosystem. A modular CSV and JSON format for word lists and structural datasets, with consistent metadata, a formal ontology, and reference catalogues (Glottolog for languages, Concepticon for concepts) supplying the identifiers.
+The specification paper for **Cross-Linguistic Data Formats**, the interchange standard underpinning the CLLD ecosystem. A modular CSV and JSON format for word lists and structural datasets, with consistent metadata, a formal ontology, and reference catalogs (Glottolog for languages, Concepticon for concepts) supplying the identifiers.
 
-Relevant to this vault as the worked example of the pattern being adopted here: entities get stable identifiers from a shared catalogue, datasets reference those identifiers rather than duplicating the entities, and interoperability follows. If anything in this vault ever needs to hold tabular linguistic data, it should be CLDF rather than an invented schema.
+Relevant to this vault as the worked example of the pattern being adopted here: entities get stable identifiers from a shared catalog, datasets reference those identifiers rather than duplicating the entities, and interoperability follows. If anything in this vault ever needs to hold tabular linguistic data, it should be CLDF rather than an invented schema.
 
 ## Sources
 

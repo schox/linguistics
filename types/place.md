@@ -28,7 +28,7 @@ Two kinds matter here and they sit at opposite ends of the same process.
 - **Institutions** are where interpretation happens: Bletchley Park, the Max Planck Institute at Leipzig, a university department. Linked from `Person` notes via `worked_at`.
 - **Sites** are where the material comes from: Knossos, Ugarit, Behistun, Mohenjo-daro. Linked from `Script` and corpus notes via `found_at`.
 
-The distinction matters more than it looks. In this vault the size of a surviving corpus is the variable that decides whether a script can be read at all, and corpus size is set by excavation. Sites are therefore causally upstream of the central argument in Decipherment, not background colour.
+The distinction matters more than it looks. In this vault the size of a surviving corpus is the variable that decides whether a script can be read at all, and corpus size is set by excavation. Sites are therefore causally upstream of the central argument in Decipherment, not background color.
 
 `kind`: institution | site | region | facility.
 `flourished`: the period when the place mattered, which is usually narrower than its existence.

@@ -15,7 +15,7 @@ status: open
 
 # Bletchley Park
 
-The principal centre of Allied codebreaking in the Second World War, in a country house estate in Buckinghamshire. By January 1945 roughly 8,995 people worked there, about three-quarters of them women.
+The principal center of Allied codebreaking in the Second World War, in a country house estate in Buckinghamshire. By January 1945 roughly 8,995 people worked there, about three-quarters of them women.
 
 ## Why it belongs in this vault
 
@@ -23,7 +23,7 @@ Bletchley is the clearest instance of [institutional concentration](institutiona
 
 Two things came out of it that matter here.
 
-**Method.** The statistical apparatus of cryptanalysis was developed and industrialised at scale: frequency and positional analysis, cribs, mechanised search through the bombe, and against Lorenz the machinery that became Colossus, designed by Tommy Flowers and generally described as the first programmable digital electronic computer. That last point puts Bletchley upstream of Computer Languages as well as Cryptography.
+**Method.** The statistical apparatus of cryptanalysis was developed and industrialized at scale: frequency and positional analysis, cribs, mechanized search through the bombe, and against Lorenz the machinery that became Colossus, designed by Tommy Flowers and generally described as the first programmable digital electronic computer. That last point puts Bletchley upstream of Computer Languages as well as Cryptography.
 
 **People.** Alan Turing, Gordon Welchman, Dilly Knox, Bill Tutte, Hugh Alexander, Donald Michie, Mavis Lever and Joan Clarke among many others. [John Chadwick](../people/john-chadwick.md) worked on Japanese naval traffic here in 1944 before his later career in Greek philology and Linear B, which is the biographical thread often told too neatly (see his note for the correction).
 

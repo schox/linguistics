@@ -8,7 +8,7 @@ updated: 2026-08-09
 
 Reading lost scripts and unknown languages. The integrative area: it takes method from Cryptography, constraint from General Linguistics, candidate relatives from Human Languages, and technique from Computer Languages.
 
-The organising fact of this area is that the binding constraint is usually **corpus size, not cleverness**. Below a certain quantity of surviving text a proposed reading can be neither proved nor disproved, however good the method. See [The evidentiary threshold and unicity distance](evidentiary-threshold-and-unicity-distance.md).
+The organizing fact of this area is that the binding constraint is usually **corpus size, not cleverness**. Below a certain quantity of surviving text a proposed reading can be neither proved nor disproved, however good the method. See [The evidentiary threshold and unicity distance](evidentiary-threshold-and-unicity-distance.md).
 
 ## Subfields
 

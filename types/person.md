@@ -45,4 +45,4 @@ Use `worked_at` to link the `Place` notes where they did the relevant work.
 
 ## Living people
 
-Notes on living people stick to documented professional contribution, sourced. No unsourced biographical claim, no health or personal-life detail, no political characterisation. If a fact cannot be verified now, leave it out and say so in the note rather than reproducing what you remember.
+Notes on living people stick to documented professional contribution, sourced. No unsourced biographical claim, no health or personal-life detail, no political characterization. If a fact cannot be verified now, leave it out and say so in the note rather than reproducing what you remember.

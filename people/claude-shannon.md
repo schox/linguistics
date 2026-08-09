@@ -5,7 +5,7 @@ died: 2001
 field:
   - Cryptography
   - Computational linguistics
-known_for: "Founded information theory; formalised secrecy systems and unicity distance"
+known_for: "Founded information theory; formalized secrecy systems and unicity distance"
 key_works:
   - "[[Shannon 1949]]"
 wikidata:

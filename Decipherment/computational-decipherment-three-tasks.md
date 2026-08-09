@@ -42,7 +42,7 @@ This is where Linear A actually sits. The University of Melbourne project (Brent
 
 Reports of "AI cracking Linear A" typically describe work in category 1 or 3 while implying category 2. Linear A remains undeciphered. Its constraint is the corpus, not the algorithm, and no method in any of these categories addresses corpus size. See [The evidentiary threshold and unicity distance](evidentiary-threshold-and-unicity-distance.md).
 
-Tamburini is explicit on the same point: these systems require segmented and clean corpora, extensive cognate lists, and human palaeographic expertise, and assist palaeographers rather than replacing them.
+Tamburini is explicit on the same point: these systems require segmented and clean corpora, extensive cognate lists, and human paleographic expertise, and assist paleographers rather than replacing them.
 
 ## Sources
 

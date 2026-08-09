@@ -10,7 +10,7 @@ The bibliography. One `Reference` note per source, cited from content notes via 
 
 Browse by the Bibliography, Sources by year, or Reading list views in the sidebar rather than through this folder.
 
-## Datasets and catalogues
+## Datasets and catalogs
 
 See `_data-sources.md` for how the vault relates to these.
 

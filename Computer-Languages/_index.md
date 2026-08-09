@@ -19,7 +19,7 @@ Controlled vocabulary for the `subfield` field on notes in this area.
 5. **Domain and non-general-purpose languages**: markup (SGML, XML, HTML, Markdown), query (SQL, SPARQL, GraphQL, Datalog), configuration (YAML, TOML, JSON), shell, regular expressions, build and schema languages, DSLs.
 6. **Design and comparative**: syntax versus semantics, expressiveness and succinctness, readability and cognitive load, error handling philosophies, whether linguistic relativity has any content for programming languages.
 7. **Notation beyond programming**: mathematical notation, musical notation, chess and dance notation, APL as a boundary case, Iverson's "notation as a tool of thought".
-8. **History and standardisation**: the committee languages, standards bodies, the social life of a language community.
+8. **History and standardization**: the committee languages, standards bodies, the social life of a language community.
 
 ## Notes
 

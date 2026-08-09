@@ -15,7 +15,7 @@ The same formalism claimed by two fields, and the cleanest junction between Gene
 
 ## The hierarchy
 
-Chomsky (1956) classifies formal grammars by the restrictions on their production rules, giving a strict containment: regular (type 3) inside context-free (type 2) inside context-sensitive (type 1) inside recursively enumerable (type 0). Each class corresponds to a machine that recognises it: finite automaton, pushdown automaton, linear bounded automaton, Turing machine.
+Chomsky (1956) classifies formal grammars by the restrictions on their production rules, giving a strict containment: regular (type 3) inside context-free (type 2) inside context-sensitive (type 1) inside recursively enumerable (type 0). Each class corresponds to a machine that recognizes it: finite automaton, pushdown automaton, linear bounded automaton, Turing machine.
 
 ## Two careers
 
@@ -25,7 +25,7 @@ In **linguistics** it was a claim about human language, and a contested one. The
 
 ## Why the junction matters here
 
-It is the concrete case for treating computer languages as a linguistic subject rather than a metaphor. The same mathematics describes both, but the questions differ: for a programming language the grammar is *stipulated* and the interesting problem is efficient parsing; for a human language the grammar is *hypothesised* and the interesting problem is whether the hypothesis is true of speakers.
+It is the concrete case for treating computer languages as a linguistic subject rather than a metaphor. The same mathematics describes both, but the questions differ: for a programming language the grammar is *stipulated* and the interesting problem is efficient parsing; for a human language the grammar is *hypothesized* and the interesting problem is whether the hypothesis is true of speakers.
 
 There is also a decipherment angle worth pursuing: measures of structural complexity on an undeciphered corpus are attempts to locate it on something like this scale, which connects to [Is it writing at all?](../Decipherment/is-it-writing-at-all.md)
 

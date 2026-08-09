@@ -23,9 +23,9 @@ What produced that was not a coincidence of talented individuals but a set of co
 
 ## Instances in scope
 
-- **[Bletchley Park](bletchley-park.md)**, 1939 to 1945. Deliberate interdisciplinary recruitment (mathematicians, linguists, classicists, chess players, crossword solvers) under wartime urgency, producing both the industrialisation of cryptanalysis and, in Colossus, the first programmable digital electronic computer.
-- **[Max Planck Institute for Evolutionary Anthropology, Leipzig](max-planck-institute-leipzig.md)**, 1997 to present. A sustained programme rather than a single breakthrough, producing shared infrastructure (Glottolog, WALS, CLDF) that other people's work now depends on.
-- **MIT**, for the Chomskyan programme in linguistics and, separately and much later, the neural decipherment work of Barzilay and colleagues. Two unrelated concentrations in the same institution, which is itself worth examining.
+- **[Bletchley Park](bletchley-park.md)**, 1939 to 1945. Deliberate interdisciplinary recruitment (mathematicians, linguists, classicists, chess players, crossword solvers) under wartime urgency, producing both the industrialization of cryptanalysis and, in Colossus, the first programmable digital electronic computer.
+- **[Max Planck Institute for Evolutionary Anthropology, Leipzig](max-planck-institute-leipzig.md)**, 1997 to present. A sustained program rather than a single breakthrough, producing shared infrastructure (Glottolog, WALS, CLDF) that other people's work now depends on.
+- **MIT**, for the Chomskyan program in linguistics and, separately and much later, the neural decipherment work of Barzilay and colleagues. Two unrelated concentrations in the same institution, which is itself worth examining.
 
 ## Why it is worth a note
 

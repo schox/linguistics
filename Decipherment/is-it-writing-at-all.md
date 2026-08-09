@@ -18,7 +18,7 @@ The prior question, which most decipherment discussion skips: before asking what
 
 ## The dispute
 
-Farmer, Sproat and Witzel (2004) argue that the Indus corpus is **not writing**. Their case rests on the extreme brevity of the inscriptions (typically around five signs), the behaviour of the sign inventory, the high proportion of signs occurring only once, and the complete absence of long texts, which they read as positive evidence of a non-linguistic symbol system rather than as an accident of preservation. They note that a literate civilisation that left no long texts anywhere would be unique.
+Farmer, Sproat and Witzel (2004) argue that the Indus corpus is **not writing**. Their case rests on the extreme brevity of the inscriptions (typically around five signs), the behavior of the sign inventory, the high proportion of signs occurring only once, and the complete absence of long texts, which they read as positive evidence of a non-linguistic symbol system rather than as an accident of preservation. They note that a literate civilisation that left no long texts anywhere would be unique.
 
 Rao and colleagues (2009) reply with an information-theoretic argument. Measuring conditional entropy over Indus sign sequences, they find the values fall within the range of known linguistic systems and outside the range of the non-linguistic control systems they tested, and conclude that a linguistic interpretation remains the better supported one.
 
@@ -28,7 +28,7 @@ The exchange that followed was sharp, and both the statistical methodology and t
 
 It is the cleanest demonstration that decipherment has a well-posedness problem that cryptanalysis does not. A cryptanalyst knows the ciphertext encodes a message, because somebody encrypted one. A decipherer has to establish it, and the tools for doing so are statistical, which means they inherit every weakness of a small corpus.
 
-It also generalises. The same question applies to Rongorongo, to the Phaistos Disc, and most sharply to the Voynich manuscript, where the live hypotheses include natural language in an unknown script, an enciphered natural language, a constructed language, and an elaborate hoax containing no information at all. Those four require entirely different methods, and choosing between them is a prior step to any attempt at reading.
+It also generalizes. The same question applies to Rongorongo, to the Phaistos Disc, and most sharply to the Voynich manuscript, where the live hypotheses include natural language in an unknown script, an enciphered natural language, a constructed language, and an elaborate hoax containing no information at all. Those four require entirely different methods, and choosing between them is a prior step to any attempt at reading.
 
 ## Sources
 

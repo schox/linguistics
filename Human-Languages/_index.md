@@ -6,7 +6,7 @@ updated: 2026-08-09
 
 # Human Languages
 
-The particular languages, organised genealogically. Genealogy is the canonical spine because it is what makes the comparative and decipherment material navigable: knowing a language's relatives is precisely what lets you read it, or fail to.
+The particular languages, organized genealogically. Genealogy is the canonical spine because it is what makes the comparative and decipherment material navigable: knowing a language's relatives is precisely what lets you read it, or fail to.
 
 A dagger marks an extinct language. Classification below follows mainstream consensus; contested groupings are flagged as such, because in this area the disputes matter and a taxonomy that hides them is misleading.
 
@@ -82,7 +82,7 @@ Controlled vocabulary for the `family` and `subfield` fields on notes in this ar
 - **Pama-Nyungan**: Noongar, Wiradjuri, Kaurna, Warlpiri, Arrernte, Western Desert (Pitjantjatjara, Ngaanyatjarra), Yolngu Matha, Guugu Yimithirr
 - **Non-Pama-Nyungan**: Gunwinyguan, Bunuban, Nyulnyulan, Worrorran, Iwaidjan, Tiwi
 - **Contact varieties**: Kriol, Torres Strait Creole, Aboriginal English
-- **Documentation and revival**: the Noongar and Kaurna revival programmes, archival sources, the ethics of working with community-held material
+- **Documentation and revival**: the Noongar and Kaurna revival programs, archival sources, the ethics of working with community-held material
 - **Structural interest**: kinship systems, avoidance registers, absolute spatial reference, initiation languages
 
 ### 9. Isolates and unclassified

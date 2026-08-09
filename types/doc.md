@@ -2,11 +2,11 @@
 type: Type
 _icon: file
 _color: slate
-_sidebar_label: Docs
 _order: 100
 _pinned_properties:
   - status
 status: living
+_sidebar_label: Docs
 ---
 
 # Doc

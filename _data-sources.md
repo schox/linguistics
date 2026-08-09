@@ -8,22 +8,22 @@ updated: 2026-08-09
 
 What already exists in each area as curated, structured data, and how this vault relates to it.
 
-The governing decision: **adopt external identifiers, link out, do not mirror.** Where a mature catalogue exists, this vault stores its identifier and defers to it rather than duplicating it. A copied dataset silently goes stale, and there is no value in maintaining a worse version of Glottolog. See "Mirroring" below for the exception.
+The governing decision: **adopt external identifiers, link out, do not mirror.** Where a mature catalog exists, this vault stores its identifier and defers to it rather than duplicating it. A copied dataset silently goes stale, and there is no value in maintaining a worse version of Glottolog. See "Mirroring" below for the exception.
 
 ## The four areas are not equally served
 
 ### Linguistics and human languages: mature
 
-Best served by a long way, and worth studying closely because it is a working proof of the model this vault uses. The **CLLD** (Cross-Linguistic Linked Data) ecosystem at the Max Planck Institute is built on exactly these principles: curated entities, stable identifiers, typed relationships, open licensing, and its own visualisations.
+Best served by a long way, and worth studying closely because it is a working proof of the model this vault uses. The **CLLD** (Cross-Linguistic Linked Data) ecosystem at the Max Planck Institute is built on exactly these principles: curated entities, stable identifiers, typed relationships, open licensing, and its own visualizations.
 
-- [Glottolog](references/glottolog.md) catalogues the world's languages, dialects and families, renders the genealogy as navigable trees, and assigns every languoid a stable **Glottocode**. CC BY 4.0, versioned with a DOI.
+- [Glottolog](references/glottolog.md) catalogs the world's languages, dialects and families, renders the genealogy as navigable trees, and assigns every languoid a stable **Glottocode**. CC BY 4.0, versioned with a DOI.
 - [WALS](references/wals-2013.md) holds typological features (word order, tone, alignment) as citable authored chapters over a queryable data layer, mappable geographically. CC BY 4.0. Complete and frozen.
-- [CLDF](references/forkel-et-al-2018.md) is the interchange standard underneath it all, and the model this vault imitates: reference catalogues supply identifiers, datasets cite the identifiers rather than restating the entities.
-- **Ethnologue** is the large commercial catalogue alongside these. Proprietary and paywalled, so link only, never copy.
+- [CLDF](references/forkel-et-al-2018.md) is the interchange standard underneath it all, and the model this vault imitates: reference catalogs supply identifiers, datasets cite the identifiers rather than restating the entities.
+- **Ethnologue** is the large commercial catalog alongside these. Proprietary and paywalled, so link only, never copy.
 
 Consequence for this vault: genealogy is a safe canonical spine for Human Languages because Glottolog already maintains the tree. `Language` notes carry `glottocode`, `iso639_3`, `wals_code` and `wikidata`, so a note can be joined to real data instead of paraphrasing it.
 
-### Scripts: well standardised, thinly catalogued
+### Scripts: well standardized, thinly cataloged
 
 [ISO 15924](references/iso15924.md) gives every script a four-letter and numeric code, maintained by the Unicode Consortium, with a numeric range (600-699) reserved for undeciphered scripts. Unicode encoding covers many ancient scripts including Linear A and Linear B.
 
@@ -41,7 +41,7 @@ Licensing is mostly unstated, so treat these as link-only.
 
 ### Constructed languages: hobbyist patchwork
 
-[CALS](references/cals.md), the Conlang Database, FrathWiki, and structured lists in Wikidata. Less rigorous than the natural-language side, but the ambition to structure it the same way is unmistakable, which is itself evidence that the WALS model generalises.
+[CALS](references/cals.md), the Conlang Database, FrathWiki, and structured lists in Wikidata. Less rigorous than the natural-language side, but the ambition to structure it the same way is unmistakable, which is itself evidence that the WALS model generalizes.
 
 ### Cryptography: essentially unstructured
 
@@ -64,7 +64,7 @@ Wikidata Q-numbers are the universal fallback and the join key of last resort ac
 
 The exception to link-only. If a subset genuinely needs to be held locally, for offline work or because a note depends on a specific historical state of the data, then:
 
-1. Only mirror what the licence permits. Glottolog and WALS are CC BY 4.0 and may be reused with attribution. Ethnologue and most of the programming-language projects may not.
+1. Only mirror what the license permits. Glottolog and WALS are CC BY 4.0 and may be reused with attribution. Ethnologue and most of the programming-language projects may not.
 2. Record the exact version and DOI of what was taken.
 3. Store it in CLDF rather than an invented schema, so it stays interoperable.
 4. Mark it clearly as a snapshot with a date, so nobody mistakes it for live data.

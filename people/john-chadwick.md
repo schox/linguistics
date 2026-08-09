@@ -34,7 +34,7 @@ He heard Ventris's BBC broadcast of 1 July 1952 announcing that Linear B recorde
 
 It is tempting to present Chadwick as a cryptanalyst who walked out of Bletchley into Linear B, and this vault said so in an earlier draft. That is wrong, and the correction is worth keeping visible.
 
-Eight years separated the two, and by 1952 he was a Cambridge academic about to lecture on the Greek dialects. What he brought to Ventris was **philology, not cryptanalysis**. Ventris was an architect with an extraordinary combinatorial gift and no training in Greek dialectology, so he could produce a solution but not defend it against professional classicists. Chadwick could. The wartime work is a real biographical resonance and it plausibly made him quick to recognise what Ventris had done, but the collaboration worked because their expertise differed, not because it overlapped.
+Eight years separated the two, and by 1952 he was a Cambridge academic about to lecture on the Greek dialects. What he brought to Ventris was **philology, not cryptanalysis**. Ventris was an architect with an extraordinary combinatorial gift and no training in Greek dialectology, so he could produce a solution but not defend it against professional classicists. Chadwick could. The wartime work is a real biographical resonance and it plausibly made him quick to recognize what Ventris had done, but the collaboration worked because their expertise differed, not because it overlapped.
 
 That is the more useful lesson anyway, and it survives the correction: decipherment succeeds where combinatorial method meets domain knowledge, and those rarely sit in one head.
 

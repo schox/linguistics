@@ -15,7 +15,7 @@ The vault serves **personal and academic research**. That has one consequence wh
 
 ## Folder layout
 
-Folders are deliberately shallow. Tolaria organises by `type`, and the taxonomy lives in frontmatter (see "Taxonomy and subfields"), so folders exist only to keep the vault navigable in Finder, the terminal and on GitHub.
+Folders are deliberately shallow. Tolaria organizes by `type`, and the taxonomy lives in frontmatter (see "Taxonomy and subfields"), so folders exist only to keep the vault navigable in Finder, the terminal and on GitHub.
 
 ```
 Linguistics/
@@ -30,7 +30,7 @@ Linguistics/
   people/                   seminal figures, one note each
   places/                   seminal institutions and sites
   General-Linguistics/      the theory
-  Human-Languages/          particular languages, organised genealogically
+  Human-Languages/          particular languages, organized genealogically
   Computer-Languages/       programming, markup, query and formal languages
   Cryptography/             ciphers, algorithms, cryptanalysis, crypto history
   Decipherment/             reading lost scripts and unknown languages
@@ -127,7 +127,7 @@ belongs_to: "[[Cryptography]]"
 
 **Inclusion test.** Not every author of every cited paper. A person earns a note if at least one holds: they are cited or discussed in two or more notes; their name is the standard label for a method, result or principle; or they bridge two or more areas. Otherwise they remain an author string on the `Reference` note.
 
-**Living people.** Stick to documented professional contribution, sourced. No unsourced biographical claim, no health or personal-life detail, no political characterisation, and nothing written from memory. This is not squeamishness: false reports of Noam Chomsky's death circulated widely in 2024, so a note written casually from recall could enshrine an error that looks perfectly plausible. If a fact cannot be verified now, leave it out and say so.
+**Living people.** Stick to documented professional contribution, sourced. No unsourced biographical claim, no health or personal-life detail, no political characterization, and nothing written from memory. This is not squeamishness: false reports of Noam Chomsky's death circulated widely in 2024, so a note written casually from recall could enshrine an error that looks perfectly plausible. If a fact cannot be verified now, leave it out and say so.
 
 **Credit is part of the record.** Where a contribution has been historically misattributed or overlooked, say so with sources. Alice Kober's relationship to the Linear B decipherment is the standing example.
 
@@ -137,7 +137,7 @@ belongs_to: "[[Cryptography]]"
 
 The two kinds sit at opposite ends of the same process. **Institutions** are where interpretation happens and are linked from `Person` notes via `worked_at`. **Sites** are where the material comes from and are linked from `Script` notes via `found_at`.
 
-Sites are not background colour. The size of a surviving corpus decides whether a script can be read, and corpus size is set by excavation, so provenance is causally upstream of the central argument in Decipherment. Knossos is why Linear B was decipherable.
+Sites are not background color. The size of a surviving corpus decides whether a script can be read, and corpus size is set by excavation, so provenance is causally upstream of the central argument in Decipherment. Knossos is why Linear B was decipherable.
 
 **Inclusion test.** Expertise concentrated there in a way that explains a breakthrough, or it is the provenance of a significant corpus, or it is referenced from two or more notes. Not every university anyone attended, and not every find-spot.
 
@@ -156,7 +156,7 @@ Every entity note carries the external identifiers that exist for it, because th
 
 Wikidata Q-numbers are the universal fallback.
 
-Licensing matters here because the repository has a public remote. Glottolog and WALS are CC BY 4.0 and may be reused with attribution. Ethnologue is proprietary, and most of the programming-language projects state no licence at all, so those are link-only. Never copy data whose licence you have not checked.
+Licensing matters here because the repository has a public remote. Glottolog and WALS are CC BY 4.0 and may be reused with attribution. Ethnologue is proprietary, and most of the programming-language projects state no license at all, so those are link-only. Never copy data whose license you have not checked.
 
 If a subset must be held locally, record the exact version and DOI, store it in CLDF rather than an invented schema, and mark it as a dated snapshot.
 
@@ -192,7 +192,13 @@ If a file's status is unclear, leave it out and flag it rather than guess.
 
 ## Style
 
-Australian English. No em-dashes (use commas, parentheses, semicolons). Proper nouns keep their own spelling: the Research Organization Registry (ROR) and the Association for Computational Linguistics are named that way and are not to be "corrected". Extinct or dead languages are marked with a dagger in prose lists. Give dates as BCE/CE.
+**International English (US spelling) in this vault.** Use `-ize` and `-ization` (organize, standardize, industrialization), `center`, `color`, `license`, `program`, `catalog`, `paleographic`. This is a deliberate exception to Andrew's usual Australian English: the vault's subject matter and its sources are overwhelmingly international, and locale can be changed at the point any derived work is produced.
+
+**Quoted titles keep their own spelling, always.** Tamburini's paper is titled "...combinatorial optimisation and coupled simulated annealing" and Barber's book is *Archaeological Decipherment*. Never normalize a title, a proper noun, or quoted matter. The Research Organization Registry is named that way; the Association for Computational Linguistics is named that way. Altering a title breaks the citation.
+
+No em-dashes (use commas, parentheses, semicolons). Extinct or dead languages are marked with a dagger in prose lists. Give dates as BCE/CE.
+
+Run `python3 scripts/check-vault.py` before committing. It validates frontmatter, resolves relative links, and checks style, with an allowlist for protected titles.
 
 ## Git
 
