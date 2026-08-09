@@ -20,7 +20,7 @@ A Tolaria vault for linguistics, human languages, computer languages, cryptograp
 
 ## The model in one paragraph
 
-Five areas: `General-Linguistics/`, `Human-Languages/`, `Computer-Languages/`, `Cryptography/`, `Decipherment/`, plus `references/` for the bibliography. Folders are shallow and are not the taxonomy; the taxonomy is the `subfield` field, drawn from each area index. Notes carry a `type` (`MOC`, `Language`, `Script`, `ComputerLanguage`, `Cipher`, `Method`, `Concept`, `Reference`, `Note`, `Media`, `Doc`) and `belongs_to` an area hub. Decipherment is the integrative area, taking method from Cryptography, constraint from General Linguistics, candidate relatives from Human Languages, and technique from Computer Languages.
+Five areas: `General-Linguistics/`, `Human-Languages/`, `Computer-Languages/`, `Cryptography/`, `Decipherment/`, plus `references/` for the bibliography. Folders are shallow and are not the taxonomy; the taxonomy is the `subfield` field, drawn from each area index. Notes carry a `type` (`MOC`, `Language`, `Script`, `ComputerLanguage`, `Cipher`, `Method`, `Concept`, `Person`, `Reference`, `Note`, `Media`, `Doc`) and `belongs_to` an area hub. Decipherment is the integrative area, taking method from Cryptography, constraint from General Linguistics, candidate relatives from Human Languages, and technique from Computer Languages.
 
 ## Rules
 
@@ -28,13 +28,14 @@ Five areas: `General-Linguistics/`, `Human-Languages/`, `Computer-Languages/`, `
 2. **Reference everything.** This is a research vault. Every substantive note ends with a `## Sources` section of markdown links and declares `cites:` in frontmatter. One `Reference` note per source, in `references/`, keyed `author-year`. Prefer a DOI or stable publisher URL, and give an open-access copy alongside a paywalled one where it exists.
 3. **Do not invent citations.** If you cannot verify a bibliographic detail, say so in the note rather than guessing. A wrong citation is worse than a missing one.
 4. **Attribute contested claims.** Much of the decipherment material is disputed. Write "Rao and colleagues argue", not "the Indus script is writing", and give both sides with sources where a debate is live.
-5. Keep `Script` and `Language` as separate notes joined by `writes` / `written_in`. They are many-to-many and conflating them breaks the decipherment material.
-6. **Fill external identifiers** on entity notes wherever they exist (`glottocode`, `iso15924`, `hopl_id`, `wikidata`). They are the join to real datasets. Do not mirror external data into the vault; link to it. Check the licence before copying anything, and see `_data-sources.md`.
-7. Do not deepen the folder tree. If a note seems to need a new folder, it almost certainly needs a `subfield` value instead.
-8. Use `subfield` values from the area `_index.md`. If none fits, add it to the index in the same change so the vocabulary stays closed.
-9. Never store real keys, secrets or credentials, even as examples in a cryptography note.
-10. When you add or move files, update the relevant `_index.md` and, for cross-cutting notes, `_junctions.md`.
-11. Commit with descriptive messages. Ask Andrew before pushing unless he has said otherwise.
+5. **Person notes have an inclusion test** (see `types/person.md`); authorship of a cited paper is not by itself grounds for one. For living people, write only sourced professional contribution, never from memory.
+6. Keep `Script` and `Language` as separate notes joined by `writes` / `written_in`. They are many-to-many and conflating them breaks the decipherment material.
+7. **Fill external identifiers** on entity notes wherever they exist (`glottocode`, `iso15924`, `hopl_id`, `wikidata`). They are the join to real datasets. Do not mirror external data into the vault; link to it. Check the licence before copying anything, and see `_data-sources.md`.
+8. Do not deepen the folder tree. If a note seems to need a new folder, it almost certainly needs a `subfield` value instead.
+9. Use `subfield` values from the area `_index.md`. If none fits, add it to the index in the same change so the vocabulary stays closed.
+10. Never store real keys, secrets or credentials, even as examples in a cryptography note.
+11. When you add or move files, update the relevant `_index.md` and, for cross-cutting notes, `_junctions.md`.
+12. Commit with descriptive messages. Ask Andrew before pushing unless he has said otherwise.
 
 ## Care with claims
 

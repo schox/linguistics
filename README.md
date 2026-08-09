@@ -22,6 +22,7 @@ Computer-Languages/    programming, markup, query and formal languages
 Cryptography/          ciphers, algorithms, cryptanalysis, crypto history
 Decipherment/          reading lost scripts and unknown languages
 references/            the bibliography, one note per source
+people/                seminal figures, one note each
 types/                 Tolaria type definitions
 views/                 saved sidebar views
 attachments/           images referenced from notes

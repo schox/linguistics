@@ -29,8 +29,14 @@ Folders cannot express this, since each note lives in one folder but belongs to 
 
 - [Computational decipherment: three distinct tasks](Decipherment/computational-decipherment-three-tasks.md). Restoration, decipherment proper, and cognate search, routinely conflated.
 
+## People as junctions
+
+Seminal figures are often the join between areas, and `field` taking more than one value marks them. See `people/`.
+
+- [Claude Shannon](people/claude-shannon.md): Cryptography and information theory into Decipherment
+- [John Chadwick](people/john-chadwick.md): wartime cryptanalysis and Greek philology, with the usual telling of that story corrected
+
 ## Still to write
 
 - Embeddings and distributional semantics, as the mechanism behind neural decipherment
 - Constructed languages and the Voynich hypotheses
-- Bletchley Park to Linear B: Chadwick and the biography of method transfer

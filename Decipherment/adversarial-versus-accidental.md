@@ -32,7 +32,7 @@ Transfers with distortion: the notion of a "key". In cryptography the key is a d
 
 The asymmetry runs the other way in one respect. The cryptanalyst faces an opponent who is actively trying to defeat them, but can usually get more material. The decipherer faces no opposition at all, but the corpus is fixed, was never designed to be self-explanatory, and is usually administrative rather than discursive: inventories and receipts, which are the least informative genre imaginable for recovering a language.
 
-This is also why the biographical overlap between the fields is real rather than coincidental. John Chadwick came to Linear B directly from Bletchley Park, and worked with Ventris because the statistical habits transferred even though the problem did not.
+The biographical overlap between the fields is real, though it is easy to overstate. John Chadwick broke Italian naval codes at Alexandria in 1942 and worked on Japanese naval traffic at Bletchley Park in 1944, and he later became Ventris's collaborator on Linear B. But he came to it in 1952 as a Cambridge classicist, not straight from codebreaking, and what he supplied Ventris was Greek dialectology rather than cryptanalysis. See [John Chadwick](../people/john-chadwick.md). The transfer between these fields is genuine at the level of statistical habit, and thinner at the level of career than the story usually suggests.
 
 ## Sources
 

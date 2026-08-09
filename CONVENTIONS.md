@@ -27,6 +27,7 @@ Linguistics/
   views/                    saved sidebar views
   attachments/              images referenced from notes
   references/               the bibliography, one note per source
+  people/                   seminal figures, one note each
   General-Linguistics/      the theory
   Human-Languages/          particular languages, organised genealogically
   Computer-Languages/       programming, markup, query and formal languages
@@ -47,6 +48,7 @@ Every Markdown note declares a `type` in frontmatter. Supported types (defined i
 - `Cipher`: a cipher, cryptographic algorithm or system. Fields: `era`, `category`.
 - `Method`: a technique, manual or computational, that transfers between areas. Fields: `category`, `origin`, `applies_to`.
 - `Concept`: a term or idea worth its own note, from any area. Field: `subfield`.
+- `Person`: a seminal figure in one of the areas. Fields: `born`, `died`, `field`, `known_for`, `key_works`.
 - `Reference`: a bibliographic entry, one per source. Fields: `authors`, `year`, `container`, `doi`, `url`, `ref_type`, `status`.
 - `Note`: a general working note that doesn't yet belong under a more specific type.
 - `Media`: a photo, diagram, plate or image kept for reference.
@@ -117,6 +119,16 @@ belongs_to: "[[Cryptography]]"
 
 **Attribute contested claims to their proponents.** Much of the decipherment material is disputed, sometimes bitterly. Write "Rao and colleagues argue" and "Farmer, Sproat and Witzel reply", not "the Indus script is writing". Where a debate is live, the note should carry both sides and their sources.
 
+## People
+
+`Person` notes cover seminal figures, linked from documents as they are mentioned. They live in `people/` because the interesting ones belong to more than one area, and `field` taking multiple values is the marker of a genuine cross-area figure.
+
+**Inclusion test.** Not every author of every cited paper. A person earns a note if at least one holds: they are cited or discussed in two or more notes; their name is the standard label for a method, result or principle; or they bridge two or more areas. Otherwise they remain an author string on the `Reference` note.
+
+**Living people.** Stick to documented professional contribution, sourced. No unsourced biographical claim, no health or personal-life detail, no political characterisation, and nothing written from memory. This is not squeamishness: false reports of Noam Chomsky's death circulated widely in 2024, so a note written casually from recall could enshrine an error that looks perfectly plausible. If a fact cannot be verified now, leave it out and say so.
+
+**Credit is part of the record.** Where a contribution has been historically misattributed or overlooked, say so with sources. Alice Kober's relationship to the Linear B decipherment is the standing example.
+
 ## External data sources and identifiers
 
 Mature curated datasets already exist for some of this material, unevenly across the areas. The vault's stance is **adopt their identifiers, link out, do not mirror**. See `_data-sources.md` for the survey and the reasoning.
@@ -127,6 +139,7 @@ Every entity note carries the external identifiers that exist for it, because th
 - `Script`: `iso15924`, `iso15924_num`, `unicode_block`, `wikidata`
 - `ComputerLanguage`: `hopl_id`, `wikidata`
 - `Cipher`: `wikidata` only, since no domain scheme exists
+- `Person`: `viaf` (library standard, best for historical figures), `orcid` (living researchers), `wikidata`
 
 Wikidata Q-numbers are the universal fallback.
 

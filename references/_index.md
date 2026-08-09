@@ -26,6 +26,7 @@ See `_data-sources.md` for how the vault relates to these.
 
 - [Assael et al. 2022 (Ithaca)](assael-2022.md)
 - [Barber 1974](barber-1974.md)
+- [Chadwick 1958](chadwick-1958.md)
 - [Farmer, Sproat and Witzel 2004](farmer-sproat-witzel-2004.md)
 - [Luo, Cao and Barzilay 2019](luo-cao-barzilay-2019.md)
 - [Luo et al. 2021](luo-2021.md)
