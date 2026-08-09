@@ -83,4 +83,14 @@ Why the vault is shaped the way it is, and what was considered and rejected. App
 
 **Why.** The earlier version checked far less than the documentation claimed it did, which is worse than not having it: an agent trusting a green run would ship broken notes. Anything the docs assert should either be enforced or the assertion should be softened.
 
-**Known limit.** It does not resolve wikilink targets, so a `belongs_to` pointing at a note that does not exist passes. Worth adding.
+**Known limit.** It does not resolve wikilink targets, so a `belongs_to` pointing at a note that does not exist passes. Worth adding. **Superseded**, see below.
+
+## 2026-08-09: The checker resolves wikilink targets
+
+**Decided.** `scripts/check-vault.py` now resolves every wikilink against the set of H1 titles and bare filenames in the vault, and fails on a dangling target. Examples inside fenced code blocks are exempt; examples in inline code spans are not, so an illustrative link in prose must point at a note that exists.
+
+This supersedes the known limit recorded in the entry above.
+
+**Why.** An unresolvable `belongs_to` is exactly the failure the quoting rule exists to prevent, one step later: the YAML parses, the field looks right, and the relationship still does not exist. Catching the quoting error but not the dangling target left half the hole open.
+
+**Consequence.** A note cannot be committed pointing at an entity that has not been written yet. Where a new `Script` note needs a `found_at` site, the `Place` note is part of the same change rather than a follow-up.

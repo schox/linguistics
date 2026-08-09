@@ -46,8 +46,8 @@ Cryptography is the backdrop to decipherment, not its parent. The two share a st
 python3 scripts/check-vault.py
 ```
 
-Checks required fields per type, enum values, `subfield` membership against each area's stated vocabulary, wikilink quoting, presence of a `## Sources` section, relative link resolution, and house style. It does not resolve wikilink targets.
+Checks required fields per type, enum values, `subfield` membership against each area's stated vocabulary, wikilink quoting, wikilink resolution, presence of a `## Sources` section, relative link resolution, and house style.
 
 ## Git
 
-Git repository, remote `https://github.com/schox/linguistics.git`. Commits are left to Andrew.
+Git repository, remote `https://github.com/schox/linguistics.git`. Commit with descriptive messages; ask Andrew before pushing unless he has said otherwise.

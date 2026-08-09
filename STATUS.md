@@ -9,9 +9,9 @@ Where the project is up to, as at 2026-08-09. Update this when the picture chang
 
 ## What exists
 
-The structure is complete and enforced. Five areas, twelve note types, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
+The structure is complete and enforced. Five areas, thirteen note types plus `Type` itself, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
 
-The vault currently holds 71 notes. That is a skeleton with a good spine, not a body of research.
+The vault currently holds 72 notes. That is a skeleton with a good spine, not a body of research.
 
 ## What is deliberately thin
 
