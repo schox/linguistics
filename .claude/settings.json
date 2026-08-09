@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Bash(python3 scripts/check-vault.py)",
+      "Bash(python3 scripts/check-vault.py --quiet)",
+      "Bash(python3 scripts/check-vault.py --report)"
+    ]
+  }
+}
