@@ -10,7 +10,19 @@ The bibliography. One `Reference` note per source, cited from content notes via 
 
 Browse by the Bibliography, Sources by year, or Reading list views in the sidebar rather than through this folder.
 
-## Current entries
+## Datasets and catalogues
+
+See `_data-sources.md` for how the vault relates to these.
+
+- [CALS, Conlang Atlas of Language Structures](cals.md)
+- [Forkel et al. 2018 (CLDF)](forkel-et-al-2018.md)
+- [Glottolog](glottolog.md)
+- [HOPL](hopl.md)
+- [ISO 15924](iso15924.md)
+- [Language Lineage](languagelineage.md)
+- [WALS Online](wals-2013.md)
+
+## Literature
 
 - [Assael et al. 2022 (Ithaca)](assael-2022.md)
 - [Barber 1974](barber-1974.md)

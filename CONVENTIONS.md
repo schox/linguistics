@@ -117,6 +117,23 @@ belongs_to: "[[Cryptography]]"
 
 **Attribute contested claims to their proponents.** Much of the decipherment material is disputed, sometimes bitterly. Write "Rao and colleagues argue" and "Farmer, Sproat and Witzel reply", not "the Indus script is writing". Where a debate is live, the note should carry both sides and their sources.
 
+## External data sources and identifiers
+
+Mature curated datasets already exist for some of this material, unevenly across the areas. The vault's stance is **adopt their identifiers, link out, do not mirror**. See `_data-sources.md` for the survey and the reasoning.
+
+Every entity note carries the external identifiers that exist for it, because those are what make the note joinable to real data rather than a paraphrase of it:
+
+- `Language`: `glottocode` (Glottolog), `iso639_3`, `wals_code`, `wikidata`
+- `Script`: `iso15924`, `iso15924_num`, `unicode_block`, `wikidata`
+- `ComputerLanguage`: `hopl_id`, `wikidata`
+- `Cipher`: `wikidata` only, since no domain scheme exists
+
+Wikidata Q-numbers are the universal fallback.
+
+Licensing matters here because the repository has a public remote. Glottolog and WALS are CC BY 4.0 and may be reused with attribution. Ethnologue is proprietary, and most of the programming-language projects state no licence at all, so those are link-only. Never copy data whose licence you have not checked.
+
+If a subset must be held locally, record the exact version and DOI, store it in CLDF rather than an invented schema, and mark it as a dated snapshot.
+
 ## Linking attachments to notes
 
 Attachments should not sit orphaned. Three rules:

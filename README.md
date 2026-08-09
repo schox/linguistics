@@ -11,7 +11,7 @@ Tolaria vault for linguistics, human languages, computer languages, cryptography
 
 1. Read `CONVENTIONS.md`. Layout, types, the taxonomy model, the referencing rules and the intake rules all live there.
 2. If you are an AI assistant, read `AGENTS.md` first. It is the canonical onramp.
-3. Read `_junctions.md` for the argument the vault is organised around.
+3. Read `_junctions.md` for the argument the vault is organised around, and `_data-sources.md` for what already exists externally.
 
 ## Layout
 
@@ -26,6 +26,7 @@ types/                 Tolaria type definitions
 views/                 saved sidebar views
 attachments/           images referenced from notes
 _junctions.md          index of cross-cutting notes
+_data-sources.md       what external data exists, and how the vault relates to it
 ```
 
 Folders are shallow and stay that way. The taxonomy lives in the `subfield` frontmatter field, with the controlled vocabulary held in each area's `_index.md`, so a branch can be re-cut without moving files.

@@ -29,11 +29,12 @@ Five areas: `General-Linguistics/`, `Human-Languages/`, `Computer-Languages/`, `
 3. **Do not invent citations.** If you cannot verify a bibliographic detail, say so in the note rather than guessing. A wrong citation is worse than a missing one.
 4. **Attribute contested claims.** Much of the decipherment material is disputed. Write "Rao and colleagues argue", not "the Indus script is writing", and give both sides with sources where a debate is live.
 5. Keep `Script` and `Language` as separate notes joined by `writes` / `written_in`. They are many-to-many and conflating them breaks the decipherment material.
-6. Do not deepen the folder tree. If a note seems to need a new folder, it almost certainly needs a `subfield` value instead.
-7. Use `subfield` values from the area `_index.md`. If none fits, add it to the index in the same change so the vocabulary stays closed.
-8. Never store real keys, secrets or credentials, even as examples in a cryptography note.
-9. When you add or move files, update the relevant `_index.md` and, for cross-cutting notes, `_junctions.md`.
-10. Commit with descriptive messages. Ask Andrew before pushing unless he has said otherwise.
+6. **Fill external identifiers** on entity notes wherever they exist (`glottocode`, `iso15924`, `hopl_id`, `wikidata`). They are the join to real datasets. Do not mirror external data into the vault; link to it. Check the licence before copying anything, and see `_data-sources.md`.
+7. Do not deepen the folder tree. If a note seems to need a new folder, it almost certainly needs a `subfield` value instead.
+8. Use `subfield` values from the area `_index.md`. If none fits, add it to the index in the same change so the vocabulary stays closed.
+9. Never store real keys, secrets or credentials, even as examples in a cryptography note.
+10. When you add or move files, update the relevant `_index.md` and, for cross-cutting notes, `_junctions.md`.
+11. Commit with descriptive messages. Ask Andrew before pushing unless he has said otherwise.
 
 ## Care with claims
 
