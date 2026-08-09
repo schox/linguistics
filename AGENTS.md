@@ -9,30 +9,35 @@ If you are an AI assistant working in this vault: read this file first, then `CO
 
 ## What this vault is
 
-A Tolaria vault for linguistics, human languages, computer languages, and cryptography. A folder of Markdown files with YAML frontmatter plus attachments. It is a git repository with a GitHub remote. Tolaria is the desktop app Andrew uses to browse, edit and commit; any AI assistant can read and write the same files directly.
+A Tolaria vault for linguistics, human languages, computer languages, cryptography and decipherment, serving personal and academic research. Markdown with YAML frontmatter plus attachments, in a git repository with a GitHub remote.
 
 ## What to read, in order
 
 1. This file, for the operating model.
-2. `CONVENTIONS.md`, for the folder layout, types, frontmatter and intake rules. This is the contract.
-3. The relevant area's `_index.md` for whatever you are working on.
+2. `CONVENTIONS.md`, for layout, types, the taxonomy model, referencing and intake rules. This is the contract.
+3. `_junctions.md`, for the argument the vault is organised around.
+4. The relevant area's `_index.md`, which holds the controlled `subfield` vocabulary for that area.
 
 ## The model in one paragraph
 
-Content is organised into four areas: `General-Linguistics/`, `Human-Languages/`, `Computer-Languages/` and `Cryptography/`. Markdown notes carry a `type` (`MOC`, `Reference`, `Concept`, `Language`, `ComputerLanguage`, `Cipher`, `Note`, `Media`, `Doc`). Per-area `_index.md` MOC notes list and link the material in that area so the vault stays navigable in Tolaria. This is a reference archive: substantive content is a typed note (`Language`, `ComputerLanguage`, `Cipher`, `Concept`, `Reference`), usually wrapping or linking an attachment, not a raw file dump.
+Five areas: `General-Linguistics/`, `Human-Languages/`, `Computer-Languages/`, `Cryptography/`, `Decipherment/`, plus `references/` for the bibliography. Folders are shallow and are not the taxonomy; the taxonomy is the `subfield` field, drawn from each area index. Notes carry a `type` (`MOC`, `Language`, `Script`, `ComputerLanguage`, `Cipher`, `Method`, `Concept`, `Reference`, `Note`, `Media`, `Doc`) and `belongs_to` an area hub. Decipherment is the integrative area, taking method from Cryptography, constraint from General Linguistics, candidate relatives from Human Languages, and technique from Computer Languages.
 
 ## Rules
 
 1. Australian English. No em-dashes (use commas, parentheses, semicolons).
-2. Follow the intake rules and hard exclusions in `CONVENTIONS.md`. This vault is about linguistics and languages, not a place to store real secrets, keys or credentials, even in a Cryptography note about them.
-3. Keep original filenames for document attachments (PDF, docx). Images move to the root `attachments/` folder per convention.
-4. Set `type` on every new content note, and `belongs_to` the relevant area's `_index.md` where it makes sense.
-5. When you add or move files, update the relevant `_index.md` MOC.
-6. This vault has a GitHub remote. Commit with descriptive messages. Ask Andrew before pushing unless he has said otherwise.
+2. **Reference everything.** This is a research vault. Every substantive note ends with a `## Sources` section of markdown links and declares `cites:` in frontmatter. One `Reference` note per source, in `references/`, keyed `author-year`. Prefer a DOI or stable publisher URL, and give an open-access copy alongside a paywalled one where it exists.
+3. **Do not invent citations.** If you cannot verify a bibliographic detail, say so in the note rather than guessing. A wrong citation is worse than a missing one.
+4. **Attribute contested claims.** Much of the decipherment material is disputed. Write "Rao and colleagues argue", not "the Indus script is writing", and give both sides with sources where a debate is live.
+5. Keep `Script` and `Language` as separate notes joined by `writes` / `written_in`. They are many-to-many and conflating them breaks the decipherment material.
+6. Do not deepen the folder tree. If a note seems to need a new folder, it almost certainly needs a `subfield` value instead.
+7. Use `subfield` values from the area `_index.md`. If none fits, add it to the index in the same change so the vocabulary stays closed.
+8. Never store real keys, secrets or credentials, even as examples in a cryptography note.
+9. When you add or move files, update the relevant `_index.md` and, for cross-cutting notes, `_junctions.md`.
+10. Commit with descriptive messages. Ask Andrew before pushing unless he has said otherwise.
 
-## Maintenance
+## Care with claims
 
-There is no automated Downloads-triage routine for this vault yet (unlike the Andrew and Novansa vaults). Material is added deliberately. If Andrew wants a daily maintenance routine added later, mirror the one described in the Andrew/Novansa vaults and add a `_vault-admin/` folder for its logs.
+The computational decipherment literature is widely misreported, including by reputable outlets. Before writing that a script has been deciphered by a model, check which of the three tasks in `Decipherment/computational-decipherment-three-tasks.md` the work actually performs. Restoration is not decipherment, and cognate search is not decipherment.
 
 ## Cowork / Claude Code notes
 

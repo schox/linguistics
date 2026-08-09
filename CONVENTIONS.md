@@ -9,144 +9,147 @@ The rules of the Linguistics vault. Andrew and any AI assistant read this first.
 
 ## What the vault is
 
-A Tolaria vault for linguistics and related matters, human languages, computer languages, and cryptography. The source of truth is the filesystem: plain Markdown with YAML frontmatter, plus attachments (PDF, docx, images).
+A Tolaria vault for linguistics and related matters, human languages, computer languages, cryptography, and decipherment. The source of truth is the filesystem: plain Markdown with YAML frontmatter, plus attachments (PDF, docx, images).
 
-This is a reference and archive vault, not primarily an authoring vault. Content is a mix of original notes (concepts, comparisons, worked examples) and reference material collected from elsewhere (dictionaries, grammars, papers, specs, RFCs, books). Markdown notes are the concept notes, language and cipher hubs, reference wrappers, and the per-area index notes (MOCs) that make the archive navigable.
+The vault serves **personal and academic research**. That has one consequence which runs through everything below: claims carry references, and references carry links wherever a link exists. A note without sources is a draft, not a finished note.
 
 ## Folder layout
 
-Folders are not load-bearing for Tolaria (it organises by `type`), but they keep the vault sane in Finder, the terminal and on GitHub.
+Folders are deliberately shallow. Tolaria organises by `type`, and the taxonomy lives in frontmatter (see "Taxonomy and subfields"), so folders exist only to keep the vault navigable in Finder, the terminal and on GitHub.
 
 ```
 Linguistics/
-  README.md               orientation
-  CONVENTIONS.md           this document
-  AGENTS.md                AI onramp
-  types/                   type definitions
-  views/                   saved sidebar views
-  attachments/             images referenced from notes
-  General-Linguistics/     linguistics theory: phonetics, phonology, morphology, syntax, semantics,
-                            pragmatics, historical/comparative linguistics, sociolinguistics, etymology
-  Human-Languages/          specific human languages: grammar, vocabulary, courses, dictionaries
+  README.md                orientation
+  CONVENTIONS.md            this document
+  AGENTS.md                 AI onramp
+  _junctions.md             index of cross-cutting notes
+  types/                    type definitions
+  views/                    saved sidebar views
+  attachments/              images referenced from notes
+  references/               the bibliography, one note per source
+  General-Linguistics/      the theory
+  Human-Languages/          particular languages, organised genealogically
   Computer-Languages/       programming, markup, query and formal languages
-  Cryptography/             ciphers, cryptographic algorithms, cryptanalysis, crypto history
+  Cryptography/             ciphers, algorithms, cryptanalysis, crypto history
+  Decipherment/             reading lost scripts and unknown languages
 ```
 
-Within an area, a note with a lot of accompanying attachments (a language's course materials, say) can get its own subfolder with its own `_index.md`; a note with little else around it can sit directly in the area folder. Either way, every folder that holds files needs an `_index.md`.
+**One level per area is the rule.** A second level is allowed only where a body of attachments needs its own home (a language's course materials, a script's plate scans). Do not build the taxonomy as nested folders: a note belongs to one folder but often to several subfields, and folders cannot express that. Put it in frontmatter instead.
 
 ## Types
 
 Every Markdown note declares a `type` in frontmatter. Supported types (defined in `types/`):
 
-- `MOC`: a map-of-content / index note for an area or subfolder. Lists and links the files and subfolders inside it, and embeds any images that originated there.
-- `Language`: a specific human language (e.g. French, Japanese, Latin). Fields: `family`, `script`, `status` (interested | learning | reference | fluent).
-- `ComputerLanguage`: a programming, markup, query or formal language (e.g. Python, SQL, Lisp). Fields: `paradigm`, `first_appeared`, `status` (using | reference | historical | learning).
-- `Cipher`: a specific cipher, cryptographic algorithm or system (e.g. Caesar cipher, Enigma, RSA, AES). Fields: `era`, `category` (classical | symmetric | asymmetric | hash | protocol).
-- `Concept`: a term or idea worth its own note, from any of the four areas (a linguistic concept like phoneme or isogloss, a computing concept like a type system, a cryptographic concept like a nonce). Field: `category`, free text.
-- `Reference`: an external reference kept for the record: a dictionary, grammar, paper, RFC, spec, book, or course. Usually wraps an attachment. Fields: `topic`, `status` (unread | in-progress | read).
-- `Note`: a general working note or observation that doesn't yet belong under a more specific type.
-- `Media`: a photo, diagram, screenshot or image kept for reference.
+- `MOC`: a map-of-content / index note for an area or subfolder.
+- `Language`: a specific human language. Fields: `family`, `script`, `status`, `era`.
+- `Script`: a writing system, which is **not** the same thing as a language (see below). Fields: `class`, `period`, `decipherment_status`, `writes`.
+- `ComputerLanguage`: a programming, markup, query or formal language. Fields: `paradigm`, `first_appeared`, `lineage`, `status`.
+- `Cipher`: a cipher, cryptographic algorithm or system. Fields: `era`, `category`.
+- `Method`: a technique, manual or computational, that transfers between areas. Fields: `category`, `origin`, `applies_to`.
+- `Concept`: a term or idea worth its own note, from any area. Field: `subfield`.
+- `Reference`: a bibliographic entry, one per source. Fields: `authors`, `year`, `container`, `doi`, `url`, `ref_type`, `status`.
+- `Note`: a general working note that doesn't yet belong under a more specific type.
+- `Media`: a photo, diagram, plate or image kept for reference.
 - `Doc`: utility/meta documents like this one, the README, AGENTS.
 
 Attachments (PDF, docx, images) carry no frontmatter. They are referenced from MOC or content notes.
 
+### Script is not Language
+
+Scripts and languages are many-to-many, and conflating them makes the decipherment material incoherent. Cuneiform wrote Sumerian, Akkadian, Hittite, Elamite and Old Persian, which are unrelated languages. Japanese uses four scripts at once. Linear A is a script whose underlying language is unknown. Etruscan is a language we can pronounce but not understand.
+
+So "is X deciphered?" is always two questions: do we have the script, and do we have the language? Keep them in separate notes, joined by `writes` / `written_in`.
+
+## Taxonomy and subfields
+
+Each area's `_index.md` carries the controlled vocabulary of subfields for that area. Content notes declare one or more via `subfield:`. This is what makes the taxonomy re-cuttable: to reorganise a branch, change the vocabulary and the frontmatter, and no file moves.
+
+```yaml
+subfield:
+  - Historical and comparative
+  - Writing systems
+```
+
+Use values from the area index where one fits. If nothing fits, add the value to the area index in the same commit, so the vocabulary stays closed and discoverable.
+
 ## Relationships
 
-Tolaria turns the vault into a graph via wikilink fields in frontmatter. Defaults: `belongs_to` and `has` are computed inverses of each other, and `related_to` is lateral. They show in the Properties panel, backlinks, and Neighborhood view.
+Tolaria turns the vault into a graph via wikilink fields in frontmatter. `belongs_to` and `has` are computed inverses of each other, and `related_to` is lateral. They show in the Properties panel, backlinks, and Neighborhood view.
 
 Model used here:
 
-- Each area's `_index.md` (type `MOC`) acts as the hub for that area, titled `General Linguistics`, `Human Languages`, `Computer Languages`, or `Cryptography`.
-- A content note (`Language`, `ComputerLanguage`, `Cipher`, `Concept`, `Reference`) sets `belongs_to` the relevant area hub, e.g. `belongs_to: "[[Human Languages]]"`. The hub then shows those notes under the computed `has` relationship; you do not write the reverse by hand.
-- Use `related_to` for lateral links across areas or types, e.g. a `Concept` note on substitution ciphers `related_to` the `Cipher` notes that use the technique, or a `Language` note on French `related_to` a `Concept` note on Romance languages.
+- Each area's `_index.md` is the hub for that area, titled `General Linguistics`, `Human Languages`, `Computer Languages`, `Cryptography`, `Decipherment`.
+- Content notes set `belongs_to` the relevant area hub. The hub shows them under the computed `has`; do not write the reverse by hand.
+- `related_to` carries lateral links, including across areas.
+- `cites` on a content note points at `Reference` notes. The inverse tells you every note that draws on a given source.
+- `writes` on a `Script` note points at the `Language` notes it records.
+- `applies_to` on a `Method` note points at the areas or problems it is used on.
 
-Wikilink targets resolve by note title or filename, so prefer the note's exact H1 title (e.g. `"[[Human Languages]]"`, not the folder name).
+Wikilink targets resolve by note title or filename, so prefer the note's exact H1 title.
+
+## References and citations
+
+This is a research vault. Referencing is not optional.
+
+**One `Reference` note per source.** A paper cited by six notes is one note with six backlinks, not six copies of a URL. Filename and title use a citation key of author and year: `barber-1974.md`, titled `Barber 1974`. Disambiguate with a letter (`rao-2009a`) where needed.
+
+```yaml
+---
+type: Reference
+authors: "Shannon, C. E."
+year: 1949
+title: "Communication Theory of Secrecy Systems"
+container: "Bell System Technical Journal 28(4), 656-715"
+ref_type: paper          # paper | book | chapter | website | dataset | course | thesis | corpus
+doi: "10.1002/j.1538-7305.1949.tb00928.x"
+url: "https://onlinelibrary.wiley.com/doi/10.1002/j.1538-7305.1949.tb00928.x"
+accessed: 2026-08-09
+status: read             # unread | in-progress | read
+subfield:
+  - Theory
+belongs_to: "[[Cryptography]]"
+---
+```
+
+**Every substantive note ends with a `## Sources` section**, listing the works it draws on as markdown links, and declares them in `cites:` frontmatter so the graph knows. Prefer a DOI or a stable publisher URL over a general web page. Where an open-access copy exists alongside a paywalled version of record, give both.
+
+**Distinguish what you have read from what you have merely found.** The `status` field on a `Reference` is the reading list. Do not mark something `read` that you have skimmed.
+
+**Attribute contested claims to their proponents.** Much of the decipherment material is disputed, sometimes bitterly. Write "Rao and colleagues argue" and "Farmer, Sproat and Witzel reply", not "the Indus script is writing". Where a debate is live, the note should carry both sides and their sources.
 
 ## Linking attachments to notes
 
 Attachments should not sit orphaned. Three rules:
 
-1. **Images live in `attachments/`.** All image files are stored in the root `attachments/` folder with clean, space-free names, prefixed by area (e.g. `cryptography-enigma-rotor-wiring.png`). Tolaria does not preview paths that contain spaces or angle brackets, so embeds use plain markdown with a clean relative path: `![Enigma rotor wiring](../attachments/cryptography-enigma-rotor-wiring.png)`. Never use angle-bracket URLs in embeds.
-2. **Folder index.** Every folder that holds files has an `_index.md` (type `MOC`) that embeds the images which originated in that folder, links the documents still in the folder, and links subfolders to their own `_index.md`.
-3. **Content notes.** Where an attachment belongs to a concept covered by a note, embed or link it from that note too, not just the MOC. Example: a scan of an Enigma wiring diagram is embedded in `Cryptography/enigma.md`, not just listed in `Cryptography/_index.md`.
+1. **Images live in `attachments/`** with clean, space-free names prefixed by area (e.g. `decipherment-linear-b-tablet-py-ta-641.png`). Tolaria does not preview paths containing spaces or angle brackets, so embeds use plain markdown with a clean relative path: `![Pylos tablet Ta 641](../attachments/decipherment-linear-b-tablet-py-ta-641.png)`. Never use angle-bracket URLs in embeds.
+2. **Folder index.** Every folder holding files has an `_index.md` (type `MOC`) embedding the images which originated there, linking the documents still in the folder, and linking subfolders to their own `_index.md`.
+3. **Content notes.** Where an attachment belongs to a concept covered by a note, embed or link it from that note too, not only from the MOC.
 
-## Frontmatter
+Respect copyright. Scans of in-copyright books belong in personal storage, not in a vault with a public remote. Prefer a `Reference` note with a link over a copied PDF.
 
-Minimal and consistent. Examples:
+## Intake rules
 
-```yaml
----
-type: MOC
-area: Human-Languages
-updated: 2026-08-09
----
-```
-
-```yaml
----
-type: Language
-family: Romance
-script: Latin
-status: learning
-belongs_to: "[[Human Languages]]"
----
-```
-
-```yaml
----
-type: ComputerLanguage
-paradigm: functional
-first_appeared: 1958
-status: reference
-belongs_to: "[[Computer Languages]]"
----
-```
-
-```yaml
----
-type: Cipher
-era: WWII
-category: electromechanical
-belongs_to: "[[Cryptography]]"
-related_to:
-  - "[[Rotor Cipher]]"
----
-```
-
-```yaml
----
-type: Reference
-topic: Historical linguistics
-status: unread
-belongs_to: "[[General Linguistics]]"
----
-```
-
-Use Tolaria's built-in relationships (`belongs_to`, `has`, `related_to`) where they fit; any frontmatter field containing `[[wikilinks]]` is treated as a relationship.
-
-## Intake rules (what belongs here)
-
-A file or note belongs in this vault if it concerns linguistics, a specific human language, a computer/programming/formal language, or cryptography:
-
-- Linguistic theory, historical/comparative linguistics, sociolinguistics, etymology → `General-Linguistics/`
-- A specific human language: grammar, vocabulary, courses, dictionaries → `Human-Languages/`
-- A specific programming, markup, query or formal language: specs, references, notes → `Computer-Languages/`
-- Ciphers, cryptographic algorithms, cryptanalysis, crypto history → `Cryptography/`
+A note belongs here if it concerns linguistics, a particular human language, a computer or formal language, cryptography, or decipherment.
 
 **Never bring into this vault:**
 
-- **Real secrets, keys or credentials.** A `Cipher` or `Concept` note can discuss RSA or AES as cryptography; it must never hold an actual private key, password, API token or seed phrase. Those stay in secured storage and are never mirrored here, even as an example.
+- **Real secrets, keys or credentials.** A `Cipher` note can discuss RSA or AES; it must never hold an actual private key, password, API token or seed phrase, even as an example.
 - **Clinical or patient data.** Never.
-- **Other vaults' material.** Andrew's personal/professional life belongs in the `Andrew` vault, Novansa OÜ material belongs in the `Novansa` vault, the novel belongs in the `Spoonbill` vault.
+- **Other vaults' material.** Personal and professional life belongs in `Andrew`, Novansa OÜ material in `Novansa`, the novel in `Spoonbill`.
 
 If a file's status is unclear, leave it out and flag it rather than guess.
 
 ## Naming
 
-- Keep original filenames for document attachments (PDF, docx); they carry dates and context.
+- Keep original filenames for document attachments; they carry dates and context.
 - Images are renamed into `attachments/` with clean, space-free, area-prefixed names.
 - New Markdown notes: kebab-case filename, descriptive H1 title.
+- `Reference` notes: citation key, `author-year`.
 - MOC notes: `_index.md` inside the folder they describe.
+
+## Style
+
+Australian English. No em-dashes (use commas, parentheses, semicolons). Extinct or dead languages are marked with a dagger in prose lists. Give dates as BCE/CE.
 
 ## Git
 

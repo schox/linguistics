@@ -1,0 +1,9 @@
+name: Scripts
+icon: null
+color: null
+sort: property:decipherment_status:asc
+filters:
+  all:
+  - field: type
+    op: equals
+    value: Script

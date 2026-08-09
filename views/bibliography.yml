@@ -1,7 +1,7 @@
-name: Sources by year
+name: Bibliography
 icon: null
 color: null
-sort: property:year:desc
+sort: property:authors:asc
 filters:
   all:
   - field: type

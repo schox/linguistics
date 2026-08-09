@@ -1,4 +1,4 @@
-name: Sources by year
+name: Reading list (unread)
 icon: null
 color: null
 sort: property:year:desc
@@ -7,3 +7,6 @@ filters:
   - field: type
     op: equals
     value: Reference
+  - field: status
+    op: equals
+    value: unread

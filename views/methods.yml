@@ -1,9 +1,9 @@
-name: Sources by year
+name: Methods
 icon: null
 color: null
-sort: property:year:desc
+sort: property:category:asc
 filters:
   all:
   - field: type
     op: equals
-    value: Reference
+    value: Method
