@@ -1,0 +1,9 @@
+name: Languages
+icon: null
+color: null
+sort: property:family:asc
+filters:
+  all:
+  - field: type
+    op: equals
+    value: Language

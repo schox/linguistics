@@ -1,0 +1,9 @@
+name: Reference
+icon: null
+color: null
+sort: property:topic:asc
+filters:
+  all:
+  - field: type
+    op: equals
+    value: Reference

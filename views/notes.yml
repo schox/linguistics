@@ -1,0 +1,9 @@
+name: Notes
+icon: null
+color: null
+sort: property:status:asc
+filters:
+  all:
+  - field: type
+    op: equals
+    value: Note

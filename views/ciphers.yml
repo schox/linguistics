@@ -1,0 +1,9 @@
+name: Ciphers
+icon: null
+color: null
+sort: property:era:asc
+filters:
+  all:
+  - field: type
+    op: equals
+    value: Cipher
