@@ -17,9 +17,12 @@ See `_data-sources.md` for how the vault relates to these.
 - [CALS, Conlang Atlas of Language Structures](cals.md)
 - [Forkel et al. 2018 (CLDF)](forkel-et-al-2018.md)
 - [Glottolog](glottolog.md)
+- [Godart and Olivier 1976](godart-olivier-1976.md), GORILA, the Linear A corpus of record
 - [HOPL](hopl.md)
 - [ISO 15924](iso15924.md)
 - [Language Lineage](languagelineage.md)
+- [Rutter, Aegean Prehistoric Archaeology](rutter-aegean-prehistory.md)
+- [Salgarella and Castellan 2020](salgarella-castellan-2020.md), SigLA
 - [WALS Online](wals-2013.md)
 
 ## Literature
@@ -32,6 +35,8 @@ See `_data-sources.md` for how the vault relates to these.
 - [Luo, Cao and Barzilay 2019](luo-cao-barzilay-2019.md)
 - [Luo et al. 2021](luo-2021.md)
 - [McCarthy 1960](mccarthy-1960.md)
+- [Montecchi 2019](montecchi-2019.md)
+- [Petrolito et al. 2015](petrolito-et-al-2015.md)
 - [Rao et al. 2009](rao-2009.md)
 - [Shannon 1949](shannon-1949.md)
 - [Tamburini 2025](tamburini-2025.md)

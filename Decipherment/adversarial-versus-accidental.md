@@ -18,7 +18,7 @@ The boundary between cryptography and decipherment, and the reason one is the ba
 
 **Cryptography is adversarial.** Someone designed the system specifically to resist you. A key existed and somebody held it. The design is usually known (Kerckhoffs's principle), the difficulty is deliberate and engineered, and the analyst can often obtain more ciphertext, chosen plaintext, or an operator's mistake.
 
-**Decipherment is accidental.** Nobody was hiding anything. A Linear A scribe was recording a commodity transaction for colleagues who read it fluently. The obscurity is a side effect of cultural loss: the reading community died and took the key with it. There is no adversary, no key schedule, no protocol, and crucially no way to obtain more text except by excavation.
+**Decipherment is accidental.** Nobody was hiding anything. A [Linear A](linear-a.md) scribe was recording a commodity transaction for colleagues who read it fluently. The obscurity is a side effect of cultural loss: the reading community died and took the key with it. There is no adversary, no key schedule, no protocol, and crucially no way to obtain more text except by excavation.
 
 ## What transfers and what does not
 

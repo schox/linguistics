@@ -14,6 +14,7 @@ subfield:
   - The problem space
 belongs_to: "[[Decipherment]]"
 related_to:
+  - "[[Linear A]]"
   - "[[Script versus language]]"
   - "[[The evidentiary threshold and unicity distance]]"
 cites:
@@ -39,7 +40,7 @@ Three conditions held simultaneously, and their conjunction is rare.
 
 **A known language underneath.** The language turned out to be Greek, which meant an entire comparative apparatus was waiting once the identification was granted. This is the *different script, same language* case.
 
-Compare [Linear A](_index.md), which shares the second condition partly (Linear B supplies probable values for many signs) and fails the other two. Roughly 1,400 readable inscriptions and no identified language. The contrast is the cleanest available illustration of [the evidentiary threshold](evidentiary-threshold-and-unicity-distance.md): the same scholars, the same island, the same script family, and one is read while the other is not, largely because of what survived.
+Compare [Linear A](linear-a.md), which shares the second condition partly (Linear B supplies probable values for many signs) and fails the other two. Around 1,427 documents and no identified language. The contrast is the cleanest available illustration of [the evidentiary threshold](evidentiary-threshold-and-unicity-distance.md): the same scholars, the same island, the same script family, and one is read while the other is not, largely because of what survived.
 
 ## Sources
 

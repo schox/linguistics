@@ -29,7 +29,7 @@ The language of pre-Roman Etruria in central Italy, attested from about 700 BCE 
 
 Etruscan is written in an alphabet derived from Greek, specifically the Euboean script brought to southern Italy by colonists, so the texts can be transliterated and pronounced with confidence. The language itself is only partly understood. That places it in the third of the four states set out in [Script versus language](../Decipherment/script-versus-language.md): **script solved, language open.**
 
-It is the counterexample to the intuition that decipherment is one achievement. Linear B had both problems fall together in 1952. Linear A has neither solved. Etruscan sits between, and could not be described at all without separating the two questions.
+It is the counterexample to the intuition that decipherment is one achievement. Linear B had both problems fall together in 1952. [Linear A](../Decipherment/linear-a.md) has neither solved. Etruscan sits between, and could not be described at all without separating the two questions.
 
 ## Not an isolate
 

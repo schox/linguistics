@@ -36,7 +36,7 @@ The structural limitation is shared by all of them: **the method needs a correct
 
 Neither script nor language is known, and the task is to identify a plausible relative so that task 2 becomes possible at all.
 
-This is where Linear A actually sits. The University of Melbourne project (Brent Davis and Emily Tour, with Robert Turnbull's MDAP team) pre-trains models on candidate related languages and fine-tunes on Linear A to test degrees of relatedness. It is a search for the right hypothesis, not a reading, and it is honest about that.
+This is where [Linear A](linear-a.md) actually sits. The University of Melbourne project (Brent Davis and Emily Tour, with Robert Turnbull's MDAP team) pre-trains models on candidate related languages and fine-tunes on Linear A to test degrees of relatedness. It is a search for the right hypothesis, not a reading, and it is honest about that.
 
 ## The recurring error
 

@@ -56,6 +56,7 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 ## Scripts
 
 - [Linear B](linear-b.md), deciphered
+- [Linear A](linear-a.md), undeciphered, and the corpus-size case in its clearest form
 - [Etruscan alphabet](etruscan-alphabet.md), deciphered script, partly understood language
 
 ## Documents

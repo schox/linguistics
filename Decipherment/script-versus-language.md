@@ -26,7 +26,7 @@ Stated as script known or unknown against language known or unknown:
 
 - **Both known**: ordinary reading.
 - **Script unknown, language known**: the tractable case. Linear B before 1952 was here without anyone realising it, since the language turned out to be Greek. Maya glyphs were here too, with living Mayan languages available all along.
-- **Script known, language unknown**: Etruscan. We can pronounce it and cannot understand it. Linear A is partly here, since Linear B gives probable sound values for many signs while the language beneath remains unidentified.
+- **Script known, language unknown**: Etruscan. We can pronounce it and cannot understand it. [Linear A](linear-a.md) is partly here, since Linear B gives probable sound values for many signs while the language beneath remains unidentified.
 - **Neither known**: the Indus script, Rongorongo. No established method exists for this case, and it is not clear that one can exist below the evidentiary threshold.
 
 The computational literature uses a closely related three-case scheme (different script and same language, different script and different language, same script and different language), which is the version used as the spine of the Decipherment area index. See [Tamburini 2025](../references/tamburini-2025.md).

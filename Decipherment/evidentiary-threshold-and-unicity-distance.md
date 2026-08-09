@@ -21,7 +21,7 @@ The most important idea in this vault, and the reason cryptography belongs along
 
 Shannon (1949) defines the **unicity distance** of a cipher: the minimum quantity of ciphertext at which the correct key becomes uniquely determined. Below it, several keys produce plausible plaintexts and there is no information-theoretic ground for preferring one. The shortfall is not a failure of effort or ingenuity. The information required to decide simply is not present.
 
-Barber (1974) sets out an **evidentiary threshold** for archaeological decipherment: a quantity of surviving text below which a proposed reading can be neither proved nor disproved. Her later restatement is blunt about the consequence for Linear A. The corpus has not grown enough since 1974 to cross the threshold, given an unknown and possibly structurally unusual underlying language, and no computational method removes that limit.
+Barber (1974) sets out an **evidentiary threshold** for archaeological decipherment: a quantity of surviving text below which a proposed reading can be neither proved nor disproved. Her later restatement is blunt about the consequence for [Linear A](linear-a.md). The corpus has not grown enough since 1974 to cross the threshold, given an unknown and possibly structurally unusual underlying language, and no computational method removes that limit.
 
 Two literatures, no shared vocabulary, one result: **below some quantity of text, the solution is underdetermined.**
 

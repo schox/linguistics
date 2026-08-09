@@ -25,7 +25,7 @@ Consequence for this vault: genealogy is a safe canonical spine for Human Langua
 
 ### Scripts: well standardized, thinly cataloged
 
-[ISO 15924](references/iso15924.md) gives every script a four-letter and numeric code, maintained by the Unicode Consortium, with a numeric range (600-699) reserved for undeciphered scripts. Unicode encoding covers many ancient scripts including Linear A and Linear B.
+[ISO 15924](references/iso15924.md) gives every script a four-letter and numeric code, maintained by the Unicode Consortium, with a numeric range (600-699) reserved for undeciphered scripts. Unicode encoding covers many ancient scripts including [Linear A](Decipherment/linear-a.md) and [Linear B](Decipherment/linear-b.md).
 
 But there is no Glottolog for scripts: no curated relational dataset of script descent, borrowing and adaptation. The Latin alphabet's descent from Phoenician through Greek and Etruscan is well established scholarship and not, as far as I can find, an open structured dataset. A gap.
 

@@ -21,9 +21,10 @@ See the inclusion test in `types/place.md`. Not every university anyone attended
 
 ## Sites
 
-- [Knossos](knossos.md), Crete
+- [Knossos](knossos.md), Crete, provenance of the Linear B tablets
+- [Hagia Triada](hagia-triada.md), Crete, provenance of the largest Linear A archive
 
 ## Obvious gaps
 
-Sites: Pylos, Ugarit, Behistun, Rosetta, Mohenjo-daro and Harappa, Ayia Triada, Amarna, Nineveh (Ashurbanipal's library), Ebla, Boghazköy.
+Sites: Pylos, Ugarit, Behistun, Rosetta, Mohenjo-daro and Harappa, Amarna, Nineveh (Ashurbanipal's library), Ebla, Boghazköy, Chania.
 Institutions: the British School at Athens, Cambridge Faculty of Classics, MIT, Bell Labs, Riverbank Laboratories, GCHQ, the Ashmolean.
