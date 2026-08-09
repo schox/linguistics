@@ -94,3 +94,25 @@ This supersedes the known limit recorded in the entry above.
 **Why.** An unresolvable `belongs_to` is exactly the failure the quoting rule exists to prevent, one step later: the YAML parses, the field looks right, and the relationship still does not exist. Catching the quoting error but not the dangling target left half the hole open.
 
 **Consequence.** A note cannot be committed pointing at an entity that has not been written yet. Where a new `Script` note needs a `found_at` site, the `Place` note is part of the same change rather than a follow-up.
+
+## 2026-08-09: Absent facts are recorded, not omitted
+
+**Decided.** The vault's evidentiary standard is stated in `AGENTS.md` and covers three cases rather than one. A claim that cannot be verified is not written. A claim that is disputed is written with both sides attributed. A fact that would have been useful but cannot be found is **written down as absent**, under `## Open questions`, with what was looked for.
+
+**Rejected.** Silently omitting what could not be found, which was the previous default.
+
+**Why.** Andrew's framing: this is for research and academic use, personal now and shared later, so there is no room for inference dressed as fact. The first two cases were already covered. The third was not, and it is the one that degrades quietly, because an omission is indistinguishable from completeness on the page. Recording the gap converts a dead end into a result and stops the next reader repeating the search. It also removes the incentive that produces fabrication in the first place, which is the felt need to fill a hole.
+
+**Consequence.** Notes on thinly published corpora will carry visible gaps. That is the intended outcome, not a defect. `## Open questions` is optional and unenforced by the checker, because the checker cannot tell a genuine absence from an unasked question.
+
+**Known limit.** `scripts/check-vault.py` verifies that a `## Sources` section exists and that its relative links resolve. It cannot tell a real citation from a plausible fabrication, and it does not check that a DOI or external identifier resolves. The standard above is therefore a discipline, not something the tooling enforces. Andrew has a separate service that does fact and link checking periodically, so the checker deliberately stays offline and structural rather than growing a network mode.
+
+## 2026-08-09: Wikipedia is a source, not a Reference
+
+**Decided.** A Wikipedia article may be listed under a note's `## Sources` and linked in prose. It never gets its own note in `references/`. `scripts/check-vault.py` fails a `Reference` whose `url` or `doi` points at Wikipedia.
+
+**Rejected.** Two stricter readings, both considered and both wrong. Banning Wikipedia from `## Sources` as well, which would have stripped citations from eleven existing notes and left several with nothing, replacing a useful pointer with a hole. And the status quo of saying nothing, which leaves the line undrawn until someone files `references/wikipedia-linear-a.md` and it looks like precedent.
+
+**Why.** The two roles are different. `## Sources` records what a note actually drew on, and for orientation on a script or a site Wikipedia frequently is that, honestly. `references/` is the authoritative bibliography, the thing the vault's academic use rests on, and it holds works of record: papers, books, chapters, datasets, corpora. Wikipedia is a finding aid pointing into that literature, so the correct move on encountering it is to follow its citations to the work of record and reference that.
+
+**Consequence.** Where a fact is available only from Wikipedia, cite Wikipedia in `## Sources` and say in the note that the primary source has not been located. That is the absent-fact case from the entry above, not a license to skip the search.

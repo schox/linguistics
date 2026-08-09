@@ -61,9 +61,19 @@ This is the easiest mistake to make and the hardest to notice, because nothing l
 
 Scripts and languages are many-to-many, joined by `writes` and `written_in`. Cuneiform wrote five unrelated languages. Linear A is a script whose language is unknown. Etruscan is a language readable in a script we can pronounce but do not fully understand. "Is X deciphered?" is always two questions.
 
-### Unverified facts
+### Unverified facts, and facts that are absent
 
-If you cannot verify something, do not write it. Mark the note `status: draft` and state in prose what is missing and what would settle it. Do not invent a placeholder format; `status: draft` plus a sentence is the convention.
+The vault serves research, so it confines itself to the facts as found. Inference is not evidence, and your own reasoning is not a source.
+
+Three situations, three treatments, and collapsing them loses information:
+
+**You cannot verify it.** Do not write it. Mark the note `status: draft` and state in prose what is missing and what would settle it. Do not invent a placeholder format; `status: draft` plus a sentence is the convention.
+
+**It is genuinely disputed.** Write it, with both sides attributed to their proponents and both sets of sources. See "References and citations" below.
+
+**It appears not to exist, or you looked and could not find it.** Record the absence in an `## Open questions` section at the foot of the note, saying what you looked for and where. This is the case most easily lost, because an omission reads as completeness. A stated gap is a finding: it tells the next reader that the search has been done, and it is often the honest answer for a corpus that has never been fully published.
+
+`## Open questions` sits after `## Sources`. It is optional, and it is not a to-do list for the note's prose; it is for questions the sources themselves do not answer.
 
 ## Taxonomy and subfields
 
@@ -117,6 +127,8 @@ belongs_to: "[[Cryptography]]"
 ```
 
 **Every substantive note ends with a `## Sources` section**, listing the works it draws on as markdown links, and declares them in `cites:` frontmatter so the graph knows. Prefer a DOI or a stable publisher URL over a general web page. Where an open-access copy exists alongside a paywalled version of record, give both.
+
+**Wikipedia is a source in a note, never a `Reference` note.** Listing a Wikipedia article under a note's `## Sources`, or linking it in prose, is fine and often the most useful orientation available. What it must not become is its own file in `references/`, because `references/` is the authoritative bibliography: papers, books, chapters, datasets, corpora. Wikipedia is a finding aid pointing at those, so cite it where it helped and follow it to the work of record. `scripts/check-vault.py` fails a `Reference` note whose `url` is a Wikipedia article.
 
 **Distinguish what you have read from what you have merely found.** The `status` field on a `Reference` is the reading list. Do not mark something `read` that you have skimmed.
 

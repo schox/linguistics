@@ -10,6 +10,8 @@ Checks, per markdown file:
   * every relative markdown link resolves
   * every [[wikilink]] resolves to an H1 title or filename
   * content notes end with a ## Sources section
+  * no Reference note points at Wikipedia (fine as a source in a note,
+    never as an entry in the authoritative bibliography)
   * house style: International English, no em-dashes
 
 Standard library only. Run from anywhere:
@@ -228,6 +230,16 @@ def check(path, vocabs, targets):
         # content notes must cite something
         if ntype in CONTENT and "## Sources" not in raw:
             out.append((rel, 1, f"{ntype} note has no '## Sources' section"))
+
+        # references/ is the authoritative bibliography. Wikipedia is a finding
+        # aid: welcome under a note's ## Sources, never a Reference of its own.
+        if ntype == "Reference":
+            for field in ("url", "doi"):
+                value = data.get(field)
+                if isinstance(value, str) and "wikipedia.org" in value:
+                    out.append((rel, 1,
+                                f"Reference '{field}' points at Wikipedia; cite the "
+                                "work of record instead"))
 
     # the silent YAML trap
     for m in WIKILINK_UNQUOTED.finditer(raw[:raw.find("\n---\n", 3) + 5]):
