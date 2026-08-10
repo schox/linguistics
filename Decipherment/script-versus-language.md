@@ -16,7 +16,7 @@ A script is not a language, and treating them as one thing makes every decipherm
 
 ## Many to many
 
-One script writes many languages. Cuneiform recorded Sumerian, Akkadian, Hittite, Elamite and Old Persian, which are not related to one another. The Latin alphabet writes most of Europe and much of the world.
+One script writes many languages. [Cuneiform](cuneiform.md) recorded [Sumerian](../Human-Languages/sumerian.md), [Akkadian](../Human-Languages/akkadian.md), Hittite, Elamite and Old Persian, which are not related to one another. The Latin alphabet writes most of Europe and much of the world.
 
 One language is written in many scripts. Japanese uses kanji, hiragana, katakana and rōmaji simultaneously. Serbo-Croatian runs in Latin and Cyrillic. Turkish switched from Arabic to Latin in 1928.
 

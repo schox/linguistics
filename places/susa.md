@@ -24,7 +24,7 @@ Proto-Elamite survives in roughly 1,700 clay tablets from eight or nine excavati
 
 That last point is the one worth drawing out. **The corpus is split between two countries because of how it was excavated**, and the larger share sits outside Iran. Provenance in this vault usually means where material came out of the ground; here it also means where it went afterwards, which affects who can work on it and how easily it can be digitized as a single corpus. Kelley notes that recent progress has come from corpus digitization, and a corpus divided between institutions in two countries is a harder thing to digitize whole.
 
-Susa is also relevant well beyond this area. It was a major Elamite center and later an Achaemenid capital, and its long sequence connects to cuneiform and to the Behistun-era material that phase 2 of the batching plan will need.
+Susa is also relevant well beyond this area. It was a major Elamite center and later an Achaemenid capital, and its long sequence connects to [cuneiform](../Decipherment/cuneiform.md) and to the [Behistun](behistun.md)-era material that phase 2 of the batching plan will need.
 
 ## Open questions
 

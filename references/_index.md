@@ -54,6 +54,7 @@ See `_data-sources.md` for how the vault relates to these.
 - [Salgarella 2025](salgarella-2025.md), Linear A
 - [Shannon 1949](shannon-1949.md)
 - [Sproat 2010](sproat-2010.md)
+- [Torres Torres 2007](torres-torres-2007.md), the cuneiform decipherment
 - [Tamburini 2025](tamburini-2025.md)
 - [Ventris and Chadwick 1953](ventris-chadwick-1953.md)
 - [Yadav et al. 2009](yadav-et-al-2009.md)

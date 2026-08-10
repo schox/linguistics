@@ -32,7 +32,7 @@ One of the world's earliest writing systems, used in Iran from roughly 3300 to 2
 
 Kelley describes the script as "only very partly deciphered". The partial success is asymmetric and does not point where the usual sense of the phrase suggests:
 
-- **The numerical systems are substantially understood.** Proto-Elamite shares them with proto-cuneiform, which is read, and quantity notations turn out to be the most recoverable part of an accounting corpus because they have internal structure that can be checked arithmetically.
+- **The numerical systems are substantially understood.** Proto-Elamite shares them with proto-[cuneiform](cuneiform.md), which is read, and quantity notations turn out to be the most recoverable part of an accounting corpus because they have internal structure that can be checked arithmetically.
 - **The non-numerical signs are not.** Several hundred of them record commodities, personnel and institutions. Kelley's framing is that they encode ideographically rather than primarily linguistically.
 
 That second point matters for the vault's taxonomy. Reading Proto-Elamite quantities is not partial decipherment in the [Linear B](linear-b.md) sense of recovering sound values for some signs. It is closer to understanding an accounting schema than to reading a language, and it can be done without settling what language, if any, lies underneath. Compare [computational decipherment's three tasks](computational-decipherment-three-tasks.md), which makes a related distinction: doing something useful with a corpus is not the same as reading it.

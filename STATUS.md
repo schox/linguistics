@@ -22,10 +22,10 @@ Content is now being added in **batches**, one commit per closure set: an anchor
 Content. The areas hold their taxonomy and a handful of exemplars, nothing more:
 
 - **General Linguistics**: 1 note (the Chomsky hierarchy). Ten subfields, nine empty.
-- **Human Languages**: 3 notes (Egyptian, Etruscan, Mycenaean Greek). The genealogy is mapped to branch level and almost entirely unpopulated.
+- **Human Languages**: 5 notes (Akkadian, Egyptian, Etruscan, Mycenaean Greek, Sumerian). The genealogy is mapped to branch level and almost entirely unpopulated.
 - **Computer Languages**: 1 note (Lisp).
 - **Cryptography**: 3 notes (Vigenère, and two methods).
-- **Decipherment**: the most developed area, 17 notes, because it carries the vault's argument.
+- **Decipherment**: the most developed area, 18 notes, because it carries the vault's argument.
 
 ## How the content was built
 
@@ -40,7 +40,7 @@ Content is added in **batches**: one commit per closure set, meaning an anchor n
 
 All seven carry their ISO 15924 code, Unicode block, `corpus_size` and `found_at`, which was the point: corpus size is the variable the whole Decipherment argument turns on, and it is now checkable across the set rather than asserted. A cross-cutting note, `Decipherment/segmentation-and-transcription.md`, followed from what all four batches turned up independently.
 
-**Phase 2, the solved decipherments, is under way.** Batch 5 covered Egyptian hieroglyphs, with the Rosetta Stone's findspot, Champollion, and the vault's first `Language` note written to give a deciphered script something to point at.
+**Phase 2, the solved decipherments, is under way.** Batch 5 covered Egyptian hieroglyphs; batch 6 covered cuneiform, with Behistun, Rawlinson, Hincks, Akkadian and Sumerian. Both batches needed `Language` notes, because a deciphered script has to have something to point at.
 
 **Everything still to do is in `ROADMAP.md`**, including what is blocked and on whom. Do not duplicate it here.
 

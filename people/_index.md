@@ -18,6 +18,8 @@ See the inclusion test in `types/person.md`. Authorship of a cited paper is not 
 - [John Chadwick](john-chadwick.md), Decipherment and Cryptography
 - [Claude Shannon](claude-shannon.md), Cryptography and Computational linguistics
 - [Jean-François Champollion](champollion.md), Decipherment
+- [Henry Creswicke Rawlinson](rawlinson.md), Decipherment
+- [Edward Hincks](hincks.md), Decipherment
 
 ## Obvious gaps
 
