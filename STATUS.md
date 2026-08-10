@@ -60,12 +60,15 @@ Verified while writing batch 1, so later batches need not re-derive them:
 
 Recorded so the fact-checking service can retry them rather than each batch rediscovering the block. All as at 2026-08-09/10.
 
-- `people.ku.edu` (Younger's Linear A transcriptions): host did not resolve. **Still open**, and the most serious of these, since the Linear A corpus figures descend from it.
-- Pleiades: bot detection. Blocks every `pleiades` identifier. **Not yet retried through Tavily.**
-- CNR eprints (TLS error) and University of Bologna repository (403), both for Montecchi 2019. **Not yet retried through Tavily.**
-- ~~Britannica, UNESCO World Heritage, harappa.com: HTTP 403~~ **resolved 2026-08-10** by retrieving them through Tavily. See the entry in `DECISIONS.md` for when that is appropriate and how retrieved content is marked.
+- ~~Britannica, UNESCO World Heritage, harappa.com: HTTP 403~~ **resolved 2026-08-10** through Tavily. See `DECISIONS.md` for when that is appropriate and how retrieved content is marked.
+- ~~`people.ku.edu` (Younger's Linear A transcriptions)~~ **explained 2026-08-10.** The site is gone, not moved: reportedly taken down by the University of Kansas after Younger's retirement, with the contents deposited on Academia.edu (last update 8 April 2024). The vault's Linear A corpus figures descend from it, so tracing them into the surviving document is the outstanding check. See the open questions in `Decipherment/linear-a.md`.
+- ~~Pleiades~~ **partly resolved 2026-08-10.** Knossos is 589872, now recorded. Hagia Triada returned no record, and probably has none: Pleiades is scoped to the Greek and Roman world and a purely Minoan site may fall outside it.
+- **Still blocked:** the University of Bologna repository record for Montecchi 2019, which failed again through Tavily. The CNR eprints TLS error was not retried. This is the one that would settle the contested Hagia Triada tablet count, 147 against Rutter's 168.
 
-The three still open are worth a pass with Tavily before batch 3, since two of them would fill identifier fields and one would settle a contested tablet count.
+## Resources found but not yet used
+
+- **Salgarella, *Writing in Bronze Age Crete: Linear A*** (Cambridge Elements, "Writing the World" series). A recent single-volume overview of Linear A signs and inscribed objects in archaeological context, by the author of SigLA. The obvious next reference for Linear A; bibliographic details not yet verified.
+- **Mnamon**, Scuola Normale Superiore, "Ancient writing systems in the Mediterranean: a critical guide to electronic resources" (`mnamon.sns.it`), with a DOI and ISBN. A curated scholarly guide covering Linear A, Cypro-Minoan and others. Likely useful for batch 3.
 
 ## Known limitations
 

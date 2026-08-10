@@ -46,7 +46,7 @@ The two counts differ by about 13 percent, and the two datings differ by a whole
 ## Open questions
 
 - **Which count is right, and on what basis.** Reading Montecchi 2019 would settle both the tablet count and the phasing of the archive. See the note on that reference for what could and could not be verified about the volume itself.
-- **The `pleiades` identifier is missing.** Pleiades is the correct gazetteer identifier for an ancient site under `types/place.md`, and would be the join to the archaeological datasets. The Pleiades site was behind bot detection when this note was written on 2026-08-09 and no ID could be confirmed. It was deliberately left empty rather than guessed.
+- **The `pleiades` identifier appears not to exist.** Pleiades was searched on 2026-08-10, once the bot-block was worked around, and returned no record for this site. [Knossos](knossos.md) has one (589872) and so do Gortyn and Prinias, so the gazetteer covers Crete; what it does not obviously cover is a purely Minoan site with no Greek or Roman phase, which is what Pleiades is scoped to. Treat this as probably absent rather than merely unfound, but it is worth one more look by someone with the gazetteer's search working properly. `geonames` remains unfilled.
 - **Halbherr's dates of work at the site.** Sources consulted give the start as 1902 and refer to work continuing to about 1914 with Pernier, Paribeni and Banti, but this was not confirmed against an excavation report, so only the start year is stated above.
 
 ## Sources

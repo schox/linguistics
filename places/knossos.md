@@ -5,7 +5,7 @@ country: Greece
 region: Crete
 flourished: c. 1900-1350 BCE
 wikidata:
-pleiades:
+pleiades: 589872
 belongs_to: "[[Decipherment]]"
 related_to:
   - "[[The evidentiary threshold and unicity distance]]"
@@ -38,3 +38,4 @@ That makes excavation history a legitimate research topic for this vault rather 
 
 - [Knossos, Wikipedia](https://en.wikipedia.org/wiki/Knossos)
 - [Petrolito et al. 2015](../references/petrolito-et-al-2015.md), for the Linear A and Linear B corpus figures
+- [Pleiades 589872](https://pleiades.stoa.org/places/589872), "Knosos/Col. Iulia Nobilis Cnosos"
