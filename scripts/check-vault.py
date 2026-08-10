@@ -55,6 +55,10 @@ BRITISH = re.compile(
     r"(?:e|es|ed|ing|ation|ations)\b"
     r"|\b(?:catalogu(?:e|es|ed|ing)|programme|programmes|licence|licences|"
     r"centre|centres|colour|colours|coloured|behaviour|behaviours|behavioural|"
+    r"neighbour|neighbours|neighbouring|honour|honours|honoured|favour|favours|"
+    r"favoured|favourite|favourites|labour|labours|endeavour|endeavours|"
+    r"rumour|rumours|humour|humours|vapour|vapours|odour|odours|armour|"
+    r"savour|savours|splendour|fervour|harbour|harbours|"
     r"palaeo\w+|artefact|artefacts|defence|modelling|labelled|travelled|mediaeval)\b",
     re.I,
 )

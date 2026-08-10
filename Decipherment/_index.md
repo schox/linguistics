@@ -58,6 +58,8 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 - [Linear B](linear-b.md), deciphered
 - [Linear A](linear-a.md), undeciphered, and the corpus-size case in its clearest form
 - [Indus script](indus-script.md), undeciphered, and disputed as to whether it is writing at all
+- [Cypro-Minoan](cypro-minoan.md), undeciphered, between a script we cannot read and one we can
+- [Phaistos Disc](phaistos-disc.md), undeciphered, and the limiting case: a corpus of one object
 - [Etruscan alphabet](etruscan-alphabet.md), deciphered script, partly understood language
 
 ## Documents

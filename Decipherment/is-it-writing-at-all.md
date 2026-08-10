@@ -35,7 +35,7 @@ Worth noting too that [Yadav et al. 2009](../references/yadav-et-al-2009.md), fr
 
 It is the cleanest demonstration that decipherment has a well-posedness problem that cryptanalysis does not. A cryptanalyst knows the ciphertext encodes a message, because somebody encrypted one. A decipherer has to establish it, and the tools for doing so are statistical, which means they inherit every weakness of a small corpus.
 
-It also generalizes. The same question applies to Rongorongo, to the Phaistos Disc, and most sharply to the Voynich manuscript, where the live hypotheses include natural language in an unknown script, an enciphered natural language, a constructed language, and an elaborate hoax containing no information at all. Those four require entirely different methods, and choosing between them is a prior step to any attempt at reading.
+It also generalizes. The same question applies to Rongorongo, to the [Phaistos Disc](phaistos-disc.md), and most sharply to the Voynich manuscript, where the live hypotheses include natural language in an unknown script, an enciphered natural language, a constructed language, and an elaborate hoax containing no information at all. Those four require entirely different methods, and choosing between them is a prior step to any attempt at reading.
 
 ## Sources
 

@@ -85,7 +85,9 @@ That is the evidentiary threshold operating mechanically rather than in principl
 
 `iso15924` is `Inds`, numeric 610, and 610 sits inside the 600-699 block the registry reserves for undeciphered scripts.
 
-**There is no Unicode block.** `unicode_block` is empty because none exists, not because it was not looked up: the Unicode block list contains no block whose name refers to the Indus or Harappan script. This is the second such gap the vault has recorded, alongside the Phaistos Disc having no ISO 15924 code at all. Encoding presupposes an agreed sign list, and for the Indus corpus the sign list is exactly what is in dispute.
+**There is no Unicode block.** `unicode_block` is empty because none exists, not because it was not looked up: the Unicode block list contains no block whose name refers to the Indus or Harappan script. Encoding presupposes an agreed sign list, and for the Indus corpus the sign list is exactly what is in dispute.
+
+The [Phaistos Disc](phaistos-disc.md) is the mirror image: no ISO 15924 code and no Unicode script value, but a Unicode block all the same. Between them the two show that the registries are not one system. A corpus can be encoded as characters without being recognized as a script, or recognized as a script without being encoded, and neither status implies anything about whether it is writing.
 
 ## Open questions
 

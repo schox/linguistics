@@ -19,7 +19,7 @@ cites:
 
 # Hagia Triada
 
-A Minoan site in south-central Crete, a few kilometers from Phaistos, excavated by the Italian mission from 1902. It is the provenance of the largest known archive of [Linear A](../Decipherment/linear-a.md) tablets.
+A Minoan site in south-central Crete, a few kilometers from [Phaistos](phaistos.md), excavated by the Italian mission from 1902. It is the provenance of the largest known archive of [Linear A](../Decipherment/linear-a.md) tablets.
 
 The name appears in the literature in several forms, and searching it requires all of them: Hagia Triada, Haghia Triada, Ayia Triadha, Agia Triada. The vault uses **Hagia Triada**, matching the Wikidata label. Rutter uses *Ayia Triadha*; Montecchi and Salgarella use *Haghia Triada*.
 

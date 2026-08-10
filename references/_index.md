@@ -21,7 +21,11 @@ See `_data-sources.md` for how the vault relates to these.
 - [HOPL](hopl.md)
 - [ISO 15924](iso15924.md)
 - [Language Lineage](languagelineage.md)
+- [Ferrara 2013](ferrara-2013.md), the Cypro-Minoan corpus
+- [Heraklion Archaeological Museum, the Phaistos Disc](heraklion-museum-phaistos-disc.md)
 - [Mahadevan 1977](mahadevan-1977.md), the Indus concordance both camps use
+- [Mnamon](mnamon.md), critical guide to Mediterranean writing systems
+- [Olivier 2007](olivier-2007.md), HoChyMin, the Cypro-Minoan reference numbering
 - [Rutter, Aegean Prehistoric Archaeology](rutter-aegean-prehistory.md)
 - [Salgarella and Castellan 2020](salgarella-castellan-2020.md), SigLA
 - [UNESCO, Archaeological Ruins at Moenjodaro](unesco-moenjodaro.md)

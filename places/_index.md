@@ -25,8 +25,10 @@ See the inclusion test in `types/place.md`. Not every university anyone attended
 - [Hagia Triada](hagia-triada.md), Crete, provenance of the largest Linear A archive
 - [Harappa](harappa.md), Punjab, type-site of the Indus civilization
 - [Mohenjo-daro](mohenjo-daro.md), Sindh, and the argument from what excavation did not find
+- [Phaistos](phaistos.md), Crete, provenance of exactly one object in its script
+- [Enkomi](enkomi.md), Cyprus, principal provenance of the Cypro-Minoan tablets
 
 ## Obvious gaps
 
-Sites: Pylos, Ugarit, Behistun, Rosetta, Amarna, Nineveh (Ashurbanipal's library), Ebla, Boghazköy, Chania, Dholavira.
+Sites: Ugarit (now overdue, since it is the sole provenance of the CM3 texts as well as the Ugaritic material), Pylos, Behistun, Rosetta, Amarna, Nineveh (Ashurbanipal's library), Ebla, Boghazköy, Chania, Dholavira, Maroni, Palaepaphos.
 Institutions: the British School at Athens, Cambridge Faculty of Classics, MIT, Bell Labs, Riverbank Laboratories, GCHQ, the Ashmolean.

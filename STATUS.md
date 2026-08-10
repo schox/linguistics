@@ -11,7 +11,7 @@ Where the project is up to, as at 2026-08-09. Update this when the picture chang
 
 The structure is complete and enforced. Five areas, thirteen note types plus `Type` itself, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
 
-The vault currently holds 88 notes. That is a skeleton with a good spine, not a body of research.
+The vault currently holds 96 notes. That is a skeleton with a good spine, not a body of research.
 
 Content is now being added in **batches**, one commit per closure set: an anchor note plus every note it must link for the checker to pass, plus the index updates and this file. See the batching plan below and the entry on sweeps in `DECISIONS.md`.
 
@@ -23,7 +23,7 @@ Content. The areas hold their taxonomy and a handful of exemplars, nothing more:
 - **Human Languages**: 2 notes (Etruscan, Mycenaean Greek). The genealogy is mapped to branch level and almost entirely unpopulated.
 - **Computer Languages**: 1 note (Lisp).
 - **Cryptography**: 3 notes (Vigenère, and two methods).
-- **Decipherment**: the most developed area, 10 notes, because it carries the vault's argument.
+- **Decipherment**: the most developed area, 12 notes, because it carries the vault's argument.
 
 ## The batching plan
 
@@ -33,7 +33,7 @@ Agreed with Andrew on 2026-08-09. Argument-first rather than coverage-first: not
 
 1. ~~Linear A, with Hagia Triada~~ **done**, 2026-08-09.
 2. ~~The Indus script, with Mohenjo-daro and Harappa~~ **done**, 2026-08-10.
-3. Cypro-Minoan (`Cpmn`, 402) and the Phaistos Disc, with Enkomi and Phaistos.
+3. ~~Cypro-Minoan and the Phaistos Disc, with Enkomi and Phaistos~~ **done**, 2026-08-10.
 4. Rongorongo (`Roro`, 620), Proto-Elamite (`Pelm`, 016) and the Voynich, with Rapa Nui and Susa.
 
 Note for batch 4: **Linear Elamite is not Proto-Elamite.** They are distinct scripts and the vault must not merge them. Farmer, Sproat and Witzel use Linear Elamite as a comparison case for the Indus corpus, and it is worth a note of its own: 21 or 22 known inscriptions, most longer than the longest Indus text, which is the cleanest demonstration that corpus volume and text length are independent variables.
@@ -51,10 +51,12 @@ Running alongside: the two unwritten junction notes at the foot of `_junctions.m
 Verified while writing batch 1, so later batches need not re-derive them:
 
 - ISO 15924, from the Unicode Consortium code list: Linear A `Lina` 400, Linear B `Linb` 401, Cypro-Minoan `Cpmn` 402, Indus `Inds` 610, Rongorongo `Roro` 620, Proto-Elamite `Pelm` 016.
-- **The Phaistos Disc has no ISO 15924 code at all.** That is a genuine gap in the registry, not an oversight in this vault, and batch 3 has to say so rather than leave the field looking unfilled.
+- **The Phaistos Disc has no ISO 15924 code, but does have a Unicode block** (`101D0..101FF`) and no Unicode script property value. Verified against all three registry files. Encoded as characters, unregistered as a script.
 - Unicode blocks: Linear A U+10600-U+1077F, Linear B Syllabary U+10000-U+1007F, Linear B Ideograms U+10080-U+100FF, Aegean Numbers U+10100-U+1013F, Cypro-Minoan U+12F90-U+12FFF.
 - **The Indus script has no Unicode block**, checked against `Blocks.txt`. Encoding presupposes an agreed sign list, which is the thing in dispute.
 - Mean signs per document, for the comparison the vault's argument rests on: Indus 4.6 (sourced), Linear A c. 5.2 and Linear B at most c. 12.5 (both computed here, and the Linear B figure is an upper bound). Later batches should extend this table and keep marking which figures are sourced and which are derived.
+- Total sign occurrences, the other axis: Linear B 57,398; Indus 13,372; Linear A 7,362-7,396; Phaistos Disc 241. Each is its own source's total and the four are not perfectly commensurable, so treat the comparison as order-of-magnitude.
+- Cypriot syllabary is `Cprt` 403, block U+10800-U+1083F. It is **deciphered** and is the descendant of Cypro-Minoan, so do not confuse the two.
 
 ## Sources that were unreachable
 
