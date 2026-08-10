@@ -66,7 +66,7 @@ Farmer, Sproat and Witzel press this further with a comparison the vault should 
 
 ## The sign inventory, and why counts differ
 
-Estimates depend almost entirely on how variants are split, which is a decision rather than an observation.
+Estimates depend almost entirely on how variants are split, which is a decision rather than an observation. See [what counts as one sign](segmentation-and-transcription.md), which collects this problem across the vault's scripts.
 
 - **417** distinct signs in Mahadevan's concordance, the figure both camps use.
 - **300-400** is the range Farmer, Sproat and Witzel report for most counts since the 1960s, citing Parpola, Fairservis, Possehl and others.

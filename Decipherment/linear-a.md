@@ -56,7 +56,7 @@ Counts differ because they count different things, and the difference is worth h
 - [Rutter](../references/rutter-aegean-prehistory.md) describes a syllabary of "some 85 distinct signs".
 - Petrolito and colleagues note that 81 signs are shared with Linear B and are assumed to carry syllabic values, the remainder being assumed logograms.
 
-The 85 and the 180 are not in conflict. One is an estimate of the syllabic subset, the other the full inventory of simple signs. Quoting either alone as "the number of Linear A signs" produces an argument that does not survive contact with the other.
+See [what counts as one sign](segmentation-and-transcription.md) for why this recurs on every script here. The 85 and the 180 are not in conflict. One is an estimate of the syllabic subset, the other the full inventory of simple signs. Quoting either alone as "the number of Linear A signs" produces an argument that does not survive contact with the other.
 
 ## Reading without understanding
 

@@ -48,7 +48,7 @@ The conventional classification, devised by Masson and kept by Olivier, splits t
 
 **Whether those are one script or several is the live question, and it is not a taxonomic quibble.** Ferrara's Appendix 2 treats the repertory as "83 different graphemes of a single writing system", which cuts against reading CM1, CM2 and CM3 as separate scripts.
 
-The consequence is arithmetical. A single corpus of 243 short inscriptions is already far below the threshold at which a decipherment could be tested. Split three ways it becomes three corpora of a few dozen each, and each of those is closer to the [Phaistos Disc](phaistos-disc.md) than to [Linear A](linear-a.md). How you classify the material determines whether there is anything to work on, which is an unusually direct case of a methodological decision setting the evidentiary limit. See [the evidentiary threshold](evidentiary-threshold-and-unicity-distance.md).
+The consequence is arithmetical. A single corpus of 243 short inscriptions is already far below the threshold at which a decipherment could be tested. Split three ways it becomes three corpora of a few dozen each, and each of those is closer to the [Phaistos Disc](phaistos-disc.md) than to [Linear A](linear-a.md). How you classify the material determines whether there is anything to work on, which is an unusually direct case of a methodological decision setting the evidentiary limit. It is the corpus-level form of the problem set out in [what counts as one sign](segmentation-and-transcription.md). See [the evidentiary threshold](evidentiary-threshold-and-unicity-distance.md).
 
 ## Why a readable descendant does not help
 

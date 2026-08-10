@@ -61,7 +61,7 @@ That combination is unique here. Every other undeciphered script in the vault is
 ## Open questions
 
 - **No sourced count of glyphs or word-tokens.** This is a real gap and an odd one. Decades of statistical analysis rest on transcriptions, and the vault has no figure from a source it has read for how many characters or words the manuscript contains, nor for the size of the glyph inventory. Commonly cited figures exist; none was verified. Until that is fixed, `corpus_size` records the object and not the text.
-- **The transcription systems have not been examined.** Any statistical claim about the Voynich depends on a transcription alphabet, EVA being the usual one, and different transcriptions segment the script differently. This is the same segmentation problem that afflicts [rongorongo](rongorongo.md) and the [Indus script](indus-script.md), and it should be a note in its own right rather than a line here.
+- **The transcription systems have not been examined.** Any statistical claim about the Voynich depends on a transcription alphabet, EVA being the usual one, and different transcriptions segment the script differently. This is the same segmentation problem that afflicts [rongorongo](rongorongo.md) and the [Indus script](indus-script.md), now collected in [what counts as one sign](segmentation-and-transcription.md).
 - **The hoax hypothesis is stated but not assessed.** Arguments from the statistical properties of the text have been made in both directions and none has been read.
 - **The illustrations are untouched here.** The botanical, astronomical and balneological sections are a large body of non-textual evidence, and identification of the plants is one of the few external constraints available.
 

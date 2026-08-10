@@ -11,7 +11,7 @@ Where the project is up to, as at 2026-08-09. Update this when the picture chang
 
 The structure is complete and enforced. Five areas, thirteen note types plus `Type` itself, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
 
-The vault currently holds 104 notes. That is a skeleton with a good spine, not a body of research.
+The vault currently holds 105 notes. That is a skeleton with a good spine, not a body of research.
 
 Content is now being added in **batches**, one commit per closure set: an anchor note plus every note it must link for the checker to pass, plus the index updates and this file. See the batching plan below and the entry on sweeps in `DECISIONS.md`.
 
@@ -23,7 +23,7 @@ Content. The areas hold their taxonomy and a handful of exemplars, nothing more:
 - **Human Languages**: 2 notes (Etruscan, Mycenaean Greek). The genealogy is mapped to branch level and almost entirely unpopulated.
 - **Computer Languages**: 1 note (Lisp).
 - **Cryptography**: 3 notes (Vigenère, and two methods).
-- **Decipherment**: the most developed area, 15 notes, because it carries the vault's argument.
+- **Decipherment**: the most developed area, 16 notes, because it carries the vault's argument.
 
 ## The batching plan
 
@@ -42,7 +42,7 @@ Agreed with Andrew on 2026-08-09. Argument-first rather than coverage-first: not
 
 Beyond phases 2 to 4 below, three things surfaced repeatedly across the four script batches and are worth doing on their own:
 
-1. **A note on segmentation and transcription.** Every undeciphered script in the vault has the same problem in a different costume: Indus sign counts run 417 to 676 depending on variant-splitting, rongorongo has 120 bases fusing into hundreds of compounds, Cypro-Minoan may be one script or three, and every Voynich statistic depends on a transcription alphabet. This is a single methodological issue and it currently sits scattered across five notes as an open question. It is a junction note waiting to be written.
+1. ~~A note on segmentation and transcription.~~ **Written**, 2026-08-10, as `Decipherment/segmentation-and-transcription.md`, titled *What counts as one sign*. It collects the problem from all five scripts that carry it and argues that the evidentiary threshold cannot be measured independently of a segmentation decision. Its own open questions are now the live ones: no methodological literature has been consulted, and the claim that entropy is sensitive to segmentation is stated rather than demonstrated.
 2. **Read the two Cambridge Elements volumes.** Kelley on Proto-Elamite and Salgarella on Linear A are both short, current, and would close a dozen open questions between them. Both are cited unread.
 3. **`Language` notes for Rapanui and a `Place` note for Ugarit.** Rapanui is a real living language currently mentioned only as an appendage to a script. Ugarit is the sole provenance of the CM3 texts and will be needed again for Ugaritic in phase 2.
 

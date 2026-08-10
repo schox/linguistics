@@ -28,6 +28,7 @@ Folders cannot express this, since each note lives in one folder but belongs to 
 ## Computation and Decipherment
 
 - [Computational decipherment: three distinct tasks](Decipherment/computational-decipherment-three-tasks.md). Restoration, decipherment proper, and cognate search, routinely conflated.
+- [What counts as one sign](Decipherment/segmentation-and-transcription.md). Segmentation and transcription are decisions taken before any statistic is computed, and every entropy value, Zipf fit and n-gram model inherits them. Assembled from what the four script batches turned up independently.
 
 ## People as junctions
 
@@ -47,3 +48,4 @@ Where the transfer physically happened. See `places/`.
 
 - Embeddings and distributional semantics, as the mechanism behind neural decipherment
 - Constructed languages and the Voynich hypotheses
+- Corpus destruction as a historical event rather than an accident, prompted by [Rongorongo](Decipherment/rongorongo.md) and [Rapa Nui](places/rapa-nui.md). The vault's existing framing in [adversarial versus accidental encipherment](Decipherment/adversarial-versus-accidental.md) treats obscurity as an accident of cultural loss, which does not fit a reading community destroyed within living memory by identifiable action.

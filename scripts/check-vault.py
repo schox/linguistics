@@ -50,10 +50,13 @@ PROTECTED = [
 # "mechanism" are correct in both varieties.
 BRITISH = re.compile(
     r"\w*(?:organis|recognis|standardis|formalis|generalis|visualis|industrialis|"
-    r"mechanis|minimis|characteris|normalis|specialis|analys|romanis|optimis|"
+    r"mechanis|minimis|characteris|normalis|specialis|romanis|optimis|"
     r"summaris|utilis|prioritis|categoris|emphasis|apologis|civilis|hypothesis"
     r"|criticis|systematis|theoris|synthesis)"
     r"(?:e|es|ed|ing|ation|ations)\b"
+    # 'analys' is handled separately: 'analyses' is the correct plural of
+    # 'analysis' in every variety, so the 'es' ending must not fire here.
+    r"|\w*analys(?:e|ed|ing)\b"
     r"|\b(?:catalogu(?:e|es|ed|ing)|programme|programmes|licence|licences|"
     r"centre|centres|colour|colours|coloured|behaviour|behaviours|behavioural|"
     r"neighbour|neighbours|neighbouring|honour|honours|honoured|favour|favours|"

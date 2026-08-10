@@ -52,6 +52,7 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 - [Frequency analysis](frequency-analysis.md)
 - [Is it writing at all? The Indus entropy debate](is-it-writing-at-all.md)
 - [Computational decipherment: three distinct tasks](computational-decipherment-three-tasks.md)
+- [What counts as one sign](segmentation-and-transcription.md), segmentation and transcription as prior decisions
 
 ## Scripts
 
