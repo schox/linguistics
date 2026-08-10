@@ -29,6 +29,7 @@ cites:
   - "[[Donnelly 2025]]"
   - "[[Kelley 2026]]"
   - "[[Berthin 2024]]"
+  - "[[Englund 2004]]"
 status: open
 ---
 
@@ -113,6 +114,8 @@ Applying the taxonomy to the vault's own unread scripts. **This is reasoning fro
 **Family two needs at least two more members**, both from this diagnosis:
 
 - **Insufficient attention.** Proto-Elamite has a large corpus, no dispute about its status, and nobody blocking it. There have simply not been enough people. That is a different failure from a wrong theory or an authority, and unusually, it is the one most easily fixed.
+
+  This one has since been confirmed from the inside. [Englund](../references/englund-2004.md), the scholar most associated with the corpus, writes that the texts "have played an historically minor role relative to early cuneiform" and that their publication "appears to have proceeded with little understanding of the text corpus and the accounting system it represented, and with little attention paid to an accurate representation in hand copies of the texts themselves". He also puts the corpus itself well above Linear A and early Harappan in size. The diagnosis was made here from the vault's own figures and then found already stated by the authority.
 - **An interpretive tradition destroyed rather than faded.** Rongorongo's obstacle is not the corpus. It is that the people who could have explained it were killed or died in the colonization of [Rapa Nui](../places/rapa-nui.md), within the documentary record and while observers were present. Every other script here that recovered had *something* from the inside: Landa took down an informant's account for Maya, Coptic preserved Egyptian, Akkadian scribes left Sumerian vocabularies. Rongorongo has none, because the chain broke abruptly enough that nobody wrote one.
 
 That last point deserves stating plainly. Most family-two obstacles were removable, and were removed: theories are replaced, authorities die, cliffs get climbed. **The rongorongo case is the one where the obstacle appears to be permanent**, because the missing thing is testimony that no longer can be given.

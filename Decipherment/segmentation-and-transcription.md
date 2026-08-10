@@ -14,6 +14,7 @@ related_to:
   - "[[Cypro-Minoan]]"
   - "[[Voynich manuscript]]"
   - "[[Mayan hieroglyphs]]"
+  - "[[Proto-Elamite]]"
 cites:
   - "[[Farmer, Sproat and Witzel 2004]]"
   - "[[Yadav et al. 2009]]"
@@ -22,6 +23,7 @@ cites:
   - "[[Salgarella and Castellan 2020]]"
   - "[[Petrolito et al. 2015]]"
   - "[[Mnamon]]"
+  - "[[Englund 2004]]"
 status: open
 ---
 
@@ -51,6 +53,10 @@ A factor of thirty separates the extremes. Farmer, Sproat and Witzel note what W
 - 81 signs shared with [Linear B](linear-b.md) and assumed to carry syllabic values (Petrolito and colleagues)
 
 These count different things: the full inventory of simple signs, an estimate of the syllabic subset, and the shared subset. Quoting any one as "the number of Linear A signs" produces an argument that does not survive contact with the others.
+
+**[Proto-Elamite](proto-elamite.md) has the widest spread of all**, and it was recorded after this note was written. Englund gives the history: Mecquenem's final list of 1949 ran to "upwards of 5,500 signs" and was full of variants; Meriggi, in 1971-1974, grouped presumed variants under discrete headings "and so arrived at a total of less than 400". A factor of roughly fourteen on one corpus, against the Indus script's factor of thirty across four analysts but a much narrower band among the serious ones.
+
+That case is instructive because the two figures are not rival estimates of the same thing. One is a catalog of attested graphic forms; the other is a hypothesis about which of those forms are the same sign. Confusing the two is how a sign count becomes an argument.
 
 **[Rongorongo](rongorongo.md) has the problem built into the script.** Berthin gives about 120 unique base characters which, citing Barthel, fuse into hundreds of compound forms. Whether a fused pair is one sign or two is a segmentation judgement made hundreds of times over a corpus of roughly 14,000 signs, and the token count is not independent of it.
 

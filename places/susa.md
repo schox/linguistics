@@ -12,6 +12,7 @@ related_to:
 status: open
 cites:
   - "[[Kelley 2026]]"
+  - "[[Englund 2004]]"
 ---
 
 # Susa
@@ -26,14 +27,23 @@ That last point is the one worth drawing out. **The corpus is split between two 
 
 Susa is also relevant well beyond this area. It was a major Elamite center and later an Achaemenid capital, and its long sequence connects to [cuneiform](../Decipherment/cuneiform.md) and to the [Behistun](behistun.md)-era material that phase 2 of the batching plan will need.
 
+## Where the Louvre material came from
+
+[Englund](../references/englund-2004.md) supplies the answer the earlier version of this note lacked, and it is not flattering. The late nineteenth and early twentieth century French excavations here "made that script the first archaic Near Eastern writing system known to us", a quarter century before Jemdet Nasr and Uruk produced proto-cuneiform. Susa was the first place anyone saw archaic Near Eastern writing at all.
+
+What sent the tablets to Paris was de Morgan's "archaeological earth-moving machine". That is Englund's phrase, and it accounts both for the size of the Louvre holdings and for how little is known about the context any given tablet came from.
+
+So the split corpus recorded above is not merely an administrative accident. It is the residue of an excavation method that moved earth rather than recorded it, at the site that had the earliest evidence and lost the chance to document it.
+
 ## Open questions
 
-- **The excavation history is not recorded.** French excavation at Susa from the late nineteenth century is what produced the Louvre holdings, and none of it is sourced here. This is the same gap as at [Mohenjo-daro](mohenjo-daro.md) and [Enkomi](enkomi.md), and it is becoming a pattern worth addressing systematically rather than site by site.
+- **The excavation history is still only sketched.** Englund names de Morgan and dates the French work to the late nineteenth and early twentieth centuries, which is more than the note had, but no excavation report has been consulted and the sequence of missions is not recorded. This is the same gap as at [Mohenjo-daro](mohenjo-daro.md) and [Enkomi](enkomi.md), and it is becoming a pattern worth addressing systematically rather than site by site.
 - **No per-site corpus count.** How many of the c. 1,700 tablets come from Susa specifically is not stated in any source read. The Cuneiform Digital Library Initiative, which holds a digitized subset, is the obvious place to find it.
 - **No `pleiades` identifier was found.** Pleiades was searched on 2026-08-10 and returned no Susa record, though the gazetteer does extend to the Near East, so this may be a failure of the search rather than a genuine absence. Worth one more attempt. `geonames` is unfilled.
 - **The UNESCO World Heritage documentation has not been consulted**, though it was productive for [Mohenjo-daro](mohenjo-daro.md) and would likely give the site's extent and excavated fraction.
 
 ## Sources
 
+- [Englund 2004](../references/englund-2004.md), for the priority of Susa, de Morgan's methods and the corpus figures
 - [Kelley 2026](../references/kelley-2026.md), for the Proto-Elamite corpus and its distribution between collections
 - [Wikidata Q180773](https://www.wikidata.org/wiki/Q180773)

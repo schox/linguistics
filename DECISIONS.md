@@ -190,3 +190,17 @@ The hand-written list was rejected for the reason the vault rejects any duplicat
 Softening was the better trade here. The conversational check has worked without exception, it happens earlier than a dialog would, and it carries context a yes/no prompt cannot. A dialog would add a click and displace a judgement onto a moment when the decision has already been made.
 
 **Consequence.** Rule 15 now says out loud that nothing will stop you mechanically. That is deliberate: a rule which admits it is unenforced is more likely to be followed than one which implies a safety net that is not there.
+
+## 2026-08-10: The checker verifies STATUS.md's own note count
+
+**Decided.** `scripts/check-vault.py` reads the "The vault currently holds N notes" line in `STATUS.md` and fails if N does not match the number of files it checked.
+
+**Why.** That number was wrong for eight batches. It read 107 while the vault held 132, because every edit meant to update it was a string replacement that matched nothing and returned silently. Nothing noticed, because nothing was looking.
+
+The failure mode is worth naming precisely, since it will recur. An unasserted `str.replace` on a moving target is not an edit, it is a request that may be declined without telling you. The batches that carried these updates asserted on some replacements and not on this one.
+
+`STATUS.md` is the first file an incoming agent reads after `AGENTS.md`. A wrong headline figure there is worse than no figure, because it is quoted onward.
+
+**Rejected.** Removing the number, and generating the whole file. The count earns its place, and generating `STATUS.md` would destroy the judgement in the rest of it.
+
+**Consequence.** Adding a note now fails the build until `STATUS.md` is updated, which is the intended coupling. This is the same principle as the entry on the checker enforcing rather than advising: a figure the vault asserts should be one the vault can check.

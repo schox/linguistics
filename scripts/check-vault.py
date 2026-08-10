@@ -12,6 +12,7 @@ Checks, per markdown file:
   * content notes end with a ## Sources section
   * no Reference note points at Wikipedia (fine as a source in a note,
     never as an entry in the authoritative bibliography)
+  * the note count stated in STATUS.md matches the actual number of notes
   * house style: International English, no em-dashes
 
 Standard library only. Run from anywhere:
@@ -545,6 +546,30 @@ def report(files):
     return 0
 
 
+def status_count(files):
+    """STATUS.md states a note count. Check it against reality.
+
+    Added after that number silently drifted from 107 to 132 across eight
+    batches, because the edits updating it were string replacements that
+    matched nothing and failed quietly. STATUS.md is the first thing an
+    incoming agent reads, so a wrong figure there is worse than none.
+    """
+    path = os.path.join(ROOT, "STATUS.md")
+    if not os.path.exists(path):
+        return []
+    raw = open(path, encoding="utf-8").read()
+    m = re.search(r"The vault currently holds (\d[\d,]*) notes", raw)
+    if not m:
+        return [("STATUS.md", 1,
+                 "no 'The vault currently holds N notes' line to check against")]
+    stated = int(m.group(1).replace(",", ""))
+    if stated != len(files):
+        line = raw[:m.start()].count("\n") + 1
+        return [("STATUS.md", line,
+                 f"states {stated} notes; the vault has {len(files)}")]
+    return []
+
+
 def main():
     quiet = "--quiet" in sys.argv
     vocabs = {a: subfield_vocab(os.path.join(ROOT, p)) for a, p in AREA_INDEX.items()}
@@ -557,6 +582,7 @@ def main():
     problems = []
     for path in files:
         problems.extend(check(path, vocabs, targets))
+    problems.extend(status_count(files))
     for rel, line, msg in problems:
         print(f"{rel}:{line}: {msg}")
     if problems:

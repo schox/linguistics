@@ -25,7 +25,7 @@ That is a deliberate trade. The alternative, resolving every open question as it
 
 1. Every item from `--questions`, triaged: closeable now, blocked, or not worth pursuing.
 2. Bibliographic details marked provisional, especially `Olivier 2007` and `Montecchi 2019`.
-3. Every figure the vault computed rather than quoted, re-derived. The convention requires the working to be shown, so this is checkable.
+3. Every figure the vault computed rather than quoted, re-derived. The convention requires the working to be shown, so this is checkable. **Extend this to figures the vault states about itself**: the STATUS note count drifted silently for eight batches before a check was added for it, and other stated counts (per-area figures, the reference total) are still unchecked.
 4. Facts taken at second hand where the primary source exists, notably everything reaching the vault through Farmer, Sproat and Witzel, Petrolito and colleagues, or a review rather than the book reviewed.
 5. Content retrieved through the Tavily extraction service rather than seen directly. Those notes say so; the audit should confirm the pages still say what was extracted.
 6. Empty identifier fields, distinguishing "not looked up" from "searched and probably absent". The vault has been careful about this distinction and it should be verified.
@@ -44,7 +44,7 @@ Nothing here can be moved by more searching.
 - **Montecchi 2019**, the study of record for the Hagia Triada archive. The Bologna repository returns 403 and failed again through Tavily; the CNR eprints server has a TLS error. This is what would settle the contested tablet count, 147 against Rutter's 168.
 - **Younger's Linear A transcriptions.** The University of Kansas site is gone. A 53-page deposit under his name exists on Academia.edu, last updated 8 April 2024. The vault's Linear A corpus figures descend from the dead site, so confirming they are traceable into the surviving document is the single most valuable outstanding check.
 - **Mahadevan 1977**, an 829-page print memoir, for the per-site distribution of the Indus corpus.
-- **The Cuneiform Digital Library Initiative**, for the Proto-Elamite corpus and its per-site breakdown. Not blocked, simply not yet consulted.
+- **The Cuneiform Digital Library Initiative catalog**, for a per-site breakdown of the proto-Elamite tablets. Its publications have now been used; the searchable catalog has not.
 
 ## Next work, in order
 
@@ -57,7 +57,7 @@ What phase 2 produced, beyond the notes, is a second axis for the whole area, no
 **What follows from the diagnosis, in rough order of value:**
 
 - **Carry the diagnosis back into the seven script notes.** Each still describes its obstacle in its own terms and none says which family it is in. Deliberately deferred while the taxonomy was still moving; it should be reconciled at the audit.
-- **Proto-Elamite is the tractable one.** Diagnosed as blocked by insufficient attention rather than by evidence, with about 1,700 tablets and a digitized subset at the CDLI. Of the seven, it is the one where more work plausibly moves the answer.
+- ~~Proto-Elamite is the tractable one.~~ **Acted on**, 2026-08-10. Englund 2004, free from the CDLI, is now the note's main source and confirms the diagnosis in the author's own words. Still outstanding on it: the chapter was read only to page 103 of 149, and the CDLI catalog itself has not been queried for a per-site breakdown.
 - **The Voynich needs its hypothesis space narrowed before anything else.** It has abundant text and an unbounded candidate set, so no amount of statistical work helps until natural language, cipher, constructed language and hoax are separated. That is what `is-it-writing-at-all.md` is about and the two notes should be joined properly. One batch each, each on *what actually broke it*, which is usually a bilingual, a proper name, or a structural regularity rather than cleverness. Older sources, far more likely to be open access than phase 1's were. Ugarit is needed as a `Place` note here and is already overdue as the sole provenance of the CM3 texts.
 
 **Phase 3, people.** Driven by `check-vault.py --report`, which lists names recurring across two or more notes, that being the inclusion test in `types/person.md` stated mechanically. It currently surfaces Champollion, Rawlinson, Knorozov, Proskouriakoff, Turing, Saussure, al-Kindi and Michael Ventris. Let the vault say who it needs rather than working from a wishlist.

@@ -7,7 +7,7 @@ status: open
 writes:
 found_at:
   - "[[Susa]]"
-corpus_size: c. 1,700 clay tablets from eight or nine sites; several hundred non-numerical signs
+corpus_size: just over 1,600 pieces, c. 10,000 lines of text (Englund); c. 1,700 tablets (Kelley)
 subfield:
   - Unsolved, partial and contested
   - The problem space
@@ -16,8 +16,11 @@ related_to:
   - "[[Indus script]]"
   - "[[Script versus language]]"
   - "[[The evidentiary threshold and unicity distance]]"
+  - "[[Why a script stays unread]]"
+  - "[[What counts as one sign]]"
 cites:
   - "[[Kelley 2026]]"
+  - "[[Englund 2004]]"
 iso15924: Pelm
 iso15924_num: 016
 unicode_block:
@@ -41,11 +44,42 @@ That second point matters for the vault's taxonomy. Reading Proto-Elamite quanti
 
 ## Corpus
 
-About 1,700 clay tablets, from eight or nine excavation sites across Iran. At least 620 are held in Iran's National Museum and more than a thousand in the Louvre and other collections.
+[Englund](../references/englund-2004.md) gives "just over 1,600 pieces, with around 10,000 lines of text"; [Kelley](../references/kelley-2026.md) gives approximately 1,700 tablets. At least 620 are held in Iran's National Museum and more than a thousand in the Louvre and other collections.
 
-That is a large corpus by this area's standards, comfortably above [Linear A](linear-a.md) in document count and in the same range as the [Indus script](indus-script.md) in objects. It is also administrative, which usually helps. What it lacks is a bilingual, a securely identified underlying language, and a descendant script that can be read.
+**Englund makes the comparison this vault would otherwise have had to make for itself.** The proto-Elamite corpus is "about a quarter as many as from Babylonia (still, it represents a large amount of material compared to the relatively humble inscriptions of Linear A or of early Harappan)".
 
-Kelley notes that Proto-Elamite scholarship has been marginal relative to the script's importance, and that recent progress has come from digitizing the corpus and applying computational methods. That is a rare case in this vault of the constraint being attention rather than evidence.
+So the scholar most associated with the corpus, writing about his own material and with no stake in this vault's argument, places it well above [Linear A](linear-a.md) and the [Indus script](indus-script.md). That is as direct a confirmation as the diagnosis in [why a script stays unread](why-scripts-stay-unread.md) is going to get: proto-Elamite is not short of text.
+
+It is also administrative, which usually helps. What it lacks is a bilingual, a securely identified underlying language, and a descendant script that can be read.
+
+## Why it is stuck, in the words of the person best placed to say
+
+The vault diagnosed proto-Elamite as blocked by **insufficient attention** rather than by evidence. Englund says as much, and more bluntly than a secondary source would.
+
+The texts "have played an historically minor role relative to early cuneiform". The publication of tablets "appears to have proceeded with little understanding of the text corpus and the accounting system it represented, and with little attention paid to an accurate representation in hand copies of the texts themselves". Kelley, writing twenty years later, still describes proto-Elamite scholarship as marginal relative to the script's importance.
+
+That last clause of Englund's is the sharpest of the three, and it is an infrastructure failure rather than a shortage of scholars: if the hand copies are unreliable, then the sign forms everyone works from are unreliable, and no amount of subsequent analysis repairs that. Compare the print-only corpus problem on [Linear A](linear-a.md). Both are cases where the evidence exists and the usable version of it does not.
+
+## A sign list that ran from 5,500 to under 400
+
+Englund records the history, and the spread is the widest in the vault.
+
+- **Mecquenem (1949)**: a final list of "upwards of 5,500 signs", containing large numbers of sign variants.
+- **Meriggi (1971-1974)**: grouped presumed variants under discrete headings "and so arrived at a total of less than 400".
+
+A factor of roughly fourteen, on one corpus, from a decision about what counts as a variant. The [Indus script](indus-script.md)'s well-known spread of 20 to 676 is narrower. See [what counts as one sign](segmentation-and-transcription.md).
+
+This also explains why the vault could not state a sign count earlier and why Kelley says only "several hundred non-numerical signs".
+
+## The first archaic Near Eastern script known to anyone
+
+Englund records a fact that reframes the neglect. The late nineteenth and early twentieth century French excavations at [Susa](../places/susa.md) "made that script the first archaic Near Eastern writing system known to us", a quarter of a century before the British and American excavators of Jemdet Nasr and the Germans at Uruk found their proto-cuneiform tablets.
+
+Proto-Elamite was not overlooked because it turned up late. It was there first and was overtaken.
+
+He is also unsparing about how it was recovered: de Morgan's "archaeological earth-moving machine" sent examples to the Louvre. That single phrase accounts for both the Louvre holdings recorded on the [Susa](../places/susa.md) note and for a good deal of what is not known about the material's context.
+
+**The name is a convention, not a finding.** The script is "based on a presumed genetic relationship to texts of the later-attested Elamite-speaking peoples of the Susiana plain" and "has been only conventionally named proto-Elamite". That is why `writes` is empty here.
 
 ## Not Linear Elamite
 
@@ -63,14 +97,16 @@ Neither script has an ISO 15924 code beyond Proto-Elamite's own: Linear Elamite 
 
 ## Open questions
 
-- **The volume has not been read.** Everything above comes from the publisher's abstract and landing page for [Kelley 2026](../references/kelley-2026.md). For a note whose whole point is a careful distinction about what "partly deciphered" means, that is thin, and the Element is short enough to read properly.
+- **Kelley 2026 has still not been read**, being paywalled. Englund now carries most of this note, so the dependence on an abstract is much reduced, but the two are twenty years apart and Kelley is the current statement of the field.
 - **`class: mixed` is an inference.** A system with understood numerical notation plus several hundred ideographic signs is not an alphabet, abjad, abugida or syllabary, and `mixed` is the closest value in the vault's enum. No source read here classifies it in those terms.
-- **The eight or nine sites are unnamed here.** Only Susa is recorded under `found_at`. Kelley gives a count and not, on the landing page, a list. Tepe Yahya and Tal-i Malyan are commonly associated with Proto-Elamite in general literature but were not confirmed from a source read.
-- **The Cuneiform Digital Library Initiative holds a digitized subset** and is the obvious next source, both for a per-site breakdown and for the corpus itself. It has not been consulted.
+- **The findspots are now partly known and still not counted.** Englund's map of sites with proto-Elamite tablets appears to mark Susa, Sialk, Malyan, Tepe Yahya, Shahr-i Sokhta and Ozbaki. That was read from a figure rather than from prose, and no per-site tablet counts are given, so `found_at` still lists Susa alone.
+- ~~The Cuneiform Digital Library Initiative has not been consulted.~~ Its holdings supplied [Englund 2004](../references/englund-2004.md). The catalog itself has still not been queried for a per-site breakdown, which is what would close the question above.
+- **Englund's chapter was read only to page 103 of 149.** The sign-list analysis, the accounting systems and the decipherment attempts are all in the part not read.
 
 ## Sources
 
-- [Kelley 2026](../references/kelley-2026.md), *Proto-Elamite: Writing and Society in Early Iran*, for the corpus size, dating, sign inventory and decipherment status
+- [Englund 2004](../references/englund-2004.md), for the corpus figures, the sign-list history, the findspots, the priority of Susa and the assessment of the field
+- [Kelley 2026](../references/kelley-2026.md), *Proto-Elamite: Writing and Society in Early Iran*, for the dating and the current decipherment status
 - [Farmer, Sproat and Witzel 2004](../references/farmer-sproat-witzel-2004.md), for the Linear Elamite comparison
 - [ISO 15924](../references/iso15924.md), for `Pelm` 016 and the absence of Linear Elamite, verified against the Unicode Consortium code list
 - [Unicode block data](https://www.unicode.org/Public/UNIDATA/Blocks.txt), checked and containing no Proto-Elamite or Elamite block

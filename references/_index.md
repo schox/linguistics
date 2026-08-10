@@ -42,6 +42,7 @@ See `_data-sources.md` for how the vault relates to these.
 - [Dalby 2019](dalby-2019.md), the Rosetta Stone
 - [Day 2002](day-2002.md), the Ugaritic decipherment
 - [Donnelly 2025](donnelly-2025.md), Cypro-Minoan
+- [Englund 2004](englund-2004.md), proto-Elamite
 - [Farmer, Sproat and Witzel 2004](farmer-sproat-witzel-2004.md)
 - [Kasiski 1863](kasiski-1863.md)
 - [Kelley 2026](kelley-2026.md), Proto-Elamite
