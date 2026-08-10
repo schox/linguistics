@@ -30,6 +30,7 @@ See the inclusion test in `types/place.md`. Not every university anyone attended
 - [Susa](susa.md), Khuzestan, principal provenance of the Proto-Elamite tablets
 - [Rosetta](rosetta.md), Nile Delta, findspot of the Rosetta Stone and a reminder that a findspot is not a provenance
 - [Behistun](behistun.md), Kermanshah, where the constraint was physical access rather than survival
+- [Piedras Negras](piedras-negras.md), Petén, where the decisive property was the order of the monuments
 
 ## Regions
 

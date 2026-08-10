@@ -13,6 +13,7 @@ related_to:
   - "[[Linear A]]"
   - "[[Cypro-Minoan]]"
   - "[[Voynich manuscript]]"
+  - "[[Mayan hieroglyphs]]"
 cites:
   - "[[Farmer, Sproat and Witzel 2004]]"
   - "[[Yadav et al. 2009]]"
@@ -92,8 +93,21 @@ The vault has verified which of these scripts have Unicode blocks. Setting that 
 | Rongorongo | **no** | Barthel 1958, with compounds unresolved |
 | [Proto-Elamite](proto-elamite.md) | **no** | several hundred signs, not settled here |
 | Voynich | **no** | transcription alphabets only |
+| [Mayan hieroglyphs](maya-script.md) | **no** | deciphered, and still no agreed encodable unit |
 
-**This is the vault's own inference and not a sourced claim.** The tempting reading is that encoding requires a settled sign list, and the Indus script is the counterexample that makes it interesting: Mahadevan's 417 signs are a de facto standard that both camps in a bitter dispute rely on, and there is still no block. What that suggests is that a standards body needs more than agreement among researchers about the inventory; it needs the corpus's status as writing not to be in dispute. Encoding is a claim about what a thing is, not only about how to count it.
+**This is the vault's own inference and not a sourced claim.** The tempting reading is that encoding requires a settled sign list, and the Indus script is the counterexample that makes it interesting: Mahadevan's 417 signs are a de facto standard that both camps in a bitter dispute rely on, and there is still no block. What that suggests is that a standards body needs more than agreement among researchers about the inventory; it needs the corpus's status as writing not to be in dispute.
+
+### The inference was too strong, and Maya breaks it
+
+Added 2026-08-10, after the batch on [Mayan hieroglyphs](maya-script.md).
+
+Maya is **deciphered** and **unencoded**. It has an ISO 15924 code, `Maya` 090, whose Unicode alias column is empty, and the only related Unicode block is Mayan Numerals at U+1D2E0-U+1D2FF. There is no block for the script.
+
+That is fatal to any reading of the table above in which decipherment produces encoding. Decipherment is necessary and it is plainly not sufficient.
+
+What Maya suggests instead is that the two problems come apart. Knowing what a sign *means* does not tell you what the encodable *unit* is. Maya signs combine into glyph blocks, with infixing, conflation and heavy calligraphic variation, so a reader can understand a text perfectly while the question "how many characters is that" remains genuinely open. Egyptian, Cuneiform, Linear A and Cypro-Minoan all have relatively flat sign sequences and all have blocks; Maya composes in two dimensions and does not.
+
+So the honest version of the observation is narrower: **encoding requires a settled answer to the segmentation question, and decipherment is one route to that answer but not the only one and not a guaranteed one.** The Phaistos Disc got there without decipherment, because stamps fixed the units physically. Maya has not got there with decipherment, because meaning was never the hard part of its segmentation.
 
 ## Open questions
 

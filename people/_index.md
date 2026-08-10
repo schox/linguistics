@@ -20,7 +20,9 @@ See the inclusion test in `types/person.md`. Authorship of a cited paper is not 
 - [Jean-François Champollion](champollion.md), Decipherment
 - [Henry Creswicke Rawlinson](rawlinson.md), Decipherment
 - [Edward Hincks](hincks.md), Decipherment
+- [Yuri Knorozov](knorozov.md), Decipherment
+- [Tatiana Proskouriakoff](proskouriakoff.md), Decipherment
 
 ## Obvious gaps
 
-Thomas Young (now clearly earned, see [Champollion](champollion.md)), Rawlinson, Ventris, Knorozov, Proskouriakoff, Barber, al-Kindi, Friedman (William and Elizebeth), Turing, Kerckhoffs, Saussure, Chomsky, Knuth, Backus, McCarthy, Hopper, Iverson, Diffie and Hellman, Rivest, Shamir and Adleman.
+Thomas Young (now clearly earned, see [Champollion](champollion.md)), Ventris, Barber, al-Kindi, Friedman (William and Elizebeth), Turing, Kerckhoffs, Saussure, Chomsky, Knuth, Backus, McCarthy, Hopper, Iverson, Diffie and Hellman, Rivest, Shamir and Adleman.

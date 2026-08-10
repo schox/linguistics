@@ -145,6 +145,7 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 ## Notes
 
 - [Akkadian](akkadian.md) †, Afro-Asiatic / Semitic
+- [Classic Maya](classic-maya.md) †, Mayan / Ch'olan
 - [Egyptian](egyptian.md) †, Afro-Asiatic / Egyptian
 - [Etruscan](etruscan.md) †, Tyrsenian
 - [Mycenaean Greek](mycenaean-greek.md) †, Indo-European / Hellenic

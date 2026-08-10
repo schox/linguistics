@@ -49,6 +49,7 @@ See `_data-sources.md` for how the vault relates to these.
 - [McCarthy 1960](mccarthy-1960.md)
 - [Montecchi 2019](montecchi-2019.md)
 - [Petrolito et al. 2015](petrolito-et-al-2015.md)
+- [Proskouriakoff 1960](proskouriakoff-1960.md), the Maya historical hypothesis
 - [Rao et al. 2009](rao-2009.md)
 - [Rao et al. 2010](rao-2010.md)
 - [Salgarella 2025](salgarella-2025.md), Linear A
