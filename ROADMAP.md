@@ -48,7 +48,7 @@ Nothing here can be moved by more searching.
 
 ## Next work, in order
 
-**Phase 2, the solved decipherments.** Egyptian hieroglyphs, cuneiform, Maya glyphs, Ugaritic. One batch each, each on *what actually broke it*, which is usually a bilingual, a proper name, or a structural regularity rather than cleverness. Older sources, far more likely to be open access than phase 1's were. Ugarit is needed as a `Place` note here and is already overdue as the sole provenance of the CM3 texts.
+**Phase 2, the solved decipherments.** ~~Egyptian hieroglyphs~~ done 2026-08-10; then cuneiform, Maya glyphs, Ugaritic. One batch each, each on *what actually broke it*, which is usually a bilingual, a proper name, or a structural regularity rather than cleverness. Older sources, far more likely to be open access than phase 1's were. Ugarit is needed as a `Place` note here and is already overdue as the sole provenance of the CM3 texts.
 
 **Phase 3, people.** Driven by `check-vault.py --report`, which lists names recurring across two or more notes, that being the inclusion test in `types/person.md` stated mechanically. It currently surfaces Champollion, Rawlinson, Knorozov, Proskouriakoff, Turing, Saussure, al-Kindi and Michael Ventris. Let the vault say who it needs rather than working from a wishlist.
 
@@ -58,6 +58,9 @@ Nothing here can be moved by more searching.
 
 - **Linear Elamite** deserves a note. It is not Proto-Elamite, and `Decipherment/proto-elamite.md` states the distinction. Its 21 or 22 inscriptions, most longer than the longest of 4,000 to 5,000 Indus texts, are the cleanest demonstration in the vault that corpus volume and text length are independent variables. No ISO 15924 code, no Unicode block.
 - **A `Language` note for Rapanui.** A real, living, attested language currently mentioned only as an appendage to a script, and the vault's first Austronesian entry.
+- **Thomas Young now clearly earns a `Person` note.** He meets two limbs of the inclusion test: discussed in two or more notes, and bridging areas, since the same man worked on optics and physiology. The credit dispute with Champollion is recorded in `people/champollion.md` and would be better balanced by a note of his own.
+- **Coptic, and the Coptic alphabet.** `Copt` 204, blocks U+2C80-U+2CFF and U+102E0-U+102FF, both verified. Whether Coptic is a stage of Egyptian or a language in its own right decides whether that is one note or two.
+- **Hieratic (`Egyh` 060) and demotic (`Egyd` 070)** have codes and no notes, and demotic is a third of the Rosetta Stone.
 - **Cretan Hieroglyphic**, the third Aegean script of the period and the natural comparison for both Linear A and the Phaistos Disc. Mnamon covers it.
 - **The `wikidata` sweep.** High value as the universal join key, and **not** the cheap job it looks: a Q-number is the most fabricable string in the vault, so it needs real lookups rather than recall.
 - **Two junction notes** still unwritten at the foot of `_junctions.md`, plus a third added after batch 4: corpus destruction as a historical event rather than an accident, which rongorongo showed the existing framing does not cover.

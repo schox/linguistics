@@ -28,7 +28,7 @@ Enkomi was a center of the copper trade, which is the likely reason a script tra
 
 ## Alashiya
 
-Enkomi is commonly identified with Alashiya, the Bronze Age polity known from Egyptian, Hittite and Ugaritic correspondence. The identification of Cyprus with Alashiya is widely accepted; whether Enkomi specifically was its capital has been questioned by more recent work.
+Enkomi is commonly identified with Alashiya, the Bronze Age polity known from [Egyptian](../Human-Languages/egyptian.md), Hittite and Ugaritic correspondence. The identification of Cyprus with Alashiya is widely accepted; whether Enkomi specifically was its capital has been questioned by more recent work.
 
 This matters to the vault for a specific reason rather than as background. If Enkomi is a place named in the archives of literate neighbors, then external documents refer to it in languages we read, which is the situation that has repeatedly produced decipherments elsewhere by supplying proper names. It has not done so here.
 

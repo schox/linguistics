@@ -17,7 +17,8 @@ See the inclusion test in `types/person.md`. Authorship of a cited paper is not 
 - [Alice Kober](alice-kober.md), Decipherment
 - [John Chadwick](john-chadwick.md), Decipherment and Cryptography
 - [Claude Shannon](claude-shannon.md), Cryptography and Computational linguistics
+- [Jean-François Champollion](champollion.md), Decipherment
 
 ## Obvious gaps
 
-Champollion, Rawlinson, Ventris, Knorozov, Proskouriakoff, Barber, al-Kindi, Friedman (William and Elizebeth), Turing, Kerckhoffs, Saussure, Chomsky, Knuth, Backus, McCarthy, Hopper, Iverson, Diffie and Hellman, Rivest, Shamir and Adleman.
+Thomas Young (now clearly earned, see [Champollion](champollion.md)), Rawlinson, Ventris, Knorozov, Proskouriakoff, Barber, al-Kindi, Friedman (William and Elizebeth), Turing, Kerckhoffs, Saussure, Chomsky, Knuth, Backus, McCarthy, Hopper, Iverson, Diffie and Hellman, Rivest, Shamir and Adleman.

@@ -28,6 +28,7 @@ See the inclusion test in `types/place.md`. Not every university anyone attended
 - [Phaistos](phaistos.md), Crete, provenance of exactly one object in its script
 - [Enkomi](enkomi.md), Cyprus, principal provenance of the Cypro-Minoan tablets
 - [Susa](susa.md), Khuzestan, principal provenance of the Proto-Elamite tablets
+- [Rosetta](rosetta.md), Nile Delta, findspot of the Rosetta Stone and a reminder that a findspot is not a provenance
 
 ## Regions
 
@@ -35,5 +36,5 @@ See the inclusion test in `types/place.md`. Not every university anyone attended
 
 ## Obvious gaps
 
-Sites: Ugarit (now overdue, since it is the sole provenance of the CM3 texts as well as the Ugaritic material), Pylos, Behistun, Rosetta, Amarna, Nineveh (Ashurbanipal's library), Ebla, Boghazköy, Chania, Dholavira, Maroni, Palaepaphos.
+Sites: Ugarit (now overdue, since it is the sole provenance of the CM3 texts as well as the Ugaritic material), Pylos, Behistun, Sais, Amarna, Nineveh (Ashurbanipal's library), Ebla, Boghazköy, Chania, Dholavira, Maroni, Palaepaphos.
 Institutions: the British School at Athens, Cambridge Faculty of Classics, MIT, Bell Labs, Riverbank Laboratories, GCHQ, the Ashmolean.

@@ -19,7 +19,7 @@ Controlled vocabulary for the `subfield` field on notes in this area.
    - *Different script, different language*: Ugaritic to Old Hebrew; Phoenician to Ugaritic. Tractable where a related known language exists.
    - *Same script, different language*: Luvian and Hittite.
    - *Neither known*: Indus, [Rongorongo](rongorongo.md). No established method exists for this case.
-2. **Solved decipherments**: Egyptian hieroglyphs (Young, Champollion, the Rosetta Stone), cuneiform (Grotefend, Rawlinson, Behistun), Old Persian, Linear B (Kober's triplets, Ventris, Chadwick), Maya glyphs (Knorozov, Proskouriakoff, and the long resistance to a phonetic reading), Hittite, Ugaritic, Carian. Each worth a note on what actually broke it, which is usually a bilingual, a proper name, or a structural regularity rather than raw cleverness.
+2. **Solved decipherments**: [Egyptian hieroglyphs](egyptian-hieroglyphs.md) (Young, [Champollion](../people/champollion.md), the [Rosetta](../places/rosetta.md) Stone), cuneiform (Grotefend, Rawlinson, Behistun), Old Persian, Linear B (Kober's triplets, Ventris, Chadwick), Maya glyphs (Knorozov, Proskouriakoff, and the long resistance to a phonetic reading), Hittite, Ugaritic, Carian. Each worth a note on what actually broke it, which is usually a bilingual, a proper name, or a structural regularity rather than raw cleverness.
 3. **Unsolved, partial and contested**: Linear A, the Indus script, Rongorongo, [Proto-Elamite](proto-elamite.md), Cypro-Minoan, the Phaistos Disc, Isthmian and Olmec, the Rohonc Codex, the [Voynich manuscript](voynich-manuscript.md). Also Etruscan, readable but not understood, which demonstrates that script and language are genuinely separate problems.
 4. **Manual method**: frequency and positional analysis, sign inventories and how you count them, Kober's triplets and the detection of inflection, Ventris's grid, name-hunting (cartouches, royal names, toponyms), archaeological and iconographic context, bilinguals and quasi-bilinguals, and the fact that most early writing is administrative, which constrains the content you can expect to find.
 5. **Computational method**, which splits three ways. Popular coverage collapses them, so hold the distinction firmly:
@@ -56,6 +56,7 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 
 ## Scripts
 
+- [Egyptian hieroglyphs](egyptian-hieroglyphs.md), deciphered, and the case every later decipherment is measured against
 - [Linear B](linear-b.md), deciphered
 - [Linear A](linear-a.md), undeciphered, and the corpus-size case in its clearest form
 - [Indus script](indus-script.md), undeciphered, and disputed as to whether it is writing at all
