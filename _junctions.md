@@ -16,7 +16,7 @@ Folders cannot express this, since each note lives in one folder but belongs to 
 - [The evidentiary threshold and unicity distance](Decipherment/evidentiary-threshold-and-unicity-distance.md). Shannon and Barber reached the same underdetermination result independently. The flagship link.
 - [Adversarial versus accidental encipherment](Decipherment/adversarial-versus-accidental.md). Why the statistical apparatus transfers and the adversarial apparatus does not.
 - [Frequency analysis](Decipherment/frequency-analysis.md). One technique, three literatures, from al-Kindi to Kober.
-- [Is it writing at all? The Indus entropy debate](Decipherment/is-it-writing-at-all.md). Entropy and information content as a test of well-posedness.
+- [Is it writing at all? The Indus entropy debate](Decipherment/is-it-writing-at-all.md). Entropy and information content as a test of well-posedness, and now the argument that well-posedness and corpus size are two terms of one expression rather than two problems.
 
 ## Linguistics and Decipherment
 
