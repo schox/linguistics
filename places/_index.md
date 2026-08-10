@@ -23,8 +23,10 @@ See the inclusion test in `types/place.md`. Not every university anyone attended
 
 - [Knossos](knossos.md), Crete, provenance of the Linear B tablets
 - [Hagia Triada](hagia-triada.md), Crete, provenance of the largest Linear A archive
+- [Harappa](harappa.md), Punjab, type-site of the Indus civilization
+- [Mohenjo-daro](mohenjo-daro.md), Sindh, and the argument from what excavation did not find
 
 ## Obvious gaps
 
-Sites: Pylos, Ugarit, Behistun, Rosetta, Mohenjo-daro and Harappa, Amarna, Nineveh (Ashurbanipal's library), Ebla, Boghazköy, Chania.
+Sites: Pylos, Ugarit, Behistun, Rosetta, Amarna, Nineveh (Ashurbanipal's library), Ebla, Boghazköy, Chania, Dholavira.
 Institutions: the British School at Athens, Cambridge Faculty of Classics, MIT, Bell Labs, Riverbank Laboratories, GCHQ, the Ashmolean.

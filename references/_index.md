@@ -21,6 +21,7 @@ See `_data-sources.md` for how the vault relates to these.
 - [HOPL](hopl.md)
 - [ISO 15924](iso15924.md)
 - [Language Lineage](languagelineage.md)
+- [Mahadevan 1977](mahadevan-1977.md), the Indus concordance both camps use
 - [Rutter, Aegean Prehistoric Archaeology](rutter-aegean-prehistory.md)
 - [Salgarella and Castellan 2020](salgarella-castellan-2020.md), SigLA
 - [WALS Online](wals-2013.md)
@@ -38,6 +39,9 @@ See `_data-sources.md` for how the vault relates to these.
 - [Montecchi 2019](montecchi-2019.md)
 - [Petrolito et al. 2015](petrolito-et-al-2015.md)
 - [Rao et al. 2009](rao-2009.md)
+- [Rao et al. 2010](rao-2010.md)
 - [Shannon 1949](shannon-1949.md)
+- [Sproat 2010](sproat-2010.md)
 - [Tamburini 2025](tamburini-2025.md)
 - [Ventris and Chadwick 1953](ventris-chadwick-1953.md)
+- [Yadav et al. 2009](yadav-et-al-2009.md)

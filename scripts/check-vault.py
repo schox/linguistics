@@ -49,7 +49,8 @@ PROTECTED = [
 BRITISH = re.compile(
     r"\w*(?:organis|recognis|standardis|formalis|generalis|visualis|industrialis|"
     r"mechanis|minimis|characteris|normalis|specialis|analys|romanis|optimis|"
-    r"summaris|utilis|prioritis|categoris|emphasis|apologis)"
+    r"summaris|utilis|prioritis|categoris|emphasis|apologis|civilis|hypothesis"
+    r"|criticis|systematis|theoris|synthesis)"
     r"(?:e|es|ed|ing|ation|ations)\b"
     r"|\b(?:catalogu(?:e|es|ed|ing)|programme|programmes|licence|licences|"
     r"centre|centres|colour|colours|coloured|behaviour|behaviours|behavioural|"

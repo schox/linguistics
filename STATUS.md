@@ -11,7 +11,7 @@ Where the project is up to, as at 2026-08-09. Update this when the picture chang
 
 The structure is complete and enforced. Five areas, thirteen note types plus `Type` itself, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
 
-The vault currently holds 79 notes. That is a skeleton with a good spine, not a body of research.
+The vault currently holds 86 notes. That is a skeleton with a good spine, not a body of research.
 
 Content is now being added in **batches**, one commit per closure set: an anchor note plus every note it must link for the checker to pass, plus the index updates and this file. See the batching plan below and the entry on sweeps in `DECISIONS.md`.
 
@@ -23,7 +23,7 @@ Content. The areas hold their taxonomy and a handful of exemplars, nothing more:
 - **Human Languages**: 2 notes (Etruscan, Mycenaean Greek). The genealogy is mapped to branch level and almost entirely unpopulated.
 - **Computer Languages**: 1 note (Lisp).
 - **Cryptography**: 3 notes (Vigenère, and two methods).
-- **Decipherment**: the most developed area, 9 notes, because it carries the vault's argument.
+- **Decipherment**: the most developed area, 10 notes, because it carries the vault's argument.
 
 ## The batching plan
 
@@ -32,9 +32,11 @@ Agreed with Andrew on 2026-08-09. Argument-first rather than coverage-first: not
 **Phase 1, the undeciphered scripts.** Each with ISO 15924 code, Unicode block, `corpus_size` and `found_at`. Corpus size is the variable the whole Decipherment argument turns on.
 
 1. ~~Linear A, with Hagia Triada~~ **done**, 2026-08-09.
-2. The Indus script, with Mohenjo-daro and Harappa. Two references already exist and it feeds `is-it-writing-at-all.md`.
+2. ~~The Indus script, with Mohenjo-daro and Harappa~~ **done**, 2026-08-10.
 3. Cypro-Minoan (`Cpmn`, 402) and the Phaistos Disc, with Enkomi and Phaistos.
 4. Rongorongo (`Roro`, 620), Proto-Elamite (`Pelm`, 016) and the Voynich, with Rapa Nui and Susa.
+
+Note for batch 4: **Linear Elamite is not Proto-Elamite.** They are distinct scripts and the vault must not merge them. Farmer, Sproat and Witzel use Linear Elamite as a comparison case for the Indus corpus, and it is worth a note of its own: 21 or 22 known inscriptions, most longer than the longest Indus text, which is the cleanest demonstration that corpus volume and text length are independent variables.
 
 **Phase 2, the solved decipherments.** Egyptian hieroglyphs, cuneiform, Maya glyphs, Ugaritic. One batch each, each worth a note on *what actually broke it*, usually a bilingual, a proper name, or a structural regularity.
 
@@ -51,6 +53,17 @@ Verified while writing batch 1, so later batches need not re-derive them:
 - ISO 15924, from the Unicode Consortium code list: Linear A `Lina` 400, Linear B `Linb` 401, Cypro-Minoan `Cpmn` 402, Indus `Inds` 610, Rongorongo `Roro` 620, Proto-Elamite `Pelm` 016.
 - **The Phaistos Disc has no ISO 15924 code at all.** That is a genuine gap in the registry, not an oversight in this vault, and batch 3 has to say so rather than leave the field looking unfilled.
 - Unicode blocks: Linear A U+10600-U+1077F, Linear B Syllabary U+10000-U+1007F, Linear B Ideograms U+10080-U+100FF, Aegean Numbers U+10100-U+1013F, Cypro-Minoan U+12F90-U+12FFF.
+- **The Indus script has no Unicode block**, checked against `Blocks.txt`. Encoding presupposes an agreed sign list, which is the thing in dispute.
+- Mean signs per document, for the comparison the vault's argument rests on: Indus 4.6 (sourced), Linear A c. 5.2 and Linear B at most c. 12.5 (both computed here, and the Linear B figure is an upper bound). Later batches should extend this table and keep marking which figures are sourced and which are derived.
+
+## Sources that were unreachable
+
+Recorded so the fact-checking service can retry them rather than each batch rediscovering the block. All as at 2026-08-09/10.
+
+- `people.ku.edu` (Younger's Linear A transcriptions): host did not resolve.
+- Pleiades: bot detection. Blocks every `pleiades` identifier.
+- Britannica, UNESCO World Heritage, harappa.com: HTTP 403. Blocked the excavation histories in `places/harappa.md` and `places/mohenjo-daro.md`.
+- CNR eprints (TLS error) and University of Bologna repository (403), both for Montecchi 2019.
 
 ## Known limitations
 
