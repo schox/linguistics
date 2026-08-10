@@ -27,6 +27,11 @@ See the inclusion test in `types/place.md`. Not every university anyone attended
 - [Mohenjo-daro](mohenjo-daro.md), Sindh, and the argument from what excavation did not find
 - [Phaistos](phaistos.md), Crete, provenance of exactly one object in its script
 - [Enkomi](enkomi.md), Cyprus, principal provenance of the Cypro-Minoan tablets
+- [Susa](susa.md), Khuzestan, principal provenance of the Proto-Elamite tablets
+
+## Regions
+
+- [Rapa Nui](rapa-nui.md), sole provenance of rongorongo, and the one place here that matters for what happened to the people rather than for what was excavated
 
 ## Obvious gaps
 

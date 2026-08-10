@@ -11,7 +11,7 @@ Where the project is up to, as at 2026-08-09. Update this when the picture chang
 
 The structure is complete and enforced. Five areas, thirteen note types plus `Type` itself, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
 
-The vault currently holds 96 notes. That is a skeleton with a good spine, not a body of research.
+The vault currently holds 104 notes. That is a skeleton with a good spine, not a body of research.
 
 Content is now being added in **batches**, one commit per closure set: an anchor note plus every note it must link for the checker to pass, plus the index updates and this file. See the batching plan below and the entry on sweeps in `DECISIONS.md`.
 
@@ -23,7 +23,7 @@ Content. The areas hold their taxonomy and a handful of exemplars, nothing more:
 - **Human Languages**: 2 notes (Etruscan, Mycenaean Greek). The genealogy is mapped to branch level and almost entirely unpopulated.
 - **Computer Languages**: 1 note (Lisp).
 - **Cryptography**: 3 notes (Vigenère, and two methods).
-- **Decipherment**: the most developed area, 12 notes, because it carries the vault's argument.
+- **Decipherment**: the most developed area, 15 notes, because it carries the vault's argument.
 
 ## The batching plan
 
@@ -34,9 +34,17 @@ Agreed with Andrew on 2026-08-09. Argument-first rather than coverage-first: not
 1. ~~Linear A, with Hagia Triada~~ **done**, 2026-08-09.
 2. ~~The Indus script, with Mohenjo-daro and Harappa~~ **done**, 2026-08-10.
 3. ~~Cypro-Minoan and the Phaistos Disc, with Enkomi and Phaistos~~ **done**, 2026-08-10.
-4. Rongorongo (`Roro`, 620), Proto-Elamite (`Pelm`, 016) and the Voynich, with Rapa Nui and Susa.
+4. ~~Rongorongo, Proto-Elamite and the Voynich, with Rapa Nui and Susa~~ **done**, 2026-08-10. **Phase 1 complete.**
 
-Note for batch 4: **Linear Elamite is not Proto-Elamite.** They are distinct scripts and the vault must not merge them. Farmer, Sproat and Witzel use Linear Elamite as a comparison case for the Indus corpus, and it is worth a note of its own: 21 or 22 known inscriptions, most longer than the longest Indus text, which is the cleanest demonstration that corpus volume and text length are independent variables.
+**Linear Elamite still has no note**, and now clearly deserves one. It is not Proto-Elamite; `Decipherment/proto-elamite.md` states the distinction. Its 21 or 22 inscriptions, most longer than the longest of 4,000-5,000 Indus texts, are the cleanest demonstration in the vault that corpus volume and text length are independent variables. It has no ISO 15924 code and no Unicode block.
+
+## Highest-value work now that phase 1 is done
+
+Beyond phases 2 to 4 below, three things surfaced repeatedly across the four script batches and are worth doing on their own:
+
+1. **A note on segmentation and transcription.** Every undeciphered script in the vault has the same problem in a different costume: Indus sign counts run 417 to 676 depending on variant-splitting, rongorongo has 120 bases fusing into hundreds of compounds, Cypro-Minoan may be one script or three, and every Voynich statistic depends on a transcription alphabet. This is a single methodological issue and it currently sits scattered across five notes as an open question. It is a junction note waiting to be written.
+2. **Read the two Cambridge Elements volumes.** Kelley on Proto-Elamite and Salgarella on Linear A are both short, current, and would close a dozen open questions between them. Both are cited unread.
+3. **`Language` notes for Rapanui and a `Place` note for Ugarit.** Rapanui is a real living language currently mentioned only as an appendage to a script. Ugarit is the sole provenance of the CM3 texts and will be needed again for Ugaritic in phase 2.
 
 **Phase 2, the solved decipherments.** Egyptian hieroglyphs, cuneiform, Maya glyphs, Ugaritic. One batch each, each worth a note on *what actually broke it*, usually a bilingual, a proper name, or a structural regularity.
 
@@ -69,8 +77,8 @@ Recorded so the fact-checking service can retry them rather than each batch redi
 
 ## Resources found but not yet used
 
-- **Salgarella, *Writing in Bronze Age Crete: Linear A*** (Cambridge Elements, "Writing the World" series). A recent single-volume overview of Linear A signs and inscribed objects in archaeological context, by the author of SigLA. The obvious next reference for Linear A; bibliographic details not yet verified.
-- **Mnamon**, Scuola Normale Superiore, "Ancient writing systems in the Mediterranean: a critical guide to electronic resources" (`mnamon.sns.it`), with a DOI and ISBN. A curated scholarly guide covering Linear A, Cypro-Minoan and others. Likely useful for batch 3.
+- **Salgarella, *Writing in Bronze Age Crete: Linear A*** (Cambridge Elements, *Writing in the Ancient World* series, the same series as [Kelley 2026](references/kelley-2026.md)). A recent single-volume overview of Linear A signs and inscribed objects in archaeological context, by the author of SigLA. The obvious next reference for Linear A; bibliographic details not yet verified.
+- **Mnamon**, Scuola Normale Superiore, "Ancient writing systems in the Mediterranean: a critical guide to electronic resources" (`mnamon.sns.it`), with a DOI and ISBN. A curated scholarly guide covering Linear A, Cypro-Minoan, the Phaistos Disc and others. Used in batch 3 and now a Reference note.
 
 ## Known limitations
 

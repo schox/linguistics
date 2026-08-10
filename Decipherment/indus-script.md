@@ -62,7 +62,7 @@ Set against the vault's other scripts, using each source's own totals:
 
 The pattern it shows is worth the caveats. The two undeciphered scripts have texts averaging around five signs; the deciphered one has texts more than twice as long. Corpus size alone does not separate them, since the Indus corpus has nearly twice Linear A's sign occurrences and is still unread.
 
-Farmer, Sproat and Witzel press this further with a comparison the vault should keep: only 21 or possibly 22 Linear Elamite inscriptions are known, "most of them are longer than the longest of the known 4-5,000 Indus inscriptions". A corpus two hundred times smaller can contain longer texts. Length and volume are independent variables, and the evidentiary threshold depends on both. (Linear Elamite is not Proto-Elamite; they are distinct scripts and the vault should not merge them when Proto-Elamite is written.)
+Farmer, Sproat and Witzel press this further with a comparison the vault should keep: only 21 or possibly 22 Linear Elamite inscriptions are known, "most of them are longer than the longest of the known 4-5,000 Indus inscriptions". A corpus two hundred times smaller can contain longer texts. Length and volume are independent variables, and the evidentiary threshold depends on both. (Linear Elamite is not [Proto-Elamite](proto-elamite.md); they are distinct scripts and the vault should not merge them when Proto-Elamite is written.)
 
 ## The sign inventory, and why counts differ
 

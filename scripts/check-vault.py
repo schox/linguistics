@@ -42,6 +42,7 @@ PROTECTED = [
     "Research Organization Registry",
     "Association for Computational Linguistics",
     "UNESCO World Heritage Centre",          # the body is named this
+    "Easter Island Artefacts",               # Berthin 2024, title
 ]
 
 # Stems are matched WITHOUT a leading \b so prefixed forms are caught too

@@ -21,6 +21,7 @@ See `_data-sources.md` for how the vault relates to these.
 - [HOPL](hopl.md)
 - [ISO 15924](iso15924.md)
 - [Language Lineage](languagelineage.md)
+- [Beinecke MS 408](beinecke-ms-408.md), the Voynich manuscript catalog record
 - [Ferrara 2013](ferrara-2013.md), the Cypro-Minoan corpus
 - [Heraklion Archaeological Museum, the Phaistos Disc](heraklion-museum-phaistos-disc.md)
 - [Mahadevan 1977](mahadevan-1977.md), the Indus concordance both camps use
@@ -36,6 +37,8 @@ See `_data-sources.md` for how the vault relates to these.
 
 - [Assael et al. 2022 (Ithaca)](assael-2022.md)
 - [Barber 1974](barber-1974.md)
+- [Berthin 2024](berthin-2024.md)
+- [Kelley 2026](kelley-2026.md), Proto-Elamite
 - [Chadwick 1958](chadwick-1958.md)
 - [Kasiski 1863](kasiski-1863.md)
 - [Farmer, Sproat and Witzel 2004](farmer-sproat-witzel-2004.md)

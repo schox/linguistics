@@ -18,9 +18,9 @@ Controlled vocabulary for the `subfield` field on notes in this area.
    - *Different script, same language*: Linear B to Mycenaean Greek; the Cypriot syllabary to Arcadocypriot Greek. The tractable case.
    - *Different script, different language*: Ugaritic to Old Hebrew; Phoenician to Ugaritic. Tractable where a related known language exists.
    - *Same script, different language*: Luvian and Hittite.
-   - *Neither known*: Indus, Rongorongo. No established method exists for this case.
+   - *Neither known*: Indus, [Rongorongo](rongorongo.md). No established method exists for this case.
 2. **Solved decipherments**: Egyptian hieroglyphs (Young, Champollion, the Rosetta Stone), cuneiform (Grotefend, Rawlinson, Behistun), Old Persian, Linear B (Kober's triplets, Ventris, Chadwick), Maya glyphs (Knorozov, Proskouriakoff, and the long resistance to a phonetic reading), Hittite, Ugaritic, Carian. Each worth a note on what actually broke it, which is usually a bilingual, a proper name, or a structural regularity rather than raw cleverness.
-3. **Unsolved, partial and contested**: Linear A, the Indus script, Rongorongo, Proto-Elamite, Cypro-Minoan, the Phaistos Disc, Isthmian and Olmec, the Rohonc Codex, the Voynich manuscript. Also Etruscan, readable but not understood, which demonstrates that script and language are genuinely separate problems.
+3. **Unsolved, partial and contested**: Linear A, the Indus script, Rongorongo, [Proto-Elamite](proto-elamite.md), Cypro-Minoan, the Phaistos Disc, Isthmian and Olmec, the Rohonc Codex, the [Voynich manuscript](voynich-manuscript.md). Also Etruscan, readable but not understood, which demonstrates that script and language are genuinely separate problems.
 4. **Manual method**: frequency and positional analysis, sign inventories and how you count them, Kober's triplets and the detection of inflection, Ventris's grid, name-hunting (cartouches, royal names, toponyms), archaeological and iconographic context, bilinguals and quasi-bilinguals, and the fact that most early writing is administrative, which constrains the content you can expect to find.
 5. **Computational method**, which splits three ways. Popular coverage collapses them, so hold the distinction firmly:
    - *Restoration and attribution*, where script and language are known and the text is damaged: Pythia, Ithaca, Aeneas. These decipher nothing.
@@ -60,6 +60,9 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 - [Indus script](indus-script.md), undeciphered, and disputed as to whether it is writing at all
 - [Cypro-Minoan](cypro-minoan.md), undeciphered, between a script we cannot read and one we can
 - [Phaistos Disc](phaistos-disc.md), undeciphered, and the limiting case: a corpus of one object
+- [Rongorongo](rongorongo.md), undeciphered, where the reading community was destroyed inside the record
+- [Proto-Elamite](proto-elamite.md), partial, and partial in an unexpected direction
+- [Voynich manuscript](voynich-manuscript.md), undeciphered, and not certainly a decipherment problem at all
 - [Etruscan alphabet](etruscan-alphabet.md), deciphered script, partly understood language
 
 ## Documents
