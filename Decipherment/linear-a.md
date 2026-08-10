@@ -19,6 +19,7 @@ related_to:
   - "[[The evidentiary threshold and unicity distance]]"
 cites:
   - "[[Petrolito et al. 2015]]"
+  - "[[Salgarella 2025]]"
   - "[[Salgarella and Castellan 2020]]"
   - "[[Godart and Olivier 1976]]"
   - "[[Rutter, Aegean Prehistoric Archaeology]]"
@@ -46,7 +47,7 @@ By document count Linear A has roughly **31 percent** of Linear B's corpus. By s
 
 Set that against everything the two scripts share: the same island, overlapping findspots, a script family so close that Linear B was built on Linear A, and the same generation of scholars working on both. One is read and one is not, and the difference is very largely what happened to survive and be excavated. See [The evidentiary threshold and unicity distance](evidentiary-threshold-and-unicity-distance.md).
 
-The corpus of record is [GORILA](../references/godart-olivier-1976.md), five print volumes published between 1976 and 1985 and never superseded. Its being print-only is not a bibliographic detail: Salgarella and Castellan built the SigLA database because a printed edition "does not allow to carry out any statistical and comparative analysis of signs and sign-sequences". An unreadable corpus and an uncountable one fail in different ways, and Linear A has both problems.
+The corpus of record is [GORILA](../references/godart-olivier-1976.md), five volumes published between 1976 and 1985 and never superseded. Its format is not a bibliographic detail: Salgarella and Castellan built the SigLA database because a printed edition "does not allow to carry out any statistical and comparative analysis of signs and sign-sequences". Publishers' scans of the volumes exist, but a scan is an image, and the barrier is the absence of machine-readable sign data rather than the absence of a digital copy. An unreadable corpus and an uncountable one fail in different ways, and Linear A has both problems.
 
 ## The sign inventory
 
@@ -89,6 +90,7 @@ The range in the frontmatter, c. 1800-1450 BCE, follows Salgarella and Castellan
 
 - [Petrolito et al. 2015](../references/petrolito-et-al-2015.md), for the corpus size and the survey of hypotheses
 - [Salgarella and Castellan 2020](../references/salgarella-castellan-2020.md), for the sign inventory, the dating and the typology
+- [Salgarella 2025](../references/salgarella-2025.md), the current single-volume treatment, paywalled and unread
 - [Godart and Olivier 1976](../references/godart-olivier-1976.md), GORILA, the corpus of record
 - [Rutter, Aegean Prehistoric Archaeology](../references/rutter-aegean-prehistory.md), for findspots and archaeological phasing
 - [ISO 15924](../references/iso15924.md), for `Lina` and 400, verified against the Unicode Consortium code list

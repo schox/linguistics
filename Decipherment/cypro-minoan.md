@@ -21,6 +21,7 @@ cites:
   - "[[Ferrara 2013]]"
   - "[[Olivier 2007]]"
   - "[[Mnamon]]"
+  - "[[Donnelly 2025]]"
 iso15924: Cpmn
 iso15924_num: 402
 unicode_block: U+12F90-U+12FFF
@@ -57,6 +58,14 @@ The Cypriot syllabary, ISO 15924 `Cprt`, is deciphered: it wrote Arcadocypriot G
 Cypro-Minoan is its ancestor and remains unread, because descent supplies sign shapes and not sound values, and because the language underneath is unknown. `writes` is empty for that reason. Eteocypriot, attested later in the readable Cypriot syllabary but itself not understood, is the usual candidate, and the vault does not assert it.
 
 This is the same structure as Linear A against Linear B, one generation removed and in the opposite direction: there, a descendant script supplies probable values for an unread ancestor; here, the descendant is readable and still does not deliver the ancestor. Two attempts at the same trick, both failing for the same reason, which is that a script is not a language.
+
+## A possible explanation for the shortness, not yet adopted
+
+[Donnelly 2025](../references/donnelly-2025.md), a current single-volume treatment that this vault has not been able to read, offers a causal account of the corpus's character rather than a description of it. Her abstract states that Cypro-Minoan has "few clay tablets, characteristic of neighboring scribal-based, administrative writing traditions", and that "Cypro-Minoan writers wrote on mercantile objects, outside of scribal schools".
+
+If that holds, the corpus is short and scattered because of who was writing and why, not because of what happened to survive. That would make Cypro-Minoan different in kind from [Linear A](linear-a.md) and the [Indus script](indus-script.md), where the vault treats the constraint as preservation and excavation: here the evidentiary limit would have been set at the moment of inscription, by a writing practice that produced portable mercantile objects rather than palatial archives.
+
+It is recorded as a reported position and not adopted, because the volume is paywalled and only the abstract has been read.
 
 ## Findspots
 

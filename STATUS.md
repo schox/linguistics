@@ -11,7 +11,7 @@ Where the project is up to, as at 2026-08-09. Update this when the picture chang
 
 The structure is complete and enforced. Five areas, thirteen note types plus `Type` itself, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
 
-The vault currently holds 105 notes. That is a skeleton with a good spine, not a body of research.
+The vault currently holds 107 notes. That is a skeleton with a good spine, not a body of research.
 
 Content is now being added in **batches**, one commit per closure set: an anchor note plus every note it must link for the checker to pass, plus the index updates and this file. See the batching plan below and the entry on sweeps in `DECISIONS.md`.
 
@@ -43,7 +43,15 @@ Agreed with Andrew on 2026-08-09. Argument-first rather than coverage-first: not
 Beyond phases 2 to 4 below, three things surfaced repeatedly across the four script batches and are worth doing on their own:
 
 1. ~~A note on segmentation and transcription.~~ **Written**, 2026-08-10, as `Decipherment/segmentation-and-transcription.md`, titled *What counts as one sign*. It collects the problem from all five scripts that carry it and argues that the evidentiary threshold cannot be measured independently of a segmentation decision. Its own open questions are now the live ones: no methodological literature has been consulted, and the claim that entropy is sensitive to segmentation is stated rather than demonstrated.
-2. **Read the two Cambridge Elements volumes.** Kelley on Proto-Elamite and Salgarella on Linear A are both short, current, and would close a dozen open questions between them. Both are cited unread.
+2. **The Cambridge Elements volumes are paywalled and this is now the vault's main blocker.** Attempted 2026-08-10. There are three, not two, all in *Elements in Writing in the Ancient World* edited by Andreas Stauder, and between them they cover three of the seven undeciphered scripts:
+
+   - Salgarella 2025, *Writing in Bronze Age Crete: 'Minoan' Linear A*, DOI 10.1017/9781009520041
+   - Kelley 2026, *Proto-Elamite: Writing and Society in Early Iran*, DOI 10.1017/9781009614559
+   - Donnelly 2025, *Cypro-Minoan and Its Writers: At Home and Overseas*, DOI 10.1017/9781009381840
+
+   None is open access. Cambridge Core requires a login; the Salgarella volume is listed at 55 pounds hardback, 18 paperback, 25 US dollars for the eBook. All three now have Reference notes carrying fully verified bibliographic details, section lists and abstracts, and each states plainly that the body is unread.
+
+   **What is needed is access, not more searching.** Andrew's institutional login, or the three eBooks, would close roughly a dozen open questions across `linear-a.md`, `proto-elamite.md`, `cypro-minoan.md`, `hagia-triada.md` and `enkomi.md`. Salgarella's sections 3 and 5 alone would settle the per-site distribution of the Linear A corpus, which is the longest-standing gap in the vault.
 3. **`Language` notes for Rapanui and a `Place` note for Ugarit.** Rapanui is a real living language currently mentioned only as an appendage to a script. Ugarit is the sole provenance of the CM3 texts and will be needed again for Ugaritic in phase 2.
 
 **Phase 2, the solved decipherments.** Egyptian hieroglyphs, cuneiform, Maya glyphs, Ugaritic. One batch each, each worth a note on *what actually broke it*, usually a bilingual, a proper name, or a structural regularity.
@@ -77,7 +85,7 @@ Recorded so the fact-checking service can retry them rather than each batch redi
 
 ## Resources found but not yet used
 
-- **Salgarella, *Writing in Bronze Age Crete: Linear A*** (Cambridge Elements, *Writing in the Ancient World* series, the same series as [Kelley 2026](references/kelley-2026.md)). A recent single-volume overview of Linear A signs and inscribed objects in archaeological context, by the author of SigLA. The obvious next reference for Linear A; bibliographic details not yet verified.
+- ~~Salgarella's Linear A volume~~ **now a Reference note**, [Salgarella 2025](references/salgarella-2025.md), with verified details. Paywalled; see above.
 - **Mnamon**, Scuola Normale Superiore, "Ancient writing systems in the Mediterranean: a critical guide to electronic resources" (`mnamon.sns.it`), with a DOI and ISBN. A curated scholarly guide covering Linear A, Cypro-Minoan, the Phaistos Disc and others. Used in batch 3 and now a Reference note.
 
 ## Known limitations

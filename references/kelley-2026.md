@@ -26,7 +26,11 @@ Its framing of the decipherment status is careful and worth keeping: the script 
 
 The abstract also notes that Proto-Elamite scholarship has been marginal relative to its importance, and that recent progress has come from corpus digitization and computational methods.
 
-**Unread.** All of the above comes from the publisher's landing page: the abstract, the series and the identifiers. The body has not been consulted, and the same Cambridge Elements series contains Salgarella's volume on Linear A, which the vault has also not read and which is listed in `STATUS.md` as outstanding.
+Its eight sections are: Introduction; The Paths to Writing in Iran; The Proto-Elamite World; Approaches to Decipherment; The System of Signs; Proto-Elamite Economies and Their Participants; Writing as Social Practice; The Afterlife of Proto-Elamite. Section 5 would settle the sign-inventory question and section 4 the account of what "partly deciphered" means, both of which [Proto-Elamite](../Decipherment/proto-elamite.md) currently carries as open questions.
+
+**Unread, because it is paywalled.** Not open access; Cambridge Core requires a login, and the PDF is offered only behind it. All of the above comes from the publisher's landing page.
+
+Two companion volumes in the same series cover other scripts in this vault and are equally inaccessible: [Salgarella 2025](salgarella-2025.md) on Linear A and [Donnelly 2025](donnelly-2025.md) on Cypro-Minoan. Three of the vault's seven undeciphered scripts now have a current single-volume treatment in *Elements in Writing in the Ancient World*, and the vault has read none of them.
 
 ## Sources
 

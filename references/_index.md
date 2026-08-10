@@ -38,10 +38,11 @@ See `_data-sources.md` for how the vault relates to these.
 - [Assael et al. 2022 (Ithaca)](assael-2022.md)
 - [Barber 1974](barber-1974.md)
 - [Berthin 2024](berthin-2024.md)
-- [Kelley 2026](kelley-2026.md), Proto-Elamite
 - [Chadwick 1958](chadwick-1958.md)
-- [Kasiski 1863](kasiski-1863.md)
+- [Donnelly 2025](donnelly-2025.md), Cypro-Minoan
 - [Farmer, Sproat and Witzel 2004](farmer-sproat-witzel-2004.md)
+- [Kasiski 1863](kasiski-1863.md)
+- [Kelley 2026](kelley-2026.md), Proto-Elamite
 - [Luo, Cao and Barzilay 2019](luo-cao-barzilay-2019.md)
 - [Luo et al. 2021](luo-2021.md)
 - [McCarthy 1960](mccarthy-1960.md)
@@ -49,8 +50,11 @@ See `_data-sources.md` for how the vault relates to these.
 - [Petrolito et al. 2015](petrolito-et-al-2015.md)
 - [Rao et al. 2009](rao-2009.md)
 - [Rao et al. 2010](rao-2010.md)
+- [Salgarella 2025](salgarella-2025.md), Linear A
 - [Shannon 1949](shannon-1949.md)
 - [Sproat 2010](sproat-2010.md)
 - [Tamburini 2025](tamburini-2025.md)
 - [Ventris and Chadwick 1953](ventris-chadwick-1953.md)
 - [Yadav et al. 2009](yadav-et-al-2009.md)
+
+The three *Elements in Writing in the Ancient World* volumes above (Donnelly, Kelley, Salgarella) are current single-volume treatments of three of the vault's undeciphered scripts. All three are paywalled and none has been read. See `STATUS.md`.
