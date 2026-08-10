@@ -3,9 +3,13 @@
     "allow": [
       "WebSearch",
       "WebFetch",
-      "Bash(python3 scripts/check-vault.py)",
-      "Bash(python3 scripts/check-vault.py --quiet)",
-      "Bash(python3 scripts/check-vault.py --report)"
+      "Bash(python3 scripts/check-vault.py*)",
+      "Bash(git status*)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(git show*)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   }
 }
