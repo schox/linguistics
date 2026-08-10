@@ -484,6 +484,41 @@ def recurring_proper_nouns(notes):
     return sorted(rows, key=lambda r: (-r[0], r[1]))
 
 
+def open_questions(files):
+    """Harvest every '## Open questions' bullet in the vault.
+
+    ROADMAP.md holds judgement: what is worth doing, in what order, and what
+    is blocked on something only Andrew can supply. It deliberately does not
+    list the individual questions, because a hand-copied list of eighty items
+    goes stale the first time a note is edited. This regenerates it instead.
+    """
+    rows = []
+    for path in files:
+        raw = open(path, encoding="utf-8").read()
+        body, collecting = [], False
+        for line in strip_fenced(raw).split("\n"):
+            if line.startswith("## "):
+                collecting = line.strip() == "## Open questions"
+                continue
+            if collecting and line.startswith("- "):
+                body.append(line[2:].strip())
+        if body:
+            rows.append((os.path.relpath(path, ROOT), body))
+
+    total = sum(len(b) for _, b in rows)
+    print(f"Open questions: {total} across {len(rows)} notes\n")
+    print("  Harvested from '## Open questions' sections. This is the live")
+    print("  list; ROADMAP.md holds the ordering and the blockers.\n")
+    for rel, body in sorted(rows):
+        print(f"{rel}")
+        for item in body:
+            # the bolded lead-in is the question; the rest is the detail
+            m = re.match(r"\*\*(.+?)\*\*", item)
+            print(f"  - {m.group(1) if m else item[:100]}")
+        print()
+    return 0
+
+
 def report(files):
     notes = note_index(files)
 
@@ -516,6 +551,8 @@ def main():
     files = list(markdown_files())
     if "--report" in sys.argv:
         return report(files)
+    if "--questions" in sys.argv:
+        return open_questions(files)
     targets = resolvable_targets(files)
     problems = []
     for path in files:

@@ -31,7 +31,8 @@ scripts/               check-vault.py, the consistency checker
 _junctions.md          index of cross-cutting notes
 _data-sources.md       what external data exists, and how the vault relates to it
 DECISIONS.md           why the vault is shaped this way, and what was rejected
-STATUS.md              where the project is up to, and what to do next
+STATUS.md              where the project is up to
+ROADMAP.md             what to do next, and what is blocked on what
 ```
 
 Folders are shallow and stay that way. The taxonomy lives in the `subfield` frontmatter field, with the controlled vocabulary held in each area's `_index.md`, so a branch can be re-cut without moving files.
@@ -53,6 +54,12 @@ python3 scripts/check-vault.py --report
 ```
 
 The advisory sweep, which never fails. The checks above resolve every link that exists but cannot see a link that is missing, so this lists unlinked mentions of existing notes, and recurring names that have no note yet. Run it after adding an entity note.
+
+```sh
+python3 scripts/check-vault.py --questions
+```
+
+Every `## Open questions` bullet in the vault, harvested live so that `ROADMAP.md` does not have to keep a copy.
 
 ## Git
 

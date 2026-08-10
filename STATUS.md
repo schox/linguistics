@@ -5,7 +5,9 @@ status: living
 
 # Status
 
-Where the project is up to, as at 2026-08-09. Update this when the picture changes; it is the first thing an incoming agent should read after `AGENTS.md`.
+Where the project is up to, as at 2026-08-10. Update this when the picture changes; it is the first thing an incoming agent should read after `AGENTS.md`.
+
+This file is the present tense: what exists, what is thin, what has been established, what is known to be wrong or missing. For what happens next and what is blocked, see `ROADMAP.md`.
 
 ## What exists
 
@@ -25,42 +27,20 @@ Content. The areas hold their taxonomy and a handful of exemplars, nothing more:
 - **Cryptography**: 3 notes (Vigenère, and two methods).
 - **Decipherment**: the most developed area, 16 notes, because it carries the vault's argument.
 
-## The batching plan
+## How the content was built
 
-Agreed with Andrew on 2026-08-09. Argument-first rather than coverage-first: notes that make the vault's central claim checkable are worth more than even coverage across areas.
+Content is added in **batches**: one commit per closure set, meaning an anchor note plus every note it must link for the checker to pass, plus the index updates and this file. Argument-first rather than coverage-first, so notes that make the vault's central claim checkable come before even coverage across areas.
 
-**Phase 1, the undeciphered scripts.** Each with ISO 15924 code, Unicode block, `corpus_size` and `found_at`. Corpus size is the variable the whole Decipherment argument turns on.
+**Phase 1, the undeciphered scripts, is complete** as at 2026-08-10, in four batches:
 
-1. ~~Linear A, with Hagia Triada~~ **done**, 2026-08-09.
-2. ~~The Indus script, with Mohenjo-daro and Harappa~~ **done**, 2026-08-10.
-3. ~~Cypro-Minoan and the Phaistos Disc, with Enkomi and Phaistos~~ **done**, 2026-08-10.
-4. ~~Rongorongo, Proto-Elamite and the Voynich, with Rapa Nui and Susa~~ **done**, 2026-08-10. **Phase 1 complete.**
+1. Linear A, with Hagia Triada.
+2. The Indus script, with Mohenjo-daro and Harappa.
+3. Cypro-Minoan and the Phaistos Disc, with Enkomi and Phaistos.
+4. Rongorongo, Proto-Elamite and the Voynich, with Rapa Nui and Susa.
 
-**Linear Elamite still has no note**, and now clearly deserves one. It is not Proto-Elamite; `Decipherment/proto-elamite.md` states the distinction. Its 21 or 22 inscriptions, most longer than the longest of 4,000-5,000 Indus texts, are the cleanest demonstration in the vault that corpus volume and text length are independent variables. It has no ISO 15924 code and no Unicode block.
+All seven carry their ISO 15924 code, Unicode block, `corpus_size` and `found_at`, which was the point: corpus size is the variable the whole Decipherment argument turns on, and it is now checkable across the set rather than asserted. A cross-cutting note, `Decipherment/segmentation-and-transcription.md`, followed from what all four batches turned up independently.
 
-## Highest-value work now that phase 1 is done
-
-Beyond phases 2 to 4 below, three things surfaced repeatedly across the four script batches and are worth doing on their own:
-
-1. ~~A note on segmentation and transcription.~~ **Written**, 2026-08-10, as `Decipherment/segmentation-and-transcription.md`, titled *What counts as one sign*. It collects the problem from all five scripts that carry it and argues that the evidentiary threshold cannot be measured independently of a segmentation decision. Its own open questions are now the live ones: no methodological literature has been consulted, and the claim that entropy is sensitive to segmentation is stated rather than demonstrated.
-2. **The Cambridge Elements volumes are paywalled and this is now the vault's main blocker.** Attempted 2026-08-10. There are three, not two, all in *Elements in Writing in the Ancient World* edited by Andreas Stauder, and between them they cover three of the seven undeciphered scripts:
-
-   - Salgarella 2025, *Writing in Bronze Age Crete: 'Minoan' Linear A*, DOI 10.1017/9781009520041
-   - Kelley 2026, *Proto-Elamite: Writing and Society in Early Iran*, DOI 10.1017/9781009614559
-   - Donnelly 2025, *Cypro-Minoan and Its Writers: At Home and Overseas*, DOI 10.1017/9781009381840
-
-   None is open access. Cambridge Core requires a login; the Salgarella volume is listed at 55 pounds hardback, 18 paperback, 25 US dollars for the eBook. All three now have Reference notes carrying fully verified bibliographic details, section lists and abstracts, and each states plainly that the body is unread.
-
-   **What is needed is access, not more searching.** Andrew's institutional login, or the three eBooks, would close roughly a dozen open questions across `linear-a.md`, `proto-elamite.md`, `cypro-minoan.md`, `hagia-triada.md` and `enkomi.md`. Salgarella's sections 3 and 5 alone would settle the per-site distribution of the Linear A corpus, which is the longest-standing gap in the vault.
-3. **`Language` notes for Rapanui and a `Place` note for Ugarit.** Rapanui is a real living language currently mentioned only as an appendage to a script. Ugarit is the sole provenance of the CM3 texts and will be needed again for Ugaritic in phase 2.
-
-**Phase 2, the solved decipherments.** Egyptian hieroglyphs, cuneiform, Maya glyphs, Ugaritic. One batch each, each worth a note on *what actually broke it*, usually a bilingual, a proper name, or a structural regularity.
-
-**Phase 3, people.** Driven by `--report`, not by a wishlist: the sweep lists names recurring across two or more notes, which is the inclusion test in `types/person.md` stated mechanically. As at this commit it surfaces Champollion, Rawlinson, Knorozov, Proskouriakoff, Turing, Saussure, al-Kindi and Michael Ventris.
-
-**Phase 4, the thin areas.** General Linguistics and Computer Languages, one note each. `chomsky-hierarchy.md` is currently load-bearing for an entire junction on its own.
-
-Running alongside: the two unwritten junction notes at the foot of `_junctions.md`, and the `wikidata` sweep. The identifier sweep is **not** the cheap job it looks: a Q-number is the most fabricable string in the vault, so it needs real lookups, and it is deliberately scheduled after phase 1 rather than done from recall.
+**Everything still to do is in `ROADMAP.md`**, including what is blocked and on whom. Do not duplicate it here.
 
 ## Useful facts already established
 
@@ -83,11 +63,6 @@ Recorded so the fact-checking service can retry them rather than each batch redi
 - ~~Pleiades~~ **partly resolved 2026-08-10.** Knossos is 589872, now recorded. Hagia Triada returned no record, and probably has none: Pleiades is scoped to the Greek and Roman world and a purely Minoan site may fall outside it.
 - **Still blocked:** the University of Bologna repository record for Montecchi 2019, which failed again through Tavily. The CNR eprints TLS error was not retried. This is the one that would settle the contested Hagia Triada tablet count, 147 against Rutter's 168.
 
-## Resources found but not yet used
-
-- ~~Salgarella's Linear A volume~~ **now a Reference note**, [Salgarella 2025](references/salgarella-2025.md), with verified details. Paywalled; see above.
-- **Mnamon**, Scuola Normale Superiore, "Ancient writing systems in the Mediterranean: a critical guide to electronic resources" (`mnamon.sns.it`), with a DOI and ISBN. A curated scholarly guide covering Linear A, Cypro-Minoan, the Phaistos Disc and others. Used in batch 3 and now a Reference note.
-
 ## Known limitations
 
 - `wikidata` is empty nearly everywhere. It is the universal join key, so filling it is high value, but see the warning above about doing it from recall.
@@ -99,5 +74,9 @@ Recorded so the fact-checking service can retry them rather than each batch redi
 
 ## Open questions for Andrew
 
-- Whether grammatology should move wholesale into Decipherment, or stay split between there and General Linguistics. Deferred once already; `Script` notes currently live in `Decipherment/` regardless of status.
+These two have been open since the vault was built and are restated in `ROADMAP.md` under what is blocked on him.
+
+- Whether grammatology should move wholesale into Decipherment, or stay split between there and General Linguistics. `Script` notes currently live in `Decipherment/` regardless of status.
 - Whether Noam Chomsky and Donald Knuth should get `Person` notes. Chomsky was deliberately not written because his current status could not be verified and false death reports circulated in 2024; see the living-people rule in `types/person.md`.
+
+**The 59 open questions on individual notes are not listed anywhere by hand.** Run `python3 scripts/check-vault.py --questions` for the live set. They are deliberately not being chased: see the deferred audit in `ROADMAP.md`.

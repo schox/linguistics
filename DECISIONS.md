@@ -166,3 +166,15 @@ And `references/rutter-aegean-prehistory.md` was first written with `year: 2000`
 **The constraint that comes with it.** An extraction service returns a rendering of a page, not the page. That is one step further from the primary document than the vault's own verification rule wants, and the risk is that it quietly becomes the default because it is easier. So it is scoped to pages that refuse direct access, and `references/unesco-moenjodaro.md` and `references/unesco-harappa-tentative.md` both carry an explicit statement that their content was retrieved this way and the page itself was not seen.
 
 **Also decided, arising from the same batch.** Britannica and other tertiary encyclopedias are treated as Wikipedia is: citable under `## Sources`, never a `Reference` note. Institutional documentation such as a UNESCO World Heritage entry is treated differently and can earn a note, because for a site's extent, protection status and excavated fraction it is the primary record rather than a summary of one.
+
+## 2026-08-10: Open questions accumulate; the audit is deferred and deliberate
+
+**Decided.** Gaps are recorded on the note where they arise and left there. A full audit of the whole corpus happens when the vault is much closer to complete. `ROADMAP.md` is created to hold what is blocked, on whom, and in what order work should proceed, and `STATUS.md` is trimmed to the present tense so the two do not drift.
+
+**Rejected.** Resolving each open question as it arises, and keeping a hand-written to-do list of them.
+
+**Why.** Phase 1 produced 59 open questions across 17 notes in two days. Chasing them as they appeared would have meant each batch spending more effort on the tail of the previous one than on new material, and much of it wasted: a note written today may be superseded by a source read next month, and several questions that looked permanent were closed incidentally by later batches. Recording a gap honestly is cheap, which is the whole point of the `## Open questions` convention; closing them one at a time is not.
+
+The hand-written list was rejected for the reason the vault rejects any duplicated inventory. A copied list of 59 items is stale the first time a note is edited, and the vault already had one drift of exactly this kind between `CONVENTIONS.md` and `types/`. `scripts/check-vault.py --questions` harvests them instead, so `ROADMAP.md` can hold judgement and ordering without holding data.
+
+**Consequence.** An agent finding a gap mid-batch should record it and move on, not chase it. That is now stated in `AGENTS.md`, because the natural instinct is the opposite and the instinct is wrong here.
