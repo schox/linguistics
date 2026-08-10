@@ -53,6 +53,7 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 - [Is it writing at all? The Indus entropy debate](is-it-writing-at-all.md)
 - [Computational decipherment: three distinct tasks](computational-decipherment-three-tasks.md)
 - [What counts as one sign](segmentation-and-transcription.md), segmentation and transcription as prior decisions
+- [Why a script stays unread](why-scripts-stay-unread.md), the taxonomy of obstacles, evidential and otherwise
 
 ## Scripts
 

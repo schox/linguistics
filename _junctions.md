@@ -12,6 +12,7 @@ Folders cannot express this, since each note lives in one folder but belongs to 
 
 ## Cryptography and Decipherment
 
+- [Why a script stays unread](Decipherment/why-scripts-stay-unread.md). The synthesis the whole Decipherment area was building toward: two families of obstacle, one evidential and computable in advance, one not, and only the first justifies calling a script undecipherable.
 - [The evidentiary threshold and unicity distance](Decipherment/evidentiary-threshold-and-unicity-distance.md). Shannon and Barber reached the same underdetermination result independently. The flagship link.
 - [Adversarial versus accidental encipherment](Decipherment/adversarial-versus-accidental.md). Why the statistical apparatus transfers and the adversarial apparatus does not.
 - [Frequency analysis](Decipherment/frequency-analysis.md). One technique, three literatures, from al-Kindi to Kober.

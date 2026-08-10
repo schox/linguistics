@@ -31,7 +31,11 @@ It relocates the difficulty. The intuitive model of an undeciphered script is a 
 
 This yields the working test for any decipherment claim, computational or manual: *does the corpus contain enough text to distinguish this proposal from its rivals?* If not, the proposal may still be correct, but it cannot be shown to be, and a confident presentation of it is a category error rather than a discovery.
 
-It also explains the pattern in the record. [Egyptian](egyptian-hieroglyphs.md) had the [Rosetta](../places/rosetta.md) Stone and a vast corpus. Linear B had roughly 6,000 tablets and a language that turned out to be Greek. The [Phaistos Disc](phaistos-disc.md) has 241 signs on one object and has been "deciphered" repeatedly and incompatibly, which is exactly what the underdetermined case looks like from the outside.
+It also explains the pattern in the record. [Egyptian](egyptian-hieroglyphs.md) had the [Rosetta](../places/rosetta.md) Stone and a vast corpus. [Linear B](linear-b.md) had roughly 6,000 tablets and a language that turned out to be Greek. The [Phaistos Disc](phaistos-disc.md) has 241 signs on one object and has been "deciphered" repeatedly and incompatibly, which is exactly what the underdetermined case looks like from the outside.
+
+## It is not the only reason a script goes unread
+
+Added after the phase 2 batches on the solved decipherments. Every script this vault has covered that *was* read turned out to have been blocked by something other than a shortage of text: a wrong theory, an argument from implausibility, institutional authority, or physical inaccessibility. The threshold explains one family of failure and the vault spent some time treating it as the only one. See [why a script stays unread](why-scripts-stay-unread.md).
 
 ## Caution
 
