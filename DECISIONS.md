@@ -154,3 +154,15 @@ And `references/rutter-aegean-prehistory.md` was first written with `year: 2000`
 **Why.** The note already contained the evidence against its own classification: its first sentence gives about 87 syllabic signs and over 100 ideographic signs, and a script with more semantic signs than phonetic ones is not a syllabary. The two notes also disagreed with each other while describing one script family.
 
 **Known limit.** The `class` enum has no `logo-syllabic` value, which is the standard term in the Aegean literature. `mixed` is the closest available and the distinction is carried in prose instead. Adding a vocabulary value for one script family was judged a poor trade, but it is open.
+
+## 2026-08-10: Tavily as a retrieval fallback, and how retrieved content is marked
+
+**Decided.** Where a page refuses a direct fetch, the Tavily extraction service is used to retrieve it. It is a fallback, not the default research path, and a note whose load-bearing fact came through it says so.
+
+**Rejected.** Two alternatives. Leaving the gaps, which is what batch 2 did and which produced the two weakest notes in the vault. And defeating the block directly by spoofing a browser client, which was tested only far enough to establish that plain `curl` is refused too, and then dropped: these sites are choosing to refuse automated clients, and working around that is not a research method the vault should adopt.
+
+**Why.** Six of the eight source failures across the first two batches were HTTP 403 bot-blocks, and they clustered on exactly the institutional and reference sites that archaeological provenance depends on: UNESCO, Britannica, harappa.com. On the first attempt Tavily retrieved all three, and immediately closed an open question that `places/mohenjo-daro.md` had recorded as unanswerable: UNESCO gives the property as 240 hectares with about one third excavated since 1922, which is the quantity the argument from absence in the Indus dispute actually rests on.
+
+**The constraint that comes with it.** An extraction service returns a rendering of a page, not the page. That is one step further from the primary document than the vault's own verification rule wants, and the risk is that it quietly becomes the default because it is easier. So it is scoped to pages that refuse direct access, and `references/unesco-moenjodaro.md` and `references/unesco-harappa-tentative.md` both carry an explicit statement that their content was retrieved this way and the page itself was not seen.
+
+**Also decided, arising from the same batch.** Britannica and other tertiary encyclopedias are treated as Wikipedia is: citable under `## Sources`, never a `Reference` note. Institutional documentation such as a UNESCO World Heritage entry is treated differently and can earn a note, because for a site's extent, protection status and excavated fraction it is the primary record rather than a summary of one.

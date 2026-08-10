@@ -11,7 +11,7 @@ Where the project is up to, as at 2026-08-09. Update this when the picture chang
 
 The structure is complete and enforced. Five areas, thirteen note types plus `Type` itself, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
 
-The vault currently holds 86 notes. That is a skeleton with a good spine, not a body of research.
+The vault currently holds 88 notes. That is a skeleton with a good spine, not a body of research.
 
 Content is now being added in **batches**, one commit per closure set: an anchor note plus every note it must link for the checker to pass, plus the index updates and this file. See the batching plan below and the entry on sweeps in `DECISIONS.md`.
 
@@ -60,10 +60,12 @@ Verified while writing batch 1, so later batches need not re-derive them:
 
 Recorded so the fact-checking service can retry them rather than each batch rediscovering the block. All as at 2026-08-09/10.
 
-- `people.ku.edu` (Younger's Linear A transcriptions): host did not resolve.
-- Pleiades: bot detection. Blocks every `pleiades` identifier.
-- Britannica, UNESCO World Heritage, harappa.com: HTTP 403. Blocked the excavation histories in `places/harappa.md` and `places/mohenjo-daro.md`.
-- CNR eprints (TLS error) and University of Bologna repository (403), both for Montecchi 2019.
+- `people.ku.edu` (Younger's Linear A transcriptions): host did not resolve. **Still open**, and the most serious of these, since the Linear A corpus figures descend from it.
+- Pleiades: bot detection. Blocks every `pleiades` identifier. **Not yet retried through Tavily.**
+- CNR eprints (TLS error) and University of Bologna repository (403), both for Montecchi 2019. **Not yet retried through Tavily.**
+- ~~Britannica, UNESCO World Heritage, harappa.com: HTTP 403~~ **resolved 2026-08-10** by retrieving them through Tavily. See the entry in `DECISIONS.md` for when that is appropriate and how retrieved content is marked.
+
+The three still open are worth a pass with Tavily before batch 3, since two of them would fill identifier fields and one would settle a contested tablet count.
 
 ## Known limitations
 

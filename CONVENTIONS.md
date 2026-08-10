@@ -146,6 +146,8 @@ belongs_to: "[[Cryptography]]"
 
 **Wikipedia is a source in a note, never a `Reference` note.** Listing a Wikipedia article under a note's `## Sources`, or linking it in prose, is fine and often the most useful orientation available. What it must not become is its own file in `references/`, because `references/` is the authoritative bibliography: papers, books, chapters, datasets, corpora. Wikipedia is a finding aid pointing at those, so cite it where it helped and follow it to the work of record. `scripts/check-vault.py` fails a `Reference` note whose `url` is a Wikipedia article.
 
+**The same applies to Britannica and other tertiary encyclopedias**, which the checker does not enforce because the list is open-ended. The test is not the publisher's reputation but the kind of document: a work of record gets a `Reference` note, a summary of works of record gets a line under `## Sources`. Institutional documentation is different again and can earn a note where it is the primary record of something, as UNESCO's World Heritage entries are for a site's extent and protection status.
+
 **Distinguish what you have read from what you have merely found.** The `status` field on a `Reference` is the reading list. Do not mark something `read` that you have skimmed.
 
 **Attribute contested claims to their proponents.** Much of the decipherment material is disputed, sometimes bitterly. Write "Rao and colleagues argue" and "Farmer, Sproat and Witzel reply", not "the Indus script is writing". Where a debate is live, the note should carry both sides and their sources.

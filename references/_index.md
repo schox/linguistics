@@ -24,6 +24,8 @@ See `_data-sources.md` for how the vault relates to these.
 - [Mahadevan 1977](mahadevan-1977.md), the Indus concordance both camps use
 - [Rutter, Aegean Prehistoric Archaeology](rutter-aegean-prehistory.md)
 - [Salgarella and Castellan 2020](salgarella-castellan-2020.md), SigLA
+- [UNESCO, Archaeological Ruins at Moenjodaro](unesco-moenjodaro.md)
+- [UNESCO, Archaeological Site of Harappa](unesco-harappa-tentative.md)
 - [WALS Online](wals-2013.md)
 
 ## Literature

@@ -41,6 +41,7 @@ PROTECTED = [
     "Archaeological Decipherment",         # Barber 1974
     "Research Organization Registry",
     "Association for Computational Linguistics",
+    "UNESCO World Heritage Centre",          # the body is named this
 ]
 
 # Stems are matched WITHOUT a leading \b so prefixed forms are caught too

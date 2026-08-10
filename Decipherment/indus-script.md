@@ -25,6 +25,7 @@ cites:
   - "[[Yadav et al. 2009]]"
   - "[[Sproat 2010]]"
   - "[[Rao et al. 2010]]"
+  - "[[UNESCO, Archaeological Site of Harappa]]"
 iso15924: Inds
 iso15924_num: 610
 unicode_block:
@@ -90,7 +91,7 @@ That is the evidentiary threshold operating mechanically rather than in principl
 
 - **Per-site distribution of the corpus was not established.** Mahadevan's concordance is reported to include tables of sign distribution by archaeological site, which is precisely what would let the provenance argument in [Mohenjo-daro](../places/mohenjo-daro.md) and [Harappa](../places/harappa.md) be made quantitatively rather than by assertion. Reading M77 Table 1 would settle it. No source read here gives per-site inscription counts.
 - **Neither the Sproat nor the Rao article of the published exchange has been read.** Both are recorded with their DOIs, and open-access copies exist for both. The characterization of the Rao reply currently rests on the authors' own summary page, which is a partisan source for a dispute about that very argument.
-- **The dating range is the civilization's, not the script's.** `period` gives the Mature Harappan phase. Farmer, Sproat and Witzel refer to the symbols being in use for "at least 600 years", and Yadav and colleagues give a much wider span for the civilization (7000 to 1500 BCE) with the peak at 2600-1900 BCE. A defensible first-and-last-attestation range for the signs themselves was not found.
+- **The dating range is the civilization's, not the script's.** `period` gives the Mature Harappan phase, c. 2600-1900 BCE, which is corroborated by Farmer, Sproat and Witzel and by the excavators' phase chronology in [UNESCO's Harappa documentation](../references/unesco-harappa-tentative.md). Farmer, Sproat and Witzel separately refer to the symbols being in use for "at least 600 years", which is consistent with that span. What is still missing is a first-and-last-attestation range for the signs themselves, which need not coincide with the mature phase: the Harappa sequence has Early Harappan levels from c. 2800 BCE and Late Harappan down to c. 1300 BCE, and whether inscribed objects occur in either was not established.
 - **Whether the vault should hold a `Language` note for Harappan.** Wikidata has Q3428279, "unknown language or languages of the Harappan civilization". No note was created, on the same reasoning as Minoan for Linear A: an unattested language identified only as the referent of an undeciphered script is not a language note, it is a gap in a script note.
 
 ## Sources
@@ -100,6 +101,7 @@ That is the evidentiary threshold operating mechanically rather than in principl
 - [Mahadevan 1977](../references/mahadevan-1977.md), the concordance both camps use
 - [Rao et al. 2009](../references/rao-2009.md) and [Rao et al. 2010](../references/rao-2010.md), for the entropy argument and the published reply
 - [Sproat 2010](../references/sproat-2010.md), for the critique
+- [UNESCO, Archaeological Site of Harappa](../references/unesco-harappa-tentative.md), for the excavators' phase chronology
 - [ISO 15924](../references/iso15924.md), for `Inds` and 610, verified against the Unicode Consortium code list
 - [Unicode block data](https://www.unicode.org/Public/UNIDATA/Blocks.txt), checked and containing no Indus block
 - [Wikidata Q601388](https://www.wikidata.org/wiki/Q601388)

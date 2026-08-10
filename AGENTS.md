@@ -49,6 +49,10 @@ This applies to a note's whole content, not only to its citations. It applies wi
 
 **Repetition is not corroboration.** A figure appearing in five search results is usually one tertiary source quoted five times. Count distinct primary sources, not distinct URLs, and say which one you actually read.
 
+**When a page refuses a direct fetch**, use the Tavily extraction service as a retrieval fallback. Many institutional and reference sites (UNESCO, Britannica, museum and project sites) return HTTP 403 to any non-browser client, and those are exactly the sources archaeological provenance depends on. Two conditions: it is a fallback and not the default path, because an extract is one step further from the primary document than the document is; and where the extracted content carries a load-bearing fact, the note says it was retrieved that way, so a reader knows the page itself was not seen. Do not attempt to defeat a block by other means.
+
+**Tertiary encyclopedias are sources, not references.** Britannica, Wikipedia and their like may be cited under a note's `## Sources` and are often the honest answer for an outline. They never get a `Reference` note. See `CONVENTIONS.md`.
+
 **Derived numbers must show their working.** A ratio, percentage, average, unit conversion or absolute date computed from sourced inputs is *your* claim, not the source's, and it carries the source's authority without having earned it. State the inputs and their origin in the note so the arithmetic is checkable and not merely the citation. This is where errors actually happen: verification instinctively points at quotations, and quotations are the part already under control.
 
 **A required field with no verifiable value** takes the nearest verifiable proxy and says in the note that it is a proxy, with what it does and does not establish. It never takes a plausible guess. `references/rutter-aegean-prehistory.md` is the worked example: an undated web resource whose `year` is its copyright notice, stated as dating the access rather than the work. A schema slot is not evidence that a fact exists.
