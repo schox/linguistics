@@ -13,6 +13,11 @@ related_to:
   - "[[Ugaritic script]]"
   - "[[Linear A]]"
   - "[[Phaistos Disc]]"
+  - "[[Indus script]]"
+  - "[[Cypro-Minoan]]"
+  - "[[Rongorongo]]"
+  - "[[Proto-Elamite]]"
+  - "[[Voynich manuscript]]"
 cites:
   - "[[Barber 1974]]"
   - "[[Shannon 1949]]"
@@ -21,6 +26,9 @@ cites:
   - "[[Day 2002]]"
   - "[[Proskouriakoff 1960]]"
   - "[[Farmer, Sproat and Witzel 2004]]"
+  - "[[Donnelly 2025]]"
+  - "[[Kelley 2026]]"
+  - "[[Berthin 2024]]"
 status: open
 ---
 
@@ -41,6 +49,8 @@ The corpus is too small, or too short, or too fragmentary, for any reading to be
 - [Cypro-Minoan](cypro-minoan.md) is 243 short inscriptions, or three corpora of a few dozen each depending on a classification decision nobody has settled.
 
 The distinguishing feature of this family is that **the bound is computable in principle before you start**. You can ask how much text there is and how much a decision procedure would need. That is what makes it a genuine epistemic limit and not a complaint.
+
+**This framing is refined later in the note.** Applying it to the seven unread scripts showed that family one is not really about quantity at all, and that a corpus can fail to determine an answer while being perfectly large. The sections below are the argument as first stated; the diagnosis is where it gets corrected.
 
 ## Family two: everything else
 
@@ -78,6 +88,35 @@ The awkwardness is that the second family is only obvious in retrospect. Before 
 
 **But the asymmetry is not total, and this is the part worth keeping.** The evidential bound is the only one that can be estimated in advance, because it is a property of the corpus rather than of the people looking at it. You can count signs. You cannot count your own assumptions. So a claim that a script is *undecipherable* is defensible only in family one, and only ever provisionally, since excavation can move the bound; whereas a claim that a script is *merely undeciphered* is unfalsifiable in the pleasant way, since some future frame might always be the missing one.
 
+## The seven unread scripts, diagnosed
+
+Applying the taxonomy to the vault's own unread scripts. **This is reasoning from the figures already recorded on each note, not a new finding from the literature**, and the point of doing it is that a classification which cannot be applied is not worth keeping.
+
+| Script | Family | Why |
+| --- | --- | --- |
+| [Phaistos Disc](phaistos-disc.md) | **One**, cleanly | 241 tokens, 45 types, one object. No segmentation problem, since the signs were stamped. Quantity is the only obstacle there is. |
+| [Linear A](linear-a.md) | **One**, plus a removable layer | 1,427 documents averaging about five signs. Below the bound. But the corpus of record is print-only, so the *analyzable* corpus is smaller than the surviving one, which is family two and fixable. |
+| [Cypro-Minoan](cypro-minoan.md) | **One**, but conditionally | 243 short inscriptions is marginal; split three ways by the conventional classification it is hopeless. A family-two decision determines the family-one status. |
+| [Indus](indus-script.md) | **Undiagnosable** | Cannot be classified until a prior question is settled: whether it encodes language at all. If it does, 13,372 occurrences at 4.6 signs per text puts it in family one on length. |
+| [Rongorongo](rongorongo.md) | **Two** | About 14,000 signs, more than the Indus corpus and twice Linear A, and a probable known language in Old Rapanui. Volume is not the obstacle. |
+| [Proto-Elamite](proto-elamite.md) | **Two** | About 1,700 tablets is a large corpus. Kelley's own framing is that scholarship has been marginal relative to the script's importance. |
+| [Voynich manuscript](voynich-manuscript.md) | **Breaks the categories** | 102 folios of continuous writing, so it cannot be short of text. See below. |
+
+**Only one of the seven is cleanly explained by the vault's central thesis.** That is the result, and it is not what phase 1 implied. Corpus size does real work on Linear A and the Phaistos Disc and rather little elsewhere.
+
+### Three things the diagnosis breaks
+
+**Family one is not about quantity.** It is about whether the evidence determines an answer, and too little text is only one way to fail that. The [Voynich manuscript](voynich-manuscript.md) has abundant text and an **unbounded hypothesis space**: the live options include natural language in an unknown script, an enciphered natural language, a constructed language, and a hoax carrying no information. Until that set is narrowed, more text does not help, because the candidates are not commensurable. This is exactly the qualification [the evidentiary threshold](evidentiary-threshold-and-unicity-distance.md) already makes, that unicity distance needs a defined key space and decipherment has none, and the Voynich is where it bites hardest.
+
+**Under family one, evidence lost and evidence never created are different.** The vault has been assuming corpora shrank. If [Donnelly](../references/donnelly-2025.md) is right that Cypro-Minoan writers worked on mercantile objects outside scribal schools, that corpus was never large, and its evidentiary limit was set at the moment of inscription rather than by three thousand years of attrition. Nothing can be excavated to fix that, which matters, because "go and dig" is the standard answer to family one.
+
+**Family two needs at least two more members**, both from this diagnosis:
+
+- **Insufficient attention.** Proto-Elamite has a large corpus, no dispute about its status, and nobody blocking it. There have simply not been enough people. That is a different failure from a wrong theory or an authority, and unusually, it is the one most easily fixed.
+- **An interpretive tradition destroyed rather than faded.** Rongorongo's obstacle is not the corpus. It is that the people who could have explained it were killed or died in the colonization of [Rapa Nui](../places/rapa-nui.md), within the documentary record and while observers were present. Every other script here that recovered had *something* from the inside: Landa took down an informant's account for Maya, Coptic preserved Egyptian, Akkadian scribes left Sumerian vocabularies. Rongorongo has none, because the chain broke abruptly enough that nobody wrote one.
+
+That last point deserves stating plainly. Most family-two obstacles were removable, and were removed: theories are replaced, authorities die, cliffs get climbed. **The rongorongo case is the one where the obstacle appears to be permanent**, because the missing thing is testimony that no longer can be given.
+
 ## A caution the vault has earned twice
 
 Arguments from implausibility have a bad record here, and the vault entertains one.
@@ -91,7 +130,9 @@ What the precedent does establish is the standard of proof. The cuneiform object
 - **This taxonomy is the vault's own and is not drawn from any source.** Every case in it is sourced, but the classification into two families and five mechanisms is a synthesis made here across eight batches. No literature has been consulted on whether anyone has proposed a better one, and someone almost certainly has.
 - **The five configurations of language access are ordered by how much they help, and that ordering is asserted rather than argued.** Ugaritic was fastest and had the first, which is one data point.
 - **Family two is a list, not a theory.** Wrong theory, implausibility, authority, inaccessibility and unrecognized key are five things that happened, not a principled partition, and they overlap: Thompson's authority defended a wrong theory, and Landa's alphabet was unrecognized partly because of one.
-- **No unsolved script here has been diagnosed with this.** The obvious next use is to ask, for each of the seven, which family it is in. The [Voynich manuscript](voynich-manuscript.md) is the interesting one, because it has abundant text and therefore cannot be in family one.
+- **The refinements above are not carried back into the seven script notes.** Each still describes its own obstacle in its own terms, and none says which family it is in. That is deliberate for now, since the taxonomy has changed twice while being applied and may change again, but it should be reconciled at the audit.
+- **The two new family-two members are each supported by one case.** Insufficient attention rests on Proto-Elamite and destroyed testimony on rongorongo. One instance is not a category.
+- **Whether the Indus dispute is itself a family-two obstacle is not settled here.** A field that cannot agree whether its object is writing is stuck in a way that looks structural, but calling that an obstacle presumes the answer.
 
 ## Sources
 
