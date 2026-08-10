@@ -63,4 +63,4 @@ Every `## Open questions` bullet in the vault, harvested live so that `ROADMAP.m
 
 ## Git
 
-Git repository, remote `https://github.com/schox/linguistics.git`. Commit with descriptive messages; ask Andrew before pushing unless he has said otherwise.
+Git repository, remote `https://github.com/schox/linguistics.git`. Commit freely with descriptive messages. **Ask Andrew in conversation before pushing**, every time, unless he has said otherwise for that piece of work.

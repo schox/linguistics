@@ -76,7 +76,7 @@ This applies to a note's whole content, not only to its citations. It applies wi
 12. Use `subfield` values from the area `_index.md`. If none fits, add it to the index in the same change so the vocabulary stays closed.
 13. Never store real keys, secrets or credentials, even as examples in a cryptography note.
 14. When you add or move files, update the relevant `_index.md` and, for cross-cutting notes, `_junctions.md`.
-15. Commit with descriptive messages. Ask Andrew before pushing unless he has said otherwise.
+15. **Commit freely; ask before pushing.** Commit with descriptive messages as you go. Before `git push`, ask Andrew in conversation and wait for an answer, every time, unless he has said otherwise for that piece of work. Note that the permission dialog is **not** the gate: `git push` is allowed in local settings, so nothing will stop you mechanically. The check is yours to make.
 
 ## Care with claims
 
@@ -113,7 +113,7 @@ python3 scripts/check-vault.py --questions
 
 This harvests every `## Open questions` bullet in the vault. It exists so that `ROADMAP.md` does not have to list them by hand, since a copied list of that size goes stale immediately. **Do not chase these as you go.** A full audit is planned for when the vault is closer to complete; recording a gap honestly and moving on is the intended behavior, and `ROADMAP.md` explains the trade.
 
-Commit with descriptive messages. Ask Andrew before pushing unless he has said otherwise.
+Commit with descriptive messages as you go. Ask Andrew in conversation before pushing, every time, unless he has said otherwise for that piece of work. The permission layer will not stop you; see rule 15.
 
 ### If you are running in Cowork rather than locally
 

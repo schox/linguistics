@@ -178,3 +178,15 @@ And `references/rutter-aegean-prehistory.md` was first written with `year: 2000`
 The hand-written list was rejected for the reason the vault rejects any duplicated inventory. A copied list of 59 items is stale the first time a note is edited, and the vault already had one drift of exactly this kind between `CONVENTIONS.md` and `types/`. `scripts/check-vault.py --questions` harvests them instead, so `ROADMAP.md` can hold judgement and ordering without holding data.
 
 **Consequence.** An agent finding a gap mid-batch should record it and move on, not chase it. That is now stated in `AGENTS.md`, because the natural instinct is the opposite and the instinct is wrong here.
+
+## 2026-08-10: The push check is conversational, not mechanical
+
+**Decided.** `git push` stays allowed in local settings so no dialog appears, and the rule is restated in all four places it is written: ask Andrew in conversation before pushing, every time, and say so where the reader can see that the permission layer will not enforce it.
+
+**Rejected.** Removing the permission so the dialog returns as a hard gate.
+
+**Why.** The two were inconsistent, which is the failure this file exists to prevent. Four documents said "ask before pushing" while the configuration allowed it silently, so the rule's protection rested entirely on an agent remembering to ask. That is precisely the pattern the earlier entry on the checker rejects: an assertion the tooling does not back should either be enforced or softened.
+
+Softening was the better trade here. The conversational check has worked without exception, it happens earlier than a dialog would, and it carries context a yes/no prompt cannot. A dialog would add a click and displace a judgement onto a moment when the decision has already been made.
+
+**Consequence.** Rule 15 now says out loud that nothing will stop you mechanically. That is deliberate: a rule which admits it is unenforced is more likely to be followed than one which implies a safety net that is not there.

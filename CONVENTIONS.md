@@ -233,4 +233,4 @@ Run `python3 scripts/check-vault.py` before committing. It validates frontmatter
 
 ## Git
 
-The vault is a git repository. Remote: `https://github.com/schox/linguistics.git`. Commit with descriptive messages; ask Andrew before pushing unless he has said otherwise.
+The vault is a git repository. Remote: `https://github.com/schox/linguistics.git`. Commit freely with descriptive messages. **Ask Andrew in conversation before pushing**, every time, unless he has said otherwise for that piece of work.
