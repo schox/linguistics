@@ -24,11 +24,11 @@ Two of the four conventional Cypro-Minoan subgroups are defined by material from
 
 That is a striking dependency. A classification that governs how the whole corpus is divided, and therefore whether it is large enough to work on at all, rests substantially on four tablets from one place. See the argument about counting in [Cypro-Minoan](../Decipherment/cypro-minoan.md).
 
-Enkomi was a center of the copper trade, which is the likely reason a script traveled from it as far as Ugarit, where the CM3 texts were found.
+Enkomi was a center of the copper trade, which is the likely reason a script traveled from it as far as [Ugarit](ugarit.md), where the CM3 texts were found.
 
 ## Alashiya
 
-Enkomi is commonly identified with Alashiya, the Bronze Age polity known from [Egyptian](../Human-Languages/egyptian.md), Hittite and Ugaritic correspondence. The identification of Cyprus with Alashiya is widely accepted; whether Enkomi specifically was its capital has been questioned by more recent work.
+Enkomi is commonly identified with Alashiya, the Bronze Age polity known from [Egyptian](../Human-Languages/egyptian.md), Hittite and [Ugaritic](../Human-Languages/ugaritic.md) correspondence. The identification of Cyprus with Alashiya is widely accepted; whether Enkomi specifically was its capital has been questioned by more recent work.
 
 This matters to the vault for a specific reason rather than as background. If Enkomi is a place named in the archives of literate neighbors, then external documents refer to it in languages we read, which is the situation that has repeatedly produced decipherments elsewhere by supplying proper names. It has not done so here.
 

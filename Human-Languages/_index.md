@@ -150,6 +150,7 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 - [Etruscan](etruscan.md) †, Tyrsenian
 - [Mycenaean Greek](mycenaean-greek.md) †, Indo-European / Hellenic
 - [Sumerian](sumerian.md) †, isolate
+- [Ugaritic](ugaritic.md) †, Afro-Asiatic / Semitic
 
 ## Documents
 

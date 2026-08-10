@@ -69,11 +69,11 @@ It is recorded as a reported position and not adopted, because the volume is pay
 
 ## Findspots
 
-Principally Cyprus, and Enkomi above all: CM0 is a single tablet from there and CM2 is three tablets from there. CM3 comes entirely from Ugarit on the Syrian coast, which places the script in the eastern Mediterranean trade network rather than on Cyprus alone. Reviews of Ferrara also mention material from Maroni, Palaepaphos and Tiryns.
+Principally Cyprus, and Enkomi above all: CM0 is a single tablet from there and CM2 is three tablets from there. CM3 comes entirely from [Ugarit](../places/ugarit.md) on the Syrian coast, which places the script in the eastern Mediterranean trade network rather than on Cyprus alone. Reviews of Ferrara also mention material from Maroni, Palaepaphos and Tiryns.
 
 ## Open questions
 
-- **No per-site breakdown of the 243.** As with the [Indus script](indus-script.md), the corpus is described in aggregate and by subgroup rather than by findspot, so `found_at` lists only Enkomi, where the tablets are securely attributed. Ugarit, Maroni, Palaepaphos and Tiryns would all deserve entries under a fuller accounting, and Ugarit in particular is a significant site the vault has no note for.
+- **No per-site breakdown of the 243.** As with the [Indus script](indus-script.md), the corpus is described in aggregate and by subgroup rather than by findspot, so `found_at` lists only Enkomi, where the tablets are securely attributed. Maroni, Palaepaphos and Tiryns would all deserve entries under a fuller accounting. [Ugarit](../places/ugarit.md) now has one.
 - **The single-system claim is taken at second hand.** Neither volume of Ferrara has been read; the 243, the 27 additions and the 83 graphemes all come from Petrakis's review. The claim that these are variants of one writing system is the most consequential thing in this note and it deserves to rest on the book.
 - **HoChyMin's bibliographic details are provisional.** See the caveat in [Olivier 2007](../references/olivier-2007.md); no catalog record was reached.
 - **`class: syllabary` follows Mnamon and Wikidata**, and the ISO 15924 French name is *syllabaire chypro-minoen*. It has not been demonstrated by decipherment, and the same caution applies as to the Phaistos Disc, though here the descent from Linear A and to the Cypriot syllabary makes the classification considerably better founded.

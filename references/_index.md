@@ -40,6 +40,7 @@ See `_data-sources.md` for how the vault relates to these.
 - [Berthin 2024](berthin-2024.md)
 - [Chadwick 1958](chadwick-1958.md)
 - [Dalby 2019](dalby-2019.md), the Rosetta Stone
+- [Day 2002](day-2002.md), the Ugaritic decipherment
 - [Donnelly 2025](donnelly-2025.md), Cypro-Minoan
 - [Farmer, Sproat and Witzel 2004](farmer-sproat-witzel-2004.md)
 - [Kasiski 1863](kasiski-1863.md)

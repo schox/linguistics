@@ -31,6 +31,7 @@ See the inclusion test in `types/place.md`. Not every university anyone attended
 - [Rosetta](rosetta.md), Nile Delta, findspot of the Rosetta Stone and a reminder that a findspot is not a provenance
 - [Behistun](behistun.md), Kermanshah, where the constraint was physical access rather than survival
 - [Piedras Negras](piedras-negras.md), Petén, where the decisive property was the order of the monuments
+- [Ugarit](ugarit.md), Syria, provenance of both a solved and an unsolved script
 
 ## Regions
 
@@ -38,5 +39,5 @@ See the inclusion test in `types/place.md`. Not every university anyone attended
 
 ## Obvious gaps
 
-Sites: Ugarit (now overdue, since it is the sole provenance of the CM3 texts as well as the Ugaritic material), Pylos, Sais, Amarna, Nineveh (Ashurbanipal's library), Ebla, Boghazköy, Chania, Dholavira, Maroni, Palaepaphos.
+Sites: Pylos, Sais, Amarna, Nineveh (Ashurbanipal's library), Ebla, Boghazköy, Chania, Dholavira, Maroni, Palaepaphos.
 Institutions: the British School at Athens, Cambridge Faculty of Classics, MIT, Bell Labs, Riverbank Laboratories, GCHQ, the Ashmolean.

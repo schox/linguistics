@@ -28,7 +28,7 @@ DeepMind's Ithaca does this for Greek inscriptions (Nature, 2022), following Pyt
 
 The script is unknown; the aim is to map it onto a known language.
 
-Luo, Cao and Barzilay (2019) frame this as minimum-cost flow, learning character-level correspondences without parallel text, evaluated on Ugaritic to Hebrew and Linear B to Greek. Luo et al. (2021) extend it to undersegmented scripts using phonetic priors, which matters because undersegmentation is the normal condition of an undeciphered corpus. Tamburini (2025) reaches higher accuracy with combinatorial optimisation and coupled simulated annealing.
+Luo, Cao and Barzilay (2019) frame this as minimum-cost flow, learning character-level correspondences without parallel text, evaluated on [Ugaritic](../Human-Languages/ugaritic.md) to Hebrew and Linear B to Greek. Luo et al. (2021) extend it to undersegmented scripts using phonetic priors, which matters because undersegmentation is the normal condition of an undeciphered corpus. Tamburini (2025) reaches higher accuracy with combinatorial optimisation and coupled simulated annealing.
 
 The structural limitation is shared by all of them: **the method needs a correct guess about which known language to align against.** It exploits a relative, it does not find one. Evaluation is possible only on already-solved cases, which means reported accuracy measures performance on problems where the answer was available to check.
 
