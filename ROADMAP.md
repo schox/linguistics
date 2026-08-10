@@ -66,7 +66,11 @@ The sweep now surfaces, in rough order of how strongly: **Horapollo** and **Kirc
 
 Horapollo and Kircher are the interesting ones. A `Person` note for an obstacle would test whether `types/person.md`'s inclusion test means what it says, since both are standard labels for a result, and the result is an error.
 
-**Phase 4, the thin areas.** General Linguistics and Computer Languages, one note each. `chomsky-hierarchy.md` is load-bearing for an entire junction on its own.
+**Phase 4, the thin areas.** Started 2026-08-10 with `General-Linguistics/redundancy.md`, which was the highest-value gap anywhere in the vault: the Decipherment area had been dividing by redundancy for months without a note saying what it is.
+
+**Computer Languages is being left thin deliberately, and that is a recommendation rather than a deferral.** The area holds one note, on Lisp. Nothing in nine batches of Decipherment work has needed it, and writing notes there now would be filling a quota rather than following the argument, which is what `DECISIONS.md` says this vault does not do. The one thing that would genuinely serve is a note on statistical language models, n-grams and Markov chains, since `computational-decipherment-three-tasks.md`, `Yadav et al. 2009` and `redundancy.md` all lean on them; but that belongs under Computational linguistics in General Linguistics, not here.
+
+Leave Computer Languages until Andrew wants it for its own sake. It is the one area whose thinness is not a defect in the vault's coverage but a consequence of what the vault is about.
 
 ## Standalone items, not tied to a phase
 

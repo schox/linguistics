@@ -39,7 +39,7 @@ Worth noting too that [Yadav et al. 2009](../references/yadav-et-al-2009.md), fr
 
 The vault has treated well-posedness and corpus size as two separate problems. They are two terms of one expression, and seeing that explains several things at once.
 
-**The vault's own reading, stated as such.** Shannon's unicity distance is, informally, the quantity of ciphertext needed before the key is uniquely determined, and it scales with the size of the key space divided by the redundancy of the plaintext language. Two quantities, one on top and one underneath.
+**The vault's own reading, stated as such.** Shannon's unicity distance is, informally, the quantity of ciphertext needed before the key is uniquely determined, and it scales with the size of the key space divided by the [redundancy](../General-Linguistics/redundancy.md) of the plaintext language. Two quantities, one on top and one underneath.
 
 [The evidentiary threshold](evidentiary-threshold-and-unicity-distance.md) is the vault's version of the first question: **is there enough text?** That note's own Caution flags the second, and files it as a limitation of the analogy: unicity distance assumes a defined key space and a known plaintext language model, and "decipherment has neither".
 

@@ -56,6 +56,7 @@ See `_data-sources.md` for how the vault relates to these.
 - [Rao et al. 2010](rao-2010.md)
 - [Salgarella 2025](salgarella-2025.md), Linear A
 - [Shannon 1949](shannon-1949.md)
+- [Shannon 1951](shannon-1951.md), the entropy of printed English
 - [Sproat 2010](sproat-2010.md)
 - [Torres Torres 2007](torres-torres-2007.md), the cuneiform decipherment
 - [Tamburini 2025](tamburini-2025.md)

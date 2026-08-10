@@ -39,7 +39,7 @@ Added after the phase 2 batches on the solved decipherments. Every script this v
 
 ## Caution
 
-The parallel is real but not an identity. Unicity distance is computed against a defined key space and a known plaintext language model. Decipherment has neither: the "key space" is unbounded and the plaintext language may be unattested and unrelated to anything known. So the cryptographic result is a rigorous analogue, not a formula that can be applied directly to a sign corpus to yield a number. Treat it as the right conceptual frame, and be careful about anyone who claims to have computed a precise threshold for a given script.
+The parallel is real but not an identity. Unicity distance is computed against a defined key space and a known plaintext language model, whose [redundancy](../General-Linguistics/redundancy.md) supplies the divisor. Decipherment has neither: the "key space" is unbounded and the plaintext language may be unattested and unrelated to anything known. So the cryptographic result is a rigorous analogue, not a formula that can be applied directly to a sign corpus to yield a number. Treat it as the right conceptual frame, and be careful about anyone who claims to have computed a precise threshold for a given script.
 
 **This caution turned out to be half the argument rather than a limitation of it.** Whether a plaintext language exists at all is the other term of the same expression, and it is prior to the quantity question rather than parallel to it. Developed in [is it writing at all?](is-it-writing-at-all.md), which is why that note is not a side-debate about the Indus script.
 

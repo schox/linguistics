@@ -40,6 +40,8 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 
 ## Notes
 
+- [Redundancy](redundancy.md), the constraint that makes decipherment possible at all
+
 (none yet)
 
 ## Documents
