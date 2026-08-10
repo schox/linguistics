@@ -20,7 +20,7 @@ status: open
 
 # John Chadwick
 
-English classicist and philologist (21 May 1920 to 24 November 1998), Michael Ventris's collaborator on Linear B and the man who made the decipherment stick as scholarship.
+English classicist and philologist (21 May 1920 to 24 November 1998), [Michael Ventris](ventris.md)'s collaborator on Linear B and the man who made the decipherment stick as scholarship.
 
 ## Wartime cryptography
 

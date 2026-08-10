@@ -29,7 +29,7 @@ wikidata:
 
 # Linear B
 
-The script of Mycenaean administration, about 87 syllabic signs and over 100 ideographic signs, used from roughly 1450 to 1200 BCE. Deciphered by Michael Ventris in 1952, with [John Chadwick](../people/john-chadwick.md).
+The script of Mycenaean administration, about 87 syllabic signs and over 100 ideographic signs, used from roughly 1450 to 1200 BCE. Deciphered by [Michael Ventris](../people/ventris.md) in 1952, with [John Chadwick](../people/john-chadwick.md).
 
 `class` is `mixed`, not `syllabary`. Salgarella and Castellan state that "both Linear A and Linear B are logo-syllabic writing systems", consisting of syllabograms for open syllables and logograms standing for whole words or concepts. The sign counts in the first sentence say the same thing: a script with more ideographic signs than syllabic ones is not a syllabary. This note previously said `syllabary` and so contradicted its own opening line while disagreeing with [Linear A](linear-a.md), which is classified from the same source.
 

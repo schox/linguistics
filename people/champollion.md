@@ -50,7 +50,7 @@ He is the standard label for the decipherment, which satisfies the second limb o
 
 - **Nothing here is from his own writing.** The *Lettre à M. Dacier* is short, published in 1822, and long out of copyright, so there is no good reason for this note to rest entirely on Dalby's summary.
 - **His life is barely covered.** Born 1790, teaching at Grenoble by 1814, dead at 41 in 1832. His Coptic learning, which is what let him use the language rather than only the signs, is not treated at all and is the part most relevant to this vault.
-- **Thomas Young has no note**, and on the evidence above he meets the inclusion test. He also bridges areas, having worked on physics and physiology, which is exactly the cross-area signal `field` is meant to capture.
+- ~~Thomas Young has no note.~~ Written, see [Thomas Young](young.md). Whether he genuinely bridges areas, which would be the cross-area signal `field` is meant to capture, is left open there because nothing read covers his scientific work.
 - **`viaf` not looked up.**
 
 ## Sources

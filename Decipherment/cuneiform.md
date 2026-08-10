@@ -38,7 +38,7 @@ The wedge-shaped script of Mesopotamia, invented for [Sumerian](../Human-Languag
 
 The pattern from [Egyptian hieroglyphs](egyptian-hieroglyphs.md), the script of the [Egyptian](../Human-Languages/egyptian.md) language, repeats with different materials, and the repetition is the point.
 
-Grotefend's work bore fruit in **1802**, twenty years before Champollion's *Lettre*, and it started from royal names with no bilingual at all. Working on two Old Persian inscriptions from Persepolis, he identified a recurring sign group as "king" and a longer one as "king of kings", inferred from the pattern that the author of one text was the son of the author of the other, and matched the pair against Darius and Xerxes because Greek historians said Persepolis was built by kings Herodotus named.
+[Grotefend's](../people/grotefend.md) work bore fruit in **1802**, twenty years before Champollion's *Lettre*, and it started from royal names with no bilingual at all. Working on two Old Persian inscriptions from Persepolis, he identified a recurring sign group as "king" and a longer one as "king of kings", inferred from the pattern that the author of one text was the son of the author of the other, and matched the pair against Darius and Xerxes because Greek historians said Persepolis was built by kings Herodotus named.
 
 He then assigned sound values from Greek, Hebrew and Avestan forms of those names, reading `d a r h e u s h` for Darius and `kh sh h e r sh e` for Xerxes, and used the royal title *khscheio* from Duperron's 1771 edition of the Avesta to recover vowels and transliterate Hystaspes as `g o sh t a s p`.
 

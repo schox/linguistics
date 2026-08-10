@@ -41,7 +41,7 @@ Not the Rosetta Stone alone. Dalby's account gives the sequence, and the useful 
 | 1799 | The stone is recognized as carrying three versions of one text |
 | 1802 | Silvestre de Sacy and Åkerblad show the **demotic** spells foreign names phonetically; Åkerblad publishes 29 demotic letters, more than half correct |
 | 1803 | First full translation of the Greek text |
-| 1814-1819 | Thomas Young shows the **hieroglyphic** does the same, reads `p t o l m e s` in a cartouche, and finds as many as 80 similarities between hieroglyphic and demotic |
+| 1814-1819 | [Thomas Young](../people/young.md) shows the **hieroglyphic** does the same, reads `p t o l m e s` in a cartouche, and finds as many as 80 similarities between hieroglyphic and demotic |
 | 1822 | Champollion reads `k l e o p a t r a` from the Philae obelisk and publishes an alphabet of phonetic hieroglyphs in the *Lettre à M. Dacier* |
 | 1823 | Champollion confirms that phonetic signs also spell **native** Egyptian names, identifying Ramesses and Thutmose at Abu Simbel |
 

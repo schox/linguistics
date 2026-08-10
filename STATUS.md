@@ -13,7 +13,7 @@ This file is the present tense: what exists, what is thin, what has been establi
 
 The structure is complete and enforced. Five areas, thirteen note types plus `Type` itself, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
 
-The vault currently holds 132 notes. Decipherment is no longer a skeleton; every other area still is.
+The vault currently holds 135 notes. Decipherment is no longer a skeleton; every other area still is.
 
 **This figure is now checked.** `scripts/check-vault.py` fails if it drifts from the actual count, which it had, silently, from 107 to 132 across eight batches.
 
@@ -25,7 +25,7 @@ Content. The areas hold their taxonomy and a handful of exemplars, nothing more:
 - **Human Languages**: 7 notes (Akkadian, Classic Maya, Egyptian, Etruscan, Mycenaean Greek, Sumerian, Ugaritic). The genealogy is mapped to branch level and almost entirely unpopulated.
 - **Computer Languages**: 1 note (Lisp).
 - **Cryptography**: 3 notes (Vigenère, and two methods).
-- **Decipherment**: 21 notes, plus the 15 places, 8 people and 44 references that overwhelmingly serve it. The only area worked properly.
+- **Decipherment**: 21 notes, plus the 15 places, 11 people and 45 references that overwhelmingly serve it. The only area worked properly.
 
 The Human Languages notes are worth a caveat: all seven exist because a deciphered script needed a language to point at. The area is currently a by-product of Decipherment rather than a treatment of its own subject.
 

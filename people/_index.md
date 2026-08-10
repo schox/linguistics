@@ -22,7 +22,10 @@ See the inclusion test in `types/person.md`. Authorship of a cited paper is not 
 - [Edward Hincks](hincks.md), Decipherment
 - [Yuri Knorozov](knorozov.md), Decipherment
 - [Tatiana Proskouriakoff](proskouriakoff.md), Decipherment
+- [Michael Ventris](ventris.md), Decipherment
+- [Thomas Young](young.md), Decipherment
+- [Georg Friedrich Grotefend](grotefend.md), Decipherment
 
 ## Obvious gaps
 
-Thomas Young (now clearly earned, see [Champollion](champollion.md)), Ventris, Barber, al-Kindi, Friedman (William and Elizebeth), Turing, Kerckhoffs, Saussure, Chomsky, Knuth, Backus, McCarthy, Hopper, Iverson, Diffie and Hellman, Rivest, Shamir and Adleman.
+Barber, al-Kindi, Friedman (William and Elizebeth), Turing, Kerckhoffs, Saussure, Chomsky, Knuth, Backus, McCarthy, Hopper, Iverson, Diffie and Hellman, Rivest, Shamir and Adleman.
