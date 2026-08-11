@@ -34,8 +34,6 @@ So the language behind the script was never lost. What was lost was the ability 
 
 It also means the decipherment had a resource none of the others did: native speakers of related languages whose [phonology](../General-Linguistics/phonology.md) and [morphology](../General-Linguistics/morphology.md) could test a proposed reading directly.
 
-That is worth more than it looks. Both of those notes record that the field's standard methods, the minimal pair and the grammaticality judgment, require an informant, and that no other language in this area has one. Maya is the exception, and it is also the case that broke.
-
 ## Open questions
 
 - **This is a stub**, written so the script has a language to point at, as with [Egyptian](egyptian.md), [Akkadian](akkadian.md) and [Sumerian](sumerian.md). It has no treatment of the grammar, the corpus, or the relationship between the inscriptional language and the modern ones.

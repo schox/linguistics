@@ -25,6 +25,18 @@ A Tolaria vault for linguistics, human languages, computer languages, cryptograp
 
 Five areas: `General-Linguistics/`, `Human-Languages/`, `Computer-Languages/`, `Cryptography/`, `Decipherment/`, plus `references/` for the bibliography. Folders are shallow and are not the taxonomy; the taxonomy is the `subfield` field, drawn from each area index. Notes carry a `type` (`MOC`, `Language`, `Script`, `ComputerLanguage`, `Cipher`, `Method`, `Concept`, `Person`, `Place`, `Reference`, `Note`, `Media`, `Doc`) and `belongs_to` an area hub. Decipherment is the integrative area, taking method from Cryptography, constraint from General Linguistics, candidate relatives from Human Languages, and technique from Computer Languages.
 
+## A knowledge base first, an argument second
+
+**This is the governing instruction for content work, and it overrides your instinct to be interesting.**
+
+The vault is being built breadth-first as a general reference, and amplified with analysis afterward. A note on a topic **describes that topic**: what it is, how it works, with examples, plus the child topics that should become notes of their own and an honest statement of what it does not cover. That is the whole job.
+
+Analysis, interpretation, cross-area synthesis and the vault's own reasoning are all wanted, and they go in **separate notes that link to the entries**, not inside them. A reader looking up what a phoneme is should get a phoneme, not an argument about undeciphered scripts.
+
+This was learned the hard way; `DECISIONS.md` records the batch that had to be written twice. The failure is seductive because each individual digression is defensible. Judge it at the level of the note: if someone came to this note for its title, does the note answer that?
+
+`belongs_to` carries the topic hierarchy, chaining from a note to its parent up to the area hub. See `CONVENTIONS.md`.
+
 ## The evidentiary standard
 
 This vault is for research and academic use: Andrew's own first, shared with others later. Everything below follows from that. **Confine yourself to the facts as you find them.**

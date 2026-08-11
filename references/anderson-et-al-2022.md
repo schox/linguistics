@@ -24,9 +24,9 @@ related_to:
 
 # Anderson et al. 2022
 
-An open-access introductory linguistics textbook, and the backbone the vault uses for the **Levels of analysis** subfield.
+An open-access introductory linguistics textbook, and the backbone the vault uses for the **[Levels of analysis](../General-Linguistics/levels-of-analysis.md)** subfield.
 
-It matters here for a practical reason. General Linguistics is the area this vault leans on hardest and has written least, and most of the standard reference works for it are paywalled. This one is not, which means a claim made in a starter note can be checked by anyone reading the repository rather than taken on trust.
+It matters here for a practical reason. General Linguistics is the area this vault leans on hardest and has written least, and most of the standard reference works for it are paywalled. This one is not, which means a claim made in a reference entry can be checked by anyone reading the repository rather than taken on trust.
 
 ## What it is
 
@@ -53,7 +53,7 @@ It treats **signed languages throughout rather than in an appendix**: signed-lan
 
 **Read in part**, and the note should not claim more. The sections consulted so far are 3.6 (segmentation, transcription and the IPA), 4.1 (phonemes and allophones), 4.3 (contrastive distribution and minimal pairs), 5.1 (what is morphology, what is a word), 6.1 (grammaticality judgements), 6.3 (phrases, heads and selection), 7.1 (linguistic meaning), 7.3 (entailments and implicatures), 8.5 (the Cooperative Principle) and 8.9 (illocutionary meaning).
 
-Everything in the six starter notes on levels of analysis descends from those ten sections. Chapters 9 to 14 are unread.
+Everything in the six entries under [Levels of analysis](../General-Linguistics/levels-of-analysis.md) descends from those ten sections, together with the chapter and section titles, which are used to say what each subject covers without claiming to have read it. Chapters 9 to 14 are unread.
 
 ## A caveat about scope
 

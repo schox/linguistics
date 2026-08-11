@@ -47,6 +47,6 @@ Where the transfer physically happened. See `places/`.
 
 ## Still to write
 
-- Embeddings and distributional semantics, as the mechanism behind neural decipherment. [Semantics](General-Linguistics/semantics.md) now states where this attaches and what it will have to argue: that a word's meaning is approached through the contexts it occurs in, which is the one methodological principle in that area that survives having no informant.
+- Embeddings and distributional semantics, as the mechanism behind neural decipherment. Attaches to [Semantics](General-Linguistics/semantics.md).
 - Constructed languages and the Voynich hypotheses
 - Corpus destruction as a historical event rather than an accident, prompted by [Rongorongo](Decipherment/rongorongo.md) and [Rapa Nui](places/rapa-nui.md). The vault's existing framing in [adversarial versus accidental encipherment](Decipherment/adversarial-versus-accidental.md) treats obscurity as an accident of cultural loss, which does not fit a reading community destroyed within living memory by identifiable action.

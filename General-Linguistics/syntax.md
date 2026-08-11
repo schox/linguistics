@@ -2,12 +2,11 @@
 type: Concept
 subfield:
   - Levels of analysis
-belongs_to: "[[General Linguistics]]"
+belongs_to: "[[Levels of analysis]]"
 related_to:
   - "[[Morphology]]"
   - "[[Semantics]]"
   - "[[The Chomsky hierarchy]]"
-  - "[[Is it writing at all? The Indus entropy debate]]"
 cites:
   - "[[Anderson et al. 2022]]"
 status: open
@@ -15,54 +14,77 @@ status: open
 
 # Syntax
 
-The study of how words are organized into phrases and sentences. [Anderson et al.](../references/anderson-et-al-2022.md) make the central claim immediately: a sentence is not a string of words but a **hierarchical structure**, and every phrase has an element that is its **head**.
+The study of how words are organized into phrases and sentences. [Anderson et al. 2022](../references/anderson-et-al-2022.md) state the central claim at the outset: a sentence is not merely a string of words but has a **hierarchical structure**, and every phrase has an element that is its **syntactic head**.
 
-That claim, not the details of any particular theory, is what connects this area to [the Chomsky hierarchy](chomsky-hierarchy.md) and through it to Computer Languages. Hierarchy is the thing a regular grammar cannot produce and a context-free one can.
+## Generativity
 
-## Generativity, shown with nonsense
+An internal grammar generalizes to sentences never encountered before. Anderson et al. demonstrate this with invented words:
 
-Their demonstration is two invented sentences. *All grypnos are tichek* is the right shape for English even though two of its words mean nothing. *Grypnos tichek all are* is not, and would still not be even if you knew what a grypno was.
+| | |
+| --- | --- |
+| (1) | All grypnos are tichek. |
+| (2) | \*Grypnos tichek all are. |
 
-Nobody has encountered either sentence before, which is the point: an internal grammar generalizes to new cases. They call this **generativity**.
+Neither sentence has been read before and neither contains meanings a reader can look up, yet (1) is the right shape for English and (2) is not. Shape is separable from meaning. This property is called **generativity**.
 
-**Shape is separable from meaning.** The vault has been relying on this for its entire Decipherment area, since every distributional method assumes that structure is detectable without content, and it has not previously had a note saying so.
+## Grammaticality
 
-## Grammaticality judgments, and why the vault cannot have any
+A sentence consistent with the patterns of a language user's internal grammar is **grammatical**; one that is not is **ungrammatical**.
 
-A sentence matching the patterns of a user's internal grammar is **grammatical**; one that does not is **ungrammatical**, conventionally marked with an asterisk. A sentence that is well formed but makes no sense takes a hash mark instead: their example is *#The book pedalled the ladder harmoniously*, which is the right shape and semantically absurd.
+Ungrammatical does not mean "bad grammar" in the prescriptive sense of rules taught in school. It means inconsistent with the grammatical system of an actual language user.
 
-The evidence base of the field is the **grammaticality judgment**, and Anderson et al. are careful about what it is. It is an evaluation by an individual language user. There is no way to obtain one for "English" as a whole, only from particular English speakers, and describing something as ungrammatical in a language is shorthand for saying that its users generally agree. Where they disagree, that disagreement is itself data about syntactic variation.
+**Notation:**
 
-They are also clear that ungrammatical examples are the more interesting ones, because they show the limits.
+| Mark | Means |
+| --- | --- |
+| `*` | ungrammatical, as in \**Grypnos tichek all are* |
+| `#` | grammatical but semantically odd, as in *#The book pedalled the ladder harmoniously* |
 
-**This is the vault's own reasoning and is not drawn from the source.** Every language in this vault's Decipherment area is dead, and several are unidentified. There is nobody to ask. The consequence is that **the primary evidence of syntax, and specifically all negative evidence, is unavailable for the languages the vault studies.** A corpus shows what was written. It never shows what could not have been written, and the asterisk cannot be assigned.
+Anderson et al. note that ungrammatical examples are often the more informative, because they show the limits on how sentences can be built.
 
-This is a structural limit rather than a shortage of data, and it belongs beside the constraint recorded in [phonology](phonology.md), where minimal pairs turned out to require meanings a decipherer does not have. In both cases the field's standard method presupposes an informant. Corpus-only linguistics is a different discipline working under a strictly weaker evidence base, and the vault should say so wherever it treats a distributional result as equivalent to a grammatical one.
+## Grammaticality judgments
 
-## Constituents, heads and selection
+The evidence base of the field. A **grammaticality judgment** is an evaluation of a sentence by a language user.
 
-Words group into **constituents**. Anderson et al. define a **phrase** as a set of words acting together as a unit, and demonstrate it by substitution: in *All kittens are very cute*, the opening can be replaced by *puppies*, or *the ducklings that I saw earlier*, or *these videos of a baby panda sneezing*, but not by *that I saw earlier* or *of a baby panda*.
+Anderson et al. are careful about its scope. A judgment can only be obtained from an individual, never from a language as a whole; describing a sentence as ungrammatical "in English" is shorthand for saying that users of English generally agree about it. Where users disagree, the disagreement is itself evidence about **syntactic variation**.
 
-What the working substitutions share is not merely containing a noun. They are noun phrases, in which the noun is the **head**: it fixes the category of the whole phrase, and therefore where the phrase can go. This is the same headedness found inside compound words, applied to words in a phrase instead of morphemes in a word, which is why [morphology](morphology.md) and syntax are usually taught as one continuous argument.
+## Constituents and phrases
 
-Heads also **select**. A verb has, in their phrasing, an opinion about how many objects it takes, which is transitivity; no verb has an opinion about whether it is modified by an adverb.
+All human languages appear to group words into **constituents**. Grammatical generalizations refer to **phrases** in **structural positions**, not to linear properties such as "the fourth word".
 
-## Where this touches the Indus dispute
+A **phrase** is a set of words acting together as a unit. The standard test is substitution. In *All kittens are very cute*, the opening can be replaced by:
 
-[Is it writing at all?](../Decipherment/is-it-writing-at-all.md) records an argument conducted almost entirely in terms of conditional entropy over sign sequences. Both sides are measuring how constrained the ordering is.
+- *Puppies*
+- *The ducklings that I saw earlier*
+- *These videos of a baby panda sneezing*
 
-The vault should be careful about what that measures. Constrained ordering is consistent with syntax and is not the same claim. Heraldic sequences, accounting formats and calendrical notations are all strongly ordered and none is a sentence. The hierarchical structure that Anderson et al. put at the center of syntax is exactly what a bigram or Markov statistic does not test for, and the vault's existing note says the dispute is about redundancy without saying that redundancy at that order of statistic is a weak proxy for grammar.
+but not by *that I saw earlier* or *of a baby panda*, both of which give ungrammatical results.
 
-**Stated as a caution, not as a finding.** Whether anyone has attempted a hierarchy-sensitive test on the Indus corpus is unknown here and is worth finding out.
+What the working substitutions share is not merely containing a noun. Each is a **noun phrase**, in which a noun is the **head**.
+
+## Heads and selection
+
+The head of a phrase determines the category of the whole phrase, and therefore where the phrase can occur relative to other phrases. This is the same **headedness** found in compound words, applied to words in a phrase rather than morphemes in a word.
+
+Heads also **select**. A verb determines whether and how many objects it takes, which is its **transitivity**; Anderson et al. put it as each verb having an opinion about its objects. No verb has an opinion about whether it is modified by an adverb, and in English no verb has an opinion about having a subject, because all English clauses require one.
+
+## Tree notation
+
+The source develops constituency into tree diagrams and then into X-bar theory, covering sentences as TPs, modifiers as adjuncts, structural ambiguity, embedded clauses and movement. An appendix gives the alternative phrase-structure-rule notation.
+
+**This is one framework among several** and this note does not present it as the syntax of record. Dependency grammar takes a different starting point; the vault has no note on either.
+
+## Child topics
+
+To be written as notes of their own: constituent, phrase, syntactic head, selection, transitivity, grammaticality judgment, word order, constituency test, lexical and functional category, clausal embedding, thematic role, argument structure, movement, X-bar theory, dependency versus constituency.
 
 ## Open questions
 
-- **No syntactic theory is presented.** The source's treatment is X-bar and movement, one framework among several, and this note has deliberately taken only the parts that are common ground. Dependency versus constituency is named in this area's index under **Formal foundations** and is unwritten.
-- **Word order typology is absent.** It is the most immediately useful part of syntax for this vault, since a decipherer wants to know what orders are possible at all, and it belongs under **Typology and universals** sourced from [WALS 2013](../references/wals-2013.md), which the vault holds as a Reference and has not used for this.
-- **The claim that entropy over sign sequences is a weak proxy for syntax is the vault's own** and is not attributed. It is the kind of claim that ought to exist in the computational literature already.
-- **Nothing here covers the syntax of dead languages as a practiced discipline.** Classicists and Assyriologists do describe the syntax of languages with no speakers, and how they establish anything without negative evidence is exactly the question this note raises and does not answer.
-- **Thematic roles, argument structure, and the passive are all in the source and unused**, and argument structure is where syntax hands off to [semantics](semantics.md).
+- **Word order is named and not covered**, and it is the part of syntax with the widest cross-linguistic evidence base. It belongs under **Typology and universals**, sourced from [WALS 2013](../references/wals-2013.md), which this vault holds and has not used.
+- **No syntactic theory is presented.** Only material common to most frameworks is included, which leaves the note thin on structure above the phrase.
+- **Dependency versus constituency is unwritten**, though it is named in this area's index under **Formal foundations** and is the main live alternative to the tree notation above.
+- **Nothing here covers the syntax of languages with no living speakers**, which is a practiced discipline in classics and Assyriology and cannot use grammaticality judgments.
 
 ## Sources
 
-- [Anderson et al. 2022](../references/anderson-et-al-2022.md), section 6.1 for the definition of syntax, the *grypnos* examples, generativity, grammaticality judgments and the asterisk and hash conventions; section 6.3 for constituents, phrases, the substitution test, headedness and selection
+- [Anderson et al. 2022](../references/anderson-et-al-2022.md), section 6.1 for the definition of syntax, the *grypnos* examples, generativity, grammaticality, grammaticality judgments and the asterisk and hash conventions; section 6.3 for constituents, phrases, the substitution test, headedness and selection; chapter 6 and appendix section titles for the tree notation

@@ -225,3 +225,31 @@ The failure mode is specific and worth naming, because it is the natural one for
 That last point turned out to be the argument for the whole approach rather than a stylistic requirement. Writing six notes on the levels of analysis surfaced three problems the Decipherment area had been walking past: the minimal-pair test presupposes meanings a decipherer does not have, grammaticality judgements presuppose an informant no dead language has, and signs per document measures writing rather than language. None of those came from the decipherment literature. They came from writing down the elementary material the vault had skipped.
 
 **Consequence.** Breadth is cheaper per note but not cheap, since sourcing dominates. It also means General Linguistics and Cryptography, which have been neglected, now come before more Decipherment work.
+
+## 2026-08-11: A knowledge base first, an argument second
+
+**Decided.** Andrew's instruction, given after the first attempt at the breadth batch was rejected: "think of it more like a database than a thesis". Entries describe their subject. Analysis, interpretation and cross-area synthesis go in separate notes that link to the entries.
+
+**This supersedes the entry above it in one respect**, and only one. The reasoning for breadth before depth stands. The claim that a starter note "must connect" to existing vault work, and the six notes written on that basis, do not.
+
+**Why the first attempt failed.** It produced entries that were structurally sound and wrong in kind. Each defined its level in a few paragraphs and then spent as much space again arguing from that level back into the Decipherment area: what Kober was really doing, why a decipherer cannot use minimal pairs, why signs per document overstates the evidence. Individually those are defensible. Collectively they meant a reader looking up what a phoneme is got an argument about undeciphered scripts, and the reference layer the vault had set out to build did not exist at the end of it.
+
+The generalization worth keeping: **a note that answers a question nobody asked it is not a reference note**, however well sourced. Argument attracts argument, and an area written argument-first stays argument-first because every new note is written to fit the existing case.
+
+**What an entry looks like now.** Definition, description, examples, child topics named, `## Open questions` for what is not covered, `## Sources`. No section relating the subject to other areas beyond a link.
+
+**Rejected.** Deleting the analysis. Several of those observations are worth notes of their own, written as such and linking to both sides rather than embedded in a definition. They are parked in `ROADMAP.md`.
+
+**Consequence.** Coverage is now the measure of progress for the reference layer, not depth. The vault will look thinner and less interesting for a while, which is the intended trade.
+
+## 2026-08-11: `belongs_to` chains, and subfields get MOC hubs
+
+**Decided.** `belongs_to` carries the topic hierarchy, not just membership of an area. A note points at its immediate parent; the chain runs topic to subfield `MOC` to area hub. `related_to` links siblings. Each subfield gets a `MOC` note when it acquires content.
+
+**Why.** The vault needed a hierarchical taxonomy per discipline, and Tolaria already supplies the machinery: `has` is the computed inverse of `belongs_to`, so a chained `belongs_to` renders as a tree in the Properties panel and the Neighborhood view with nothing written by hand. The previous rule, that every content note points at its area hub, made all 145 notes siblings in the graph and left any hierarchy to be maintained as prose in an `_index.md`, which is exactly the sort of hand-maintained list this vault has already been burned by.
+
+**Rejected.** A separate `parent` field. It would have duplicated what `belongs_to` already means and would not have been picked up by Tolaria's computed inverse, so the graph would have stayed flat while the frontmatter claimed otherwise.
+
+Also rejected: dropping `subfield` once a `MOC` exists for it. `subfield` is the controlled taxonomy and is checked against each area's stated vocabulary; `belongs_to` is the graph. They answer different questions and both stay on every note.
+
+**Consequence.** `CONVENTIONS.md` is amended. Existing notes are not being migrated wholesale: they point at their area hub, which remains valid as a chain of length one, and they move under a subfield `MOC` when that subfield is next worked on.

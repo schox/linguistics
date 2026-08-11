@@ -2,11 +2,9 @@
 type: Concept
 subfield:
   - Levels of analysis
-belongs_to: "[[General Linguistics]]"
+belongs_to: "[[Levels of analysis]]"
 related_to:
   - "[[Semantics]]"
-  - "[[Redundancy]]"
-  - "[[Why a script stays unread]]"
 cites:
   - "[[Anderson et al. 2022]]"
 status: open
@@ -14,59 +12,80 @@ status: open
 
 # Pragmatics
 
-What an utterance means in a context, over and above what the sentence means on its own.
+The study of what an utterance means in a context, over and above what the sentence means on its own.
 
-[Semantics](semantics.md) gives a sentence's truth conditions independent of context. Pragmatics starts from the fact that sentences do not occur in isolation, and asks what a speaker or signer means *in* making the utterance, and what an addressee is entitled to infer.
+[Semantics](semantics.md) gives a sentence's meaning independent of context. Pragmatics starts from the fact that sentences do not occur in isolation, and asks what a speaker or signer means *in* making the utterance, and what an addressee is entitled to conclude.
 
-[Anderson et al.](../references/anderson-et-al-2022.md) keep the terminology strict, and it is worth keeping: **the speaker or signer implies, the addressee infers.** The two are not interchangeable.
+**Terminology, which [Anderson et al. 2022](../references/anderson-et-al-2022.md) keep strict:** the speaker or signer **implies**; the addressee **infers**. The two are not interchangeable.
+
+## Conversational implicature
+
+An inference licensed by the context rather than by the words.
+
+| | |
+| --- | --- |
+| Aya: | Did Raj feed the cat and clean the litterbox? |
+| Bo: | He fed the cat. |
+| Aya: | (infers: he didn't clean the litterbox) |
+
+Nothing in Bo's sentence says the litterbox was not cleaned. The inference rests on the assumption that if both were true, Bo would have said both.
 
 ## The Cooperative Principle
 
-The standard account of why implicatures arise, due to Paul Grice.
+The standard account of why such inferences arise, proposed by Paul Grice.
 
-Their example: Aya asks whether Raj fed the cat and cleaned the litterbox; Bo answers that he fed the cat; Aya infers that he did not clean the litterbox. Nothing in Bo's sentence says so. The inference comes from the assumption that if both were true Bo would have said both.
+Discourse participants assume that everyone in a conversation is acting so as to accomplish the conversational goals. Grice set out four **maxims**, general rules of conduct that participants are taken to follow and to expect others to follow:
 
-Grice's proposal is that conversation runs on implicit principles, the underlying assumption being that participants are acting so as to accomplish conversational goals. He set out four **maxims**: Quality, Quantity, Relation and Manner.
+- Maxim of **Quality**
+- Maxim of **Quantity**
+- Maxim of **Relation**
+- Maxim of **Manner**
 
-Anderson et al. spend some effort correcting a common misreading, and the correction is the part worth recording. The maxims are phrased as imperatives but are **not prescriptive**. They are a description of a language user's pragmatic knowledge, in the same way a phonological rule is stated as an instruction without being advice. Grice's own framing is conditional: **if** discourse participants have a common immediate goal, **then** it is in their interest to follow something like the Cooperative Principle. They quote him calling it something it is "REASONABLE for us to follow" and that "we SHOULD NOT abandon", with his emphasis, and note that what counts as cooperative differs between a casual conversation, a quarrel, a letter and a witness statement.
+**The maxims are not prescriptive.** They are stated as imperatives but describe a language user's pragmatic knowledge, in the same way a phonological rule can be stated as an instruction without being advice. Anderson et al. spend some effort correcting the misreading that failing to follow them makes someone a bad language user.
 
-**Grice 1975 is not held as a Reference here and has not been read.** Everything above reaches the vault through a textbook, including the quotations, which are given with page numbers this vault has not verified.
+Grice's own framing is conditional: **if** discourse participants have a common immediate goal, **then** it is in their interest to follow something like the Cooperative Principle. They quote him describing it as something it is "REASONABLE for us to follow" and that "we SHOULD NOT abandon", his emphasis, and record his own observation that what counts as cooperative differs between a casual conversation, a quarrel, a letter and a witness statement.
 
-## Speech acts
+**Grice 1975 is not held as a Reference in this vault and has not been read.** Everything above, including the quotations and their page references, reaches the vault through a textbook.
 
-The other half of the chapter. **Illocutionary meaning** is what a speaker means in making an utterance, once the literal meaning has been built up. Their example turns on a roommate saying there is tomato sauce and ground beef in the fridge: the sense of the sentence is the combined meaning of its words, but what is being done is asserting it and inviting agreement.
+## Illocutionary meaning
 
-Assertion and question are the two illocutionary types they develop; exclamatives and imperatives are named and set aside.
+What a speaker means *in* making an utterance, once the literal meaning has been composed.
 
-The wider claim is that language is **performative**: things happen when you say them. Naming a ship christens it; writing a bequest in a will creates rights. They quote J. L. Austin, "to *say* something is to *do* something", his emphasis, and note that his original **performatives** were utterances with a conventional consequence, typically carrying a performative verb: *I hereby name*, *I hereby bequeath*. Anything linguistic that does something is a **speech act** or **sign act**.
+Anderson et al. illustrate with two roommates deciding on dinner. Bo says *We have tomato sauce and ground beef in the fridge*. The sense of the sentence is the combined meaning of its words; what Bo is doing is stating something he believes true and inviting agreement. That is an **assertion**.
 
-Austin 1975 likewise reaches the vault only through this textbook.
+Classifying sentences by illocutionary meaning gives at least:
 
-## The corpora this vault reads are pragmatically flat
+| Type | Example |
+| --- | --- |
+| Assertion | *We have tomato sauce in the fridge.* |
+| Question | *Should we have spaghetti for dinner?* |
+| Exclamative | *What a beautiful raccoon!* |
+| Imperative | *Look at the raccoon!* |
 
-**This is the vault's own reasoning and is not drawn from a source.**
+The source develops assertion and question and sets the other two aside.
 
-Almost everything in the Decipherment area is administrative. Linear A and Linear B are accounts. The Indus corpus is dominated by short seal inscriptions. Proto-Elamite is bookkeeping. What survives is what was written on durable material for record-keeping, which is a strong survival bias rather than a fact about what those societies said.
+## Speech acts and performativity
 
-Grice's machinery assumes conversation: two participants, shared goals, and inference about why *this* was said rather than something else. An inventory has almost none of that. There is no addressee reasoning about what the scribe chose not to write, and a ration list flouts no maxims.
+Language is **performative**: things happen and the world changes when utterances are made. Saying *I name this ship the S.S. Anne* christens it; writing *I bequeath my card collection to my child* in a will creates rights over the collection.
 
-This cuts two ways, and the vault should hold both.
+Anderson et al. quote J. L. Austin: "to *say* something is to *do* something", his emphasis. Austin's original **performatives** were utterances made in order to do something and give rise to a conventional consequence, typically carrying a **performative verb**: *I hereby name*, *I hereby bequeath*, *I now pronounce*.
 
-It makes the corpora **easier**, in the sense the Decipherment area already relies on: formulaic administrative text is highly structured, and structure is what [frequency analysis](../Decipherment/frequency-analysis.md) and every distributional method consume. [Redundancy](redundancy.md) records this.
+Anything linguistic that serves the purpose of doing something is a **speech act**, or **sign act** in a signed language.
 
-It also makes them **poorer**, in a way the vault has not previously stated. Almost everything pragmatics studies is absent from them, so a decipherment of an administrative corpus recovers a register rather than a language. When [why a script stays unread](../Decipherment/why-scripts-stay-unread.md) treats corpus size as the binding variable, the unstated assumption is that a corpus is a sample of a language. An accounting archive is a sample of one genre, and a hundred thousand ration tablets would not supply what a single letter would.
+**Austin 1975 likewise reaches this vault only through the textbook.**
 
-Whether that materially affects decipherability is not something this vault can currently answer. It is recorded as a problem, alongside the two already open in [redundancy](redundancy.md) and [morphology](morphology.md), all three pointing the same way: sign counts overstate the evidence.
+## Child topics
+
+To be written as notes of their own: conversational implicature, the Cooperative Principle, the Gricean maxims, flouting and violating a maxim, illocutionary meaning, assertion, question, speech act, performativity, presupposition, at-issue and non-at-issue meaning, deixis, context, common ground.
 
 ## Open questions
 
-- **Grice 1975 and Austin 1975 are both unread and unheld.** Two of the field's foundational works reach this note entirely through an introductory textbook, including quotations with page references the vault has not checked. Both should become Reference notes and be read.
-- **The maxims are named and not stated.** Quality, Quantity, Relation and Manner appear here as a list of labels; what each actually says is not recorded, and flouting versus violating a maxim is in the source and unused.
-- **Presupposition is entirely absent**, along with the at-issue and non-at-issue distinction the source opens the chapter with. Presupposition is the part of pragmatics most likely to be recoverable from an ancient corpus, because it leaves traces in the text itself rather than in a conversation.
-- **Deixis is not covered**, and it is the other candidate for being visible in a dead corpus.
-- **The claim that administrative corpora are pragmatically flat has not been checked against anyone who has argued it.** Assyriologists and Aegean specialists work on exactly this material and will have views about what genre bias does to interpretation.
-- **Nothing here connects pragmatics to cryptography**, though the vault's Cryptography area is about messages sent in contexts, and the assumption that a plaintext is cooperative discourse is doing quiet work in classical cryptanalysis.
+- **Grice 1975 and Austin 1975 are unread and unheld.** Two foundational works reach this note entirely through an introductory textbook, including quotations with page references the vault has not checked. Both should become Reference notes.
+- **The maxims are named and not stated.** What each of Quality, Quantity, Relation and Manner actually says is not recorded here, and flouting versus violating a maxim is in the source and unused.
+- **Presupposition is absent**, along with the at-issue and non-at-issue distinction the source opens its pragmatics chapter with.
+- **Deixis is not covered at all**, and it is a standard part of any treatment of the subject.
+- **Cross-community variation in discourse** has a section in the source and is not reflected here.
 
 ## Sources
 
-- [Anderson et al. 2022](../references/anderson-et-al-2022.md), section 8.5 for the Cooperative Principle, the litterbox example, the four maxims, the imply and infer distinction, the non-prescriptive reading and the quotations from Grice; section 8.9 for illocutionary meaning, assertion and question, performativity, performative verbs and the quotation from Austin
+- [Anderson et al. 2022](../references/anderson-et-al-2022.md), section 8.5 for the Cooperative Principle, the litterbox example, the four maxims, the imply and infer distinction, the non-prescriptive reading and the quotations from Grice; section 8.9 for illocutionary meaning, assertion, question, exclamative, imperative, performativity, performative verbs, speech acts and the quotation from Austin; chapter 8 section titles for the topics listed as uncovered

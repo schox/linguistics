@@ -13,7 +13,7 @@ This file is the present tense: what exists, what is thin, what has been establi
 
 The structure is complete and enforced. Five areas, thirteen note types plus `Type` itself, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
 
-The vault currently holds 144 notes. Decipherment is no longer a skeleton; every other area still is.
+The vault currently holds 145 notes. Decipherment is no longer a skeleton; every other area still is.
 
 **This figure is now checked.** `scripts/check-vault.py` fails if it drifts from the actual count, which it had, silently, from 107 to 132 across eight batches.
 
@@ -21,7 +21,7 @@ The vault currently holds 144 notes. Decipherment is no longer a skeleton; every
 
 Content. The areas hold their taxonomy and a handful of exemplars, nothing more:
 
-- **General Linguistics**: 8 notes. The **Levels of analysis** subfield is now covered by six starter notes (phonetics, phonology, morphology, syntax, semantics, pragmatics); the Chomsky hierarchy and redundancy sit under Formal foundations and Computational linguistics. Ten subfields, seven still empty.
+- **General Linguistics**: 9 notes. The **Levels of analysis** subfield has a `MOC` and six entries (phonetics, phonology, morphology, syntax, semantics, pragmatics); the Chomsky hierarchy and redundancy sit under Formal foundations and Computational linguistics. Ten subfields, seven still empty. None of the child topics the six entries name is written.
 - **Human Languages**: 7 notes (Akkadian, Classic Maya, Egyptian, Etruscan, Mycenaean Greek, Sumerian, Ugaritic). The genealogy is mapped to branch level and almost entirely unpopulated.
 - **Computer Languages**: 1 note (Lisp).
 - **Cryptography**: 3 notes (Vigenère, and two methods).
@@ -46,12 +46,15 @@ All seven carry their ISO 15924 code, Unicode block, `corpus_size` and `found_at
 
 **The plan then changed, on Andrew's instruction.** Phases 3 and 4 as originally scoped (people, then thin areas) are superseded. The vault was going deep before it went wide, producing analysis and interpretation on a base that had no general reference under it: eight notes into the Decipherment argument, General Linguistics still had no note on phonology. The instruction is that the vault **starts as a general reference and is amplified afterward**, which means a hierarchical taxonomy per discipline and starter notes across it before any more interpretation.
 
-**Batch 9 is the first of these.** Six starter notes covering the **Levels of analysis** subfield of General Linguistics, written from one open-access textbook ([Anderson et al. 2022](references/anderson-et-al-2022.md), CC BY-NC-SA), each ending with an explicit statement of what it does not cover.
+**Batch 9 is the first of these**, and it establishes the shape. A `MOC` note for the **Levels of analysis** subfield of General Linguistics, plus six entries under it (phonetics, phonology, morphology, syntax, semantics, pragmatics), written from one open-access textbook ([Anderson et al. 2022](references/anderson-et-al-2022.md), CC BY-NC-SA).
 
-Two things about how they are written, because they set the pattern for the rest:
+**The vault is a knowledge base first and an argument second.** That ordering is Andrew's and it is the governing instruction for every batch from here. In practice:
 
-- **They are breadth-first but not standard-free.** Each is sourced, each marks the vault's own reasoning as the vault's own, and each records its gaps. Breadth changed the scope, not the evidentiary standard.
-- **They earn their place by connecting.** Each note carries a section relating its level to work the vault has already done, which is what makes it a vault note rather than a textbook summary. Three of them surfaced problems the Decipherment area had not stated: the minimal-pair test needs meanings a decipherer lacks, grammaticality judgments need an informant no dead language has, and signs per document is not a measure of how much language is present.
+- **An entry describes; it does not argue.** Define the subject, describe it, give examples, name the child topics, record what is not covered. Interpretation, cross-area synthesis and the vault's own reasoning belong in separate notes that link to the entries, not inside them.
+- **Structure is carried by the graph, not by prose.** `belongs_to` chains from a note to its parent, up through a subfield `MOC` to the area hub, so Tolaria's computed `has` gives the tree. `related_to` links siblings. See `CONVENTIONS.md`.
+- **Breadth changed the scope, not the evidentiary standard.** Each entry is sourced, cites its Reference, and records its gaps under `## Open questions`.
+
+Batch 9 was written twice. The first attempt produced six essays that argued from each level back into the Decipherment area, which is the failure mode this ordering exists to prevent: it read as a thesis with a textbook attached, and it was rewritten as reference entries. The observations it generated were not discarded; they are parked in `ROADMAP.md` as notes to be written on their own once the reference layer exists.
 
 **Everything still to do is in `ROADMAP.md`**, including what is blocked and on whom. Do not duplicate it here.
 

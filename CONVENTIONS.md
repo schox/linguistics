@@ -110,8 +110,10 @@ Tolaria turns the vault into a graph via wikilink fields in frontmatter. `belong
 Model used here:
 
 - Each area's `_index.md` is the hub for that area, titled `General Linguistics`, `Human Languages`, `Computer Languages`, `Cryptography`, `Decipherment`.
-- Content notes set `belongs_to` the relevant area hub. The hub shows them under the computed `has`; do not write the reverse by hand.
-- `related_to` carries lateral links, including across areas.
+- **`belongs_to` chains, and carries the topic hierarchy.** A note sets `belongs_to` its immediate parent, which may be the area hub, a subfield `MOC`, or a broader `Concept`. The parent shows its children under the computed `has`; do not write the reverse by hand. Every chain terminates at an area hub.
+- **A subfield gets a `MOC` note when it acquires content**, titled with the subfield's exact vocabulary value, for example `Levels of analysis`. It sits between the area hub and that subfield's notes. Until one exists, notes in that subfield may hang directly off the area hub.
+- Chain depth is not limited, but keep it shallow enough to state: area, subfield, topic, subtopic is the expected shape. `subfield` stays on every note in the chain regardless of depth, because it is the taxonomy and `belongs_to` is the graph.
+- `related_to` carries lateral links, including across areas. Siblings link to each other with `related_to`, not `belongs_to`.
 - `cites` on a content note points at `Reference` notes. The inverse tells you every note that draws on a given source.
 - `writes` on a `Script` note points at the `Language` notes it records.
 - `applies_to` on a `Method` note points at the areas or problems it is used on.

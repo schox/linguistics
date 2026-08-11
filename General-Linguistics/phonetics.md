@@ -2,11 +2,9 @@
 type: Concept
 subfield:
   - Levels of analysis
-belongs_to: "[[General Linguistics]]"
+belongs_to: "[[Levels of analysis]]"
 related_to:
   - "[[Phonology]]"
-  - "[[What counts as one sign]]"
-  - "[[Morphology]]"
 cites:
   - "[[Anderson et al. 2022]]"
 status: open
@@ -14,52 +12,72 @@ status: open
 
 # Phonetics
 
-The physical study of the speech signal: how it is produced, how it travels, how it is received. The level at which language is a fact about bodies and air rather than about grammar.
+The study of the physical properties of a linguistic signal: how it is produced, how it travels, and how it is perceived. It is the level at which language is a fact about bodies and air rather than about grammar.
 
-Conventionally divided three ways, which is the division this area's index uses:
+The unit is the **phone**, an individual speech sound considered as a physical event rather than as a member of a language's sound system. Phones are written between **square brackets**: `[n]` is a voiced alveolar nasal stop.
+
+## The three branches
 
 | Branch | Studies |
 | --- | --- |
-| articulatory | how the vocal tract produces the signal |
-| acoustic | the physical properties of the signal itself |
-| auditory | how a hearer perceives it |
+| Articulatory | how the vocal tract produces the signal |
+| Acoustic | the physical properties of the signal itself, usually via waveforms and spectrograms |
+| Auditory | how a hearer perceives it |
 
-**The vault's source covers the first of these and very little of the other two.** [Anderson et al.](../references/anderson-et-al-2022.md) is articulatory throughout chapter 3: articulators, place and phonation, manner, vowels, then syllables, stress and intonation. Acoustic phonetics appears only where waveforms are needed to make a point, and auditory phonetics is left to the psycholinguistics chapters. This note inherits that shape and should not be read as a balanced treatment.
+Articulatory phonetics is the branch covered in introductory treatments and the branch the rest of this note describes. [Anderson et al. 2022](../references/anderson-et-al-2022.md) is articulatory throughout its phonetics chapter; acoustic material appears only where a waveform is needed to make a point, and auditory material is deferred to its psycholinguistics chapters.
 
-## Signed language is not an afterthought here
+## Describing consonants
 
-Chapter 3 puts signed-language articulators, sign description and signed-language notation inside the phonetics chapter rather than in an appendix.
+A consonant is conventionally identified by three properties, which together pick out a single phone.
 
-That is worth recording rather than passing over. It means "phonetics" in current usage is the study of the **physical realization of a linguistic signal**, whatever the modality, not the study of sound. The vault's habit of treating the spoken and the written as the only two things a language can be is a habit, not a fact about language.
+- **Place of articulation**: where in the vocal tract the constriction is made.
+- **Manner of articulation**: how the airflow is obstructed, for example stop, fricative, nasal or approximant.
+- **Phonation**: the state of the vocal folds, most importantly whether the sound is voiced or voiceless.
 
-## Segmentation, which is the vault's problem one level down
+So `[n]` is alveolar in place, nasal stop in manner, and voiced in phonation.
 
-Anderson et al. introduce the term **segment** for dividing a word into its component phones, and then immediately warn that it often cannot be done. They contrast waveforms for the English words *nab* and *wool*: *nab* shows abrupt transitions between three regions corresponding to three phones, while *wool* has smooth transitions from beginning to end with no obvious divisions.
+## Describing vowels
 
-Their warning is directed at students: "when working with raw data from a spoken language, it may not be so clear where the boundaries are between phones".
+Vowels are produced without a constriction and so are described by tongue position and lip posture rather than by place and manner: how high the tongue is, how far forward or back, and whether the lips are rounded.
 
-The vault has already written this argument about writing. [What counts as one sign](../Decipherment/segmentation-and-transcription.md) holds that deciding where one sign stops and the next begins is prior to reading, contested, and quietly determines every count downstream.
+## Suprasegmentals
 
-**This is the vault's own observation and is not drawn from the source.** The two problems are the same problem at two levels. A continuous signal has to be cut into units before anything can be counted, the cuts are analytic decisions rather than observations, and in both cases the decision is usually made silently and inherited by everyone downstream. A decipherer inherits a sign list; a phonetician inherits a segmentation.
+Properties that belong to units larger than a single phone: the **syllable**, **stress**, and **tone and intonation**.
 
-## Why the IPA exists, and why decipherment cannot skip it
+## Signed languages
 
-Phonetic transcription is written in **square brackets**, and can be **broad**, giving only what is needed to tell one word from another, or **narrow**, giving fine detail. Symbols of a writing system are written in **angle brackets**, a convention that exists precisely to keep the two apart.
+Signed languages have their own articulators, description and notation, treated in the same chapter rather than as a separate subject. A sign is described by parameters analogous to place, manner and phonation, and signs can form minimal pairs differing in a single parameter.
 
-Anderson et al. give the reason a writing system cannot serve as a transcription system, and it is the reason this vault keeps `Script` and `Language` as separate types. An existing orthography is optimized for one language and has no way to write the phones of another. Worse, orthographies are internally inconsistent: they note that English uses one letter for the different vowels of *nab*, *father*, *halo* and *diva*, and writes one vowel five different ways in *diva*, *meet*, *meat*, *me* and *mummy*. Their conclusion is that the English writing system "does not have a one-to-one relationship between phones and letters".
+This is why "phonetics" in current usage means the study of the **physical realization of a linguistic signal**, whatever the modality, rather than the study of sound specifically.
 
-Even a regular orthography would not be enough, because the same word varies across speakers. Their example is the vowel of *mop*, which is low and back in Los Angeles, low and back with some lip rounding in London, and articulated further forward in Chicago.
+## Segmentation
 
-**The consequence for this vault is direct.** A script does not record a pronunciation, and it never did. Decipherment recovers a script's relation to a phonological system, not a recording of speech, and every sound value assigned to an ancient sign is a value in someone's reconstructed phonology rather than a phone anyone heard. That is why the vault's `Script` notes carry `writes` and the `Language` notes carry `written_in`, and why conflating them breaks the decipherment material.
+Dividing a stretch of speech into its component phones. It is not always possible.
+
+Anderson et al. contrast waveforms for the English words *nab* and *wool*. *nab* shows abrupt transitions between three regions corresponding to three phones; *wool* has smooth transitions from beginning to end with no obvious divisions. Their caution to students is that with raw data from a spoken language "it may not be so clear where the boundaries are between phones".
+
+## Transcription and the IPA
+
+A **transcription** notates the phones of an utterance. It may be **broad**, giving only what is needed to distinguish one word from another, or **narrow**, giving fine phonetic detail.
+
+Transcription is written between square brackets. Symbols belonging to a writing system are written between **angle brackets**, a convention that exists to keep the two apart.
+
+The **International Phonetic Alphabet** exists because no writing system can serve as a transcription system. Anderson et al. give three reasons:
+
+1. **An orthography is optimized for one language** and has no way to write the phones of another.
+2. **Orthographies are internally inconsistent.** English uses one letter for the different vowels of *nab*, *father*, *halo* and *diva*, and writes one vowel five ways in *diva*, *meet*, *meat*, *me* and *mummy*. The English writing system "does not have a one-to-one relationship between phones and letters".
+3. **The same word varies between speakers.** The vowel of *mop* is low and back in Los Angeles, low and back with lip rounding in London, and articulated further forward in Chicago.
+
+## Child topics
+
+To be written as notes of their own: articulatory phonetics, acoustic phonetics, auditory phonetics, place of articulation, manner of articulation, phonation, vowel description, the International Phonetic Alphabet, syllable, stress, tone and intonation, sign parameters, segmentation.
 
 ## Open questions
 
-- **Acoustic and auditory phonetics are effectively unwritten here**, because the source is articulatory. Formants, spectrograms, the acoustic correlates of the articulatory categories, and categorical perception are all missing, and two of the three branches named in this area's index have no content.
-- **There is no note on the International Phonetic Alphabet itself**, and the vault has no record of the association that maintains it, the chart's revision history, or the current revision. That is an obvious gap for a vault about writing systems, and the chart is a candidate for the empty `attachments/` directory.
-- **Nothing here is instrumental.** How phonetic claims are actually measured, and how much of the descriptive apparatus predates the ability to measure it, is not addressed.
-- **The relation between phonetic segments and script signs is asserted rather than worked through.** The claim that both segmentation problems are one problem is the vault's own and has not been checked against anyone who has argued it.
-- **Sign-language phonetics is mentioned and not covered**, despite being the part of the chapter that most directly challenges how this vault frames writing.
+- **Acoustic and auditory phonetics are described here only by definition.** Formants, spectrograms, the acoustic correlates of articulatory categories, and categorical perception are all absent, and two of the three branches have no substance. A source other than an introductory textbook is needed.
+- **The International Phonetic Alphabet has no note and no chart in the vault.** The association that maintains it, the chart's revision history and its current revision are unrecorded, and the chart is a candidate for `attachments/`.
+- **Nothing here is instrumental.** How phonetic claims are measured is not covered.
 
 ## Sources
 
-- [Anderson et al. 2022](../references/anderson-et-al-2022.md), section 3.6, for segmentation, the *nab* and *wool* waveforms, broad and narrow transcription, the bracket conventions, the English orthography examples and the *mop* variation; and chapter 3 generally for the scope of the phonetics chapter
+- [Anderson et al. 2022](../references/anderson-et-al-2022.md), chapter 3, for the three-way branch division as reflected in its coverage, consonant and vowel description, suprasegmentals, signed-language articulators, and section 3.6 for segmentation, the *nab* and *wool* waveforms, broad and narrow transcription, the bracket conventions, the English orthography examples and the *mop* variation
