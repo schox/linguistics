@@ -27,7 +27,7 @@ Shannon's wartime cryptographic work and his information theory are the same bod
 
 That result is the reason cryptography sits alongside decipherment in this vault rather than merely near it. Barber's evidentiary threshold for archaeological decipherment is the same underdetermination argument reached independently in another literature. See [The evidentiary threshold and unicity distance](../Decipherment/evidentiary-threshold-and-unicity-distance.md).
 
-His entropy measures also underlie the [Indus entropy debate](../Decipherment/is-it-writing-at-all.md), where conditional entropy is used to argue about whether a corpus encodes language at all, and they run forward into corpus linguistics and distributional semantics.
+His entropy measures also underlie the [Indus entropy debate](../Decipherment/is-it-writing-at-all.md), where conditional entropy is used to argue about whether a corpus encodes language at all, and they run forward into corpus linguistics and distributional [semantics](../General-Linguistics/semantics.md).
 
 ## Key works
 

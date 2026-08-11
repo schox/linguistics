@@ -48,6 +48,26 @@ Nothing here can be moved by more searching.
 
 ## Next work, in order
 
+**The plan below is superseded from 2026-08-11.** Andrew's instruction is that the vault starts as a general reference and is amplified afterward, so breadth across every discipline comes before any more interpretation. `DECISIONS.md` records the reasoning and what a starter note is. Phases 3 and 4 as scoped below are not cancelled, only re-ordered behind the breadth work; the items in them are still owed and are still accurate.
+
+### The breadth program
+
+One subfield per batch, taxonomy already in place from each area's `_index.md`. Order is by how much the rest of the vault is already leaning on the missing material.
+
+1. ~~**General Linguistics, Levels of analysis.**~~ **Done 2026-08-11**, batch 9: phonetics, phonology, morphology, syntax, semantics, pragmatics, from [Anderson et al. 2022](references/anderson-et-al-2022.md). Discourse is named in the index and was not written, because the source does not support it.
+2. **General Linguistics, Writing systems.** The most urgent thing in the vault. Every one of the eleven `Script` notes carries a `class` value (alphabet, abjad, abugida, syllabary, logographic, mixed) and **nothing in the vault defines that vocabulary**. A typology used eleven times and defined zero times is worse than a gap, because it looks settled. Also carries the history of the alphabet, orthographic depth, and transliteration standards, and it is the formal junction with Decipherment.
+3. **Cryptography, the whole area.** Three notes against an index promising roughly eighty topics, and zero commits in nine batches. It is the worst ratio in the vault. The three existing notes are also the oldest and thinnest anywhere: `index-of-coincidence` is 213 words and `kasiski` is 172, and both are load-bearing for the Decipherment area. Repair them in the same batch.
+4. **General Linguistics, Historical and comparative.** The comparative method, regular sound change, reconstruction. Decipherment uses candidate relatives constantly (Ventris against Greek, Bauer against Semitic) and the vault has never written down what a relative is or how one is established.
+5. **General Linguistics, Typology and universals.** [WALS 2013](references/wals-2013.md) is already held as a Reference and has never been used. This is where word order, alignment and the morphological typology belong; three starter notes from batch 9 defer to it.
+6. **Computer Languages**, which `DECISIONS.md` previously recommended leaving thin. That recommendation was made under argument-first batching and does not survive the change: a general reference cannot have an area with one note in it.
+7. **Human Languages**, currently seven notes that all exist because a script needed something to point at.
+
+Remaining General Linguistics subfields (Sociolinguistics, Psycholinguistics and acquisition, Computational linguistics, Semiotics and philosophy of language, Etymology and lexicography) follow. Computational linguistics should absorb the statistical-language-model note described at the foot of this section.
+
+**A caution for whoever runs these.** Batch 9 found three unstated problems in the Decipherment area purely by writing elementary material down. That is the return on breadth, and it only appears if each starter note is made to connect to existing work rather than summarizing a source. A batch that produces six textbook summaries has failed even if the checker passes.
+
+### The superseded plan, still owed
+
 **Phase 2, the solved decipherments, is complete**, 2026-08-10: Egyptian hieroglyphs, cuneiform, Maya glyphs and Ugaritic, the last bringing Ugarit with it.
 
 What phase 2 produced, beyond the notes, is a second axis for the whole area, now written up as `Decipherment/why-scripts-stay-unread.md`. Phase 1 established that corpus size is the binding constraint on the unread scripts. Phase 2 shows that among the *solved* ones the decisive variables were different every time, and none of them was a shortage of text.

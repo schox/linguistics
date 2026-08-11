@@ -204,3 +204,24 @@ The failure mode is worth naming precisely, since it will recur. An unasserted `
 **Rejected.** Removing the number, and generating the whole file. The count earns its place, and generating `STATUS.md` would destroy the judgement in the rest of it.
 
 **Consequence.** Adding a note now fails the build until `STATUS.md` is updated, which is the intended coupling. This is the same principle as the entry on the checker enforcing rather than advising: a figure the vault asserts should be one the vault can check.
+
+## 2026-08-11: Breadth before depth, and what a starter note is
+
+**Decided.** Andrew's instruction: the vault "needs to start as a general reference and then be amplified". The batching plan is re-ordered accordingly. Every discipline gets a hierarchical taxonomy and a set of starter notes across it before any more interpretation is written anywhere.
+
+**Why.** The audit on 2026-08-10 measured the problem rather than guessing at it. Nine batches in, Decipherment held a worked argument about why scripts stay unread, and General Linguistics, the area that argument leans on hardest, held two notes and neither was about linguistics. It had no phonology note. Eight of its ten subfields were empty. The same picture held elsewhere: Cryptography's index promised roughly eighty topics against three notes and had received no commits at all.
+
+The failure mode is specific and worth naming, because it is the natural one for an agent working batch by batch. Depth-first work always has an obvious next step, so it never runs out of things to do, and it produces notes that are individually good and collectively unbalanced. Nothing in the process notices that a vault about linguistics has no note on syntax, because no single batch is responsible for that.
+
+**Rejected.** A separate lower evidentiary tier for survey material, marked `status: draft`. It was the obvious way to buy breadth cheaply and it was the wrong trade twice over. `draft` already means something precise in `CONVENTIONS.md` (a fact could not be verified), so overloading it would blunt the one signal that flags unreliability. And a two-tier standard would put the burden on every future reader to work out which tier they were looking at.
+
+**What a starter note is instead.** Narrower scope, same standard.
+
+- Sourced like any other note, with `## Sources` and `cites`.
+- The vault's own reasoning marked as the vault's own, as everywhere else.
+- Gaps recorded in `## Open questions` rather than papered over, and a starter note is expected to have many.
+- **It must connect.** A starter note that only restates a textbook does not earn a place; each carries a section relating its subject to work the vault has already done.
+
+That last point turned out to be the argument for the whole approach rather than a stylistic requirement. Writing six notes on the levels of analysis surfaced three problems the Decipherment area had been walking past: the minimal-pair test presupposes meanings a decipherer does not have, grammaticality judgements presuppose an informant no dead language has, and signs per document measures writing rather than language. None of those came from the decipherment literature. They came from writing down the elementary material the vault had skipped.
+
+**Consequence.** Breadth is cheaper per note but not cheap, since sourcing dominates. It also means General Linguistics and Cryptography, which have been neglected, now come before more Decipherment work.

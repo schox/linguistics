@@ -27,7 +27,6 @@ iso15924_num: 020
 unicode_block: U+12000-U+123FF
 wikidata: Q401
 ---
-
 # Cuneiform
 
 The wedge-shaped script of Mesopotamia, invented for [Sumerian](../Human-Languages/sumerian.md) and adapted for [Akkadian](../Human-Languages/akkadian.md) and many other languages. Deciphered across the nineteenth century, and formally accepted as deciphered on 29 May 1857 by a procedure this vault should care about more than the decipherment itself.
@@ -84,8 +83,8 @@ Those last two ranges are worth stating precisely, because a summary consulted w
 
 - **Old Persian has no note**, despite being the wedge that opened everything here and having its own script code and Unicode block. It should be the next thing written in this area.
 - **Elamite likewise**, and the vault already holds a warning about Linear Elamite in `ROADMAP.md`. Behistun is trilingual and the vault covers one of the three.
-- **`period` is uneven.** The range given is Mnamon's for Akkadian cuneiform. Sumerian cuneiform is earlier and the note does not date it, so the field describes part of its subject.
-- **`corpus_size` is not a number.** Torres Torres mentions tens of thousands of tablets in Ashurbanipal's library alone, and the total across all sites and periods is far larger. As with Egyptian, the variable that binds the undeciphered scripts stops binding here, but the vault should still find a figure rather than gesture.
+- `period` **is uneven.** The range given is Mnamon's for Akkadian cuneiform. Sumerian cuneiform is earlier and the note does not date it, so the field describes part of its subject.
+- `corpus_size` **is not a number.** Torres Torres mentions tens of thousands of tablets in Ashurbanipal's library alone, and the total across all sites and periods is far larger. As with Egyptian, the variable that binds the undeciphered scripts stops binding here, but the vault should still find a figure rather than gesture.
 - **Nothing from the primary literature has been read.** Rawlinson's *The Persian Cuneiform Inscription at Behistun* (1846-1851), the 1857 comparison itself, and Hincks's papers in the *Transactions of the Royal Irish Academy* are all out of copyright and all reach this note through Torres Torres.
 - **The Cuneiform Digital Library Initiative** remains unconsulted, and is the obvious source for corpus figures.
 

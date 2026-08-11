@@ -32,7 +32,9 @@ This is the configuration the vault has not had before, and it is the most favou
 
 So the language behind the script was never lost. What was lost was the ability to connect the script to it, which is precisely the [script versus language](../Decipherment/script-versus-language.md) distinction doing its work. A living language and an unread script coexisted for four centuries.
 
-It also means the decipherment had a resource none of the others did: native speakers of related languages whose phonology and morphology could test a proposed reading directly.
+It also means the decipherment had a resource none of the others did: native speakers of related languages whose [phonology](../General-Linguistics/phonology.md) and [morphology](../General-Linguistics/morphology.md) could test a proposed reading directly.
+
+That is worth more than it looks. Both of those notes record that the field's standard methods, the minimal pair and the grammaticality judgment, require an informant, and that no other language in this area has one. Maya is the exception, and it is also the case that broke.
 
 ## Open questions
 

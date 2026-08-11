@@ -24,7 +24,7 @@ Designed by John McCarthy at MIT from 1958, first appearing in 1960. The second-
 
 ## Why it belongs in a linguistics vault
 
-Lisp is the cleanest case of a programming language built as a **notation** rather than as an instruction set. McCarthy conceived it as a practical mathematical notation for computer programs, influenced by Church's lambda calculus without being derived from it directly, and the consequence is a language whose syntax is its own data structure.
+Lisp is the cleanest case of a programming language built as a **notation** rather than as an instruction set. McCarthy conceived it as a practical mathematical notation for computer programs, influenced by Church's lambda calculus without being derived from it directly, and the consequence is a language whose [syntax](../General-Linguistics/syntax.md) is its own data structure.
 
 That homoiconicity makes Lisp the strongest test case for the comparison this area is supposed to interrogate. In a natural language the distinction between an utterance and a description of an utterance is carried by quotation and metalanguage, and it is famously slippery. Lisp collapses the distinction deliberately: code and data are the same s-expressions, so a program can construct and evaluate programs. Whether that has any analogue in human language, or whether it marks precisely where the analogy fails, is a question worth an argued note.
 

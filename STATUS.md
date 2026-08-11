@@ -13,7 +13,7 @@ This file is the present tense: what exists, what is thin, what has been establi
 
 The structure is complete and enforced. Five areas, thirteen note types plus `Type` itself, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
 
-The vault currently holds 137 notes. Decipherment is no longer a skeleton; every other area still is.
+The vault currently holds 144 notes. Decipherment is no longer a skeleton; every other area still is.
 
 **This figure is now checked.** `scripts/check-vault.py` fails if it drifts from the actual count, which it had, silently, from 107 to 132 across eight batches.
 
@@ -21,7 +21,7 @@ The vault currently holds 137 notes. Decipherment is no longer a skeleton; every
 
 Content. The areas hold their taxonomy and a handful of exemplars, nothing more:
 
-- **General Linguistics**: 2 notes (the Chomsky hierarchy, redundancy). Ten subfields, eight empty.
+- **General Linguistics**: 8 notes. The **Levels of analysis** subfield is now covered by six starter notes (phonetics, phonology, morphology, syntax, semantics, pragmatics); the Chomsky hierarchy and redundancy sit under Formal foundations and Computational linguistics. Ten subfields, seven still empty.
 - **Human Languages**: 7 notes (Akkadian, Classic Maya, Egyptian, Etruscan, Mycenaean Greek, Sumerian, Ugaritic). The genealogy is mapped to branch level and almost entirely unpopulated.
 - **Computer Languages**: 1 note (Lisp).
 - **Cryptography**: 3 notes (Vigenère, and two methods).
@@ -43,6 +43,15 @@ Content is added in **batches**: one commit per closure set, meaning an anchor n
 All seven carry their ISO 15924 code, Unicode block, `corpus_size` and `found_at`, which was the point: corpus size is the variable the whole Decipherment argument turns on, and it is now checkable across the set rather than asserted. A cross-cutting note, `Decipherment/segmentation-and-transcription.md`, followed from what all four batches turned up independently.
 
 **Phase 2, the solved decipherments, is under way.** Batch 5 covered Egyptian hieroglyphs; batch 6 covered cuneiform, with Behistun, Rawlinson, Hincks, Akkadian and Sumerian; batch 7 covered Mayan hieroglyphs, with Piedras Negras, Knorozov, Proskouriakoff and Classic Maya; batch 8 covered Ugaritic, with Ugarit. **Phase 2 is complete**, and produced `Decipherment/why-scripts-stay-unread.md`, the synthesis the area was building toward. That note now also diagnoses all seven unread scripts, and finds that only one of them is cleanly explained by the corpus-size thesis phase 1 established. Both batches needed `Language` notes, because a deciphered script has to have something to point at.
+
+**The plan then changed, on Andrew's instruction.** Phases 3 and 4 as originally scoped (people, then thin areas) are superseded. The vault was going deep before it went wide, producing analysis and interpretation on a base that had no general reference under it: eight notes into the Decipherment argument, General Linguistics still had no note on phonology. The instruction is that the vault **starts as a general reference and is amplified afterward**, which means a hierarchical taxonomy per discipline and starter notes across it before any more interpretation.
+
+**Batch 9 is the first of these.** Six starter notes covering the **Levels of analysis** subfield of General Linguistics, written from one open-access textbook ([Anderson et al. 2022](references/anderson-et-al-2022.md), CC BY-NC-SA), each ending with an explicit statement of what it does not cover.
+
+Two things about how they are written, because they set the pattern for the rest:
+
+- **They are breadth-first but not standard-free.** Each is sourced, each marks the vault's own reasoning as the vault's own, and each records its gaps. Breadth changed the scope, not the evidentiary standard.
+- **They earn their place by connecting.** Each note carries a section relating its level to work the vault has already done, which is what makes it a vault note rather than a textbook summary. Three of them surfaced problems the Decipherment area had not stated: the minimal-pair test needs meanings a decipherer lacks, grammaticality judgments need an informant no dead language has, and signs per document is not a measure of how much language is present.
 
 **Everything still to do is in `ROADMAP.md`**, including what is blocked and on whom. Do not duplicate it here.
 
