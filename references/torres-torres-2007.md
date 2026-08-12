@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Torres Torres 2007"
 authors: "Torres Torres, Elena"
 year: 2007
 title: "El desciframiento de la escritura cuneiforme: un hito que culminó hace 150 años"

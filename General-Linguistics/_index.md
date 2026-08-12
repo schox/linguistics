@@ -1,5 +1,7 @@
 ---
 type: MOC
+aliases:
+  - "General Linguistics"
 area: General-Linguistics
 updated: 2026-08-09
 ---

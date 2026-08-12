@@ -1,5 +1,7 @@
 ---
 type: Person
+aliases:
+  - "Tatiana Proskouriakoff"
 born: 1909
 died: 1985
 field:

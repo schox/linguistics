@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Language Lineage"
 authors: "Author not stated on site"
 year: 2025
 title: "Programming Language Lineage"

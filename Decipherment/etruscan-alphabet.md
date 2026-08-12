@@ -1,5 +1,7 @@
 ---
 type: Script
+aliases:
+  - "Etruscan alphabet"
 class: alphabet
 period: c. 700 BCE - 50 CE
 decipherment_status: deciphered

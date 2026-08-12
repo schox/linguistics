@@ -1,5 +1,7 @@
 ---
 type: Method
+aliases:
+  - "Frequency analysis"
 category: statistical
 subfield:
   - Manual method

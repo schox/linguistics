@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Proskouriakoff 1960"
 authors: "Proskouriakoff, Tatiana"
 year: 1960
 title: "Historical Implications of a Pattern of Dates at Piedras Negras, Guatemala"

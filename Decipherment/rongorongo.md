@@ -1,5 +1,7 @@
 ---
 type: Script
+aliases:
+  - "Rongorongo"
 class: undetermined
 period: attested from the 19th century CE; date of origin disputed
 decipherment_status: undeciphered

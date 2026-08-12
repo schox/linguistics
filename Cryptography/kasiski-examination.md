@@ -1,5 +1,7 @@
 ---
 type: Method
+aliases:
+  - "Kasiski examination"
 category: statistical
 origin: Cryptanalysis
 applies_to:

@@ -1,5 +1,7 @@
 ---
 type: Person
+aliases:
+  - "Alice Kober"
 born: 1906
 died: 1950
 field:

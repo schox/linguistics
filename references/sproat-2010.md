@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Sproat 2010"
 authors: "Sproat, Richard"
 year: 2010
 title: "Last Words: Ancient Symbols, Computational Linguistics, and the Reviewing Practices of the General Science Journals"

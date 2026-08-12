@@ -1,5 +1,7 @@
 ---
 type: Person
+aliases:
+  - "Georg Friedrich Grotefend"
 born: 1775
 died: 1853
 field:

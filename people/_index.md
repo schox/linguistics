@@ -1,5 +1,7 @@
 ---
 type: MOC
+aliases:
+  - "People"
 area: people
 updated: 2026-08-09
 ---

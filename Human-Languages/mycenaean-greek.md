@@ -1,5 +1,7 @@
 ---
 type: Language
+aliases:
+  - "Mycenaean Greek"
 family: Indo-European
 branch: Hellenic
 written_in:

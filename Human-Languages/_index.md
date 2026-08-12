@@ -1,5 +1,7 @@
 ---
 type: MOC
+aliases:
+  - "Human Languages"
 area: Human-Languages
 updated: 2026-08-09
 ---

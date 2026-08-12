@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Susa"
 kind: site
 country: Iran
 region: Khuzestan

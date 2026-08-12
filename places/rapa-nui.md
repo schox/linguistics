@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Rapa Nui"
 kind: region
 country: Chile
 region: Polynesia

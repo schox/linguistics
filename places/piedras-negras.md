@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Piedras Negras"
 kind: site
 country: Guatemala
 region: Petén

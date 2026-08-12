@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Harappa"
 kind: site
 country: Pakistan
 region: Punjab

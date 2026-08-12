@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Barber 1974"
 authors: "Barber, E. J. W."
 year: 1974
 title: "Archaeological Decipherment: A Handbook"

@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Luo, Cao and Barzilay 2019"
 authors: "Luo, Jiaming; Cao, Yuan; Barzilay, Regina"
 year: 2019
 title: "Neural Decipherment via Minimum-Cost Flow: From Ugaritic to Linear B"

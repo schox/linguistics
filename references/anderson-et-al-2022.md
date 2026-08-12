@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Anderson et al. 2022"
 authors: "Anderson, C.; Bjorkman, B.; Denis, D.; Doner, J.; Grant, M.; Sanders, N.; Taniguchi, A."
 year: 2022
 title: "Essentials of Linguistics, 2nd edition"

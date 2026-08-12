@@ -1,5 +1,7 @@
 ---
 type: MOC
+aliases:
+  - "Cryptography"
 area: Cryptography
 updated: 2026-08-09
 ---

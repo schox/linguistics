@@ -1,5 +1,7 @@
 ---
 type: Script
+aliases:
+  - "Linear B"
 class: mixed
 period: c. 1450-1200 BCE
 decipherment_status: deciphered

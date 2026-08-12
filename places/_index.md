@@ -1,5 +1,7 @@
 ---
 type: MOC
+aliases:
+  - "Places"
 area: places
 updated: 2026-08-09
 ---

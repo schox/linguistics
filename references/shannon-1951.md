@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Shannon 1951"
 authors: "Shannon, C. E."
 year: 1951
 title: "Prediction and Entropy of Printed English"

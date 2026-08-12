@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Ventris and Chadwick 1953"
 authors: "Ventris, Michael; Chadwick, John"
 year: 1953
 title: "Evidence for Greek Dialect in the Mycenaean Archives"

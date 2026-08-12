@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Chadwick 1958"
 authors: "Chadwick, John"
 year: 1958
 title: "The Decipherment of Linear B"

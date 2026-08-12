@@ -1,5 +1,7 @@
 ---
 type: Person
+aliases:
+  - "Henry Creswicke Rawlinson"
 born: 1810
 died: 1895
 field:

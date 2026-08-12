@@ -1,5 +1,7 @@
 ---
 type: Concept
+aliases:
+  - "The Chomsky hierarchy"
 subfield:
   - Formal foundations
   - Computational linguistics

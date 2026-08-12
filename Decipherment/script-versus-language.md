@@ -1,5 +1,7 @@
 ---
 type: Concept
+aliases:
+  - "Script versus language"
 subfield:
   - The problem space
   - Writing systems

@@ -1,5 +1,7 @@
 ---
 type: Concept
+aliases:
+  - "Adversarial versus accidental encipherment"
 subfield:
   - Epistemics
   - The problem space

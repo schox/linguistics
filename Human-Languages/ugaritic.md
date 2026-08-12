@@ -1,5 +1,7 @@
 ---
 type: Language
+aliases:
+  - "Ugaritic"
 family: Afro-Asiatic
 branch: Semitic
 written_in:

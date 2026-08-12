@@ -1,5 +1,7 @@
 ---
 type: Concept
+aliases:
+  - "What counts as one sign"
 subfield:
   - Infrastructure
   - Epistemics

@@ -1,5 +1,7 @@
 ---
 type: Script
+aliases:
+  - "Cypro-Minoan"
 class: syllabary
 period: late 16th to 11th century BCE
 decipherment_status: undeciphered

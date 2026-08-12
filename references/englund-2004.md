@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Englund 2004"
 authors: "Englund, Robert K."
 year: 2004
 title: "The state of decipherment of proto-Elamite"

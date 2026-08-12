@@ -1,5 +1,7 @@
 ---
 type: MOC
+aliases:
+  - "Levels of analysis"
 area: General-Linguistics
 subfield:
   - Levels of analysis

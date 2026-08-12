@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Conlang Atlas of Language Structures"
 authors: "Conlang community"
 year: 2026
 title: "Conlang Atlas of Language Structures (CALS)"

@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Farmer, Sproat and Witzel 2004"
 authors: "Farmer, Steve; Sproat, Richard; Witzel, Michael"
 year: 2004
 title: "The Collapse of the Indus-Script Thesis: The Myth of a Literate Harappan Civilization"

@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Yadav et al. 2009"
 authors: "Yadav, Nisha; Joglekar, Hrishikesh; Rao, Rajesh P. N.; Vahia, M. N.; Mahadevan, Iravatham; Adhikari, R."
 year: 2009
 title: "Statistical analysis of the Indus script using n-grams"

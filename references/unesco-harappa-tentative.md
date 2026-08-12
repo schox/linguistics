@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "UNESCO, Archaeological Site of Harappa"
 authors: "UNESCO World Heritage Centre"
 year: 2026
 title: "Archaeological Site of Harappa"

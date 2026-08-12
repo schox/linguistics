@@ -1,5 +1,7 @@
 ---
 type: Doc
+aliases:
+  - "Roadmap"
 status: living
 ---
 

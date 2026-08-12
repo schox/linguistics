@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Olivier 2007"
 authors: "Olivier, Jean-Pierre"
 year: 2007
 title: "Édition holistique des textes chypro-minoens"

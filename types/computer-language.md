@@ -1,5 +1,7 @@
 ---
 type: Type
+aliases:
+  - "ComputerLanguage"
 _icon: terminal
 _color: indigo
 _sidebar_label: Computer Languages

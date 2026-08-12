@@ -1,5 +1,7 @@
 ---
 type: Script
+aliases:
+  - "Cuneiform"
 class: mixed
 period: c. 2350 BCE to c. 100 CE for Akkadian cuneiform; earlier for Sumerian
 decipherment_status: deciphered

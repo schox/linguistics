@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Kelley 2026"
 authors: "Kelley, Kathryn"
 year: 2026
 title: "Proto-Elamite: Writing and Society in Early Iran"

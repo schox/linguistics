@@ -1,5 +1,7 @@
 ---
 type: Script
+aliases:
+  - "Phaistos Disc"
 class: undetermined
 period: 18th-17th centuries BCE, from a disturbed context
 decipherment_status: undeciphered

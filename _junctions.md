@@ -1,5 +1,7 @@
 ---
 type: MOC
+aliases:
+  - "Junctions"
 area: cross-cutting
 updated: 2026-08-09
 ---

@@ -1,5 +1,7 @@
 ---
 type: Script
+aliases:
+  - "Ugaritic script"
 class: abjad
 period: Late Bronze Age, to c. 1190 BCE
 decipherment_status: deciphered

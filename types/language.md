@@ -1,5 +1,7 @@
 ---
 type: Type
+aliases:
+  - "Language"
 _icon: languages
 _color: green
 _sidebar_label: Languages

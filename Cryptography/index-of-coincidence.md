@@ -1,5 +1,7 @@
 ---
 type: Method
+aliases:
+  - "Index of coincidence"
 category: statistical
 origin: Cryptanalysis
 applies_to:

@@ -1,5 +1,7 @@
 ---
 type: Cipher
+aliases:
+  - "Vigenère cipher"
 category: classical
 era: early modern
 first_described: 1553

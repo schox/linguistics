@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Rosetta"
 kind: site
 country: Egypt
 region: Nile Delta

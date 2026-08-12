@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Assael et al. 2022 (Ithaca)"
 authors: "Assael, Yannis; Sommerschield, Thea; et al."
 year: 2022
 title: "Restoring and attributing ancient texts using deep neural networks"

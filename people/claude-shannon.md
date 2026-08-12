@@ -1,5 +1,7 @@
 ---
 type: Person
+aliases:
+  - "Claude Shannon"
 born: 1916
 died: 2001
 field:

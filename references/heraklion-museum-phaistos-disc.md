@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Heraklion Archaeological Museum, the Phaistos Disc"
 authors: "Heraklion Archaeological Museum"
 year: 2026
 title: "The Phaistos Disc"

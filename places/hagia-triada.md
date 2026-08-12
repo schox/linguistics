@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Hagia Triada"
 kind: site
 country: Greece
 region: Crete

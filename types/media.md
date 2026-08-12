@@ -1,5 +1,7 @@
 ---
 type: Type
+aliases:
+  - "Media"
 _icon: image
 _color: pink
 _sidebar_label: Media

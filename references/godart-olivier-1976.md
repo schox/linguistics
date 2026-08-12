@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Godart and Olivier 1976"
 authors: "Godart, Louis; Olivier, Jean-Pierre"
 year: 1976
 title: "Recueil des inscriptions en Linéaire A"

@@ -1,5 +1,7 @@
 ---
 type: Script
+aliases:
+  - "Voynich manuscript"
 class: undetermined
 period: parchment radiocarbon dated 1404-1438 CE
 decipherment_status: undeciphered

@@ -1,5 +1,7 @@
 ---
 type: Concept
+aliases:
+  - "Institutional concentration"
 subfield:
   - Epistemics
 belongs_to: "[[Decipherment]]"

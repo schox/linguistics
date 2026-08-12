@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Montecchi 2019"
 authors: "Montecchi, Barbara"
 year: 2019
 title: "Contare a Haghia Triada. Le tavolette in lineare A, i documenti sigillati e il sistema economico-amministrativo nel TM IB"

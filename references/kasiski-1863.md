@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Kasiski 1863"
 authors: "Kasiski, Friedrich W."
 year: 1863
 title: "Die Geheimschriften und die Dechiffrir-Kunst"

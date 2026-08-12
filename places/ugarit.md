@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Ugarit"
 kind: site
 country: Syria
 region: Latakia

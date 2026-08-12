@@ -1,5 +1,7 @@
 ---
 type: Person
+aliases:
+  - "John Chadwick"
 born: 1920
 died: 1998
 field:

@@ -1,5 +1,7 @@
 ---
 type: MOC
+aliases:
+  - "References"
 area: references
 updated: 2026-08-09
 ---

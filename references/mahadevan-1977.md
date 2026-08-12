@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Mahadevan 1977"
 authors: "Mahadevan, Iravatham"
 year: 1977
 title: "The Indus Script: Texts, Concordance and Tables"

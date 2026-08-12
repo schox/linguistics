@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "HOPL (Online Historical Encyclopaedia of Programming Languages)"
 authors: "Pigott, Diarmuid J.; Axtens, Bruce M. (maintainer)"
 year: 2025
 title: "HOPL: Online Historical Encyclopaedia of Programming Languages"

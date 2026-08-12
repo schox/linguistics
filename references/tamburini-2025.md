@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Tamburini 2025"
 authors: "Tamburini, Fabio"
 year: 2025
 title: "On automatic decipherment of lost ancient scripts relying on combinatorial optimisation and coupled simulated annealing"

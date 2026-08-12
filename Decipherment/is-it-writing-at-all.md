@@ -1,5 +1,7 @@
 ---
 type: Concept
+aliases:
+  - "Is it writing at all? The Indus entropy debate"
 subfield:
   - Epistemics
 belongs_to: "[[Decipherment]]"

@@ -1,5 +1,7 @@
 ---
 type: Concept
+aliases:
+  - "Why a script stays unread"
 subfield:
   - Epistemics
   - The problem space

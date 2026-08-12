@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Ferrara 2013"
 authors: "Ferrara, Silvia"
 year: 2013
 title: "Cypro-Minoan Inscriptions. Volume II: The Corpus"

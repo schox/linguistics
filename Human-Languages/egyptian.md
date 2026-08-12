@@ -1,5 +1,7 @@
 ---
 type: Language
+aliases:
+  - "Egyptian"
 family: Afro-Asiatic
 branch: Egyptian
 written_in:

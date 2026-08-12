@@ -1,5 +1,7 @@
 ---
 type: Type
+aliases:
+  - "Reference"
 _icon: book-open
 _color: teal
 _sidebar_label: Reference

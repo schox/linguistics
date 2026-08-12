@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Shannon 1949"
 authors: "Shannon, C. E."
 year: 1949
 title: "Communication Theory of Secrecy Systems"

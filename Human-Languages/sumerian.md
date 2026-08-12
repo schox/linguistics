@@ -1,5 +1,7 @@
 ---
 type: Language
+aliases:
+  - "Sumerian"
 family: Sumerian
 branch:
 written_in:

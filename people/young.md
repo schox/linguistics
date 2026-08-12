@@ -1,5 +1,7 @@
 ---
 type: Person
+aliases:
+  - "Thomas Young"
 born: 1773
 died: 1829
 field:

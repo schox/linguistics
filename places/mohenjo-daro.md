@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Mohenjo-daro"
 kind: site
 country: Pakistan
 region: Sindh

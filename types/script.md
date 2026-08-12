@@ -1,5 +1,7 @@
 ---
 type: Type
+aliases:
+  - "Script"
 _icon: pen-tool
 _color: orange
 _sidebar_label: Scripts

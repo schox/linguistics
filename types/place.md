@@ -1,5 +1,7 @@
 ---
 type: Type
+aliases:
+  - "Place"
 _icon: map-pin
 _color: amber
 _sidebar_label: Places

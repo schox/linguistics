@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Knossos"
 kind: site
 country: Greece
 region: Crete

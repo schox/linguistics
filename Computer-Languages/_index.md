@@ -1,5 +1,7 @@
 ---
 type: MOC
+aliases:
+  - "Computer Languages"
 area: Computer-Languages
 updated: 2026-08-09
 ---

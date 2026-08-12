@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Behistun"
 kind: site
 country: Iran
 region: Kermanshah

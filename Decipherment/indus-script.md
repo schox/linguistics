@@ -1,5 +1,7 @@
 ---
 type: Script
+aliases:
+  - "Indus script"
 class: undetermined
 period: c. 2600-1900 BCE (Mature Harappan)
 decipherment_status: undeciphered

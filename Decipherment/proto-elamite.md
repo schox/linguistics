@@ -1,5 +1,7 @@
 ---
 type: Script
+aliases:
+  - "Proto-Elamite"
 class: mixed
 period: c. 3300-2900 BCE
 decipherment_status: partial

@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Salgarella and Castellan 2020"
 authors: "Salgarella, Ester; Castellan, Simon"
 year: 2020
 title: "SigLA: The Signs of Linear A, a palæographical database"

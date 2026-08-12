@@ -1,5 +1,7 @@
 ---
 type: Script
+aliases:
+  - "Mayan hieroglyphs"
 class: mixed
 period: c. 3rd century BCE to the 16th century CE
 decipherment_status: deciphered

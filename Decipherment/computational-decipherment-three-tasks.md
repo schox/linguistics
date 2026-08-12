@@ -1,5 +1,7 @@
 ---
 type: Concept
+aliases:
+  - "Computational decipherment: three distinct tasks"
 subfield:
   - Computational method
 belongs_to: "[[Decipherment]]"

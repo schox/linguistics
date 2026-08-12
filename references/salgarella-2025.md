@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Salgarella 2025"
 authors: "Salgarella, Ester"
 year: 2025
 title: "Writing in Bronze Age Crete: 'Minoan' Linear A"

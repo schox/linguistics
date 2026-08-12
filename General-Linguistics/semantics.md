@@ -1,5 +1,7 @@
 ---
 type: Concept
+aliases:
+  - "Semantics"
 subfield:
   - Levels of analysis
 belongs_to: "[[Levels of analysis]]"

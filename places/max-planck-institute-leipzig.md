@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Max Planck Institute for Evolutionary Anthropology, Leipzig"
 kind: institution
 country: Germany
 region: Leipzig

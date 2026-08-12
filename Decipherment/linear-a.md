@@ -1,5 +1,7 @@
 ---
 type: Script
+aliases:
+  - "Linear A"
 class: mixed
 period: c. 1800-1450 BCE
 decipherment_status: undeciphered

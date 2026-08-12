@@ -1,5 +1,7 @@
 ---
 type: Concept
+aliases:
+  - "Redundancy"
 subfield:
   - Computational linguistics
   - Formal foundations

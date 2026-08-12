@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "UNESCO, Archaeological Ruins at Moenjodaro"
 authors: "UNESCO World Heritage Centre"
 year: 1980
 title: "Archaeological Ruins at Moenjodaro"

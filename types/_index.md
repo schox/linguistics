@@ -1,5 +1,7 @@
 ---
 type: MOC
+aliases:
+  - "Types"
 area: types
 updated: 2026-08-09
 ---

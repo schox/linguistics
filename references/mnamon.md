@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Mnamon"
 authors: "Scuola Normale Superiore, Laboratorio di Storia, Archeologia, Epigrafia, Tradizione dell'antico"
 year: 2008
 title: "Mnamon: Ancient Writing Systems in the Mediterranean, a critical guide to electronic resources"

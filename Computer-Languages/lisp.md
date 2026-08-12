@@ -1,5 +1,7 @@
 ---
 type: ComputerLanguage
+aliases:
+  - "Lisp"
 paradigm: functional, procedural, reflective, meta
 lineage: Lisp
 first_appeared: 1958

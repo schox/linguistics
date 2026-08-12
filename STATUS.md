@@ -1,5 +1,7 @@
 ---
 type: Doc
+aliases:
+  - "Status"
 status: living
 ---
 

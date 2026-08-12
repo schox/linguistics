@@ -1,5 +1,7 @@
 ---
 type: Type
+aliases:
+  - "Person"
 _icon: user
 _color: violet
 _sidebar_label: People

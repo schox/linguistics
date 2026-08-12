@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Berthin 2024"
 authors: "Berthin, Gordon"
 year: 2024
 title: "Qualitative and Quantitative Validation of Rongorongo Glyph Strings on Easter Island Artefacts"

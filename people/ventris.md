@@ -1,5 +1,7 @@
 ---
 type: Person
+aliases:
+  - "Michael Ventris"
 born: 1922
 died: 1956
 field:

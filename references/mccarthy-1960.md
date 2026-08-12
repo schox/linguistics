@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "McCarthy 1960"
 authors: "McCarthy, John"
 year: 1960
 title: "Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I"

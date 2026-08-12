@@ -1,5 +1,7 @@
 ---
 type: Doc
+aliases:
+  - "Decisions"
 status: living
 ---
 

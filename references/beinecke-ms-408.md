@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Beinecke MS 408"
 authors: "Beinecke Rare Book and Manuscript Library, Yale University"
 year: 2026
 title: "Beinecke MS 408, catalog record"

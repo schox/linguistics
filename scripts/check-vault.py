@@ -8,7 +8,10 @@ Checks, per markdown file:
   * subfield values valid against the owning area's _index.md
   * wikilink values quoted (unquoted [[X]] is a nested YAML list and fails silently)
   * every relative markdown link resolves
-  * every [[wikilink]] resolves to an H1 title or filename
+  * every [[wikilink]] resolves to a filename, alias or H1 title
+  * every note whose H1 title differs from its filename carries that title
+    in `aliases` (Obsidian resolves wikilinks by filename or alias only,
+    so without the alias every title-style wikilink at the note breaks)
   * content notes end with a ## Sources section
   * no Reference note points at Wikipedia (fine as a source in a note,
     never as an entry in the authoritative bibliography)
@@ -181,13 +184,25 @@ def subfield_vocab(path):
 
 
 def resolvable_targets(files):
-    """Every wikilink target Tolaria can resolve: H1 titles and bare filenames."""
+    """Every wikilink target Obsidian can resolve: bare filenames and aliases.
+
+    H1 titles are included too, but only because the alias rule makes every
+    H1 an alias; the title itself is not resolvable in Obsidian, which is
+    exactly what the alias check below exists to guarantee.
+    """
     targets = set()
     for path in files:
         targets.add(os.path.basename(path)[:-3])
-        m = re.search(r"^#\s+(.+)$", open(path, encoding="utf-8").read(), re.M)
+        raw = open(path, encoding="utf-8").read()
+        m = re.search(r"^#\s+(.+)$", raw, re.M)
         if m:
             targets.add(m.group(1).strip())
+        data, _ = parse_frontmatter(raw)
+        aliases = (data or {}).get("aliases")
+        if isinstance(aliases, str):
+            aliases = [aliases]
+        for alias in aliases or []:
+            targets.add(alias)
     return targets
 
 
@@ -260,6 +275,20 @@ def check(path, vocabs, targets):
                                 f"Reference '{field}' points at Wikipedia; cite the "
                                 "work of record instead"))
 
+    # Obsidian resolves wikilinks by filename or alias, never by H1 title,
+    # so a note titled differently from its filename must alias the title.
+    m = re.search(r"^#\s+(.+)$", raw, re.M)
+    if m:
+        title, base_name = m.group(1).strip(), os.path.basename(rel)[:-3]
+        if title not in (base_name, base_name + ".md"):
+            aliases = data.get("aliases")
+            if isinstance(aliases, str):
+                aliases = [aliases]
+            if title not in (aliases or []):
+                out.append((rel, 1,
+                            f"H1 '{title}' missing from aliases; title-style "
+                            "wikilinks at this note will not resolve in Obsidian"))
+
     # the silent YAML trap
     for m in WIKILINK_UNQUOTED.finditer(raw[:raw.find("\n---\n", 3) + 5]):
         out.append((rel, 1,
@@ -307,7 +336,7 @@ SWEEP_STOP = {
     "Scripts", "Fields", "Identifiers", "Subfield vocabulary", "Current entries",
     "Obvious gaps", "See", "Compare", "Where", "Worked", "Prefer", "Every",
     "Use", "Do", "Read", "Run", "Keep", "Give", "Never", "Write", "Mark",
-    "Wikipedia", "Markdown", "YAML", "Unicode", "Tolaria",
+    "Wikipedia", "Markdown", "YAML", "Unicode", "Tolaria", "Obsidian", "Bases",
     "BCE", "CE", "ISO", "DOI", "CC", "MOC", "CLDF",
 }
 

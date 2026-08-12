@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Bletchley Park"
 kind: institution
 country: United Kingdom
 region: Buckinghamshire

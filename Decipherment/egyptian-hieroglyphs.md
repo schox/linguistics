@@ -1,5 +1,7 @@
 ---
 type: Script
+aliases:
+  - "Egyptian hieroglyphs"
 class: mixed
 period: in use until 394 CE; start date not sourced here
 decipherment_status: deciphered

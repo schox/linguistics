@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Rutter, Aegean Prehistoric Archaeology"
 authors: "Rutter, Jeremy B.; Gonzalez-Major, JoAnn"
 year: 2026
 title: "Aegean Prehistoric Archaeology"

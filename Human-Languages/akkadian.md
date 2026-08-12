@@ -1,5 +1,7 @@
 ---
 type: Language
+aliases:
+  - "Akkadian"
 family: Afro-Asiatic
 branch: Semitic
 written_in:

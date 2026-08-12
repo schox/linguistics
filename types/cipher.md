@@ -1,5 +1,7 @@
 ---
 type: Type
+aliases:
+  - "Cipher"
 _icon: lock
 _color: rose
 _sidebar_label: Ciphers

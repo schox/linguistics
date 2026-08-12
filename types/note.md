@@ -1,5 +1,7 @@
 ---
 type: Type
+aliases:
+  - "Note"
 _icon: edit
 _color: yellow
 _sidebar_label: Notes

@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Donnelly 2025"
 authors: "Donnelly, Cassandra M."
 year: 2025
 title: "Cypro-Minoan and Its Writers: At Home and Overseas"

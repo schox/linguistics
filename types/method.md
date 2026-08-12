@@ -1,5 +1,7 @@
 ---
 type: Type
+aliases:
+  - "Method"
 _icon: git-branch
 _color: cyan
 _sidebar_label: Methods

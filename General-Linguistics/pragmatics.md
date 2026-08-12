@@ -1,5 +1,7 @@
 ---
 type: Concept
+aliases:
+  - "Pragmatics"
 subfield:
   - Levels of analysis
 belongs_to: "[[Levels of analysis]]"

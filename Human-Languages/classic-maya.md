@@ -1,5 +1,7 @@
 ---
 type: Language
+aliases:
+  - "Classic Maya"
 family: Mayan
 branch: Ch'olan
 written_in:

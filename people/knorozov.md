@@ -1,5 +1,7 @@
 ---
 type: Person
+aliases:
+  - "Yuri Knorozov"
 born: 1922
 died: 1999
 field:

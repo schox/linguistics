@@ -1,5 +1,7 @@
 ---
 type: Type
+aliases:
+  - "Concept"
 _icon: lightbulb
 _color: purple
 _sidebar_label: Concepts

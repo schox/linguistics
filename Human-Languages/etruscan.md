@@ -1,5 +1,7 @@
 ---
 type: Language
+aliases:
+  - "Etruscan"
 family: Tyrsenian
 branch:
 written_in:

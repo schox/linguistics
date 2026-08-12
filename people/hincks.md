@@ -1,5 +1,7 @@
 ---
 type: Person
+aliases:
+  - "Edward Hincks"
 born: 1792
 died: 1866
 field:

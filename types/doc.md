@@ -1,5 +1,7 @@
 ---
 type: Type
+aliases:
+  - "Doc"
 _icon: file
 _color: slate
 _sidebar_label: Docs

@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Dalby 2019"
 authors: "Dalby, Andrew; et al."
 year: 2019
 title: "Rosetta Stone"

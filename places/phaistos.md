@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Phaistos"
 kind: site
 country: Greece
 region: Crete

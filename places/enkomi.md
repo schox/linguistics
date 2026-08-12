@@ -1,5 +1,7 @@
 ---
 type: Place
+aliases:
+  - "Enkomi"
 kind: site
 country: Cyprus
 region: Famagusta District

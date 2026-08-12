@@ -1,5 +1,7 @@
 ---
 type: Concept
+aliases:
+  - "Phonetics"
 subfield:
   - Levels of analysis
 belongs_to: "[[Levels of analysis]]"

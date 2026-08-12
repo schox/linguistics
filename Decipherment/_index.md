@@ -1,5 +1,7 @@
 ---
 type: MOC
+aliases:
+  - "Decipherment"
 area: Decipherment
 updated: 2026-08-09
 ---

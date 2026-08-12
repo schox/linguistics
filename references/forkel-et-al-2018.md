@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Forkel et al. 2018 (CLDF)"
 authors: "Forkel, Robert; List, Johann-Mattis; Greenhill, Simon J.; Rzymski, Christoph; Bank, Sebastian; Cysouw, Michael; Hammarström, Harald; Haspelmath, Martin; Kaiping, Gereon A.; Gray, Russell D."
 year: 2018
 title: "Cross-Linguistic Data Formats, advancing data sharing and re-use in comparative linguistics"

@@ -1,5 +1,7 @@
 ---
 type: Type
+aliases:
+  - "MOC"
 _icon: map
 _color: blue
 _sidebar_label: Maps

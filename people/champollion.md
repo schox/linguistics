@@ -1,5 +1,7 @@
 ---
 type: Person
+aliases:
+  - "Jean-François Champollion"
 born: 1790
 died: 1832
 field:

@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Glottolog"
 authors: "Hammarström, Harald; Forkel, Robert; Haspelmath, Martin; Bank, Sebastian"
 year: 2026
 title: "Glottolog 5.3"

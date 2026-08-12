@@ -1,5 +1,7 @@
 ---
 type: Reference
+aliases:
+  - "Petrolito et al. 2015"
 authors: "Petrolito, Tommaso; Petrolito, Ruggero; Winterstein, Grégoire; Perono Cacciafoco, Francesco"
 year: 2015
 title: "Minoan linguistic resources: The Linear A Digital Corpus"
