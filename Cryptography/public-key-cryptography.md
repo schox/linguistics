@@ -12,16 +12,23 @@ updated: 2026-08-12
 
 Cryptography in which the key that encrypts is not the key that decrypts. The asymmetric primitives and the hardness assumptions they rest on.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
+Stubbed out in full on 2026-08-12: five topics with eleven children. Nothing here is written yet.
 
-## Topics owed to this hub
+## Notes in this subfield
 
-RSA, Diffie-Hellman, ElGamal, Rabin, elliptic curve cryptography, pairings, the integer factorization problem, the discrete logarithm problem, chosen ciphertext security, probabilistic encryption.
-
-From [Menezes et al. 1996](../references/menezes-et-al-1996.md) chapters 3, 4 and 8, and [Boneh and Shoup 2023](../references/boneh-shoup-2023.md) chapters 10 to 12 and 15 to 16.
+- [Public-key encryption schemes](public-key-encryption-schemes.md), with five named schemes
+- [Hardness assumptions](hardness-assumptions.md), with the five problems the field rests on
+- [Elliptic curve cryptography](elliptic-curve-cryptography.md), with pairings under it
+- [Chosen ciphertext security](chosen-ciphertext-security.md)
+- [Probabilistic encryption](probabilistic-encryption.md)
 
 **Digital signatures are not here.** Both instruments separate them; see [Digital signatures and authentication](digital-signatures-and-authentication.md).
 
-## Notes in this subfield
+**Diffie-Hellman is not here either.** It is key agreement rather than encryption, and is filed under [Key management and establishment](key-management-and-establishment.md); the assumption it rests on is under Hardness assumptions.
+
+## Still owed
+
+- **Key sizes and equivalent strength**, the practical question every one of these raises and none of the stubs covers.
+
 
 (none yet)

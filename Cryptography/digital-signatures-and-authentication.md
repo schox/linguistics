@@ -12,14 +12,19 @@ updated: 2026-08-12
 
 Proving who sent something, and that it has not changed. Signing is not encryption, and both instruments give it a chapter of its own rather than a section under public-key cryptography.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-Digital signature schemes, RSA signatures, DSA and ECDSA, one-time signatures, blind and group signatures, entity authentication, challenge-response protocols, passwords as weak authentication, sigma protocols, public key infrastructure and certificates.
-
-From [Menezes et al. 1996](../references/menezes-et-al-1996.md) chapters 10 and 11, and [Boneh and Shoup 2023](../references/boneh-shoup-2023.md) chapters 13, 14, 18 and 19.
+Stubbed out in full on 2026-08-12: four topics with eleven children. Nothing here is written yet.
 
 ## Notes in this subfield
+
+- [Digital signature schemes](digital-signature-schemes.md), with six under it
+- [Entity authentication](entity-authentication.md), with three
+- [Public key infrastructure](public-key-infrastructure.md), with two
+- [Sigma protocols](sigma-protocols.md)
+
+## Still owed
+
+- **The Fiat-Shamir transform** in its own right, which turns an identification protocol into a signature and is named in both instruments.
+- **Certificate revocation**, filed for now under [Key management and establishment](key-management-and-establishment.md) with the rest of the key life cycle.
+
 
 (none yet)

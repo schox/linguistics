@@ -62,7 +62,7 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 
 ## Subfield hubs
 
-Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. Three are stubbed out in full, [Cryptanalysis](cryptanalysis.md), [Classical ciphers](classical-ciphers.md) and [Symmetric cryptography](symmetric-cryptography.md); the other eleven are stub hubs awaiting the breadth program in `ROADMAP.md`.
+Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. Six are stubbed out in full: [Cryptanalysis](cryptanalysis.md), [Classical ciphers](classical-ciphers.md), [Symmetric cryptography](symmetric-cryptography.md), [Public-key cryptography](public-key-cryptography.md), [Digital signatures and authentication](digital-signatures-and-authentication.md) and [Hashes and integrity](hashes-and-integrity.md). The other eight are stub hubs awaiting the breadth program in `ROADMAP.md`.
 
 - [Classical ciphers](classical-ciphers.md)
 - [Mechanical and electromechanical](mechanical-and-electromechanical.md)
@@ -87,9 +87,9 @@ Written:
 - [Kasiski examination](kasiski-examination.md), method
 - [Index of coincidence](index-of-coincidence.md), method
 
-**81 taxonomy stubs**, added 2026-08-12 across three subfields, at two levels of depth. See each hub for its list: [Cryptanalysis](cryptanalysis.md) 42, [Classical ciphers](classical-ciphers.md) 21, [Symmetric cryptography](symmetric-cryptography.md) 18.
+**125 taxonomy stubs**, added 2026-08-12 across six subfields, at two levels of depth. See each hub for its list: [Cryptanalysis](cryptanalysis.md) 42, [Classical ciphers](classical-ciphers.md) 21, [Symmetric cryptography](symmetric-cryptography.md) 18, [Public-key cryptography](public-key-cryptography.md) 16, [Digital signatures and authentication](digital-signatures-and-authentication.md) 15, [Hashes and integrity](hashes-and-integrity.md) 13.
 
-A stub says so in its body and asserts nothing about its subject. 37 cite a source naming the topic; the other 44 read **To be researched** and are listed by `python3 scripts/check-vault.py --stubs`, which is the worklist for closing them. `DECISIONS.md` records why that relaxation exists and when it expires.
+A stub says so in its body and asserts nothing about its subject. 66 cite a source naming the topic; the other 59 read **To be researched** and are listed by `python3 scripts/check-vault.py --stubs`, which is the worklist for closing them. `DECISIONS.md` records why that relaxation exists and when it expires.
 
 ## Documents
 
