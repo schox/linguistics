@@ -62,7 +62,7 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 
 ## Subfield hubs
 
-Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. Six are stubbed out in full: [Cryptanalysis](cryptanalysis.md), [Classical ciphers](classical-ciphers.md), [Symmetric cryptography](symmetric-cryptography.md), [Public-key cryptography](public-key-cryptography.md), [Digital signatures and authentication](digital-signatures-and-authentication.md) and [Hashes and integrity](hashes-and-integrity.md). The other eight are stub hubs awaiting the breadth program in `ROADMAP.md`.
+Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. **All fourteen are now stubbed out**, six at two levels and eight at one. Nothing in the area is written beyond the three notes below.
 
 - [Classical ciphers](classical-ciphers.md)
 - [Mechanical and electromechanical](mechanical-and-electromechanical.md)
@@ -87,9 +87,11 @@ Written:
 - [Kasiski examination](kasiski-examination.md), method
 - [Index of coincidence](index-of-coincidence.md), method
 
-**125 taxonomy stubs**, added 2026-08-12 across six subfields, at two levels of depth. See each hub for its list: [Cryptanalysis](cryptanalysis.md) 42, [Classical ciphers](classical-ciphers.md) 21, [Symmetric cryptography](symmetric-cryptography.md) 18, [Public-key cryptography](public-key-cryptography.md) 16, [Digital signatures and authentication](digital-signatures-and-authentication.md) 15, [Hashes and integrity](hashes-and-integrity.md) 13.
+**185 taxonomy stubs**, added 2026-08-12, covering all fourteen subfields. Depth follows the subject: two levels for Cryptanalysis (42), Classical ciphers (21), Symmetric cryptography (18), Public-key cryptography (16), Digital signatures and authentication (15) and Hashes and integrity (13); one level for Mechanical and electromechanical (7), Randomness and key generation (7), Key management and establishment (10), Protocols and deployment (8), Theory (7), Post-quantum cryptography (8), Quantum cryptography (6) and History and politics (8).
 
-A stub says so in its body and asserts nothing about its subject. 66 cite a source naming the topic; the other 59 read **To be researched** and are listed by `python3 scripts/check-vault.py --stubs`, which is the worklist for closing them. `DECISIONS.md` records why that relaxation exists and when it expires.
+A stub says so in its body and asserts nothing about its subject. 94 cite a source naming the topic; the other 91 read **To be researched** and are listed by `python3 scripts/check-vault.py --stubs`, which is the worklist for closing them. `DECISIONS.md` records why that relaxation exists and when it expires.
+
+**Where the sourcing is weakest**, and it is not evenly spread: Quantum cryptography (nothing at all), History and politics (nothing at all), Mechanical and electromechanical (one of seven), and the deployed protocols. All four fall outside what a technical classification instrument covers, which is a fact about the instruments rather than about the subjects.
 
 ## Documents
 

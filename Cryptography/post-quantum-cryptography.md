@@ -12,16 +12,17 @@ updated: 2026-08-12
 
 Classical algorithms chosen to resist attack by a quantum computer. NIST's distinction is the governing one: post-quantum cryptography is "a defense against potential cyberattacks from quantum computers", built on mathematics that is often very old, and is a different subject from [quantum cryptography](quantum-cryptography.md), which is "based fundamentally on quantum physics".
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-Lattice-based cryptography, ML-KEM (FIPS 203), ML-DSA (FIPS 204), SLH-DSA (FIPS 205), hash-based signatures, code-based cryptography, the NIST standardization process, harvest-now-decrypt-later, cryptographic agility and migration.
-
-From [Boneh and Shoup 2023](../references/boneh-shoup-2023.md) chapter 17 and NIST's post-quantum project, which standardized the first three in August 2024.
-
-**Shor and Grover are not here.** They are attacks, and sit under [Cryptanalysis](cryptanalysis.md) with the other attacks. Most treatments put them in this chapter instead, because the threat is what motivates the remedy; filing them with attacks is the more consistent choice here and is a deliberate deviation.
+Stubbed out on 2026-08-12, one level. Nothing here is written yet.
 
 ## Notes in this subfield
 
-(none yet)
+- [Lattice-based cryptography](lattice-based-cryptography.md)
+- [ML-KEM](ml-kem.md), FIPS 203
+- [ML-DSA](ml-dsa.md), FIPS 204
+- [SLH-DSA](slh-dsa.md), FIPS 205
+- [Hash-based signatures](hash-based-signatures.md)
+- [Code-based cryptography](code-based-cryptography.md)
+- [The NIST standardization process](the-nist-standardization-process.md)
+- [Harvest-now-decrypt-later](harvest-now-decrypt-later.md)
+
+The quantum attacks that motivate all of this are filed under [Quantum cryptanalysis](quantum-cryptanalysis.md) in Cryptanalysis, with [Shor's algorithm](shors-algorithm.md) and [Grover's algorithm](grovers-algorithm.md) beneath it. [McEliece](mceliece-cryptosystem.md), the long-standing code-based scheme, sits under public-key encryption because it predates the term by decades.

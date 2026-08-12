@@ -12,14 +12,23 @@ updated: 2026-08-12
 
 Getting a shared key to two parties who do not have one, and looking after keys once they exist. Two chapters of the handbook, and the part of applied cryptography that fails most often in practice.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-Key transport, key agreement, authenticated key exchange, secret sharing, conference keying, distributing public keys, certificates and certification authorities, the trust problem, key life cycle, key revocation, controlling key usage, multiple-domain key management.
-
-From [Menezes et al. 1996](../references/menezes-et-al-1996.md) chapters 12 and 13, [Boneh and Shoup 2023](../references/boneh-shoup-2023.md) chapter 21, and NIST's Key Management project.
+Stubbed out on 2026-08-12, one level. Nothing here is written yet.
 
 ## Notes in this subfield
 
-(none yet)
+Establishment:
+
+- [Key transport](key-transport.md)
+- [Key agreement](key-agreement.md)
+- [Diffie-Hellman key agreement](diffie-hellman-key-agreement.md)
+- [Authenticated key exchange](authenticated-key-exchange.md)
+- [Secret sharing](secret-sharing.md)
+- [Conference keying](conference-keying.md)
+
+Management:
+
+- [Distributing public keys](distributing-public-keys.md)
+- [Controlling key usage](controlling-key-usage.md)
+- [Key life cycle](key-life-cycle.md)
+
+Diffie-Hellman sits here rather than under [Public-key cryptography](public-key-cryptography.md) because it agrees a key rather than encrypting a message. The assumption beneath it is [The Diffie-Hellman problem](diffie-hellman-problem.md).

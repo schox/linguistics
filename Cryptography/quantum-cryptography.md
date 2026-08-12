@@ -12,14 +12,15 @@ updated: 2026-08-12
 
 Cryptography built on quantum physics rather than on computational hardness. NIST's contrast with post-quantum cryptography is the definition used here: quantum cryptography "is based fundamentally on quantum physics, which originated in the 20th century", where post-quantum cryptography is classical mathematics chosen to resist quantum attack.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-Quantum key distribution, BB84, entanglement-based protocols, quantum random number generation, device-independent cryptography, the practical limits of QKD deployment.
-
-**This list is provisional and thinner than the others.** The three instruments used to check this area's vocabulary are all classical-computation texts and none of them covers quantum cryptography, so the topics above are not drawn from a classification instrument the way the rest of the area's are. A source for the internal structure of the subject is owed before these become notes; see `ROADMAP.md`.
+Stubbed out on 2026-08-12, one level. Nothing here is written yet, and this subfield is the least well founded in the area.
 
 ## Notes in this subfield
 
-(none yet)
+- [Quantum key distribution](quantum-key-distribution.md)
+- [BB84](bb84.md)
+- [Entanglement-based protocols](entanglement-based-protocols.md)
+- [Quantum random number generation](quantum-random-number-generation.md)
+- [Device-independent cryptography](device-independent-cryptography.md)
+- [Limits of QKD deployment](limits-of-qkd-deployment.md)
+
+**Every stub here reads "To be researched", and that is a statement about the sources rather than about the subject.** The three instruments used to check this area's vocabulary are classical-computation texts and none of them covers quantum cryptography; [NIST post-quantum standards](../references/nist-pqc.md) establishes only that the subject is distinct from post-quantum cryptography, not what is in it. A source for the internal structure of the field is owed before any of these is written, and the list above should be treated as provisional until then.

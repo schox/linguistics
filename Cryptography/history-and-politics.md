@@ -12,12 +12,19 @@ updated: 2026-08-12
 
 Who is allowed to keep a secret.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-Black chambers, the NSA and GCHQ, the crypto wars, export control, Clipper, Snowden, the current lawful-access argument.
+Stubbed out on 2026-08-12, one level. Nothing here is written yet.
 
 ## Notes in this subfield
 
-(none yet)
+- [Black chambers](black-chambers.md)
+- [The NSA](the-nsa.md)
+- [GCHQ](gchq.md)
+- [The crypto wars](the-crypto-wars.md)
+- [Export control](export-control.md)
+- [The Clipper chip](the-clipper-chip.md)
+- [The Snowden disclosures](the-snowden-disclosures.md)
+- [Lawful access](lawful-access.md)
+
+**None of these carries a source**, for the same reason as the machine era: the classification instruments are technical texts and the politics of cryptography is not in them. [Bletchley Park](../places/bletchley-park.md) already exists as a `Place` note and is the nearest thing the corpus holds to this subject.
+
+Living people and current political argument both appear here, so `types/person.md` and the rule on contested claims in `CONVENTIONS.md` apply with particular force when these are written.
