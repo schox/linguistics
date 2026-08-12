@@ -36,6 +36,14 @@ That is a deliberate trade. The alternative, resolving every open question as it
 
    Worst first when it comes: `Decipherment/linear-b.md`, which is 430 words with a single content section, and that section is an argument. `Cryptography/kasiski-examination.md` (176 words) and `Cryptography/index-of-coincidence.md` (213) have no content sections at all, and `ROADMAP.md` already schedules their repair with the Cryptography batch.
 
+9. **Self-reference in the content notes.** 261 instances of "this vault" and "the vault's" across 88 files, counted 2026-08-12. The drafting policy of that date rules them out: notes do not refer to the collection they sit in, and absences are written impersonally instead. Concentrated in `Decipherment/why-scripts-stay-unread.md` (15), `General-Linguistics/redundancy.md` (12), `Decipherment/ugaritic-script.md` (12), `Decipherment/is-it-writing-at-all.md` (10).
+
+   **Not a find-and-replace.** Each instance needs rewording in context, and about a dozen are load-bearing rather than stylistic. `General-Linguistics/redundancy.md` carries "This is the vault's own reasoning and is not drawn from a source", which was the marker for unsourced analysis and now has to become the labeling convention set out in `CONVENTIONS.md` under `### Analysis, opinion and theory`.
+
+   **Do this in the same pass as item 8**, note by note. Both are the same job, retrofitting policy written on 2026-08-12 onto prose written before it, and they touch overwhelmingly the same files. Two passes over 88 notes to fix two things in each is the expensive way round.
+
+   The cost of deferring, recorded so it is a decision rather than an oversight: until the sweep runs, 88 notes carry a voice the policy forbids, and anything learning the house style by reading the corpus will learn the wrong one. That is the trade against spending the effort now, while the areas that are actually short of material stay short.
+
 ## Blocked on Andrew
 
 Nothing here can be moved by more searching.
