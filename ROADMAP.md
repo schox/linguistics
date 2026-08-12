@@ -109,7 +109,11 @@ One subfield per batch, taxonomy already in place from each area's `_index.md`. 
 
    Three of the fourteen have any content: Cryptanalysis 3, Classical ciphers 1, Theory 1. **Eleven hold no content note at all.**
 
-   **Next on this area, and the reason the vocabulary came first:** the stub inventory, one batch per subfield, on the model of the Levels of analysis child topics. Each stub cites the instrument section that names the topic, which is what makes it a placeholder for a real subject rather than a guess.
+   **The stub inventory follows, one batch per subfield**, on the model of the Levels of analysis child topics. Each stub cites the source section that names the topic, which is what makes it a placeholder for a real subject rather than a guess. Andrew's rule: an obvious placeholder should carry at least one reference, because otherwise there is no evidence the topic is a topic.
+
+   **Cryptanalysis is done**, 2026-08-12: 13 stubs, plus four new references to cover what the two handbooks do not (Shor, Grover, Kocher on timing attacks, and the Bletchley Park report on Tunny). Three topics named in the area index were deliberately left unstubbed for want of a source, and are listed on the hub: the bombe and the Enigma break, known-plaintext and crib-dragging as techniques, and meet-in-the-middle attacks.
+
+   **The remaining thirteen subfields, in suggested order:** Classical ciphers and Symmetric cryptography first, since they are what Cryptanalysis attacks and the existing thin notes sit between them; then Public-key cryptography, Digital signatures and authentication, Hashes and integrity; then Randomness and key generation, Key management and establishment, Protocols and deployment; then Theory, which is the Decipherment junction and deserves care; then Post-quantum cryptography, Mechanical and electromechanical, History and politics. **Quantum cryptography last**, because it is the one subfield whose topic list is not drawn from any held source and needs one first.
 
    The three existing notes are also the oldest and thinnest anywhere: `index-of-coincidence` is 213 words and `kasiski-examination` is 176, and both are load-bearing for the Decipherment area, which divides by them. Repair them in the same batch rather than adding around them.
 

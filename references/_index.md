@@ -27,6 +27,7 @@ See `_data-sources.md` for how the vault relates to these.
 - [Ferrara 2013](ferrara-2013.md), the Cypro-Minoan corpus
 - [Heraklion Archaeological Museum, the Phaistos Disc](heraklion-museum-phaistos-disc.md)
 - [Mahadevan 1977](mahadevan-1977.md), the Indus concordance both camps use
+- [Menezes et al. 1996](menezes-et-al-1996.md), the Handbook of Applied Cryptography
 - [Mnamon](mnamon.md), critical guide to Mediterranean writing systems
 - [Olivier 2007](olivier-2007.md), HoChyMin, the Cypro-Minoan reference numbering
 - [Rutter, Aegean Prehistoric Archaeology](rutter-aegean-prehistory.md)
@@ -39,9 +40,10 @@ See `_data-sources.md` for how the vault relates to these.
 ## Literature
 
 - [Assael et al. 2022 (Ithaca)](assael-2022.md)
-- [Baroni 2011](baroni-2011.md), writing system typology and the alphabetocentrism debate
 - [Barber 1974](barber-1974.md)
+- [Baroni 2011](baroni-2011.md), writing system typology and the alphabetocentrism debate
 - [Berthin 2024](berthin-2024.md)
+- [Boneh and Shoup 2023](boneh-shoup-2023.md), a graduate course in applied cryptography
 - [Chadwick 1958](chadwick-1958.md)
 - [Dalby 2019](dalby-2019.md), the Rosetta Stone
 - [Daniels and Bright 1996](daniels-bright-1996.md), the standard survey, not read
@@ -50,10 +52,13 @@ See `_data-sources.md` for how the vault relates to these.
 - [Englund 2004](englund-2004.md), proto-Elamite
 - [Farmer, Sproat and Witzel 2004](farmer-sproat-witzel-2004.md)
 - [Frost 2005](frost-2005.md), orthographic depth and skilled word recognition
+- [Good, Michie and Timms 1945](good-michie-timms-1945.md), the Bletchley Park report on breaking Tunny
+- [Grover 1996](grover-1996.md), quantum search
 - [Kasiski 1863](kasiski-1863.md)
 - [Kelley 2026](kelley-2026.md), Proto-Elamite
-- [Luo, Cao and Barzilay 2019](luo-cao-barzilay-2019.md)
+- [Kocher 1996](kocher-1996.md), timing attacks, the first side-channel result
 - [Luo et al. 2021](luo-2021.md)
+- [Luo, Cao and Barzilay 2019](luo-cao-barzilay-2019.md)
 - [McCarthy 1960](mccarthy-1960.md)
 - [Montecchi 2019](montecchi-2019.md)
 - [Petrolito et al. 2015](petrolito-et-al-2015.md)
@@ -64,9 +69,10 @@ See `_data-sources.md` for how the vault relates to these.
 - [Seymour et al. 2003](seymour-et-al-2003.md), reading acquisition across 13 European orthographies
 - [Shannon 1949](shannon-1949.md)
 - [Shannon 1951](shannon-1951.md), the entropy of printed English
+- [Shor 1997](shor-1997.md), quantum factoring and discrete logarithms
 - [Sproat 2010](sproat-2010.md)
-- [Torres Torres 2007](torres-torres-2007.md), the cuneiform decipherment
 - [Tamburini 2025](tamburini-2025.md)
+- [Torres Torres 2007](torres-torres-2007.md), the cuneiform decipherment
 - [Ventris and Chadwick 1953](ventris-chadwick-1953.md)
 - [Yadav et al. 2009](yadav-et-al-2009.md)
 

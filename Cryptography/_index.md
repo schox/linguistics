@@ -62,7 +62,7 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 
 ## Subfield hubs
 
-Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. All are stubs awaiting the breadth program in `ROADMAP.md`.
+Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. [Cryptanalysis](cryptanalysis.md) has been stubbed out in full; the other thirteen are stub hubs awaiting the breadth program in `ROADMAP.md`.
 
 - [Classical ciphers](classical-ciphers.md)
 - [Mechanical and electromechanical](mechanical-and-electromechanical.md)
@@ -81,9 +81,13 @@ Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. All are
 
 ## Notes
 
+Written:
+
 - [Vigenère cipher](vigenere-cipher.md), classical
 - [Kasiski examination](kasiski-examination.md), method
 - [Index of coincidence](index-of-coincidence.md), method
+
+Stubs, added 2026-08-12, all under [Cryptanalysis](cryptanalysis.md) and each citing the source that establishes it as a topic: classes of attack, attacks on protocols, attacks on hash functions, attacks on identification protocols, cryptanalysis of classical ciphers, birthday attacks, differential cryptanalysis, linear cryptanalysis, integer factorization algorithms, discrete logarithm algorithms, quantum cryptanalysis, side-channel attacks, cryptanalysis of the Lorenz cipher.
 
 ## Documents
 
