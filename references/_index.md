@@ -49,6 +49,7 @@ See `_data-sources.md` for how the vault relates to these.
 - [Donnelly 2025](donnelly-2025.md), Cypro-Minoan
 - [Englund 2004](englund-2004.md), proto-Elamite
 - [Farmer, Sproat and Witzel 2004](farmer-sproat-witzel-2004.md)
+- [Frost 2005](frost-2005.md), orthographic depth and skilled word recognition
 - [Kasiski 1863](kasiski-1863.md)
 - [Kelley 2026](kelley-2026.md), Proto-Elamite
 - [Luo, Cao and Barzilay 2019](luo-cao-barzilay-2019.md)
@@ -60,6 +61,7 @@ See `_data-sources.md` for how the vault relates to these.
 - [Rao et al. 2009](rao-2009.md)
 - [Rao et al. 2010](rao-2010.md)
 - [Salgarella 2025](salgarella-2025.md), Linear A
+- [Seymour et al. 2003](seymour-et-al-2003.md), reading acquisition across 13 European orthographies
 - [Shannon 1949](shannon-1949.md)
 - [Shannon 1951](shannon-1951.md), the entropy of printed English
 - [Sproat 2010](sproat-2010.md)

@@ -69,6 +69,7 @@ Each subfield gets a `MOC` note as its hub. Content notes `belongs_to` that hub 
   - Discourse, unwritten
 - **[Writing systems](writing-systems.md)** (MOC), shared with Decipherment
   - [Script typology](script-typology.md), what the signs stand for, and the source of the `class` vocabulary
+  - [Orthographic depth](orthographic-depth.md), how directly an orthography maps signs to sounds
 - **Formal foundations**, no MOC yet
   - [The Chomsky hierarchy](chomsky-hierarchy.md)
 - **Computational linguistics**, no MOC yet

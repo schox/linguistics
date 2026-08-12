@@ -94,7 +94,9 @@ One subfield per batch, taxonomy already in place from each area's `_index.md`. 
 2. **Levels of analysis, child topics.** Roughly forty-five notes, named at the foot of each of the six entries. One parent per batch. Phonology and morphology first, since the Decipherment area leans on both. A source beyond an introductory textbook is needed for several, particularly acoustic and auditory phonetics.
 3. **General Linguistics, Writing systems.** ~~The most urgent thing in the vault.~~ **Anchored 2026-08-12** by `General-Linguistics/script-typology.md`, which defines the vocabulary the `class` field draws on, from [Baroni 2011](references/baroni-2011.md), [the Unicode Standard](references/unicode-standard-17.md) chapter 6 with its Table 6-1, and the numeric ranges of [ISO 15924](references/iso15924.md). The three do not fully agree, and the note says where.
 
-   **Still owed to the hub**, each its own batch: the history of the alphabet, orthographic depth (Baroni pp. 129 and following is already held and unused), transliteration and romanization standards, script reform, and a note on the grapheme. The typology note names two more at its foot.
+   **Orthographic depth followed on the same day**, from [Frost 2005](references/frost-2005.md), which is the hypothesis stated by one of its own authors and is free, and [Seymour et al. 2003](references/seymour-et-al-2003.md) for the acquisition evidence.
+
+   **Still owed to the hub**, each its own batch: the history of the alphabet, transliteration and romanization standards, script reform, literacy, and a note on the grapheme. The two entries name further child topics at their feet.
 
    **Two pieces of follow-up work it generated**, both mechanical rather than research:
 

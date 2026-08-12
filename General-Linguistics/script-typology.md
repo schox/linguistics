@@ -72,7 +72,7 @@ Baroni treats it as a subtype of syllabary in which the consonant and vowel part
 
 Signs stand for individual phonemes, consonants and vowels alike. Baroni's definition is a system "where ideally all the phonemes of a language are noted by separate elements" (p. 128); Unicode's is a system "that consists of letters for the writing of both consonants and vowels", adding that the two have equal status as letters.
 
-The word "ideally" is doing real work. No alphabet achieves one sign per phoneme in practice, and the distance between the principle and any actual orthography is the subject of orthographic depth.
+The word "ideally" is doing real work. No alphabet achieves one sign per phoneme in practice, and the distance between the principle and any actual orthography is the subject of [orthographic depth](orthographic-depth.md).
 
 ### Featural
 
@@ -105,7 +105,7 @@ The standard anticipates the objection and concedes it twice. Table 6-1 is "an a
 Each should become a note of its own; none is written.
 
 - **The history of the alphabet.** Proto-Sinaitic to Phoenician to Greek, and the addition of vowel letters.
-- **Orthographic depth.** Transparent and opaque orthographies, and what depth predicts about reading. Baroni pp. 129 and following is the starting point held here.
+- ~~**Orthographic depth.**~~ Written as [Orthographic depth](orthographic-depth.md).
 - **Transliteration and romanization standards.** The ISO series, ALA-LC, Hepburn, Pinyin.
 - **Script reform.** Deliberate change to a writing system by policy.
 - **Grapheme.** The minimal contrastive graphic unit, and the graphoneme.
