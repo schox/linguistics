@@ -1,0 +1,38 @@
+name: check-vault
+
+# Obsidian enforces none of this vault's schema, and it creates stray files
+# as a byproduct of ordinary use, so the checker is the only thing standing
+# between the vault and silent drift. See AGENTS.md and DECISIONS.md.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # No dependencies: the checker is standard library only, deliberately,
+      # so it runs anywhere the vault is opened.
+      - name: Check the vault
+        run: python3 scripts/check-vault.py
+
+      # Advisory sweeps. These never fail; they are printed so the run log
+      # carries the missing-link worklist and the open-question harvest.
+      - name: Advisory sweep (never fails)
+        if: always()
+        run: |
+          echo "::group::Unlinked mentions and recurring names"
+          python3 scripts/check-vault.py --report
+          echo "::endgroup::"
+          echo "::group::Open questions"
+          python3 scripts/check-vault.py --questions
+          echo "::endgroup::"

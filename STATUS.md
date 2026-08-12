@@ -15,7 +15,7 @@ This file is the present tense: what exists, what is thin, what has been establi
 
 The structure is complete and enforced. Five areas, thirteen note types plus `Type` itself, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
 
-**The vault is an Obsidian vault as of 2026-08-12**, migrated from Tolaria; `DECISIONS.md` records why and what changed. On the repository side the migration is done: every note aliases its H1 title (checker-enforced, so title-style wikilinks resolve in Obsidian), every subfield has a `MOC` hub so the whole taxonomy shows in the graph, and the Tolaria sidebar views have Obsidian Bases equivalents in `views/*.base`. What remains is Mac-side verification by Andrew, listed in `ROADMAP.md` under the migration section: until the bases and graph are confirmed rendering, the old `views/*.yml` files stay and the vault has not been seen in the app it now targets.
+**The vault is an Obsidian vault as of 2026-08-12**, migrated from Tolaria; `DECISIONS.md` records why and what changed. **The migration is complete and the vault has been seen in the app.** Every note aliases its H1 title (checker-enforced, so title-style wikilinks resolve), every subfield has a `MOC` hub so the whole taxonomy shows in the graph, the eleven Bases in `views/*.base` render and are confirmed against observed rather than documented behavior, the Tolaria `views/*.yml` are gone, `.obsidian/` is committed, and `scripts/check-vault.py` runs in CI on every push. Andrew judged the stub taxonomy in the graph and found it sound: it needs amplification, not re-cutting. The one loose end is Breadcrumbs, installed but not yet pointed at `belongs_to`; see `ROADMAP.md`.
 
 The vault currently holds 193 notes, of which 48 are the subfield hub stubs added 2026-08-12 so the whole taxonomy is visible in the graph. Decipherment is no longer a skeleton; every other area's content still is, though its shape now shows.
 
@@ -90,7 +90,7 @@ Recorded so the fact-checking service can retry them rather than each batch redi
 - Two sources reached during batch 1 were unavailable and their absence is recorded in the notes rather than papered over: John G. Younger's Linear A transcriptions at `people.ku.edu`, which did not resolve and which the corpus figures ultimately descend from, and Pleiades, which was behind bot detection so no site identifier could be confirmed.
 - No `Media` notes and nothing in `attachments/` yet.
 - No automated intake routine, unlike the Andrew and Novansa vaults. Material is added deliberately.
-- The vault has never been opened in Obsidian. The alias rule, the Bases in `views/*.base` and the graph shape are all built to Obsidian's documented behavior, not yet to observed behavior; the Mac-side checklist in `ROADMAP.md` is where that gets settled. The underscore-prefixed fields in `types/*.md` are Tolaria legacy that Obsidian ignores.
+- **Obsidian creates files as a byproduct of ordinary use**, which Tolaria did not. Opening the vault for the first time produced an empty `Untitled.canvas` and, more dangerously, an empty `Decipherment.md` at the root, which would have competed with `Decipherment/_index.md` for all 91 `[[Decipherment]]` wikilinks in the vault. The checker caught both; this is the concrete argument for it running in CI. The underscore-prefixed fields in `types/*.md` are Tolaria legacy that Obsidian ignores.
 
 ## Open questions for Andrew
 

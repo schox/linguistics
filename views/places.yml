@@ -1,9 +1,0 @@
-name: Places
-icon: null
-color: null
-sort: property:kind:asc
-filters:
-  all:
-  - field: type
-    op: equals
-    value: Place

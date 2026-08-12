@@ -50,20 +50,18 @@ Nothing here can be moved by more searching.
 
 ## The Obsidian migration
 
-The vault moved from Tolaria to Obsidian on 2026-08-12; `DECISIONS.md` has the reasoning. The repository side is done: aliases on every note (checker-enforced), a `MOC` hub for every subfield so the taxonomy shows in the graph, and Bases in `views/*.base` mirroring the old sidebar views. What remains, in order:
+**Complete as at 2026-08-12.** The vault moved from Tolaria to Obsidian; `DECISIONS.md` has the reasoning and what the app turned out to do in practice. All seven steps are done: the vault was opened on Andrew's Mac, the Bases render, Omnisearch and Breadcrumbs are installed, the taxonomy was judged in the graph and found sound (Andrew: "heading in the right direction, it just needs amplification"), `.obsidian/` is committed, the Tolaria `views/*.yml` are deleted, and the checker runs in CI.
 
-**On Andrew's Mac:**
+What the app verified, as against what was written to documentation:
 
-1. Update Obsidian (Bases needs a current version) and open the repository root as a vault.
-2. Enable the **Bases** core plugin if it is not already on, and open the `.base` files in `views/`; confirm they render and fix any syntax the app rejects.
-3. Install community plugins as wanted: **Omnisearch** (search), **Breadcrumbs** (renders the `belongs_to` chain as a typed hierarchy), **Smart Connections** (semantic similarity; purely additive, can wait, and check its indexing settings before letting it embed on every edit). Canvas and the graph are core and need nothing.
-4. Look around the graph. The point of the stub hubs is to judge whether the starting taxonomy is sufficient before content arrives; this is the judging step. Color by folder, and filter to `type: MOC` to see the skeleton alone.
-5. Commit the `.obsidian/` config that should travel (app settings, appearance, enabled plugins); `workspace.json` is already gitignored.
+- **The view-level `sort:` key is real**, which the Bases syntax reference does not document. Obsidian rewrote `direction: ASC` to `DESC` in place, preserving the structure, so all eleven bases were correct as written.
+- **Obsidian normalizes what it opens.** It unquotes filter and formula strings (`'type == "Person"'` becomes `type == "Person"`). Its form is now the house form; expect a base to show as modified in git after you merely open it.
+- **Every base leads with a `Title` column**, a formula (`file.asLink(aliases[0])`) rather than `file.name`, because filenames are kebab-case stable keys and unreadable in a table. `references.base` labels it `Citation`, since `Reference` notes already carry a `title` property.
 
-**In the repository, after the Mac checks pass:**
+**Still outstanding, small:**
 
-6. Delete `views/*.yml` (the Tolaria views) and the `.laputa` gitignore entry.
-7. Put the checker in CI (a GitHub Action running `python3 scripts/check-vault.py` on push), so enforcement no longer depends on anyone remembering to run it. It matters more now: Obsidian validates nothing.
+- **Breadcrumbs is installed but not configured.** It looks for a property named `up`; this vault uses `belongs_to`, so `belongs_to` must be added under the plugin's Edge Fields settings and assigned the up direction. Until then the plugin does nothing. No current documentation for the settings UI was found; the published wiki 404s.
+- **Smart Connections**, the deferred third plugin (semantic similarity; purely additive, and check its indexing settings before letting it embed on every edit).
 
 **Deliberately deferred:**
 

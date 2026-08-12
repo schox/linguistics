@@ -1,9 +1,0 @@
-name: People
-icon: null
-color: null
-sort: property:born:asc
-filters:
-  all:
-  - field: type
-    op: equals
-    value: Person

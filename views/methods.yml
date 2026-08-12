@@ -1,9 +1,0 @@
-name: Methods
-icon: null
-color: null
-sort: property:category:asc
-filters:
-  all:
-  - field: type
-    op: equals
-    value: Method

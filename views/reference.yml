@@ -1,9 +1,0 @@
-name: Sources by year
-icon: null
-color: null
-sort: property:year:desc
-filters:
-  all:
-  - field: type
-    op: equals
-    value: Reference

@@ -1,11 +1,16 @@
 filters:
   and:
     - 'type == "ComputerLanguage"'
+formulas:
+  title: file.asLink(aliases[0])
+properties:
+  formula.title:
+    displayName: Title
 views:
   - type: table
     name: Computer Languages
     order:
-      - file.name
+      - formula.title
       - paradigm
       - first_appeared
       - lineage

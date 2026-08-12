@@ -1,11 +1,16 @@
 filters:
   and:
-    - 'type == "Script"'
+    - type == "Script"
+formulas:
+  title: file.asLink(aliases[0])
+properties:
+  formula.title:
+    displayName: Title
 views:
   - type: table
     name: Scripts
     order:
-      - file.name
+      - formula.title
       - class
       - decipherment_status
       - period
@@ -18,9 +23,9 @@ views:
     name: Undeciphered scripts
     filters:
       and:
-        - 'decipherment_status != "deciphered"'
+        - decipherment_status != "deciphered"
     order:
-      - file.name
+      - formula.title
       - class
       - decipherment_status
       - period

@@ -1,11 +1,16 @@
 filters:
   and:
     - 'type == "Method"'
+formulas:
+  title: file.asLink(aliases[0])
+properties:
+  formula.title:
+    displayName: Title
 views:
   - type: table
     name: Methods
     order:
-      - file.name
+      - formula.title
       - category
       - subfield
       - status

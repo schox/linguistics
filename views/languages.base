@@ -1,11 +1,16 @@
 filters:
   and:
     - 'type == "Language"'
+formulas:
+  title: file.asLink(aliases[0])
+properties:
+  formula.title:
+    displayName: Title
 views:
   - type: table
     name: Languages
     order:
-      - file.name
+      - formula.title
       - family
       - branch
       - era

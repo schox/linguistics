@@ -1,9 +1,0 @@
-name: Computer Languages
-icon: null
-color: null
-sort: property:paradigm:asc
-filters:
-  all:
-  - field: type
-    op: equals
-    value: ComputerLanguage

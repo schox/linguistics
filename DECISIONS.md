@@ -285,3 +285,27 @@ Also rejected: dropping `subfield` once a `MOC` exists for it. `subfield` is the
 Also rejected: re-parenting the existing notes onto their new hubs in the same change. They still point at their area hubs, which remains a valid chain of length one. Moving them is mechanical but judgement-bearing (several notes carry two subfields), so it happens per-area as each area is next worked on, recorded in `ROADMAP.md`.
 
 **Consequence.** The note count jumps by 48 with no new content, and the per-area figures in `STATUS.md` now measure structure and content mixed. The stubs make the vault look more finished than it is; each one says "Stub hub" in its body so the graph cannot be mistaken for coverage.
+
+## 2026-08-12: The checker runs in CI, and the app is not trusted to preserve the vault
+
+**Decided.** `scripts/check-vault.py` runs as a GitHub Action on every push to `main` and on every pull request. The advisory sweeps (`--report`, `--questions`) run in the same job and never fail the build; they are printed so the run log carries the worklist.
+
+**Why.** This was already recorded as owed when Obsidian replaced Tolaria, on the general ground that Obsidian enforces nothing. Opening the vault for the first time supplied a specific ground, which is stronger. Ordinary use of the app created two files nobody asked for: an empty `Untitled.canvas`, and an empty `Decipherment.md` at the vault root. The second is the instructive one. The vault contains 91 wikilinks to `[[Decipherment]]`, all resolving through the alias on `Decipherment/_index.md`, and a root-level file of that exact name gives every one of them a second candidate. Obsidian's documentation does not state how it breaks such a tie, and the failure would have been silent, graph-wide, and invisible in the app.
+
+Two stray keystrokes also landed in note bodies (a tab in `linear-b.md`, a `d` in `rongorongo.md`) simply from clicking around. Neither the app nor the checker objected.
+
+The generalization: **the editor is now a source of unreviewed writes to the vault.** Tolaria was not, because the vault was only ever edited deliberately. Enforcement that depends on a person remembering to run a script does not survive that change.
+
+**Rejected.** Extending the checker to catch stray characters between frontmatter and the H1. The class of accidental edit is unbounded and `git diff` already shows it perfectly well; the answer is to read diffs before committing, not to grow the checker toward a linter.
+
+**Also decided: plugin code is not committed.** `.obsidian/plugins/` is gitignored. It is 2.6 MB of bundled JavaScript that turns over with every plugin update, against 24 KB of actual settings, and `community-plugins.json` already records which plugins a new machine should install. The settings files (`app`, `appearance`, `graph`, `types`, and the plugin lists) are committed so vault behavior travels; `workspace.json` stays ignored as per-machine state.
+
+**Consequence.** Enforcement no longer depends on anyone remembering. A push that breaks the schema fails visibly, including a push made from Obsidian's own git plugin, which is the path least likely to have run the checker first.
+
+## 2026-08-12: Obsidian's normalization is the house form for `.base` files
+
+**Decided.** Where Obsidian rewrites a `.base` file, its output is canonical and the vault does not rewrite it back.
+
+**Why.** The eleven bases were written to the documented Bases schema without the app to test against. Opening them settled two things that documentation could not. The view-level `sort:` key, which the syntax reference does not document at all, is real: changing a sort in the UI rewrote `direction: ASC` to `DESC` in place and left the structure alone, which confirms the whole set was correct as written. And Obsidian unquotes filter and formula strings, turning `'type == "Person"'` into `type == "Person"`. Both forms are valid YAML, the app plainly prefers one, and fighting it would mean a spurious diff every time a base is opened.
+
+**Consequence.** New bases are written unquoted. A base showing as modified in `git status` after merely being opened is expected and not a defect. Every base also now leads with a `Title` formula column (`file.asLink(aliases[0])`) instead of `file.name`, because filenames are deliberately kebab-case stable keys and are unreadable in a table; `references.base` names that column `Citation`, because `Reference` notes already carry a `title` property and two columns headed "Title" would be worse than the problem being solved.

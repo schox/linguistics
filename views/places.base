@@ -1,11 +1,16 @@
 filters:
   and:
     - 'type == "Place"'
+formulas:
+  title: file.asLink(aliases[0])
+properties:
+  formula.title:
+    displayName: Title
 views:
   - type: table
     name: Places
     order:
-      - file.name
+      - formula.title
       - kind
       - region
       - flourished
@@ -18,7 +23,7 @@ views:
       and:
         - 'kind == "site"'
     order:
-      - file.name
+      - formula.title
       - region
       - flourished
     sort:

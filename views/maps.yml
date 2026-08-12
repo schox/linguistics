@@ -1,9 +1,0 @@
-name: Maps (area index)
-icon: null
-color: null
-sort: property:area:asc
-filters:
-  all:
-  - field: type
-    op: equals
-    value: MOC

@@ -1,11 +1,16 @@
 filters:
   and:
     - 'type == "Reference"'
+formulas:
+  title: file.asLink(aliases[0])
+properties:
+  formula.title:
+    displayName: Citation
 views:
   - type: table
     name: Bibliography
     order:
-      - file.name
+      - formula.title
       - authors
       - year
       - title
@@ -17,7 +22,7 @@ views:
   - type: table
     name: Sources by year
     order:
-      - file.name
+      - formula.title
       - year
       - authors
       - title
@@ -31,7 +36,7 @@ views:
       and:
         - 'status == "unread"'
     order:
-      - file.name
+      - formula.title
       - authors
       - year
       - title

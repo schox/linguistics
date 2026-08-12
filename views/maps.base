@@ -1,11 +1,16 @@
 filters:
   and:
     - 'type == "MOC"'
+formulas:
+  title: file.asLink(aliases[0])
+properties:
+  formula.title:
+    displayName: Title
 views:
   - type: table
     name: Maps (area and subfield hubs)
     order:
-      - file.name
+      - formula.title
       - area
       - subfield
       - updated

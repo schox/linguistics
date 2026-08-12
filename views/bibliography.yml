@@ -1,9 +1,0 @@
-name: Bibliography
-icon: null
-color: null
-sort: property:authors:asc
-filters:
-  all:
-  - field: type
-    op: equals
-    value: Reference

@@ -1,11 +1,16 @@
 filters:
   and:
     - 'type == "Note"'
+formulas:
+  title: file.asLink(aliases[0])
+properties:
+  formula.title:
+    displayName: Title
 views:
   - type: table
     name: Notes
     order:
-      - file.name
+      - formula.title
       - subfield
       - status
     sort:
