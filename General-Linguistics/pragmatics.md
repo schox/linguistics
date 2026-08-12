@@ -78,7 +78,22 @@ Anything linguistic that serves the purpose of doing something is a **speech act
 
 ## Child topics
 
-To be written as notes of their own: conversational implicature, the Cooperative Principle, the Gricean maxims, flouting and violating a maxim, illocutionary meaning, assertion, question, speech act, performativity, presupposition, at-issue and non-at-issue meaning, deixis, context, common ground.
+- [Conversational implicature](conversational-implicature.md)
+- [The Cooperative Principle](cooperative-principle.md)
+- [The Gricean maxims](gricean-maxims.md)
+- [Flouting and violating a maxim](flouting-and-violating-a-maxim.md)
+- [Illocutionary meaning](illocutionary-meaning.md)
+- [Assertion](assertion.md)
+- [Question](question.md)
+- [Speech act](speech-act.md)
+- [Performativity](performativity.md)
+- [Presupposition](presupposition.md)
+- [At-issue and non-at-issue meaning](at-issue-and-non-at-issue-meaning.md)
+- [Deixis](deixis.md)
+- [Context](context.md)
+- [Common ground](common-ground.md)
+
+All stubbed 2026-08-12; none is written.
 
 ## Open questions
 

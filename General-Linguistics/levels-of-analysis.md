@@ -54,3 +54,11 @@ Each names the child topics that should become notes of their own. None of those
 
 - [The Chomsky hierarchy](chomsky-hierarchy.md), under **Formal foundations**, which classifies grammars by the structures they can generate
 - [Redundancy](redundancy.md), under **Computational linguistics**
+
+## The child topics, stubbed
+
+Each of the six entries names the topics owed beneath it, and all 75 were stubbed on 2026-08-12: phonetics 13, phonology 11, morphology 11, syntax 15, semantics 12, pragmatics 14. Two of those are shared, so 75 notes rather than 76: *thematic role* is named by both syntax and semantics and exists once, under semantics.
+
+Every stub cites [Anderson et al. 2022](../references/anderson-et-al-2022.md) at the chapter its parent entry draws on, which is the source that names the topic. None asserts anything about its subject beyond a sentence of expected scope.
+
+**One topic is filed provisionally.** *Word order* sits under [Syntax](syntax.md) because the syntax entry names it, while that entry's own open questions record that it belongs under Typology and universals. It moves when that subfield is worked.

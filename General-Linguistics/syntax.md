@@ -78,7 +78,23 @@ The source develops constituency into tree diagrams and then into X-bar theory, 
 
 ## Child topics
 
-To be written as notes of their own: constituent, phrase, syntactic head, selection, transitivity, grammaticality judgment, word order, constituency test, lexical and functional category, clausal embedding, thematic role, argument structure, movement, X-bar theory, dependency versus constituency.
+- [Constituent](constituent.md)
+- [Phrase](phrase.md)
+- [Syntactic head](syntactic-head.md)
+- [Selection](selection.md)
+- [Transitivity](transitivity.md)
+- [Grammaticality judgment](grammaticality-judgment.md)
+- [Constituency test](constituency-test.md)
+- [Lexical and functional category](lexical-and-functional-category.md)
+- [Clausal embedding](clausal-embedding.md)
+- [Argument structure](argument-structure.md)
+- [Movement](movement.md)
+- [X-bar theory](x-bar-theory.md)
+- [Dependency versus constituency](dependency-versus-constituency.md)
+- [Word order](word-order.md)
+- [Thematic role](thematic-role.md)
+
+All stubbed 2026-08-12; none is written.
 
 ## Open questions
 

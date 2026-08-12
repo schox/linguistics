@@ -72,7 +72,19 @@ Phonology is therefore about the combinatorics of a signal in general, not about
 
 ## Child topics
 
-To be written as notes of their own: phoneme, allophone, minimal pair, contrastive distribution, complementary distribution, phonotactics, natural class, phonological rule, phonological derivation, aspiration, signed language phonology.
+- [Phoneme](phoneme.md)
+- [Allophone](allophone.md)
+- [Minimal pair](minimal-pair.md)
+- [Contrastive distribution](contrastive-distribution.md)
+- [Complementary distribution](complementary-distribution.md)
+- [Phonotactics](phonotactics.md)
+- [Natural class](natural-class.md)
+- [Phonological rule](phonological-rule.md)
+- [Phonological derivation](phonological-derivation.md)
+- [Aspiration](aspiration.md)
+- [Signed language phonology](signed-language-phonology.md)
+
+All stubbed 2026-08-12; none is written.
 
 ## Open questions
 

@@ -72,7 +72,21 @@ The **International Phonetic Alphabet** exists because no writing system can ser
 
 ## Child topics
 
-To be written as notes of their own: articulatory phonetics, acoustic phonetics, auditory phonetics, place of articulation, manner of articulation, phonation, vowel description, the International Phonetic Alphabet, syllable, stress, tone and intonation, sign parameters, segmentation.
+- [Articulatory phonetics](articulatory-phonetics.md)
+- [Acoustic phonetics](acoustic-phonetics.md)
+- [Auditory phonetics](auditory-phonetics.md)
+- [Place of articulation](place-of-articulation.md)
+- [Manner of articulation](manner-of-articulation.md)
+- [Phonation](phonation.md)
+- [Vowel description](vowel-description.md)
+- [The International Phonetic Alphabet](international-phonetic-alphabet.md)
+- [Syllable](syllable.md)
+- [Stress](stress.md)
+- [Tone and intonation](tone-and-intonation.md)
+- [Sign parameters](sign-parameters.md)
+- [Segmentation](segmentation.md)
+
+All stubbed 2026-08-12; none is written.
 
 ## Open questions
 

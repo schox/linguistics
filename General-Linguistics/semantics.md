@@ -64,7 +64,20 @@ Compositionality, the mental lexicon, lexical meaning, events and thematic roles
 
 ## Child topics
 
-To be written as notes of their own: entailment, implicature, contradiction, compositionality, denotation, truth conditions, lexical semantics, mental lexicon, sense relations, thematic role, countability, negative polarity item.
+- [Entailment](entailment.md)
+- [Implicature](implicature.md)
+- [Contradiction](contradiction.md)
+- [Compositionality](compositionality.md)
+- [Denotation](denotation.md)
+- [Truth conditions](truth-conditions.md)
+- [Lexical semantics](lexical-semantics.md)
+- [Mental lexicon](mental-lexicon.md)
+- [Sense relations](sense-relations.md)
+- [Thematic role](thematic-role.md)
+- [Countability](countability.md)
+- [Negative polarity item](negative-polarity-item.md)
+
+All stubbed 2026-08-12; none is written.
 
 ## Open questions
 

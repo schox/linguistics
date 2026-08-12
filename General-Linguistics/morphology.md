@@ -73,7 +73,19 @@ Named here so the child notes have a frame; each is treated in its own section o
 
 ## Child topics
 
-To be written as notes of their own: morpheme, root and base, affix, free and bound morphemes, allomorphy, lexical category, derivational morphology, inflectional morphology, compounding, morphological tree, word.
+- [Morpheme](morpheme.md)
+- [Root and base](root-and-base.md)
+- [Affix](affix.md)
+- [Free and bound morphemes](free-and-bound-morphemes.md)
+- [Allomorphy](allomorphy.md)
+- [Lexical category](lexical-category.md)
+- [Derivational morphology](derivational-morphology.md)
+- [Inflectional morphology](inflectional-morphology.md)
+- [Compounding](compounding.md)
+- [Morphological tree](morphological-tree.md)
+- [Word](word.md)
+
+All stubbed 2026-08-12; none is written.
 
 ## Open questions
 

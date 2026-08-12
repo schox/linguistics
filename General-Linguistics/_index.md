@@ -42,9 +42,9 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 
 ## Subfield hubs
 
-Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. All but the first are stubs awaiting the breadth program in `ROADMAP.md`.
+Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. Two have content, Levels of analysis and Writing systems; the other eight are stubs awaiting the breadth program in `ROADMAP.md`.
 
-- [Levels of analysis](levels-of-analysis.md), the only one with content
+- [Levels of analysis](levels-of-analysis.md), with content
 - [Historical and comparative](historical-and-comparative.md)
 - [Typology and universals](typology-and-universals.md)
 - [Sociolinguistics](sociolinguistics.md)
@@ -70,16 +70,18 @@ Each subfield gets a `MOC` note as its hub. Content notes `belongs_to` that hub 
 - **[Writing systems](writing-systems.md)** (MOC), shared with Decipherment
   - [Script typology](script-typology.md), what the signs stand for, and the source of the `class` vocabulary
   - [Orthographic depth](orthographic-depth.md), how directly an orthography maps signs to sounds
-- **Formal foundations**, no MOC yet
+- **[Formal foundations](formal-foundations.md)** (MOC), shared with Computer Languages
   - [The Chomsky hierarchy](chomsky-hierarchy.md)
-- **Computational linguistics**, no MOC yet
+- **[Computational linguistics](computational-linguistics.md)** (MOC)
   - [Redundancy](redundancy.md)
 
-The six notes under Levels of analysis are entries rather than treatments: each defines its subject, describes it with examples, names the child topics that should become notes of their own, and records what it does not cover. None of the child topics is written.
+The six notes under Levels of analysis are entries rather than treatments: each defines its subject, describes it with examples, names the child topics that should become notes of their own, and records what it does not cover.
+
+**All 75 child topics were stubbed on 2026-08-12**, each citing the chapter of [Anderson et al. 2022](../references/anderson-et-al-2022.md) its parent entry draws on. None is written. See [Levels of analysis](levels-of-analysis.md).
 
 **Still empty:** Historical and comparative, Typology and universals, Sociolinguistics, Psycholinguistics and acquisition, Semiotics and philosophy of language, Etymology and lexicography.
 
-**Writing systems has its anchor.** [Script typology](script-typology.md) defines the vocabulary that the `class` field on every `Script` note draws on, from three classifications that do not fully agree with one another. The history of the alphabet, orthographic depth, script reform and transliteration standards are still owed to the hub.
+**Writing systems has two entries written**, [Script typology](script-typology.md) and [Orthographic depth](orthographic-depth.md). The history of the alphabet, transliteration and romanization standards, script reform, literacy and the grapheme are still owed to the hub.
 
 ## Documents
 
