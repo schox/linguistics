@@ -286,6 +286,26 @@ Also rejected: re-parenting the existing notes onto their new hubs in the same c
 
 **Consequence.** The note count jumps by 48 with no new content, and the per-area figures in `STATUS.md` now measure structure and content mixed. The stubs make the vault look more finished than it is; each one says "Stub hub" in its body so the graph cannot be mistaken for coverage.
 
+## 2026-08-12: Taxonomy stubs may be unsourced, temporarily
+
+**Decided.** While the taxonomy is being built, a stub may carry `**To be researched.**` under `## Sources` instead of a citation. Andrew's instruction, after the stricter rule he had set the same day began obstructing the work it was meant to protect.
+
+**The rule it replaces, and why that rule was right.** Andrew's first formulation was that an obvious placeholder should carry at least one reference, "otherwise how would you know it is even the topic for a note?". That is a good test and it produced a good batch: thirteen Cryptanalysis stubs, each citing the handbook section that establishes it.
+
+**Why it could not continue.** Depth turned out to be bounded not by the subject but by whether a held source happened to itemize it. The *Handbook of Applied Cryptography* subdivides one of those thirteen topics into named algorithms and leaves the other twelve as single sections, so the corpus was about to record that factoring has seven children and hash-function attacks have none, which says something about a 1996 table of contents and nothing about cryptography. Three topics the area index names were left unstubbed for the same reason. The rule was shaping the taxonomy to the accidents of the bibliography.
+
+**What keeps it honest**, since this is a real weakening of the evidentiary standard and the only one so far granted:
+
+1. **A stub asserts nothing.** It says what a note is expected to cover and stops. The scope line is a statement of intent, not a finding. Anything more and it is a content note under the full standard.
+2. **The set is enumerable.** `check-vault.py --stubs` was added in the same change and lists every stub, separating those with a source from those awaiting one. An unsourced note that cannot be found again is a liability; one that can be listed exactly is a work item.
+3. **It expires.** When the taxonomy is judged complete, every remaining "To be researched" gets a reference or gets deleted.
+
+**Rejected.** Marking stubs with `status: draft`. `draft` already means a fact could not be verified, and overloading it would blunt the one signal that flags unreliability, which is the same reason it was rejected for the earlier stub proposal.
+
+Also rejected: leaving the strict rule and reading a chapter per topic to justify each subdivision. That is the right standard for content and the wrong one for scaffolding; it would have made building the taxonomy as expensive as writing it, which defeats the purpose of building it first.
+
+**Consequence.** The corpus now holds notes with no sources, deliberately, for the first time. That is a debt, it is recorded as one, and the sweep exists so it can be called in.
+
 ## 2026-08-12: The Cryptography vocabulary is rebuilt from published classifications
 
 **Decided.** Before writing any Cryptography content, the area's subfield vocabulary was checked against three published classifications and revised from ten values to fourteen. Andrew's instruction: get a standard accepted taxonomy first, and let the detail emerge later.

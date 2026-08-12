@@ -17,7 +17,7 @@ The structure is complete and enforced. Five areas, thirteen note types plus `Ty
 
 **The vault is an Obsidian vault as of 2026-08-12**, migrated from Tolaria; `DECISIONS.md` records why and what changed. **The migration is complete and the vault has been seen in the app.** Every note aliases its H1 title (checker-enforced, so title-style wikilinks resolve), every subfield has a `MOC` hub so the whole taxonomy shows in the graph, the eleven Bases in `views/*.base` render and are confirmed against observed rather than documented behavior, the Tolaria `views/*.yml` are gone, `.obsidian/` is committed, and `scripts/check-vault.py` runs in CI on every push. Andrew judged the stub taxonomy in the graph and found it sound: it needs amplification, not re-cutting. The one loose end is Breadcrumbs, installed but not yet pointed at `belongs_to`; see `ROADMAP.md`.
 
-The vault currently holds 223 notes, of which 51 are subfield hub stubs and 13 are topic stubs so the whole taxonomy is visible in the graph. Decipherment is no longer a skeleton; every other area's content still is, though its shape now shows.
+The vault currently holds 252 notes, of which 51 are subfield hub stubs and 42 are topic stubs so the whole taxonomy is visible in the graph. Decipherment is no longer a skeleton; every other area's content still is, though its shape now shows.
 
 **This figure is now checked.** `scripts/check-vault.py` fails if it drifts from the actual count, which it had, silently, from 107 to 132 across eight batches.
 
@@ -28,7 +28,7 @@ Content. The areas hold their taxonomy and a handful of exemplars, nothing more:
 - **General Linguistics**: 10 content notes across 21 files. The **Levels of analysis** subfield has a `MOC` and six entries (phonetics, phonology, morphology, syntax, semantics, pragmatics); the Chomsky hierarchy and redundancy sit under Formal foundations and Computational linguistics. **Writing systems** has two entries as of 2026-08-12, `script-typology.md` and `orthographic-depth.md`, and is the first subfield worked under the drafting policy. Ten subfields, six still empty. None of the child topics the six levels entries name is written.
 - **Human Languages**: 7 notes (Akkadian, Classic Maya, Egyptian, Etruscan, Mycenaean Greek, Sumerian, Ugaritic). The genealogy is mapped to branch level and almost entirely unpopulated.
 - **Computer Languages**: 1 note (Lisp).
-- **Cryptography**: 3 written notes and 13 topic stubs, across 34 files. The subfield vocabulary was rebuilt on 2026-08-12 against three published classifications (see the area index); 14 subfields, of which **Cryptanalysis** is the first to be stubbed out in full. The other 13 hold no content note at all.
+- **Cryptography**: 3 written notes and 42 topic stubs, across 63 files. The subfield vocabulary was rebuilt on 2026-08-12 against three published classifications (see the area index); 14 subfields, of which **Cryptanalysis** is the first to be stubbed out in full. The other 13 hold no content note at all.
 - **Decipherment**: 21 notes, plus the 15 places, 11 people and 51 references that overwhelmingly serve it. The only area worked properly, though the Writing systems entries are the first material in General Linguistics that Decipherment can lean on rather than the reverse.
 
 The Human Languages notes are worth a caveat: all seven exist because a deciphered script needed a language to point at. The area is currently a by-product of Decipherment rather than a treatment of its own subject.

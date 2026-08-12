@@ -28,6 +28,7 @@ Standard library only. Run from anywhere:
     python3 scripts/check-vault.py
     python3 scripts/check-vault.py --quiet    # failures only
     python3 scripts/check-vault.py --report   # advisory sweep worklist, never fails
+    python3 scripts/check-vault.py --stubs    # taxonomy stubs, and which lack a source
 
 The checks above are enforcement: they resolve every link that exists. They
 are blind in one direction, because nothing detects a link that is *missing*,
@@ -670,6 +671,43 @@ def attachment_provenance(files):
     return out
 
 
+def stubs(files):
+    """List every taxonomy stub, flagging those with no source yet.
+
+    Advisory, never fails. This exists because the source requirement was
+    relaxed for stubs while the taxonomy is being built (see `DECISIONS.md`,
+    2026-08-12). A stub may carry '**To be researched.**' under `## Sources`
+    instead of a citation. That is a temporary state, and it is only safe if
+    the set of notes in it can be listed exactly, which is what this does.
+
+    Run it before declaring the taxonomy finished. Every note it lists as
+    unsourced needs either a reference or deletion.
+    """
+    sourced, unsourced = [], []
+    for path in files:
+        rel = os.path.relpath(path, ROOT)
+        raw = open(path, encoding="utf-8").read()
+        if not re.search(r"^\*\*Stub\.\*\*", raw, re.M):
+            continue
+        body = raw.split("## Sources", 1)
+        pending = len(body) < 2 or "To be researched" in body[1]
+        (unsourced if pending else sourced).append(rel)
+
+    print("Taxonomy stubs\n")
+    print(f"  {len(sourced) + len(unsourced)} stubs: "
+          f"{len(sourced)} with a source, {len(unsourced)} awaiting one.\n")
+    if unsourced:
+        print("  Awaiting a source. Each needs a reference or deletion before")
+        print("  the taxonomy is called finished.\n")
+        for rel in unsourced:
+            print(f"    {rel}")
+    if sourced:
+        print("\n  Already sourced.\n")
+        for rel in sourced:
+            print(f"    {rel}")
+    return 0
+
+
 def status_count(files):
     """STATUS.md states a note count. Check it against reality.
 
@@ -702,6 +740,8 @@ def main():
         return report(files)
     if "--questions" in sys.argv:
         return open_questions(files)
+    if "--stubs" in sys.argv:
+        return stubs(files)
     targets = resolvable_targets(files)
     problems = []
     for path in files:

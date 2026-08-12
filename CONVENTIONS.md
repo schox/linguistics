@@ -308,6 +308,26 @@ Write an absence impersonally instead: "not recorded here", "no source read for 
 
 Dagger for extinct languages in prose lists, per `## Style`.
 
+### Taxonomy stubs
+
+**A temporary relaxation, in force while the taxonomy is being built.** From 2026-08-12 a stub may exist without a source.
+
+A stub is a placeholder for a topic that has not been written. It opens with `**Stub.**` and a sentence saying what the note is expected to cover, and it carries nothing else. It makes no claims about its subject, which is what makes it safe to hold without a citation, and the sentence describing its scope is a statement of intent rather than a finding.
+
+Where a source that names the topic is already held, cite it: that is better, and it is the evidence the topic is a topic. Where none is, `## Sources` reads:
+
+```markdown
+## Sources
+
+**To be researched.**
+```
+
+Three conditions keep this honest:
+
+1. **A stub never asserts anything about its subject.** The moment it explains, defines or claims, it is a content note and the ordinary standard applies in full.
+2. **The set is enumerable at any moment.** `python3 scripts/check-vault.py --stubs` lists every stub and separates those with a source from those awaiting one.
+3. **It expires.** When the taxonomy is judged complete, every stub still reading "To be researched" gets a reference or gets deleted. Until then the relaxation applies only to stubs and to nothing else in this document.
+
 ### Analysis, opinion and theory
 
 Analysis is wanted. Interpretation, comparison across areas, and theories of what is going on are all legitimate, and a corpus that only paraphrases its sources is worth less than one that reasons about them.

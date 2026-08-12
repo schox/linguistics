@@ -15,6 +15,13 @@ status: open
 
 **Stub.** Expected to cover how the pre-machine ciphers fall: the statistical attack on monoalphabetic substitution, period-finding against polyalphabetic ciphers, and anagramming against transposition. The junction with Decipherment is here, since these are the methods that transfer.
 
+## Child topics
+
+- [Anagramming](anagramming.md)
+- [Crib-dragging](crib-dragging.md), filed at topic level since it is not confined to the classical ciphers
+- Already written: [Frequency analysis](../Decipherment/frequency-analysis.md), [Kasiski examination](kasiski-examination.md), [Index of coincidence](index-of-coincidence.md)
+
+
 ## Sources
 
 - [Menezes et al. 1996](../references/menezes-et-al-1996.md), section 7.3, Classical ciphers and historical development

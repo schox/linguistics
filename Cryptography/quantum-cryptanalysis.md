@@ -16,6 +16,11 @@ status: open
 
 **Stub.** Expected to cover the two quantum results that bear on cryptography, and to state precisely what each does and does not break. Shor's algorithm and Grover's algorithm should each become a note of its own beneath this one.
 
+## Child topics
+
+- [Shor's algorithm](shors-algorithm.md), against the public-key hard problems
+- [Grover's algorithm](grovers-algorithm.md), against search
+
 ## Sources
 
 - [Shor 1997](../references/shor-1997.md), polynomial-time quantum factoring and discrete logarithms
