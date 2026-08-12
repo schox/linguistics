@@ -12,12 +12,17 @@ updated: 2026-08-12
 
 How languages change, and how their common ancestors are recovered.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-The comparative method, regular sound change, internal reconstruction, proto-language reconstruction, glottochronology and its critics, contact, substrate and superstrate, borrowing versus inheritance.
+Stubbed out on 2026-08-12, one level. Nothing here is written yet.
 
 ## Notes in this subfield
 
-(none yet)
+- [The comparative method](comparative-method.md)
+- [Regular sound change](regular-sound-change.md)
+- [Internal reconstruction](internal-reconstruction.md)
+- [Proto-language reconstruction](proto-language-reconstruction.md)
+- [Glottochronology](glottochronology.md)
+- [Language contact](language-contact.md)
+- [Substrate and superstrate](substrate-and-superstrate.md)
+- [Borrowing versus inheritance](borrowing-versus-inheritance.md)
+
+**This subfield is owed to Decipherment more than to any other.** That area uses candidate relatives constantly, Ventris against Greek and Bauer against Semitic, and nothing here yet defines what a relative is or how one is established. `ROADMAP.md` ranks it accordingly.

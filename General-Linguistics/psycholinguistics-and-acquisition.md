@@ -12,12 +12,13 @@ updated: 2026-08-12
 
 How language is acquired, processed and lost.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-First and second language acquisition, processing, aphasia and neurolinguistics, the critical period, sign language acquisition.
+Stubbed out on 2026-08-12, one level. Nothing here is written yet.
 
 ## Notes in this subfield
 
-(none yet)
+- [First language acquisition](first-language-acquisition.md)
+- [Second language acquisition](second-language-acquisition.md)
+- [Language processing](language-processing.md)
+- [Aphasia and neurolinguistics](aphasia-and-neurolinguistics.md)
+- [The critical period](the-critical-period.md)
+- [Sign language acquisition](sign-language-acquisition.md)

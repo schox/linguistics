@@ -12,12 +12,15 @@ updated: 2026-08-12
 
 What signs are and what meaning is.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-Saussure, Peirce, sense and reference, speech acts, linguistic relativity and its defensible versions.
+Stubbed out on 2026-08-12, one level. Nothing here is written yet.
 
 ## Notes in this subfield
 
-(none yet)
+- [Saussurean structuralism](saussurean-structuralism.md)
+- [Peircean semiotics](peircean-semiotics.md)
+- [Sense and reference](sense-and-reference.md)
+- [Linguistic relativity](linguistic-relativity.md)
+
+Speech acts are named in this subfield's description and are stubbed under [Pragmatics](pragmatics.md), where the entry lists them.
+
+Saussure and Peirce are stubbed as bodies of thought rather than as people. Whether either earns a `Person` note is a separate question, against the inclusion test in `types/person.md`.

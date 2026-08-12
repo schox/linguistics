@@ -12,12 +12,15 @@ updated: 2026-08-12
 
 Language in its social setting.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-Variation and change, dialectology and isoglosses, register and code-switching, pidgins and creoles, standardization and language policy, endangerment, documentation and revival.
+Stubbed out on 2026-08-12, one level. Nothing here is written yet.
 
 ## Notes in this subfield
 
-(none yet)
+- [Variation and change](variation-and-change.md)
+- [Dialectology and isoglosses](dialectology-and-isoglosses.md)
+- [Register and code-switching](register-and-code-switching.md)
+- [Standardization and language policy](standardization-and-language-policy.md)
+- [Language endangerment](language-endangerment.md)
+- [Language documentation and revival](language-documentation-and-revival.md)
+
+**Pidgins and creoles are not stubbed here.** Human Languages already carries [Pidgins and creoles](../Human-Languages/pidgins-and-creoles.md) as a subfield hub, and two notes of that title would resolve ambiguously. The sociolinguistic treatment belongs with that hub or as a note linking to it.

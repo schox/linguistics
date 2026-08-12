@@ -42,7 +42,7 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 
 ## Subfield hubs
 
-Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. Two have content, Levels of analysis and Writing systems; the other eight are stubs awaiting the breadth program in `ROADMAP.md`.
+Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. **All ten are now stubbed out.** Levels of analysis and Writing systems also have written entries; the other eight hold stubs only.
 
 - [Levels of analysis](levels-of-analysis.md), with content
 - [Historical and comparative](historical-and-comparative.md)
@@ -79,7 +79,7 @@ The six notes under Levels of analysis are entries rather than treatments: each 
 
 **All 75 child topics were stubbed on 2026-08-12**, each citing the chapter of [Anderson et al. 2022](../references/anderson-et-al-2022.md) its parent entry draws on. None is written. See [Levels of analysis](levels-of-analysis.md).
 
-**Still empty:** Historical and comparative, Typology and universals, Sociolinguistics, Psycholinguistics and acquisition, Semiotics and philosophy of language, Etymology and lexicography.
+**No subfield is empty any longer.** As of 2026-08-12 every one carries its topic stubs: Historical and comparative 8, Typology and universals 4, Sociolinguistics 6, Psycholinguistics and acquisition 6, Computational linguistics 6, Formal foundations 3, Semiotics and philosophy of language 4, Etymology and lexicography 4, Writing systems 8, plus the 75 under Levels of analysis. What is empty is the writing: 10 notes are written against 124 stubs.
 
 **Writing systems has two entries written**, [Script typology](script-typology.md) and [Orthographic depth](orthographic-depth.md). The history of the alphabet, transliteration and romanization standards, script reform, literacy and the grapheme are still owed to the hub.
 
