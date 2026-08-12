@@ -122,8 +122,11 @@ ENUMS = {
     ("Script", "decipherment_status"): {"deciphered", "partial", "contested", "undeciphered"},
     ("Cipher", "category"): {"classical", "mechanical", "symmetric",
                              "asymmetric", "hash", "protocol"},
+    # 'unknown' exists for taxonomy stubs: a Cipher note requires an era, and
+    # a stub asserts nothing about its subject, so it declares the era unknown
+    # rather than dating the cipher from recall. See DECISIONS.md 2026-08-12.
     ("Cipher", "era"): {"ancient", "medieval", "early modern", "industrial",
-                        "mechanical", "computer", "post-quantum"},
+                        "mechanical", "computer", "post-quantum", "unknown"},
     ("Cipher", "status"): {"reference", "historical", "current", "broken"},
     ("ComputerLanguage", "status"): {"using", "reference", "historical", "learning"},
     ("Method", "category"): {"statistical", "combinatorial", "structural",

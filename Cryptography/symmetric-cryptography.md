@@ -12,14 +12,20 @@ updated: 2026-08-12
 
 Cryptography in which the same key encrypts and decrypts. Block ciphers, stream ciphers, the modes that turn a block cipher into a usable system, and authenticated encryption.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-Block ciphers, stream ciphers, modes of operation, authenticated encryption, DES and its politics, AES, feedback shift registers, chosen plaintext attacks.
-
-From [Menezes et al. 1996](../references/menezes-et-al-1996.md) chapters 6 and 7, and [Boneh and Shoup 2023](../references/boneh-shoup-2023.md) part I. Authenticated encryption is in the second and not the first, which is a difference of date rather than of opinion.
+Stubbed out in full on 2026-08-12: four topics with fourteen children. Nothing here is written yet.
 
 ## Notes in this subfield
 
-(none yet)
+- [Block ciphers](block-ciphers.md), with two structures and five ciphers under it
+- [Stream ciphers](stream-ciphers.md), with three
+- [Modes of operation](modes-of-operation.md), with four
+- [Authenticated encryption](authenticated-encryption.md)
+
+Drawn from [Menezes et al. 1996](../references/menezes-et-al-1996.md) chapters 6 and 7, and [Boneh and Shoup 2023](../references/boneh-shoup-2023.md) part I. Authenticated encryption is in the second and not the first, which is a difference of date rather than of opinion, and AES is in neither: the handbook predates it.
+
+## Still owed to this subfield
+
+- **FEAL and SAFER**, both of which the handbook gives sections (7.5, 7.7) and which are omitted here as minor. They matter mainly as cryptanalytic targets, and the [Cryptanalysis](cryptanalysis.md) stubs reference attacks on both.
+- **Key schedules** as a topic in their own right, which several attacks turn on.
+- **Message authentication codes** are not here: they are filed under Hashes and integrity.
+- **Chosen plaintext attacks**, named in the old topic list, are filed under [Classes of attack](classes-of-attack.md) with the other attack models.

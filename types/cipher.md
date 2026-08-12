@@ -28,7 +28,8 @@ A cipher, cryptographic algorithm or system. Lives in `Cryptography/`.
 ## Fields
 
 - `category`: `classical` | `mechanical` | `symmetric` | `asymmetric` | `hash` | `protocol`.
-- `era`: broad period, from this list: `ancient` | `medieval` | `early modern` | `industrial` | `mechanical` | `computer` | `post-quantum`. Use `first_described` for the actual year.
+- `era`: broad period, from this list: `ancient` | `medieval` | `early modern` | `industrial` | `mechanical` | `computer` | `post-quantum` | `unknown`. Use `first_described` for the actual year.
+  - `unknown` is for **taxonomy stubs only**. A `Cipher` note must declare an era, and a stub asserts nothing about its subject, so it says the era is not yet established rather than dating the cipher from recall. Replace it when the note is written.
 - `first_described`: year or approximate year, e.g. `1553`.
 - `status`: `reference` (studied here) | `historical` (obsolete) | `current` (in live use) | `broken`.
 - `broken_by`: wikilinks to the `Method` or `Person` notes that defeated it. No external catalog supplies this, so it is original structuring work. See `_data-sources.md`.

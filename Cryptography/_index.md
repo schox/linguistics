@@ -62,7 +62,7 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 
 ## Subfield hubs
 
-Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. [Cryptanalysis](cryptanalysis.md) has been stubbed out in full; the other thirteen are stub hubs awaiting the breadth program in `ROADMAP.md`.
+Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. Three are stubbed out in full, [Cryptanalysis](cryptanalysis.md), [Classical ciphers](classical-ciphers.md) and [Symmetric cryptography](symmetric-cryptography.md); the other eleven are stub hubs awaiting the breadth program in `ROADMAP.md`.
 
 - [Classical ciphers](classical-ciphers.md)
 - [Mechanical and electromechanical](mechanical-and-electromechanical.md)
@@ -87,7 +87,9 @@ Written:
 - [Kasiski examination](kasiski-examination.md), method
 - [Index of coincidence](index-of-coincidence.md), method
 
-Stubs, added 2026-08-12, all under [Cryptanalysis](cryptanalysis.md) and each citing the source that establishes it as a topic: classes of attack, attacks on protocols, attacks on hash functions, attacks on identification protocols, cryptanalysis of classical ciphers, birthday attacks, differential cryptanalysis, linear cryptanalysis, integer factorization algorithms, discrete logarithm algorithms, quantum cryptanalysis, side-channel attacks, cryptanalysis of the Lorenz cipher.
+**81 taxonomy stubs**, added 2026-08-12 across three subfields, at two levels of depth. See each hub for its list: [Cryptanalysis](cryptanalysis.md) 42, [Classical ciphers](classical-ciphers.md) 21, [Symmetric cryptography](symmetric-cryptography.md) 18.
+
+A stub says so in its body and asserts nothing about its subject. 37 cite a source naming the topic; the other 44 read **To be researched** and are listed by `python3 scripts/check-vault.py --stubs`, which is the worklist for closing them. `DECISIONS.md` records why that relaxation exists and when it expires.
 
 ## Documents
 
