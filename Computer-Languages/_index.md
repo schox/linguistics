@@ -55,9 +55,11 @@ Written:
 
 - [Lisp](lisp.md), 1958
 
-**49 topic stubs**, added 2026-08-12: Paradigms 9, Genealogy and lineages 6, Formal foundations 6, Implementation 8, Domain and non-general-purpose languages 6, Design and comparative 5, Notation beyond programming 5, History and standardization 4. See each hub for its list. The Formal foundations stubs live here but hang off the hub shared with General Linguistics.
+**49 topic stubs and 32 language stubs**, added 2026-08-12: Paradigms 9, Genealogy and lineages 6, Formal foundations 6, Implementation 8, Domain and non-general-purpose languages 6, Design and comparative 5, Notation beyond programming 5, History and standardization 4. See each hub for its list. The Formal foundations stubs live here but hang off the hub shared with General Linguistics.
 
-**Individual programming languages are deliberately not stubbed**, beyond Lisp. The six lineages are the spine of this area, exactly as families and branches are in Human Languages, and which particular languages earn notes needs a selection principle rather than a judgement call. [HOPL](../references/hopl.md) is the candidate instrument and is already held, unused. The same open decision covers both areas; see `ROADMAP.md`.
+**32 individual languages**, selected 2026-08-12 on Andrew's criterion of popularity plus paradigm coverage. Twenty-two are taken by rank from [TIOBE index, August 2026](../references/tiobe-2026-08.md); ten are added because popularity alone leaves whole paradigms and four of the six lineages unrepresented. [Genealogy and lineages](genealogy-and-lineages.md) lists both groups and states what each instrument does and does not measure.
+
+The selection is a judgement and is recorded as one. Every added language says in its own note that it was added for coverage rather than selected by rank.
 
 ## Documents
 

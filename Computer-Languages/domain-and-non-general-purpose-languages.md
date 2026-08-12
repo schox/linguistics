@@ -22,3 +22,11 @@ Stubbed out on 2026-08-12, one level. Nothing here is written beyond what is lis
 - [Shell languages](shell-languages.md)
 - [Regular expressions](regular-expressions.md)
 - [Domain-specific languages](domain-specific-languages.md)
+
+## Languages filed here
+
+Three from the TIOBE top twenty-five are query or numerical rather than general-purpose:
+
+- [SQL](sql.md), rank 8
+- [R](r.md), rank 9
+- [MATLAB](matlab.md), rank 25

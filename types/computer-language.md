@@ -30,9 +30,9 @@ A programming, markup, query or formal language. Lives in `Computer-Languages/`.
 
 ## Fields
 
-- `paradigm`: free text, may be several, e.g. `functional, procedural, reflective`.
+- `paradigm`: free text, may be several, e.g. `functional, procedural, reflective`. On a taxonomy stub this records **the paradigm the language was selected to represent**, which is a statement about the selection rather than a full classification of the language, and the stub body says so.
 - `lineage`: the descent group, e.g. `Lisp`, `ALGOL`, `ML`, `C`, `Smalltalk`.
-- `first_appeared`: year.
+- `first_appeared`: year. **Taxonomy stubs use `unknown`**, on the same principle as `era` on a `Cipher` stub: the note asserts nothing about its subject yet, and dating a language from recall is exactly what the evidentiary standard forbids. Replace it when the note is written.
 - `status`: `using` | `reference` | `historical` | `learning`.
 - `influenced_by`: wikilinks to other `ComputerLanguage` notes. The computed inverse gives the influence graph, mirroring what HOPL records.
 - `implemented_in`: wikilinks for compiler bootstrapping, the relation languagelineage.org records. Distinct from influence.
