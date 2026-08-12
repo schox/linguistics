@@ -1,0 +1,16 @@
+filters:
+  and:
+    - 'type == "Language"'
+views:
+  - type: table
+    name: Languages
+    order:
+      - file.name
+      - family
+      - branch
+      - era
+      - status
+      - glottocode
+    sort:
+      - property: family
+        direction: ASC

@@ -1,0 +1,15 @@
+filters:
+  and:
+    - 'type == "Concept"'
+views:
+  - type: table
+    name: Concepts
+    order:
+      - file.name
+      - subfield
+      - status
+    sort:
+      - property: status
+        direction: ASC
+      - property: file.name
+        direction: ASC

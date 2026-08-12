@@ -1,0 +1,15 @@
+filters:
+  and:
+    - 'type == "ComputerLanguage"'
+views:
+  - type: table
+    name: Computer Languages
+    order:
+      - file.name
+      - paradigm
+      - first_appeared
+      - lineage
+      - status
+    sort:
+      - property: paradigm
+        direction: ASC

@@ -1,0 +1,30 @@
+filters:
+  and:
+    - 'type == "Script"'
+views:
+  - type: table
+    name: Scripts
+    order:
+      - file.name
+      - class
+      - decipherment_status
+      - period
+      - corpus_size
+      - iso15924
+    sort:
+      - property: decipherment_status
+        direction: ASC
+  - type: table
+    name: Undeciphered scripts
+    filters:
+      and:
+        - 'decipherment_status != "deciphered"'
+    order:
+      - file.name
+      - class
+      - decipherment_status
+      - period
+      - corpus_size
+    sort:
+      - property: period
+        direction: ASC

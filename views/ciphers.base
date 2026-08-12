@@ -1,0 +1,14 @@
+filters:
+  and:
+    - 'type == "Cipher"'
+views:
+  - type: table
+    name: Ciphers
+    order:
+      - file.name
+      - category
+      - era
+      - status
+    sort:
+      - property: era
+        direction: ASC

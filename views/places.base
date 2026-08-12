@@ -1,0 +1,26 @@
+filters:
+  and:
+    - 'type == "Place"'
+views:
+  - type: table
+    name: Places
+    order:
+      - file.name
+      - kind
+      - region
+      - flourished
+    sort:
+      - property: kind
+        direction: ASC
+  - type: table
+    name: Sites (provenance)
+    filters:
+      and:
+        - 'kind == "site"'
+    order:
+      - file.name
+      - region
+      - flourished
+    sort:
+      - property: flourished
+        direction: ASC

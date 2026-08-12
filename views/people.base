@@ -1,0 +1,14 @@
+filters:
+  and:
+    - 'type == "Person"'
+views:
+  - type: table
+    name: People
+    order:
+      - file.name
+      - field
+      - born
+      - died
+    sort:
+      - property: born
+        direction: ASC

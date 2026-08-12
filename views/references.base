@@ -1,0 +1,41 @@
+filters:
+  and:
+    - 'type == "Reference"'
+views:
+  - type: table
+    name: Bibliography
+    order:
+      - file.name
+      - authors
+      - year
+      - title
+      - ref_type
+      - status
+    sort:
+      - property: authors
+        direction: ASC
+  - type: table
+    name: Sources by year
+    order:
+      - file.name
+      - year
+      - authors
+      - title
+      - ref_type
+    sort:
+      - property: year
+        direction: DESC
+  - type: table
+    name: Reading list (unread)
+    filters:
+      and:
+        - 'status == "unread"'
+    order:
+      - file.name
+      - authors
+      - year
+      - title
+      - ref_type
+    sort:
+      - property: year
+        direction: DESC

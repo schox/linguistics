@@ -1,0 +1,14 @@
+filters:
+  and:
+    - 'type == "Method"'
+views:
+  - type: table
+    name: Methods
+    order:
+      - file.name
+      - category
+      - subfield
+      - status
+    sort:
+      - property: category
+        direction: ASC

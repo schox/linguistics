@@ -1,0 +1,16 @@
+filters:
+  and:
+    - 'type == "MOC"'
+views:
+  - type: table
+    name: Maps (area and subfield hubs)
+    order:
+      - file.name
+      - area
+      - subfield
+      - updated
+    sort:
+      - property: area
+        direction: ASC
+      - property: file.name
+        direction: ASC

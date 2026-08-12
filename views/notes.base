@@ -1,0 +1,13 @@
+filters:
+  and:
+    - 'type == "Note"'
+views:
+  - type: table
+    name: Notes
+    order:
+      - file.name
+      - subfield
+      - status
+    sort:
+      - property: status
+        direction: ASC
