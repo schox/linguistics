@@ -58,7 +58,7 @@ Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. The hub
 - [Epistemics](epistemics.md)
 - [Practitioners](practitioners.md)
 - [Infrastructure](infrastructure.md)
-- [Writing systems](../General-Linguistics/writing-systems.md), the shared hub with General Linguistics
+- [Writing systems](../General-Linguistics/writing-systems.md), the shared hub with General Linguistics, now holding [Script typology](../General-Linguistics/script-typology.md)
 
 ## Notes
 

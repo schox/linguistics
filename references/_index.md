@@ -33,15 +33,18 @@ See `_data-sources.md` for how the vault relates to these.
 - [Salgarella and Castellan 2020](salgarella-castellan-2020.md), SigLA
 - [UNESCO, Archaeological Ruins at Moenjodaro](unesco-moenjodaro.md)
 - [UNESCO, Archaeological Site of Harappa](unesco-harappa-tentative.md)
+- [Unicode Standard 17.0, chapter 6](unicode-standard-17.md), the encoded script typology and Table 6-1
 - [WALS Online](wals-2013.md)
 
 ## Literature
 
 - [Assael et al. 2022 (Ithaca)](assael-2022.md)
+- [Baroni 2011](baroni-2011.md), writing system typology and the alphabetocentrism debate
 - [Barber 1974](barber-1974.md)
 - [Berthin 2024](berthin-2024.md)
 - [Chadwick 1958](chadwick-1958.md)
 - [Dalby 2019](dalby-2019.md), the Rosetta Stone
+- [Daniels and Bright 1996](daniels-bright-1996.md), the standard survey, not read
 - [Day 2002](day-2002.md), the Ugaritic decipherment
 - [Donnelly 2025](donnelly-2025.md), Cypro-Minoan
 - [Englund 2004](englund-2004.md), proto-Elamite

@@ -12,14 +12,19 @@ updated: 2026-08-12
 ---
 # Writing systems
 
-How languages are written, and the typology of the systems that do it. This hub serves two vocabularies: it is a subfield of both General Linguistics and Decipherment, and it is the formal junction between them. It also owes the vault its definition of the script `class` values (alphabet, abjad, abugida, syllabary, logographic, mixed), which every `Script` note carries and nothing yet defines; `ROADMAP.md` ranks that the most urgent gap in the vault.
-
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
+How languages are written, and the classification of the systems that do it. The subfield belongs to two vocabularies, General Linguistics and Decipherment, and is the formal junction between them: the questions of what a script is, what its signs stand for, and how it relates to the language it records are the same questions on both sides, asked of readable and unreadable material respectively.
 
 ## Topics owed to this hub
 
-Typology of scripts, the history of the alphabet, literacy and orthographic depth, script reform, transliteration and romanization standards.
+- ~~Typology of scripts~~, written as [Script typology](script-typology.md).
+- The history of the alphabet, from Proto-Sinaitic through Phoenician to Greek.
+- Literacy and orthographic depth.
+- Script reform.
+- Transliteration and romanization standards.
+
+The child topics named at the foot of [Script typology](script-typology.md) extend this list.
 
 ## Notes in this subfield
 
-- [Script versus language](../Decipherment/script-versus-language.md)
+- [Script typology](script-typology.md), the classification of writing systems by what their signs stand for, and the vocabulary that the `class` field on every `Script` note draws on
+- [Script versus language](../Decipherment/script-versus-language.md), the many-to-many relation between the two, and the four states of a decipherment problem

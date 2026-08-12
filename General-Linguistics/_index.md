@@ -67,6 +67,8 @@ Each subfield gets a `MOC` note as its hub. Content notes `belongs_to` that hub 
   - [Semantics](semantics.md), meaning independent of context
   - [Pragmatics](pragmatics.md), meaning in context
   - Discourse, unwritten
+- **[Writing systems](writing-systems.md)** (MOC), shared with Decipherment
+  - [Script typology](script-typology.md), what the signs stand for, and the source of the `class` vocabulary
 - **Formal foundations**, no MOC yet
   - [The Chomsky hierarchy](chomsky-hierarchy.md)
 - **Computational linguistics**, no MOC yet
@@ -74,9 +76,9 @@ Each subfield gets a `MOC` note as its hub. Content notes `belongs_to` that hub 
 
 The six notes under Levels of analysis are entries rather than treatments: each defines its subject, describes it with examples, names the child topics that should become notes of their own, and records what it does not cover. None of the child topics is written.
 
-**Still empty:** Historical and comparative, Typology and universals, Sociolinguistics, Psycholinguistics and acquisition, Writing systems, Semiotics and philosophy of language, Etymology and lexicography.
+**Still empty:** Historical and comparative, Typology and universals, Sociolinguistics, Psycholinguistics and acquisition, Semiotics and philosophy of language, Etymology and lexicography.
 
-**Writing systems is the most urgent.** The `class` value carried by every `Script` note in the vault (alphabet, abjad, abugida, syllabary, logographic, mixed) is a claim this area is supposed to define and does not.
+**Writing systems has its anchor.** [Script typology](script-typology.md) defines the vocabulary that the `class` field on every `Script` note draws on, from three classifications that do not fully agree with one another. The history of the alphabet, orthographic depth, script reform and transliteration standards are still owed to the hub.
 
 ## Documents
 
