@@ -3,7 +3,7 @@ type: MOC
 aliases:
   - "Human Languages"
 area: Human-Languages
-updated: 2026-08-09
+updated: 2026-08-12
 ---
 
 # Human Languages
@@ -143,6 +143,25 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 - Sign languages
 - Pidgins and creoles
 - Constructed languages
+
+## Subfield hubs
+
+Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. All are stubs awaiting the breadth program in `ROADMAP.md`. The four groupings in section 10 chain under [Non-genealogical groupings](non-genealogical-groupings.md) rather than directly under this hub.
+
+- [Indo-European](indo-european.md)
+- [Afro-Asiatic](afro-asiatic.md)
+- [Sino-Tibetan](sino-tibetan.md)
+- [Other Eurasian families](other-eurasian-families.md)
+- [Austronesian and Papuan](austronesian-and-papuan.md)
+- [African families](african-families.md)
+- [Languages of the Americas](languages-of-the-americas.md)
+- [Australian languages](australian-languages.md)
+- [Isolates and small families](isolates-and-small-families.md)
+- [Non-genealogical groupings](non-genealogical-groupings.md)
+  - [Sign languages](sign-languages.md)
+  - [Pidgins and creoles](pidgins-and-creoles.md)
+  - [Constructed languages](constructed-languages.md)
+  - [Ancient corpus languages](ancient-corpus-languages.md)
 
 ## Notes
 

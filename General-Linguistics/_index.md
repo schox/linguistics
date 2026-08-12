@@ -3,7 +3,7 @@ type: MOC
 aliases:
   - "General Linguistics"
 area: General-Linguistics
-updated: 2026-08-09
+updated: 2026-08-12
 ---
 
 # General Linguistics
@@ -40,9 +40,24 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 - Semiotics and philosophy of language
 - Etymology and lexicography
 
+## Subfield hubs
+
+Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. All but the first are stubs awaiting the breadth program in `ROADMAP.md`.
+
+- [Levels of analysis](levels-of-analysis.md), the only one with content
+- [Historical and comparative](historical-and-comparative.md)
+- [Typology and universals](typology-and-universals.md)
+- [Sociolinguistics](sociolinguistics.md)
+- [Psycholinguistics and acquisition](psycholinguistics-and-acquisition.md)
+- [Writing systems](writing-systems.md), shared with Decipherment
+- [Computational linguistics](computational-linguistics.md)
+- [Formal foundations](formal-foundations.md), shared with Computer Languages
+- [Semiotics and philosophy of language](semiotics-and-philosophy-of-language.md)
+- [Etymology and lexicography](etymology-and-lexicography.md)
+
 ## Notes
 
-Each subfield gets a `MOC` note as its hub. Content notes `belongs_to` that hub rather than this one, and child topics `belongs_to` their parent note, so the tree is the computed `has` relation rather than a list maintained by hand. See `CONVENTIONS.md`.
+Each subfield gets a `MOC` note as its hub. Content notes `belongs_to` that hub rather than this one, and child topics `belongs_to` their parent note, so the tree hangs off the `belongs_to` chain rather than a list maintained by hand. See `CONVENTIONS.md`.
 
 - **[Levels of analysis](levels-of-analysis.md)** (MOC)
   - [Phonetics](phonetics.md), the physical signal

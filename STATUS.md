@@ -15,7 +15,7 @@ This file is the present tense: what exists, what is thin, what has been establi
 
 The structure is complete and enforced. Five areas, thirteen note types plus `Type` itself, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
 
-The vault currently holds 145 notes. Decipherment is no longer a skeleton; every other area still is.
+The vault currently holds 193 notes, of which 48 are the subfield hub stubs added 2026-08-12 so the whole taxonomy is visible in the graph. Decipherment is no longer a skeleton; every other area's content still is, though its shape now shows.
 
 **This figure is now checked.** `scripts/check-vault.py` fails if it drifts from the actual count, which it had, silently, from 107 to 132 across eight batches.
 

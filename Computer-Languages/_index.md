@@ -3,7 +3,7 @@ type: MOC
 aliases:
   - "Computer Languages"
 area: Computer-Languages
-updated: 2026-08-09
+updated: 2026-08-12
 ---
 
 # Computer Languages
@@ -35,6 +35,19 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 - Design and comparative
 - Notation beyond programming
 - History and standardization
+
+## Subfield hubs
+
+Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. All are stubs awaiting the breadth program in `ROADMAP.md`.
+
+- [Paradigms](paradigms.md)
+- [Genealogy and lineages](genealogy-and-lineages.md)
+- [Formal foundations](../General-Linguistics/formal-foundations.md), the shared hub with General Linguistics
+- [Implementation](implementation.md)
+- [Domain and non-general-purpose languages](domain-and-non-general-purpose-languages.md)
+- [Design and comparative](design-and-comparative.md)
+- [Notation beyond programming](notation-beyond-programming.md)
+- [History and standardization](history-and-standardization.md)
 
 ## Notes
 

@@ -3,7 +3,7 @@ type: MOC
 aliases:
   - "Decipherment"
 area: Decipherment
-updated: 2026-08-09
+updated: 2026-08-12
 ---
 
 # Decipherment
@@ -45,6 +45,20 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 - Practitioners
 - Infrastructure
 - Writing systems
+
+## Subfield hubs
+
+Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. The hubs are stubs; the area's existing notes still `belongs_to` this hub directly, and re-parenting them is recorded in `ROADMAP.md`.
+
+- [The problem space](the-problem-space.md)
+- [Solved decipherments](solved-decipherments.md)
+- [Unsolved, partial and contested](unsolved-partial-and-contested.md)
+- [Manual method](manual-method.md)
+- [Computational method](computational-method.md)
+- [Epistemics](epistemics.md)
+- [Practitioners](practitioners.md)
+- [Infrastructure](infrastructure.md)
+- [Writing systems](../General-Linguistics/writing-systems.md), the shared hub with General Linguistics
 
 ## Notes
 

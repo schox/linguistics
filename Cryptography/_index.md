@@ -3,7 +3,7 @@ type: MOC
 aliases:
   - "Cryptography"
 area: Cryptography
-updated: 2026-08-09
+updated: 2026-08-12
 ---
 
 # Cryptography
@@ -41,6 +41,21 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 - Theory
 - Post-quantum
 - History and politics
+
+## Subfield hubs
+
+Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. All are stubs awaiting the breadth program in `ROADMAP.md`.
+
+- [Classical ciphers](classical-ciphers.md)
+- [Mechanical and electromechanical](mechanical-and-electromechanical.md)
+- [Cryptanalysis](cryptanalysis.md)
+- [Modern symmetric](modern-symmetric.md)
+- [Asymmetric](asymmetric.md)
+- [Hashes and integrity](hashes-and-integrity.md)
+- [Protocols and deployment](protocols-and-deployment.md)
+- [Theory](theory.md)
+- [Post-quantum](post-quantum.md)
+- [History and politics](history-and-politics.md)
 
 ## Notes
 
