@@ -7,13 +7,15 @@ status: living
 
 # Linguistics
 
-Tolaria vault for linguistics, human languages, computer languages, cryptography, and decipherment. Built for personal and academic research, which means claims carry references and references carry links.
+Obsidian vault for linguistics, human languages, computer languages, cryptography, and decipherment. Built for personal and academic research, which means claims carry references and references carry links.
 
 ## Start here
 
 1. Read `CONVENTIONS.md`. Layout, types, the taxonomy model, the referencing rules and the intake rules all live there.
 2. If you are an AI assistant, read `AGENTS.md` first. It is the canonical onramp.
 3. Read `_junctions.md` for the argument the vault is organized around, and `_data-sources.md` for what already exists externally.
+
+Open the repository root as the vault in Obsidian. Recommended plugins are listed in `ROADMAP.md` under the migration section; the vault works without any of them.
 
 ## Layout
 
@@ -26,8 +28,8 @@ Decipherment/          reading lost scripts and unknown languages
 references/            the bibliography, one note per source
 people/                seminal figures, one note each
 places/                seminal institutions and sites
-types/                 Tolaria type definitions
-views/                 saved sidebar views
+types/                 type definitions, the authoritative schema
+views/                 saved Bases (.base table views)
 attachments/           images referenced from notes
 scripts/               check-vault.py, the consistency checker
 _junctions.md          index of cross-cutting notes

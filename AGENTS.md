@@ -9,7 +9,7 @@ If you are an AI assistant working in this vault: read this file first, then `CO
 
 ## What this vault is
 
-A Tolaria vault for linguistics, human languages, computer languages, cryptography and decipherment, serving personal and academic research. Markdown with YAML frontmatter plus attachments, in a git repository with a GitHub remote.
+An Obsidian vault for linguistics, human languages, computer languages, cryptography and decipherment, serving personal and academic research. Markdown with YAML frontmatter plus attachments, in a git repository with a GitHub remote. The app is a lens; `scripts/check-vault.py` is the authority on the schema, and Obsidian enforces none of it, so the checker is not optional.
 
 ## What to read, in order
 
@@ -105,7 +105,7 @@ git status
 python3 scripts/check-vault.py
 ```
 
-Tolaria is a desktop app that reads and writes these same files while Andrew has the vault open, and it has its own in-app git client. Assume the working tree may have changed under you, and never assume your last-known state is current.
+Obsidian reads and writes these same files while Andrew has the vault open, and may have its own in-app git tooling. Assume the working tree may have changed under you, and never assume your last-known state is current.
 
 **Before you finish**, run the checker again and make sure it exits clean. It checks required fields per type, enum values, subfield membership against each area's stated vocabulary, wikilink quoting, wikilink resolution, `## Sources` presence, relative link resolution, and house style.
 

@@ -7,13 +7,15 @@ status: living
 
 # Status
 
-Where the project is up to, as at 2026-08-10. Update this when the picture changes; it is the first thing an incoming agent should read after `AGENTS.md`.
+Where the project is up to, as at 2026-08-12. Update this when the picture changes; it is the first thing an incoming agent should read after `AGENTS.md`.
 
 This file is the present tense: what exists, what is thin, what has been established, what is known to be wrong or missing. For what happens next and what is blocked, see `ROADMAP.md`.
 
 ## What exists
 
 The structure is complete and enforced. Five areas, thirteen note types plus `Type` itself, a stated subfield vocabulary per area, an external-identifier scheme, a bibliography, and a checker that fails the build on schema violations. Every type has at least one worked example, named in its type file.
+
+**The vault is an Obsidian vault as of 2026-08-12**, migrated from Tolaria; `DECISIONS.md` records why and what changed. On the repository side the migration is done: every note aliases its H1 title (checker-enforced, so title-style wikilinks resolve in Obsidian), every subfield has a `MOC` hub so the whole taxonomy shows in the graph, and the Tolaria sidebar views have Obsidian Bases equivalents in `views/*.base`. What remains is Mac-side verification by Andrew, listed in `ROADMAP.md` under the migration section: until the bases and graph are confirmed rendering, the old `views/*.yml` files stay and the vault has not been seen in the app it now targets.
 
 The vault currently holds 193 notes, of which 48 are the subfield hub stubs added 2026-08-12 so the whole taxonomy is visible in the graph. Decipherment is no longer a skeleton; every other area's content still is, though its shape now shows.
 
@@ -53,7 +55,7 @@ All seven carry their ISO 15924 code, Unicode block, `corpus_size` and `found_at
 **The vault is a knowledge base first and an argument second.** That ordering is Andrew's and it is the governing instruction for every batch from here. In practice:
 
 - **An entry describes; it does not argue.** Define the subject, describe it, give examples, name the child topics, record what is not covered. Interpretation, cross-area synthesis and the vault's own reasoning belong in separate notes that link to the entries, not inside them.
-- **Structure is carried by the graph, not by prose.** `belongs_to` chains from a note to its parent, up through a subfield `MOC` to the area hub, so Tolaria's computed `has` gives the tree. `related_to` links siblings. See `CONVENTIONS.md`.
+- **Structure is carried by the graph, not by prose.** `belongs_to` chains from a note to its parent, up through a subfield `MOC` to the area hub, so the tree is read from the links and backlinks rather than maintained as prose. `related_to` links siblings. See `CONVENTIONS.md`.
 - **Breadth changed the scope, not the evidentiary standard.** Each entry is sourced, cites its Reference, and records its gaps under `## Open questions`.
 
 Batch 9 was written twice. The first attempt produced six essays that argued from each level back into the Decipherment area, which is the failure mode this ordering exists to prevent: it read as a thesis with a textbook attached, and it was rewritten as reference entries. The observations it generated were not discarded; they are parked in `ROADMAP.md` as notes to be written on their own once the reference layer exists.
@@ -88,7 +90,7 @@ Recorded so the fact-checking service can retry them rather than each batch redi
 - Two sources reached during batch 1 were unavailable and their absence is recorded in the notes rather than papered over: John G. Younger's Linear A transcriptions at `people.ku.edu`, which did not resolve and which the corpus figures ultimately descend from, and Pleiades, which was behind bot detection so no site identifier could be confirmed.
 - No `Media` notes and nothing in `attachments/` yet.
 - No automated intake routine, unlike the Andrew and Novansa vaults. Material is added deliberately.
-- The vault has never been tested against Tolaria's actual rendering of the newer types (`Script`, `Method`, `Person`, `Place`). Icons and colors in `types/*.md` are guesses at Tolaria's icon set and may need correcting in the app.
+- The vault has never been opened in Obsidian. The alias rule, the Bases in `views/*.base` and the graph shape are all built to Obsidian's documented behavior, not yet to observed behavior; the Mac-side checklist in `ROADMAP.md` is where that gets settled. The underscore-prefixed fields in `types/*.md` are Tolaria legacy that Obsidian ignores.
 
 ## Open questions for Andrew
 

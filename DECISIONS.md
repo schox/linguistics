@@ -255,3 +255,33 @@ The generalization worth keeping: **a note that answers a question nobody asked 
 Also rejected: dropping `subfield` once a `MOC` exists for it. `subfield` is the controlled taxonomy and is checked against each area's stated vocabulary; `belongs_to` is the graph. They answer different questions and both stay on every note.
 
 **Consequence.** `CONVENTIONS.md` is amended. Existing notes are not being migrated wholesale: they point at their area hub, which remains valid as a chain of length one, and they move under a subfield `MOC` when that subfield is next worked on.
+
+## 2026-08-12: Obsidian replaces Tolaria as the vault application
+
+**Decided.** The vault is an Obsidian vault from here. The files do not change in kind: plain Markdown with YAML frontmatter, the schema in `types/`, the taxonomy in `subfield`, the graph in wikilink fields, `scripts/check-vault.py` as the authority on all of it. What changes is the lens, and three mechanical consequences below.
+
+**Why.** The first iteration of this project is a knowledge base for learning, and the tools that matter for that are navigation, discovery and iteration: the graph, database-style views over frontmatter (Bases), full-text and fuzzy search (Omnisearch), semantic similarity (Smart Connections), and freeform argument-mapping (Canvas). Obsidian has all five, mature. Tolaria's genuine advantage, typed relations with computed inverses, is not worth the gap on the other four; the hierarchy also lives in `subfield` and the `belongs_to` chain, so dropping the computed `has` loses a rendering, not information. Portability was the deciding argument: the vault was already app-agnostic by design, which makes the move nearly free, and a future migration into a database (Convex is the likely target) leans on exactly the parts that stay: schema'd frontmatter, kebab-case filenames as stable keys, and a checker that guarantees the frontmatter parses rather than merely resembling a schema.
+
+**The three mechanical consequences.**
+
+1. **Aliases.** Tolaria resolved wikilinks by H1 title or filename; Obsidian resolves by filename or alias only. Every note therefore carries its H1 title in `aliases`, the checker enforces it, and title-style wikilinks keep working. Filenames were not renamed to titles, deliberately: they are the stable keys.
+2. **Bases replace the sidebar views.** `views/*.base` are the Obsidian equivalents of the Tolaria `views/*.yml`, which stay until the bases are confirmed rendering and then get deleted.
+3. **No computed `has`.** The `belongs_to` chain still carries the hierarchy, but its inverse is now read from the backlinks pane or rendered by the Breadcrumbs plugin rather than computed by the app. The 2026-08-11 entry on `belongs_to` chains stands with that one amendment.
+
+**Rejected.** Renaming files to their titles, which would have made Obsidian resolution work without aliases at the cost of churning every stable key. Also rejected: letting Obsidian's flexibility soften the schema. Obsidian enforces nothing, so the checker matters more after this move, not less; it should go into CI so the enforcement survives the app change.
+
+**Consequence.** The `_icon`, `_color`, `_sidebar_label`, `_order` and `_pinned_properties` fields in `types/*.md` are Tolaria legacy. Obsidian ignores them. They stay for now as harmless metadata and get pruned or repurposed at the audit. The in-app git caveat in `AGENTS.md` now describes Obsidian (with the git community plugin, if installed) rather than Tolaria.
+
+## 2026-08-12: The taxonomy is stubbed with MOC hubs before content
+
+**Decided.** Every subfield vocabulary value in every area gets a `MOC` hub note immediately, as a stub: scope in a sentence or two, the topics owed to it, and a scanned list of the existing notes that carry its subfield value. 48 hubs were added on this decision.
+
+**Why.** Andrew's instruction: see the whole starting structure in the graph first, judge whether it is sufficient, then backfill content in batches. A taxonomy that lives only in `_index.md` prose cannot be looked at as a shape; hubs make it nodes and edges. This is the breadth-before-depth decision of 2026-08-11 taken one step further: the reference layer now has a visible skeleton before any of its flesh.
+
+**Two vocabularies share a value, so two hubs are shared.** Formal foundations appears in both the General Linguistics and Computer Languages vocabularies, Writing systems in both General Linguistics and Decipherment, and in both cases the two entries name the same subject and are described in the indexes as junctions with each other. One hub each, living in `General-Linguistics/`, with `belongs_to` both area hubs. Two same-titled notes would have resolved ambiguously and said less.
+
+**Rejected.** Stubbing the child topics (roughly forty-five under Levels of analysis alone, hundreds across the vault). A stub hub is structural and carries no claims, so it needs no sources; a stub *entry* on phonology's child topics would be a content note with nothing verified in it, which the evidentiary standard exists to prevent. The taxonomy is the subfield vocabulary; the child topics are content, and content arrives sourced, in batches.
+
+Also rejected: re-parenting the existing notes onto their new hubs in the same change. They still point at their area hubs, which remains a valid chain of length one. Moving them is mechanical but judgement-bearing (several notes carry two subfields), so it happens per-area as each area is next worked on, recorded in `ROADMAP.md`.
+
+**Consequence.** The note count jumps by 48 with no new content, and the per-area figures in `STATUS.md` now measure structure and content mixed. The stubs make the vault look more finished than it is; each one says "Stub hub" in its body so the graph cannot be mistaken for coverage.

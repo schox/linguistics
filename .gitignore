@@ -1,5 +1,16 @@
-# Tolaria app files (machine-specific, never commit)
+# Tolaria app files (machine-specific; entry stays until the migration
+# cleanup step in ROADMAP.md removes it)
 .laputa/settings.json
+
+# Obsidian per-machine state. The rest of .obsidian/ (app settings,
+# appearance, enabled plugins) is committed so every machine gets the
+# same vault behavior.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Python
+__pycache__/
+*.pyc
 
 # Claude Code per-machine permissions. .claude/settings.json IS committed:
 # it carries the permissions every environment needs to work on this vault.

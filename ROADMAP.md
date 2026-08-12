@@ -48,6 +48,28 @@ Nothing here can be moved by more searching.
 - **Mahadevan 1977**, an 829-page print memoir, for the per-site distribution of the Indus corpus.
 - **The Cuneiform Digital Library Initiative catalog**, for a per-site breakdown of the proto-Elamite tablets. Its publications have now been used; the searchable catalog has not.
 
+## The Obsidian migration
+
+The vault moved from Tolaria to Obsidian on 2026-08-12; `DECISIONS.md` has the reasoning. The repository side is done: aliases on every note (checker-enforced), a `MOC` hub for every subfield so the taxonomy shows in the graph, and Bases in `views/*.base` mirroring the old sidebar views. What remains, in order:
+
+**On Andrew's Mac:**
+
+1. Update Obsidian (Bases needs a current version) and open the repository root as a vault.
+2. Enable the **Bases** core plugin if it is not already on, and open the `.base` files in `views/`; confirm they render and fix any syntax the app rejects.
+3. Install community plugins as wanted: **Omnisearch** (search), **Breadcrumbs** (renders the `belongs_to` chain as a typed hierarchy), **Smart Connections** (semantic similarity; purely additive, can wait, and check its indexing settings before letting it embed on every edit). Canvas and the graph are core and need nothing.
+4. Look around the graph. The point of the stub hubs is to judge whether the starting taxonomy is sufficient before content arrives; this is the judging step. Color by folder, and filter to `type: MOC` to see the skeleton alone.
+5. Commit the `.obsidian/` config that should travel (app settings, appearance, enabled plugins); `workspace.json` is already gitignored.
+
+**In the repository, after the Mac checks pass:**
+
+6. Delete `views/*.yml` (the Tolaria views) and the `.laputa` gitignore entry.
+7. Put the checker in CI (a GitHub Action running `python3 scripts/check-vault.py` on push), so enforcement no longer depends on anyone remembering to run it. It matters more now: Obsidian validates nothing.
+
+**Deliberately deferred:**
+
+- **Re-parenting existing notes onto their subfield hubs.** Notes still point at their area hubs, a valid chain of length one. Move each area's notes when that area is next worked on; several notes carry two subfields, so this is judgement, not scripting.
+- Pruning or repurposing the Tolaria legacy fields in `types/*.md` (`_icon`, `_color`, `_sidebar_label`, `_order`, `_pinned_properties`). At the audit.
+
 ## Next work, in order
 
 **The plan below is superseded from 2026-08-11.** Andrew's instruction is that the vault starts as a general reference and is amplified afterward, so breadth across every discipline comes before any more interpretation. `DECISIONS.md` records the reasoning and what a starter note is. Phases 3 and 4 as scoped below are not cancelled, only re-ordered behind the breadth work; the items in them are still owed and are still accurate.
@@ -121,7 +143,7 @@ Leave Computer Languages until Andrew wants it for its own sake. It is the one a
 - **Cretan Hieroglyphic**, the third Aegean script of the period and the natural comparison for both Linear A and the Phaistos Disc. Mnamon covers it.
 - **The `wikidata` sweep.** High value as the universal join key, and **not** the cheap job it looks: a Q-number is the most fabricable string in the vault, so it needs real lookups rather than recall.
 - **Two junction notes** still unwritten at the foot of `_junctions.md`, plus a third added after batch 4: corpus destruction as a historical event rather than an accident, which rongorongo showed the existing framing does not cover.
-- **Test the vault against Tolaria's actual rendering.** Icons and colors in `types/*.md` are guesses at Tolaria's icon set and have never been checked in the app.
+- ~~**Test the vault against Tolaria's actual rendering.**~~ **Superseded 2026-08-12** by the move to Obsidian; the equivalent check (Bases, graph, aliases as observed rather than documented behavior) is step 2 and 4 of the migration section above.
 
 ## Sources
 

@@ -10,7 +10,7 @@ updated: 2026-08-09
 
 **The type definitions are the authoritative schema.** Where this folder and prose elsewhere disagree, these files win, and the disagreement is a bug to fix.
 
-Each file declares the frontmatter template Tolaria reads, plus the allowed values for each field. Read the one for the type you are writing before you write it.
+Each file declares the type's frontmatter template, plus the allowed values for each field. Read the one for the type you are writing before you write it. The underscore-prefixed fields (`_icon`, `_color`, `_sidebar_label`, `_order`, `_pinned_properties`) are Tolaria legacy that Obsidian ignores; they stay as harmless metadata until the audit prunes or repurposes them.
 
 ## Entity types
 

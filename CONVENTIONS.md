@@ -11,13 +11,13 @@ The rules of the Linguistics vault. Andrew and any AI assistant read this first.
 
 ## What the vault is
 
-A Tolaria vault for linguistics and related matters, human languages, computer languages, cryptography, and decipherment. The source of truth is the filesystem: plain Markdown with YAML frontmatter, plus attachments (PDF, docx, images).
+An Obsidian vault for linguistics and related matters, human languages, computer languages, cryptography, and decipherment. The source of truth is the filesystem: plain Markdown with YAML frontmatter, plus attachments (PDF, docx, images). The app is a lens; `scripts/check-vault.py`, not the app, is the authority on the schema. (The vault began life in Tolaria; `DECISIONS.md` 2026-08-12 records the move and what it changed.)
 
 The vault serves **personal and academic research**. That has one consequence which runs through everything below: claims carry references, and references carry links wherever a link exists. A note without sources is a draft, not a finished note.
 
 ## Folder layout
 
-Folders are deliberately shallow. Tolaria organizes by `type`, and the taxonomy lives in frontmatter (see "Taxonomy and subfields"), so folders exist only to keep the vault navigable in Finder, the terminal and on GitHub.
+Folders are deliberately shallow. The schema organizes by `type`, and the taxonomy lives in frontmatter (see "Taxonomy and subfields"), so folders exist only to keep the vault navigable in Finder, the terminal and on GitHub.
 
 ```
 Linguistics/
@@ -26,7 +26,7 @@ Linguistics/
   AGENTS.md                 AI onramp
   _junctions.md             index of cross-cutting notes
   types/                    type definitions
-  views/                    saved sidebar views
+  views/                    saved Bases (.base table views)
   attachments/              images referenced from notes
   references/               the bibliography, one note per source
   people/                   seminal figures, one note each
@@ -107,20 +107,31 @@ Use values from the area index where one fits. If nothing fits, add the value to
 
 ## Relationships
 
-Tolaria turns the vault into a graph via wikilink fields in frontmatter. `belongs_to` and `has` are computed inverses of each other, and `related_to` is lateral. They show in the Properties panel, backlinks, and Neighborhood view.
+Wikilink fields in frontmatter turn the vault into a graph. Obsidian treats frontmatter wikilinks as real links: they appear in the graph view and the backlinks pane. There is no computed inverse; a parent's children are read from its backlinks (or rendered as a tree by the Breadcrumbs plugin, which understands `belongs_to`-style fields). `related_to` is lateral.
 
 Model used here:
 
 - Each area's `_index.md` is the hub for that area, titled `General Linguistics`, `Human Languages`, `Computer Languages`, `Cryptography`, `Decipherment`.
-- **`belongs_to` chains, and carries the topic hierarchy.** A note sets `belongs_to` its immediate parent, which may be the area hub, a subfield `MOC`, or a broader `Concept`. The parent shows its children under the computed `has`; do not write the reverse by hand. Every chain terminates at an area hub.
-- **A subfield gets a `MOC` note when it acquires content**, titled with the subfield's exact vocabulary value, for example `Levels of analysis`. It sits between the area hub and that subfield's notes. Until one exists, notes in that subfield may hang directly off the area hub.
+- **`belongs_to` chains, and carries the topic hierarchy.** A note sets `belongs_to` its immediate parent, which may be the area hub, a subfield `MOC`, or a broader `Concept`. The parent's children are its backlinks; do not maintain a reverse list by hand. Every chain terminates at an area hub.
+- **Every subfield has a `MOC` hub**, titled with the subfield's exact vocabulary value, for example `Levels of analysis`. It sits between the area hub and that subfield's notes. Since 2026-08-12 the hubs exist for the whole taxonomy, most of them as stubs; existing notes still pointing directly at an area hub move under their subfield hub when that subfield is next worked on.
+- **Two subfield values are shared between vocabularies** and have one hub each rather than two same-titled notes: `Formal foundations` (General Linguistics and Computer Languages) and `Writing systems` (General Linguistics and Decipherment). Both live in `General-Linguistics/` and belong to both area hubs. See `DECISIONS.md` 2026-08-12.
 - Chain depth is not limited, but keep it shallow enough to state: area, subfield, topic, subtopic is the expected shape. `subfield` stays on every note in the chain regardless of depth, because it is the taxonomy and `belongs_to` is the graph.
 - `related_to` carries lateral links, including across areas. Siblings link to each other with `related_to`, not `belongs_to`.
 - `cites` on a content note points at `Reference` notes. The inverse tells you every note that draws on a given source.
 - `writes` on a `Script` note points at the `Language` notes it records.
 - `applies_to` on a `Method` note points at the areas or problems it is used on.
 
-Wikilink targets resolve by note title or filename, so prefer the note's exact H1 title.
+### Wikilink resolution, and the alias rule
+
+Obsidian resolves a wikilink by **filename or alias**, never by H1 title. The vault links by title (`"[[Linear B]]"`, not `"[[linear-b]]"`), so **every note whose H1 title differs from its filename carries that title in `aliases`**:
+
+```yaml
+type: Script
+aliases:
+  - "Linear B"
+```
+
+The checker enforces this. Keep linking by exact H1 title; the alias makes it resolve. Filenames stay kebab-case and are never casually renamed, because they are the vault's stable keys, including for any future database import.
 
 ## References and citations
 
@@ -199,7 +210,7 @@ If a subset must be held locally, record the exact version and DOI, store it in 
 
 Attachments should not sit orphaned. Three rules:
 
-1. **Images live in `attachments/`** with clean, space-free names prefixed by area (e.g. `decipherment-linear-b-tablet-py-ta-641.png`). Tolaria does not preview paths containing spaces or angle brackets, so embeds use plain markdown with a clean relative path: `![Pylos tablet Ta 641](../attachments/decipherment-linear-b-tablet-py-ta-641.png)`. Never use angle-bracket URLs in embeds.
+1. **Images live in `attachments/`** with clean, space-free names prefixed by area (e.g. `decipherment-linear-b-tablet-py-ta-641.png`). Embeds use plain markdown with a clean relative path, `![Pylos tablet Ta 641](../attachments/decipherment-linear-b-tablet-py-ta-641.png)`, never angle-bracket URLs: space-free paths and plain syntax render everywhere, including GitHub, which wikilink embeds do not.
 2. **Folder index.** Every folder holding files has an `_index.md` (type `MOC`) embedding the images which originated there, linking the documents still in the folder, and linking subfolders to their own `_index.md`.
 3. **Content notes.** Where an attachment belongs to a concept covered by a note, embed or link it from that note too, not only from the MOC.
 
