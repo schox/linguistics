@@ -32,3 +32,11 @@ Evidentiary thresholds, falsification criteria, overfitting and pareidolia, why 
 - [Voynich manuscript](voynich-manuscript.md)
 - [Why a script stays unread](why-scripts-stay-unread.md)
 - [Institutional concentration](../places/institutional-concentration.md)
+
+## Topics stubbed 2026-08-12
+
+- [What counts as a decipherment](what-counts-as-a-decipherment.md)
+- [Falsification criteria](falsification-criteria.md)
+- [Overfitting and pareidolia](overfitting-and-pareidolia.md)
+- [The always-an-output problem](the-always-an-output-problem.md)
+- [Undeciphered scripts and cranks](undeciphered-scripts-and-cranks.md)

@@ -18,3 +18,16 @@ Computers applied to unread scripts: restoration, decipherment proper, and cogna
 
 - [Computational decipherment: three distinct tasks](computational-decipherment-three-tasks.md)
 - [Frequency analysis](frequency-analysis.md)
+
+## Topics stubbed 2026-08-12
+
+Following the three-way split the area index insists on, which [Computational decipherment: three distinct tasks](computational-decipherment-three-tasks.md) sets out:
+
+- [Text restoration](text-restoration.md), which deciphers nothing
+- [Minimum-cost flow decipherment](minimum-cost-flow-decipherment.md)
+- [Phonetic-prior models](phonetic-prior-models.md)
+- [Combinatorial optimization approaches](combinatorial-optimization-decipherment.md)
+- [Cognate and related-language search](cognate-search.md)
+- [Neural decipherment](neural-decipherment.md)
+
+Five of the six cite the paper that introduced the method, all of them already held.

@@ -1,6 +1,6 @@
 filters:
   and:
-    - 'type == "ComputerLanguage"'
+    - type == "ComputerLanguage"
 formulas:
   title: file.asLink(aliases[0])
 properties:

@@ -27,3 +27,12 @@ Decipherment problems classified by what is known, following the computational l
 - [Script versus language](script-versus-language.md)
 - [Ugaritic script](ugaritic-script.md)
 - [Why a script stays unread](why-scripts-stay-unread.md)
+
+## Topics stubbed 2026-08-12
+
+The four cases the computational literature names, which the area index uses as this subfield's spine:
+
+- [Different script, same language](different-script-same-language.md)
+- [Different script, different language](different-script-different-language.md)
+- [Same script, different language](same-script-different-language.md)
+- [Neither script nor language known](neither-script-nor-language-known.md)

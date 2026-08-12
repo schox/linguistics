@@ -1,6 +1,6 @@
 filters:
   and:
-    - 'type == "Concept"'
+    - type == "Concept"
 formulas:
   title: file.asLink(aliases[0])
 properties:

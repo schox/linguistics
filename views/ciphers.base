@@ -1,6 +1,6 @@
 filters:
   and:
-    - 'type == "Cipher"'
+    - type == "Cipher"
 formulas:
   title: file.asLink(aliases[0])
 properties:

@@ -60,6 +60,16 @@ Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. The hub
 - [Infrastructure](infrastructure.md)
 - [Writing systems](../General-Linguistics/writing-systems.md), the shared hub with General Linguistics, now holding [Script typology](../General-Linguistics/script-typology.md)
 
+## What is stubbed
+
+**52 topic stubs, added 2026-08-12**, completing the last of the five areas. This area is the reverse of the others: content came first, 21 notes written across nine batches before any taxonomy existed, so the stubbing is filling in around finished work rather than mapping an empty discipline.
+
+The topics come from this index's own subfield descriptions, which already named them, and from the items `ROADMAP.md` records as owed. By subfield: The problem space 4, Solved decipherments 8, Unsolved, partial and contested 4, Manual method 8, Computational method 6, Epistemics 5, Infrastructure 6, Practitioners 11.
+
+**The computational stubs are the best sourced anywhere in the corpus**: five of six cite the paper that introduced the method, all already held. The eleven practitioner stubs needed no selection principle, since every one is already named as owed.
+
+**Twelve `Script` stubs carry `class: undetermined`.** A stub asserts nothing about its subject and the typology in [Script typology](../General-Linguistics/script-typology.md) has not been applied to them. `decipherment_status` is set, because that is the claim which files each one as solved or unsolved.
+
 ## Notes
 
 - [The evidentiary threshold and unicity distance](evidentiary-threshold-and-unicity-distance.md)

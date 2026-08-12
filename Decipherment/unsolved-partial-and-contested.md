@@ -23,3 +23,10 @@ The scripts that resist, from Linear A to the Voynich manuscript, with Etruscan 
 - [Proto-Elamite](proto-elamite.md)
 - [Rongorongo](rongorongo.md)
 - [Voynich manuscript](voynich-manuscript.md)
+
+## Scripts stubbed 2026-08-12
+
+- [Isthmian script](isthmian-script.md), also called Epi-Olmec
+- [Rohonc Codex](rohonc-codex.md)
+- [Linear Elamite](linear-elamite.md), which is not proto-Elamite and demonstrates that corpus volume and text length are independent variables
+- [Cretan Hieroglyphic](cretan-hieroglyphic.md), the third Aegean script of the period

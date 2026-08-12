@@ -21,3 +21,16 @@ Frequency and positional analysis, sign inventories and how you count them, Kobe
 ## Notes in this subfield
 
 - [Frequency analysis](frequency-analysis.md)
+
+## Topics stubbed 2026-08-12
+
+- [Positional analysis](positional-analysis.md)
+- [Sign inventories and how to count them](sign-inventories.md)
+- [Kober's triplets](kobers-triplets.md)
+- [Ventris's grid](ventriss-grid.md)
+- [Name-hunting](name-hunting.md)
+- [Archaeological and iconographic context](archaeological-context.md)
+- [Bilinguals and quasi-bilinguals](bilinguals-and-quasi-bilinguals.md)
+- [The administrative character of early writing](administrative-character-of-early-writing.md)
+
+Written: [Frequency analysis](frequency-analysis.md), the technique that crosses into Cryptography, and [What counts as one sign](segmentation-and-transcription.md).

@@ -1,6 +1,6 @@
 filters:
   and:
-    - 'type == "MOC"'
+    - type == "MOC"
 formulas:
   title: file.asLink(aliases[0])
 properties:

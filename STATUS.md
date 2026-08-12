@@ -17,9 +17,17 @@ The structure is complete and enforced. Five areas, thirteen note types plus `Ty
 
 **The vault is an Obsidian vault as of 2026-08-12**, migrated from Tolaria; `DECISIONS.md` records why and what changed. **The migration is complete and the vault has been seen in the app.** Every note aliases its H1 title (checker-enforced, so title-style wikilinks resolve), every subfield has a `MOC` hub so the whole taxonomy shows in the graph, the eleven Bases in `views/*.base` render and are confirmed against observed rather than documented behavior, the Tolaria `views/*.yml` are gone, `.obsidian/` is committed, and `scripts/check-vault.py` runs in CI on every push. Andrew judged the stub taxonomy in the graph and found it sound: it needs amplification, not re-cutting. The one loose end is Breadcrumbs, installed but not yet pointed at `belongs_to`; see `ROADMAP.md`.
 
-The vault currently holds 691 notes, of which 7 are subfield hub stubs and 478 are topic stubs so the whole taxonomy is visible in the graph. Decipherment is no longer a skeleton; every other area's content still is, though its shape now shows.
+The vault currently holds 743 notes, of which none are subfield hub stubs and 530 are topic stubs so the whole taxonomy is visible in the graph. Decipherment is no longer a skeleton; every other area's content still is, though its shape now shows.
 
 **This figure is now checked.** `scripts/check-vault.py` fails if it drifts from the actual count, which it had, silently, from 107 to 132 across eight batches.
+
+## The taxonomy is complete; the writing is not
+
+**As of 2026-08-12 all five areas are stubbed out.** 743 files, of which 530 are taxonomy stubs and 68 are written content notes. Every subfield in every area has its topics named as notes rather than as prose, and no subfield hub is an empty stub any longer.
+
+That is the intended trade of structure before detail, and it should be read with the ratio in view: **roughly seven notes in ten are placeholders.** A stub says so in its body, asserts nothing about its subject, and is listed by `python3 scripts/check-vault.py --stubs`, which reports 297 carrying a source and 233 still reading "To be researched". The relaxation permitting the second group is temporary and its expiry condition is in `DECISIONS.md`.
+
+**Two selection questions remain open**, both about which individual entities earn notes. Computer Languages was settled on 2026-08-12 by popularity plus paradigm coverage. **Human Languages was not**: its 88 stubs are families and branches, and there is still no note on Latin, Mandarin or Arabic. `ROADMAP.md` holds it with WALS as the candidate instrument.
 
 ## What is deliberately thin
 
@@ -29,7 +37,7 @@ Content. The areas hold their taxonomy and a handful of exemplars, nothing more:
 - **Human Languages**: 7 written notes and 88 topic stubs, across 110 files. The genealogical spine, families and branches, was stubbed on 2026-08-12. **Individual languages are deliberately not stubbed**: the area index names about 199 and which of them earn notes needs a selection principle, with WALS the candidate instrument. See the area index and `ROADMAP.md`.
 - **Computer Languages**: 1 written note (Lisp) and 81 stubs, across 90 files. All eight subfields stubbed 2026-08-12, with 32 individual languages selected by popularity plus paradigm coverage from TIOBE and a second longitudinal source. **Human Languages still has no equivalent selection**: its language layer remains open, with WALS the candidate instrument.
 - **Cryptography**: 3 written notes and 185 topic stubs, across 207 files. **All fourteen subfields are stubbed out**, six at two levels and eight at one, completed 2026-08-12. **The area is now more than half the corpus by file count and has three written notes in it.** That is the intended trade of structure before detail, and it is the largest single thing that needs watching. The subfield vocabulary was rebuilt on 2026-08-12 against three published classifications (see the area index); 14 subfields, of which **Cryptanalysis** is the first to be stubbed out in full. The other 13 hold no content note at all.
-- **Decipherment**: 21 notes, plus the 15 places, 11 people and 51 references that overwhelmingly serve it. The only area worked properly, though the Writing systems entries are the first material in General Linguistics that Decipherment can lean on rather than the reverse.
+- **Decipherment**: 21 written notes and 52 topic stubs, plus the 15 places, 22 people and 55 references that overwhelmingly serve it. The only area whose content preceded its taxonomy: it was stubbed last, on 2026-08-12, filling in around finished work rather than mapping an empty discipline.
 
 The Human Languages notes are worth a caveat: all seven exist because a deciphered script needed a language to point at. The area is currently a by-product of Decipherment rather than a treatment of its own subject.
 
