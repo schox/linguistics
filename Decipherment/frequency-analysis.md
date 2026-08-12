@@ -11,7 +11,7 @@ applies_to:
   - "[[Cryptography]]"
   - "[[Decipherment]]"
   - "[[General Linguistics]]"
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Manual method]]"
 related_to:
   - "[[Adversarial versus accidental encipherment]]"
 status: open

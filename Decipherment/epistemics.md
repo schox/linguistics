@@ -31,3 +31,4 @@ Evidentiary thresholds, falsification criteria, overfitting and pareidolia, why 
 - [What counts as one sign](segmentation-and-transcription.md)
 - [Voynich manuscript](voynich-manuscript.md)
 - [Why a script stays unread](why-scripts-stay-unread.md)
+- [Institutional concentration](../places/institutional-concentration.md)

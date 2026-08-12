@@ -5,7 +5,7 @@ aliases:
 subfield:
   - Formal foundations
   - Computational linguistics
-belongs_to: "[[General Linguistics]]"
+belongs_to: "[[Formal foundations]]"
 related_to:
   - "[[Computer Languages]]"
 status: open

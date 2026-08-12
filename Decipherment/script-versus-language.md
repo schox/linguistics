@@ -5,7 +5,7 @@ aliases:
 subfield:
   - The problem space
   - Writing systems
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[The problem space]]"
 related_to:
   - "[[General Linguistics]]"
   - "[[Human Languages]]"

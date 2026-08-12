@@ -14,7 +14,7 @@ corpus_size: not established here; inscriptions on stelae, lintels, ceramics and
 subfield:
   - Solved decipherments
   - Epistemics
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Solved decipherments]]"
 related_to:
   - "[[Script versus language]]"
   - "[[Egyptian hieroglyphs]]"

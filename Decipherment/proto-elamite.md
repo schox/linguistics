@@ -13,7 +13,7 @@ corpus_size: just over 1,600 pieces, c. 10,000 lines of text (Englund); c. 1,700
 subfield:
   - Unsolved, partial and contested
   - The problem space
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Unsolved, partial and contested]]"
 related_to:
   - "[[Indus script]]"
   - "[[Script versus language]]"

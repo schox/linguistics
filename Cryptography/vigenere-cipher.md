@@ -12,7 +12,7 @@ broken_by:
 subfield:
   - Classical ciphers
   - Cryptanalysis
-belongs_to: "[[Cryptography]]"
+belongs_to: "[[Classical ciphers]]"
 related_to:
   - "[[Frequency analysis]]"
   - "[[Adversarial versus accidental encipherment]]"

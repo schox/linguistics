@@ -5,7 +5,7 @@ aliases:
 subfield:
   - Infrastructure
   - Epistemics
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Infrastructure]]"
 related_to:
   - "[[The evidentiary threshold and unicity distance]]"
   - "[[Is it writing at all? The Indus entropy debate]]"

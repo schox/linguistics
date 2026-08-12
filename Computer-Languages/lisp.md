@@ -12,7 +12,7 @@ subfield:
   - Paradigms
   - Genealogy and lineages
   - Formal foundations
-belongs_to: "[[Computer Languages]]"
+belongs_to: "[[Paradigms]]"
 related_to:
   - "[[The Chomsky hierarchy]]"
 cites:

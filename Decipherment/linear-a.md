@@ -14,7 +14,7 @@ corpus_size: c. 1,427 documents, c. 7,362-7,396 signs
 subfield:
   - Unsolved, partial and contested
   - The problem space
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Unsolved, partial and contested]]"
 related_to:
   - "[[Linear B]]"
   - "[[Script versus language]]"

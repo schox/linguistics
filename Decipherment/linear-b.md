@@ -14,7 +14,7 @@ corpus_size: c. 6,058 inscriptions, of which some 5,000 tablets
 subfield:
   - Solved decipherments
   - The problem space
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Solved decipherments]]"
 related_to:
   - "[[Linear A]]"
   - "[[Script versus language]]"

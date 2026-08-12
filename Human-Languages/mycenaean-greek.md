@@ -11,7 +11,7 @@ status: reference
 subfield:
   - Indo-European
   - Ancient corpus languages
-belongs_to: "[[Human Languages]]"
+belongs_to: "[[Indo-European]]"
 related_to:
   - "[[Script versus language]]"
 cites:

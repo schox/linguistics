@@ -13,7 +13,7 @@ corpus_size: one object; 241 sign-impressions, 45 distinct signs, 61 sign-groups
 subfield:
   - Unsolved, partial and contested
   - Epistemics
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Unsolved, partial and contested]]"
 related_to:
   - "[[The evidentiary threshold and unicity distance]]"
   - "[[Linear A]]"

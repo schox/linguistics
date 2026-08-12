@@ -13,7 +13,7 @@ corpus_size: 243 inscriptions in Ferrara's catalog, most very short; 83 grapheme
 subfield:
   - Unsolved, partial and contested
   - The problem space
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Unsolved, partial and contested]]"
 related_to:
   - "[[Linear A]]"
   - "[[Linear B]]"

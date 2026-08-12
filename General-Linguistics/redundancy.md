@@ -5,7 +5,7 @@ aliases:
 subfield:
   - Computational linguistics
   - Formal foundations
-belongs_to: "[[General Linguistics]]"
+belongs_to: "[[Computational linguistics]]"
 related_to:
   - "[[The evidentiary threshold and unicity distance]]"
   - "[[Is it writing at all? The Indus entropy debate]]"

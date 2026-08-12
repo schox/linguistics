@@ -77,7 +77,7 @@ What the app verified, as against what was written to documentation:
 
 **Deliberately deferred:**
 
-- **Re-parenting existing notes onto their subfield hubs.** Notes still point at their area hubs, a valid chain of length one. Move each area's notes when that area is next worked on; several notes carry two subfields, so this is judgement, not scripting.
+- ~~**Re-parenting existing notes onto their subfield hubs.**~~ **Done 2026-08-12**, as its own batch rather than per area, after the structural review found that 48 of 51 subfield hubs had no children at all. See `DECISIONS.md`.
 - Pruning or repurposing the Tolaria legacy fields in `types/*.md` (`_icon`, `_color`, `_sidebar_label`, `_order`, `_pinned_properties`). At the audit.
 
 ## Next work, in order
@@ -103,7 +103,13 @@ One subfield per batch, taxonomy already in place from each area's `_index.md`. 
    - **Reconcile the 13 `Script` notes against Table 6-1.** Several disagree with the Unicode classification, sometimes defensibly. Ugaritic is `abjad` here and an alphabet in Table 6-1; Linear A is `mixed` here and a logosyllabary there, though it is undeciphered; cuneiform and Egyptian hieroglyphs are `mixed` here and logosyllabaries there. Linear B is `mixed` on a considered decision recorded in `DECISIONS.md` 2026-08-09. Each note should state which classification it follows and why, rather than carrying a bare value.
 
      `types/script.md` now says `logosyllabary` is preferred to `mixed` wherever it applies, so the likely outcome is that cuneiform, Egyptian hieroglyphs, Linear A and Maya move off `mixed` and Linear B stays on it. Do this per note as each area is worked, not as a sweep: each move is a claim about a script and needs a source in the note, which is precisely what a bulk edit would skip.
-4. **Cryptography, the whole area.** Three notes against an index promising roughly eighty topics, and zero commits in nine batches. It is the worst ratio in the vault. The three existing notes are also the oldest and thinnest anywhere: `index-of-coincidence` is 213 words and `kasiski` is 172, and both are load-bearing for the Decipherment area. Repair them in the same batch.
+4. **Cryptography, the whole area, treated as an area in its own right.** Andrew's decision of 2026-08-12: the same coverage ambition as General Linguistics, including the modern applied material, rather than only the parts Decipherment leans on. Thinness here is a real gap in the project's declared scope, not a consequence of it.
+
+   The structural review measured what that means. Ten subfields, and **eight hold no content note at all**: Mechanical and electromechanical, Modern symmetric, Asymmetric, Hashes and integrity, Protocols and deployment, Post-quantum, History and politics, and all of Cryptanalysis beyond three notes. Cryptanalysis has 3, Classical ciphers 1, Theory 1.
+
+   The three existing notes are also the oldest and thinnest anywhere: `index-of-coincidence` is 213 words and `kasiski-examination` is 176, and both are load-bearing for the Decipherment area, which divides by them. Repair them in the same batch rather than adding around them.
+
+   Sourcing is more favorable here than anywhere else in the project, since the classical literature is out of copyright: [Kasiski 1863](references/kasiski-1863.md) is already held and unread, and Shannon 1949 and 1951 are both held.
 5. **General Linguistics, Historical and comparative.** The comparative method, regular sound change, reconstruction. Decipherment uses candidate relatives constantly (Ventris against Greek, Bauer against Semitic) and the vault has never written down what a relative is or how one is established.
 6. **General Linguistics, Typology and universals.** [WALS 2013](references/wals-2013.md) is already held as a Reference and has never been used. This is where word order, alignment and the morphological typology belong; three starter notes from batch 9 defer to it.
 7. **Computer Languages**, which `DECISIONS.md` previously recommended leaving thin. That recommendation was made under argument-first batching and does not survive the change: a general reference cannot have an area with one note in it.

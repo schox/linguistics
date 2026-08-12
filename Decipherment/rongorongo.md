@@ -13,7 +13,7 @@ corpus_size: 25 or 26 authentic objects; c. 14,000 signs; c. 120 base glyphs
 subfield:
   - Unsolved, partial and contested
   - Epistemics
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Unsolved, partial and contested]]"
 related_to:
   - "[[Script versus language]]"
   - "[[The evidentiary threshold and unicity distance]]"

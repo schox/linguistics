@@ -4,7 +4,7 @@ aliases:
   - "Is it writing at all? The Indus entropy debate"
 subfield:
   - Epistemics
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Epistemics]]"
 related_to:
   - "[[The evidentiary threshold and unicity distance]]"
   - "[[Why a script stays unread]]"

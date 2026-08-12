@@ -15,7 +15,7 @@ corpus_size: very large; tens of thousands of tablets from Ashurbanipal's librar
 subfield:
   - Solved decipherments
   - Epistemics
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Solved decipherments]]"
 related_to:
   - "[[Script versus language]]"
   - "[[The evidentiary threshold and unicity distance]]"

@@ -13,7 +13,7 @@ corpus_size: c. 13,000 inscriptions, mostly short
 subfield:
   - The problem space
   - Solved decipherments
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[The problem space]]"
 related_to:
   - "[[Script versus language]]"
 cites:

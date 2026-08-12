@@ -5,7 +5,7 @@ aliases:
 subfield:
   - Epistemics
   - The problem space
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Epistemics]]"
 related_to:
   - "[[Cryptography]]"
   - "[[The evidentiary threshold and unicity distance]]"

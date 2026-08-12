@@ -14,7 +14,7 @@ corpus_size: vast and not usefully counted; see the note below on why that matte
 subfield:
   - Solved decipherments
   - The problem space
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Solved decipherments]]"
 related_to:
   - "[[Script versus language]]"
   - "[[The evidentiary threshold and unicity distance]]"

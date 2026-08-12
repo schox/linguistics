@@ -14,7 +14,7 @@ corpus_size: thousands of tablets from Ugarit; the decipherment used the 1929 an
 subfield:
   - Solved decipherments
   - The problem space
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Solved decipherments]]"
 related_to:
   - "[[Cuneiform]]"
   - "[[Frequency analysis]]"

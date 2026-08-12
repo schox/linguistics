@@ -12,7 +12,7 @@ corpus_size: one manuscript, Beinecke MS 408; 102 folios plus folding leaves
 subfield:
   - Unsolved, partial and contested
   - Epistemics
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Unsolved, partial and contested]]"
 related_to:
   - "[[Is it writing at all? The Indus entropy debate]]"
   - "[[The evidentiary threshold and unicity distance]]"

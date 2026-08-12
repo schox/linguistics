@@ -4,7 +4,7 @@ aliases:
   - "Institutional concentration"
 subfield:
   - Epistemics
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Epistemics]]"
 related_to:
   - "[[Bletchley Park]]"
   - "[[Max Planck Institute for Evolutionary Anthropology, Leipzig]]"

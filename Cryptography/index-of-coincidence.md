@@ -10,7 +10,7 @@ applies_to:
 subfield:
   - Cryptanalysis
   - Theory
-belongs_to: "[[Cryptography]]"
+belongs_to: "[[Cryptanalysis]]"
 related_to:
   - "[[Vigenère cipher]]"
   - "[[Frequency analysis]]"

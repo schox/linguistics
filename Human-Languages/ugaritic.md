@@ -11,7 +11,7 @@ status: reference
 subfield:
   - Afro-Asiatic
   - Ancient corpus languages
-belongs_to: "[[Human Languages]]"
+belongs_to: "[[Afro-Asiatic]]"
 related_to:
   - "[[Akkadian]]"
   - "[[Script versus language]]"

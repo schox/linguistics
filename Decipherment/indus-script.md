@@ -14,7 +14,7 @@ corpus_size: c. 4,000-5,000 inscribed objects; 2,906 texts and 13,372 sign occur
 subfield:
   - Unsolved, partial and contested
   - Epistemics
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Unsolved, partial and contested]]"
 related_to:
   - "[[Is it writing at all? The Indus entropy debate]]"
   - "[[Linear A]]"

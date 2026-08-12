@@ -286,6 +286,28 @@ Also rejected: re-parenting the existing notes onto their new hubs in the same c
 
 **Consequence.** The note count jumps by 48 with no new content, and the per-area figures in `STATUS.md` now measure structure and content mixed. The stubs make the vault look more finished than it is; each one says "Stub hub" in its body so the graph cannot be mistaken for coverage.
 
+## 2026-08-12: Re-parenting, after a structural review measured the hub layer
+
+**Decided.** The 35 content notes whose `belongs_to` pointed at an area hub now point at their subfield hub. `belongs_to` takes exactly one parent on a content note. `Reference` notes stay on their area hubs.
+
+**Why.** A review of the whole taxonomy was run before starting the Cryptography area, on the principle of structure before detail. The vocabulary came out well: 51 subfield values across five areas, every one with a hub, no hub outside a vocabulary, and 47 stubs of uniform shape. Nothing needed re-cutting.
+
+The hub layer was another matter. **48 of 51 subfield hubs had no `belongs_to` children**, while 158 notes pointed straight at one of the five area hubs. The taxonomy existed as a set of nodes with almost no edges into it.
+
+The measurement also corrected an assumption made partway through the review. The hubs' hand-maintained lists of member notes looked badly out of date, sixty memberships short, until `Reference` notes were excluded from the count: references carry `subfield` but hubs rightly do not list them. On content notes the lists were short by exactly one, `places/institutional-concentration.md` on the Epistemics hub, now added. **The hand-maintained lists were accurate; the frontmatter was not.**
+
+That inverted the documented model. `CONVENTIONS.md` said the hierarchy was carried upward by `belongs_to` and that a hub's children were its backlinks, with reverse lists discouraged. In fact the hierarchy was carried downward by the very lists the document discouraged, and the field that was supposed to make them redundant was empty.
+
+**The concrete cost** was that Breadcrumbs, installed the same day to render `belongs_to` as a typed hierarchy, would have drawn five flat fans of 87, 23, 18, 18 and 12 notes. The plugin was chosen for a structure that did not exist in the data.
+
+**One parent, not several.** 31 of the 35 notes carry more than one `subfield` value, so this was the substance of the job rather than an edge case. `belongs_to` takes the primary hub only, read as the first value listed in `subfield`. Pointing at every hub was rejected: `DECISIONS.md` already separates `subfield`, the multi-valued taxonomy, from `belongs_to`, the graph, and multi-parenting would collapse that distinction and turn the tree into a DAG that Breadcrumbs renders as several competing trails. Secondary membership is already recorded by the `subfield` value and by the hub's list, so a third copy would only add a way to disagree.
+
+**Rejected.** Amending the documentation to describe the prose lists as the mechanism. They are accurate today, but they are exactly the hand-maintained reverse list this vault has been burned by before, and keeping them load-bearing would have meant every new note needing an edit in two files.
+
+Also rejected: deleting the lists now that they are redundant. They render on GitHub and in any plain-text reader, where backlinks do not exist, and a stub hub would otherwise have no body. They are demoted to a convenience, with the frontmatter authoritative where the two disagree.
+
+**Consequence.** 19 subfield hubs now have children; the 32 that do not are the subfields with no content written, which is an honest reading rather than a defect. The area hubs keep the references, the stub hubs and the `Person` and `Place` notes that carry no `subfield`.
+
 ## 2026-08-12: The `class` enum, after the typology was written
 
 **Decided.** Writing `General-Linguistics/script-typology.md` measured the `class` vocabulary against its sources for the first time, and found three mismatches. All three are now settled.

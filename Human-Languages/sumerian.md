@@ -11,7 +11,7 @@ status: reference
 subfield:
   - Isolates and small families
   - Ancient corpus languages
-belongs_to: "[[Human Languages]]"
+belongs_to: "[[Isolates and small families]]"
 related_to:
   - "[[Akkadian]]"
   - "[[Script versus language]]"

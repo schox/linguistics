@@ -11,7 +11,7 @@ status: reference
 subfield:
   - Languages of the Americas
   - Ancient corpus languages
-belongs_to: "[[Human Languages]]"
+belongs_to: "[[Languages of the Americas]]"
 related_to:
   - "[[Script versus language]]"
 cites:

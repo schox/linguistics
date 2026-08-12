@@ -4,7 +4,7 @@ aliases:
   - "Computational decipherment: three distinct tasks"
 subfield:
   - Computational method
-belongs_to: "[[Decipherment]]"
+belongs_to: "[[Computational method]]"
 related_to:
   - "[[General Linguistics]]"
   - "[[Computer Languages]]"
