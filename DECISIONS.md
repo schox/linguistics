@@ -286,6 +286,27 @@ Also rejected: re-parenting the existing notes onto their new hubs in the same c
 
 **Consequence.** The note count jumps by 48 with no new content, and the per-area figures in `STATUS.md` now measure structure and content mixed. The stubs make the vault look more finished than it is; each one says "Stub hub" in its body so the graph cannot be mistaken for coverage.
 
+## 2026-08-12: The `class` enum, after the typology was written
+
+**Decided.** Writing `General-Linguistics/script-typology.md` measured the `class` vocabulary against its sources for the first time, and found three mismatches. All three are now settled.
+
+**`logographic` becomes `logosyllabary`.** The Unicode Standard uses the second term and reserves it for systems that write words or morphemes *and* sound, on the ground that pure logography is not attested at scale. Baroni keeps `logographic` for the pleremic category, so the two sources genuinely differ, and the encoding-facing term is the better description of every script that would carry it.
+
+The deciding factor was cost rather than terminology: **`logographic` had no users.** Seven values, and the two that are standard typology (`abugida`, `logographic`) were both unused while ten of thirteen notes carried one of the two that are not. Renaming an unused value is two lines; renaming it after cuneiform, Egyptian hieroglyphs and Linear A have been moved onto it is a sweep across notes that each need a source. It was done at the moment it was free.
+
+**`mixed` and `undetermined` stay, and are now documented as local terms.** Neither source uses either as a category name, and `types/script.md` says so rather than presenting them as standard.
+
+- `mixed` is one script whose signs are of more than one kind. **Unicode's "composite system" is not the equivalent**, which is the trap worth recording: that phrase describes one language's writing using several scripts, as Japanese uses Han, two kana and Latin. For a single script mixing logograms and phonograms, Unicode's answer is `logosyllabary`, so the type file now directs writers there first and treats `mixed` as the residue.
+- `undetermined` looked redundant against `decipherment_status` and is not. The two vary independently, and the corpus already demonstrates it: Cypro-Minoan is a syllabary nobody can read. `undetermined` means the type is not established, which is a different fact from the script being unread, and keeping them apart is what makes it possible to notice that Unicode types Linear A as a logosyllabary while nobody can read it.
+
+**`featural` stays out.** It is standard in both sources, for Hangul, and nothing here needs it. An enum value with no note behind it is a claim about coverage that the corpus does not support. `types/script.md` records the omission as deliberate, with the condition for adding it.
+
+**Rejected.** Adopting Unicode's Table 6-1 wholesale as the vocabulary. It is built for encoding, it excludes every script Unicode has not encoded (which is four of the thirteen here, including the Indus script), and it assigns types to undeciphered scripts on structural inference. The standard itself calls the table "an approximate guide, rather than a definitive classification".
+
+Also rejected: reclassifying the six `mixed` notes in the same change. Each move is a claim about a particular script and needs a source in that note; a bulk edit is exactly the thing that would skip the sourcing. Recorded in `ROADMAP.md` as per-note work.
+
+**Consequence.** Every value in the enum is now either standard vocabulary or explicitly flagged as local. The checker rejects `logographic`, verified against a fixture before commit.
+
 ## 2026-08-12: Source quality, announcements, artifact provenance, and permission to argue
 
 **Decided.** Andrew's statement of policy, recorded because four of its consequences change the schema or the checker rather than only the prose.

@@ -34,7 +34,13 @@ A writing system, which is not the same thing as a language. Cuneiform wrote fiv
 
 ## Fields
 
-- `class`: `alphabet` | `abjad` | `abugida` | `syllabary` | `logographic` | `mixed` | `undetermined`.
+- `class`: `alphabet` | `abjad` | `abugida` | `syllabary` | `logosyllabary` | `mixed` | `undetermined`. The standard categories are defined in [Script typology](../General-Linguistics/script-typology.md), from three classifications that do not fully agree; the note says where they diverge. Two of the values below are local terms and are marked as such, because no source consulted uses either as a category name.
+  - `alphabet`, `abjad`, `abugida`, `syllabary`: standard, and defined in that note.
+  - `logosyllabary`: signs write words or morphemes, with subsidiary use for syllabic sound. This is the Unicode Standard's term, adopted here in preference to `logographic` because pure logography is not attested at scale: every system so labeled also writes sound.
+  - `mixed`: **local term.** One script whose signs are of more than one kind, where no single standard category fits. Do not reach for it first. Where the script writes words or morphemes alongside phonetic signs, `logosyllabary` is the standard answer and is preferred. Note also that Unicode's "composite system" is *not* the equivalent: that describes one language's writing using several scripts, as Japanese uses Han, two kana and Latin, which is a different claim.
+  - `undetermined`: **local term.** The type has not been established. This is **not** the same as `decipherment_status: undeciphered`, and the two vary independently: Cypro-Minoan is recorded as a syllabary that nobody can read. Use `undetermined` where sign inventory and structure do not settle the type, and say in the note what would.
+
+  **`featural` is deliberately absent.** It is a standard category in both sources, applied to Hangul, and no note here needs it. Add the value with the first note that does, rather than carrying a value nothing uses.
 - `decipherment_status`: `deciphered` | `partial` | `contested` | `undeciphered`.
 - `writes`: wikilinks to the `Language` notes it records, where known. Inverse of `written_in`.
 - `found_at`: wikilinks to `Place` notes for the sites the corpus came from.

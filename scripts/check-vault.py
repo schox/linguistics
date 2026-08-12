@@ -110,8 +110,13 @@ REQUIRED = {
 ENUMS = {
     ("Language", "era"): {"living", "historical", "extinct", "reconstructed"},
     ("Language", "status"): {"interested", "learning", "reference", "reading", "fluent"},
+    # 'logosyllabary' rather than 'logographic', following the Unicode
+    # Standard: pure logography is not attested at scale. 'mixed' and
+    # 'undetermined' are local terms with no counterpart in the sources;
+    # types/script.md says what they mean and when not to use them.
+    # 'featural' is deliberately absent until a note needs it.
     ("Script", "class"): {"alphabet", "abjad", "abugida", "syllabary",
-                          "logographic", "mixed", "undetermined"},
+                          "logosyllabary", "mixed", "undetermined"},
     ("Script", "decipherment_status"): {"deciphered", "partial", "contested", "undeciphered"},
     ("Cipher", "category"): {"classical", "mechanical", "symmetric",
                              "asymmetric", "hash", "protocol"},
