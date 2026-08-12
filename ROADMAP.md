@@ -105,7 +105,11 @@ One subfield per batch, taxonomy already in place from each area's `_index.md`. 
      `types/script.md` now says `logosyllabary` is preferred to `mixed` wherever it applies, so the likely outcome is that cuneiform, Egyptian hieroglyphs, Linear A and Maya move off `mixed` and Linear B stays on it. Do this per note as each area is worked, not as a sweep: each move is a claim about a script and needs a source in the note, which is precisely what a bulk edit would skip.
 4. **Cryptography, the whole area, treated as an area in its own right.** Andrew's decision of 2026-08-12: the same coverage ambition as General Linguistics, including the modern applied material, rather than only the parts Decipherment leans on. Thinness here is a real gap in the project's declared scope, not a consequence of it.
 
-   The structural review measured what that means. Ten subfields, and **eight hold no content note at all**: Mechanical and electromechanical, Modern symmetric, Asymmetric, Hashes and integrity, Protocols and deployment, Post-quantum, History and politics, and all of Cryptanalysis beyond three notes. Cryptanalysis has 3, Classical ciphers 1, Theory 1.
+   **The vocabulary was rebuilt on 2026-08-12** against three published classifications, so the cut of the field is citable rather than invented: [Menezes et al. 1996](references/menezes-et-al-1996.md) as the primary instrument, [Boneh and Shoup 2023](references/boneh-shoup-2023.md) for what a 1996 handbook cannot cover, and NIST's activity areas for what is standardized. Ten values became fourteen. See `DECISIONS.md` for what the instruments turned up and the two deliberate deviations from them.
+
+   Three of the fourteen have any content: Cryptanalysis 3, Classical ciphers 1, Theory 1. **Eleven hold no content note at all.**
+
+   **Next on this area, and the reason the vocabulary came first:** the stub inventory, one batch per subfield, on the model of the Levels of analysis child topics. Each stub cites the instrument section that names the topic, which is what makes it a placeholder for a real subject rather than a guess.
 
    The three existing notes are also the oldest and thinnest anywhere: `index-of-coincidence` is 213 words and `kasiski-examination` is 176, and both are load-bearing for the Decipherment area, which divides by them. Repair them in the same batch rather than adding around them.
 

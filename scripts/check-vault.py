@@ -53,6 +53,7 @@ PROTECTED = [
     "UNESCO World Heritage Centre",          # the body is named this
     "Easter Island Artefacts",               # Berthin 2024, title
     "Third Programme",                       # the BBC service was named this
+    "Centre for Applied Cryptographic Research",   # the Waterloo centre is named this
 ]
 
 # Stems are matched WITHOUT a leading \b so prefixed forms are caught too

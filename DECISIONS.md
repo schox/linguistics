@@ -286,6 +286,31 @@ Also rejected: re-parenting the existing notes onto their new hubs in the same c
 
 **Consequence.** The note count jumps by 48 with no new content, and the per-area figures in `STATUS.md` now measure structure and content mixed. The stubs make the vault look more finished than it is; each one says "Stub hub" in its body so the graph cannot be mistaken for coverage.
 
+## 2026-08-12: The Cryptography vocabulary is rebuilt from published classifications
+
+**Decided.** Before writing any Cryptography content, the area's subfield vocabulary was checked against three published classifications and revised from ten values to fourteen. Andrew's instruction: get a standard accepted taxonomy first, and let the detail emerge later.
+
+**Why an instrument at all.** "The important algorithms" and "the main topics" are judgements, and a judgement made without a source becomes an opinion baked into structure. That is worse than an unsourced sentence: prose can be flagged and corrected, but a taxonomy is invisible once built and everything written afterward inherits its shape. The three instruments make the cut citable, and make deviations from it statable as deviations.
+
+**The instruments.** [Menezes et al. 1996](references/menezes-et-al-1996.md), whose fifteen chapters and roughly ninety sections are the primary map; [Boneh and Shoup 2023](references/boneh-shoup-2023.md), free and current, for authenticated encryption, security definitions, lattices and the advanced protocols; and NIST's cryptographic activity areas for what is standardized.
+
+**Seven gaps they exposed**, each a chapter or named area in an instrument and absent from the old vocabulary: randomness and key generation (a whole handbook chapter); key management and key establishment (two chapters); digital signatures; identification and entity authentication; the advanced protocols (zero-knowledge, threshold, multi-party computation); implementation and side channels; and the mathematical foundations.
+
+The sharpest was **digital signatures**, which had been four words inside "Asymmetric". All three instruments give signing its own chapter, because signing is not encryption. Filing it under asymmetric encryption is the same class of error as filing `Script` under `Language`.
+
+**Quantum was conflated, and Andrew caught it.** The old vocabulary had one box, "Post-quantum", holding Shor and Grover alongside lattice schemes. Three separate things were in it. NIST states the distinction in its own words: post-quantum cryptography is "a defense against potential cyberattacks from quantum computers", built on classical mathematics, while quantum cryptography "is based fundamentally on quantum physics". So *Post-quantum cryptography* is narrowed to the classical algorithms, *Quantum cryptography* is added for the physics-based subject, and the quantum attacks move to Cryptanalysis.
+
+**Two deliberate deviations**, both recorded on the area index so they read as choices:
+
+1. *Mechanical and electromechanical* has no support in any instrument, all three being modern applied texts. It stays, because Enigma, Lorenz and Bletchley Park are where this area meets Decipherment.
+2. *Shor and Grover* are filed under Cryptanalysis rather than Post-quantum cryptography. They are attacks, and attacks live with attacks. Most treatments put them with the remedy they motivate, so this is a departure from common practice rather than from a classification.
+
+**Rejected.** Adopting the handbook's chapter list wholesale as the vocabulary. It is a 1996 book: no authenticated encryption as a named primitive, no post-quantum, no side channels, and a block-cipher chapter that predates AES. It is an instrument, not a template.
+
+Also rejected: splitting to sixteen values, with mathematical foundations, advanced protocols and implementation each standing alone. Andrew's steer was restraint, so those fold into Theory, Protocols and deployment, and Cryptanalysis respectively, and can be split later if the content justifies it.
+
+**Consequence.** Three hubs were renamed while the values had no users, which made the change nearly free: `modern-symmetric`, `asymmetric` and `post-quantum` became `symmetric-cryptography`, `public-key-cryptography` and `post-quantum-cryptography`. Four hubs are new. **Quantum cryptography's topic list is provisional and says so**, because none of the three instruments covers the subject and its internal structure is not yet drawn from anything.
+
 ## 2026-08-12: Re-parenting, after a structural review measured the hub layer
 
 **Decided.** The 35 content notes whose `belongs_to` pointed at an area hub now point at their subfield hub. `belongs_to` takes exactly one parent on a content note. `Reference` notes stay on their area hubs.
