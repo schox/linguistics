@@ -24,6 +24,30 @@ Lives in the area folder it most belongs to. Cross-cutting concepts are addition
 
 Worked example: `Decipherment/evidentiary-threshold-and-unicity-distance.md`.
 
+## Body
+
+A `Concept` note answers: what the term means, how it is used, and where its edges are.
+
+```markdown
+# <Concept name>
+
+<The definition, in one or two sentences.>
+
+## <Sections named for parts of the subject>
+   Phonology's are "Phonemes and allophones", "Notation",
+   "Phonotactics". Never "Why this matters here".
+
+## Child topics
+   The concepts under this one that should become notes of
+   their own. Naming them is how breadth stays visible before
+   it is written, and it is where the next batch comes from.
+
+## Open questions
+## Sources
+```
+
+The six notes under `General-Linguistics/levels-of-analysis.md` are the worked examples; `General-Linguistics/phonology.md` is closest to the intended shape.
+
 ## Fields required on every content note
 
 These are mandatory and are checked by `scripts/check-vault.py`:

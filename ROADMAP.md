@@ -32,6 +32,9 @@ That is a deliberate trade. The alternative, resolving every open question as it
 5. Content retrieved through the Tavily extraction service rather than seen directly. Those notes say so; the audit should confirm the pages still say what was extracted.
 6. Empty identifier fields, distinguishing "not looked up" from "searched and probably absent". The vault has been careful about this distinction and it should be verified.
 7. Andrew's standing questions, at the foot of `STATUS.md`.
+8. **The argument-framed section headings in the older notes.** A survey on 2026-08-12 found 208 distinct H2 headings across roughly ninety content notes, of which only four are structural. About thirty are named for a subject's relevance to the vault rather than for the subject: "Why this matters for the vault's central claim", "Why it belongs in a linguistics vault", "Why she matters here", "Why this reframes the whole area". They are the 2026-08-11 thesis-voice failure surviving in structural form, in the Decipherment, people and places notes written before that decision. The drafting policy now forbids them going forward; carrying it back is audit work, not a reason to stop the breadth program.
+
+   Worst first when it comes: `Decipherment/linear-b.md`, which is 430 words with a single content section, and that section is an argument. `Cryptography/kasiski-examination.md` (176 words) and `Cryptography/index-of-coincidence.md` (213) have no content sections at all, and `ROADMAP.md` already schedules their repair with the Cryptography batch.
 
 ## Blocked on Andrew
 

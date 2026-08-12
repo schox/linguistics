@@ -236,7 +236,37 @@ If a file's status is unclear, leave it out and flag it rather than guess.
 - `Reference` notes: citation key, `author-year`.
 - MOC notes: `_index.md` inside the folder they describe.
 
+## Drafting
+
+The schema in `types/` says what a note must carry. This says what a note should read like, and each type file now carries a **body skeleton** under `## Body` alongside its frontmatter template.
+
+Both are conventions, not checks. `scripts/check-vault.py` validates frontmatter and the presence of `## Sources`; it does not read prose and is not going to. Drafting is a discipline, like the evidentiary standard it serves.
+
+**A note answers its own title.** This is the test for whether a note is finished, and it is deliberately not a word count. A reader who arrives cold at `Phonology` should leave knowing what phonology is. A reader who arrives at `Kasiski examination` should be able to perform one. Length follows the subject and the sources: 176 words is too thin for a method the Decipherment area runs on, and about right for a minor identifier note. Where the sources will not support an answer, that is an `## Open questions` entry, never a reason to pad.
+
+**Open with the definition.** The first sentence says what the subject is. No throat-clearing, no announcement of what the note will cover, no restatement of the vault's purpose. Then a short orientation: when, where, how big, who.
+
+**Name a section for its subject, not for its relevance.** `## Phonotactics`, not `## Why phonotactics matters here`. This is the 2026-08-11 decision on entries, applied to structure: a heading that frames content as an argument for the vault will be filled with an argument for the vault, and the reference layer does not get built. About thirty legacy sections in the older Decipherment, people and places notes are named this way; they are recorded against the audit in `ROADMAP.md` rather than repaired piecemeal.
+
+**Prose by default.** Lists are for genuine enumerations: sign inventories, sound changes, code lists, child topics, the sides of a dispute. A list of full sentences is usually a paragraph that has lost its connective tissue.
+
+**Attribute in the sentence, not only in `## Sources`.** A reader should know whose claim it is without scrolling. "Rao and colleagues argue", "Farmer, Sproat and Witzel reply", "Englund's own diagnosis is". `## Sources` records where it came from; the sentence records whose it is.
+
+**Mark the vault's own reasoning as the vault's own.** Where a note computes, compares or infers, say so in the prose: "computed here", "the figure is derived from", "no source states this directly". Derived numbers additionally show their inputs, per the rule above.
+
+**Hedge to the evidence, and only to the evidence.** Say which of three things is true: established, contested, or unknown. "Probably", "arguably" and "it seems" are not calibration, they are a way of writing an unsourced claim without owning it. Contested means attributed to its sides; unknown means `## Open questions`.
+
+**Tense.** Present for what is the case, including for dead systems, since the system still has the properties it had: "Linear B has about 87 syllabic signs". Past for events: "Ventris announced the decipherment in 1952". A script or language that is no longer used is extinct in the past tense and describable in the present.
+
+**Voice.** The vault does not address the reader as "you" and does not write as "I". Where the vault itself is doing something, name it: "this vault holds", "the comparison here is". Dagger for extinct languages in prose lists, per `## Style`.
+
+**Link on first mention per note, then stop.** Repeated wikilinks to the same note add nothing to the graph and clutter the sentence. `check-vault.py --report` lists notes that name an existing note without linking it once.
+
+**`Doc` notes are exempt** from all of the above. `README.md`, `ROADMAP.md` and this file are working documents, not reference entries.
+
 ## Style
+
+The mechanical layer under `## Drafting`.
 
 **International English (US spelling) in this vault.** Use `-ize` and `-ization` (organize, standardize, industrialization), `center`, `color`, `license`, `program`, `catalog`, `paleographic`. This is a deliberate exception to Andrew's usual Australian English: the vault's subject matter and its sources are overwhelmingly international, and locale can be changed at the point any derived work is produced.
 

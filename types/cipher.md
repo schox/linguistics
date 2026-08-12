@@ -39,6 +39,31 @@ A cipher, cryptographic algorithm or system. Lives in `Cryptography/`.
 
 Worked example: `Cryptography/vigenere-cipher.md`.
 
+## Body
+
+A `Cipher` note answers: what the algorithm does, what breaks it, and where it sits historically.
+
+```markdown
+# <Cipher name>
+
+<What kind of cipher it is, and when it appeared.>
+
+## How it works
+   The mechanism, with a worked example on a short plaintext.
+
+## Cryptanalysis
+   What defeats it, and what that costs in text or computation.
+   Link the `Method` notes named in `broken_by`.
+
+## History and use
+   Who used it, when, and what displaced it.
+
+## Open questions
+## Sources
+```
+
+**Worked examples use obviously fictitious keys and plaintexts.** Real keys, passwords, tokens and seed phrases never enter this vault, in any note, in any form, however illustrative. See the intake rules in `CONVENTIONS.md`.
+
 ## Fields required on every content note
 
 These are mandatory and are checked by `scripts/check-vault.py`:

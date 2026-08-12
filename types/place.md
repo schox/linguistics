@@ -51,3 +51,33 @@ Not every university anyone attended, and not every find-spot.
 - `geonames`: modern geographic identifier.
 - `pleiades`: the community gazetteer of ancient places, the right identifier for archaeological sites.
 - `ror`: Research Organization Registry, the standard identifier for research institutions.
+
+## Body
+
+A `Place` note answers: what is there, what came out of it or happened there, and when it mattered.
+
+```markdown
+# <Place name>
+
+<What it is and where, in a sentence.>
+
+## The site  (or: The institution)
+   For a site: excavation history, who dug it and when, and
+   what condition the material was in.
+   For an institution: what concentrated there, under whom.
+
+## What it produced
+   The corpus, the finds, or the work. This is the section
+   that `found_at` and `worked_at` point at, and it is the
+   reason the note exists. Counts carry their sources.
+
+## Period
+   `flourished` in frontmatter; the prose says on what evidence,
+   which for an ancient site is usually a stratigraphic or
+   ceramic argument rather than a date.
+
+## Open questions
+## Sources
+```
+
+Sites are causally upstream of the decipherment argument, since excavation sets corpus size and corpus size decides decipherability. The corpus section therefore carries counts and their provenance, not atmosphere.

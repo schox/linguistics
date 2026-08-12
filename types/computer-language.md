@@ -44,6 +44,37 @@ A programming, markup, query or formal language. Lives in `Computer-Languages/`.
 
 Worked example: `Computer-Languages/lisp.md`.
 
+## Body
+
+A `ComputerLanguage` note answers: what the language is for, what it looks like, where it came from, and what it changed.
+
+```markdown
+# <Language name>
+
+<What it is, when it appeared, and who designed it.>
+
+## Design
+   The model of computation, the type discipline, and the
+   syntax in a short example.
+
+## Lineage
+   What it descends from and what descends from it.
+   `lineage` and `influenced_by` carry the same relation in
+   frontmatter; the prose says what was actually inherited.
+
+## Implementation
+   Compilation or interpretation, and notable implementations.
+
+## Reception and use
+   What it was adopted for, and what it displaced.
+
+## Child topics
+## Open questions
+## Sources
+```
+
+The comparison with human language is a topic to be argued in its own note, not a metaphor to reach for in this one.
+
 ## Fields required on every content note
 
 These are mandatory and are checked by `scripts/check-vault.py`:

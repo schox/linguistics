@@ -49,6 +49,43 @@ A writing system, which is not the same thing as a language. Cuneiform wrote fiv
 
 Worked example: `Decipherment/linear-b.md`.
 
+## Body
+
+A `Script` note answers: what the signs are, what they wrote, how much survives, and how far it can be read.
+
+```markdown
+# <Script name>
+
+<What kind of writing system it is, its period, and its status.>
+
+## The signs
+   Inventory size, sign classes, direction of writing, and what
+   a sign is taken to be. Say who segmented the corpus: that is
+   a decision taken before any statistic, not an observation.
+
+## The corpus
+   How much survives, on what, from where. `corpus_size` and
+   `found_at` carry the same facts in frontmatter; the prose
+   says what the figures are counts of and which are derived.
+
+## The language, or the question of it
+   What it writes, or why that is unknown. Link the `Language`
+   notes named in `writes`.
+
+## Decipherment
+   What is read, what is not, and on what evidence. Attribute
+   contested readings to their proponents.
+
+## Encoding
+   ISO 15924, Unicode block, or the recorded absence of either.
+
+## Child topics
+## Open questions
+## Sources
+```
+
+Do not name a section for the script's relevance to the vault. "Why it was solvable" is a heading for a synthesis note; in a `Script` note that material is described under `## Decipherment`.
+
 ## Fields required on every content note
 
 These are mandatory and are checked by `scripts/check-vault.py`:

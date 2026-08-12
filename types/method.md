@@ -32,6 +32,36 @@ These are the notes most likely to belong in several areas at once, which is why
 
 Worked example: `Decipherment/frequency-analysis.md`.
 
+## Body
+
+A `Method` note answers: what the technique does, how to perform it, what it assumes, and where it fails.
+
+```markdown
+# <Method name>
+
+<What it does, and the problem it was invented for.>
+
+## How it works
+   Enough to perform it, with a worked example on real or
+   plausible data. A method note that cannot be applied from
+   its own description is not finished.
+
+## What it assumes
+   The conditions under which it is valid. This is the section
+   that stops a method being carried into an area where its
+   assumptions do not hold, which is the standing risk in a
+   vault that moves technique between cryptanalysis and
+   decipherment.
+
+## Where it is used
+   Across areas. `applies_to` carries the same in frontmatter.
+
+## Open questions
+## Sources
+```
+
+Method notes are the ones most likely to be read by someone who wants to use the technique, which is why the worked example is not optional.
+
 ## Fields required on every content note
 
 These are mandatory and are checked by `scripts/check-vault.py`:

@@ -48,6 +48,36 @@ Fill wherever they exist; they join the note to external catalogs rather than du
 
 Worked example: `Human-Languages/etruscan.md`.
 
+## Body
+
+A `Language` note answers: whose language it is, where it sits in the family tree, how it is attested, and what it looks like.
+
+```markdown
+# <Language name>
+
+<What it is, where and when spoken, living or extinct.>
+
+## Classification
+   Family and branch. Contested placements are attributed to
+   their proponents, not resolved silently.
+
+## Attestation
+   For a corpus language: what survives, from when, in what
+   script, and how much. Link the `Script` notes named in
+   `written_in`.
+
+## Structure
+   A sketch across the levels of analysis: sound system,
+   morphology, syntax. Enough to characterize the language,
+   not a grammar of it.
+
+## Child topics
+## Open questions
+## Sources
+```
+
+Speaker numbers for a living language carry a date and a source, because the figure moves. Extinct languages take the dagger in prose lists.
+
 ## Fields required on every content note
 
 These are mandatory and are checked by `scripts/check-vault.py`:

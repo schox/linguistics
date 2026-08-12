@@ -10,7 +10,9 @@ updated: 2026-08-09
 
 **The type definitions are the authoritative schema.** Where this folder and prose elsewhere disagree, these files win, and the disagreement is a bug to fix.
 
-Each file declares the type's frontmatter template, plus the allowed values for each field. Read the one for the type you are writing before you write it. The underscore-prefixed fields (`_icon`, `_color`, `_sidebar_label`, `_order`, `_pinned_properties`) are Tolaria legacy that Obsidian ignores; they stay as harmless metadata until the audit prunes or repurposes them.
+Each file declares the type's frontmatter template, plus the allowed values for each field, plus a **`## Body` skeleton** for the note's prose. Read the one for the type you are writing before you write it. The underscore-prefixed fields (`_icon`, `_color`, `_sidebar_label`, `_order`, `_pinned_properties`) are Tolaria legacy that Obsidian ignores; they stay as harmless metadata until the audit prunes or repurposes them.
+
+**The skeletons are guidance, not enforcement.** `scripts/check-vault.py` validates frontmatter and the presence of `## Sources`; it does not read prose. A skeleton is the shape a note of that type should take unless the subject gives a reason to differ, and the general rules behind them are in `CONVENTIONS.md` under `## Drafting`.
 
 ## Entity types
 
@@ -38,5 +40,7 @@ Each file declares the type's frontmatter template, plus the allowed values for 
 ## Common rules
 
 Every content note carries `subfield`, `belongs_to` and `status`, and usually `related_to` and `cites`. `MOC`, `Doc` and `Type` notes are exempt.
+
+Every content note opens with a definition, names its sections for its subject rather than for its relevance to the vault, and ends with `## Sources`. `Doc` is exempt from the drafting policy entirely; see `CONVENTIONS.md`.
 
 Wikilink values must be quoted: `"[[Cryptography]]"`. Unquoted, YAML reads `[[Cryptography]]` as a nested list and the relationship silently fails.

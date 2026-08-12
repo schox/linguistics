@@ -286,6 +286,24 @@ Also rejected: re-parenting the existing notes onto their new hubs in the same c
 
 **Consequence.** The note count jumps by 48 with no new content, and the per-area figures in `STATUS.md` now measure structure and content mixed. The stubs make the vault look more finished than it is; each one says "Stub hub" in its body so the graph cannot be mistaken for coverage.
 
+## 2026-08-12: A drafting policy, and a body skeleton per type
+
+**Decided.** `CONVENTIONS.md` gains a `## Drafting` section, and every type file in `types/` gains a `## Body` skeleton beside its frontmatter template. Guidance, not enforcement: `scripts/check-vault.py` continues to validate frontmatter and the presence of `## Sources`, and continues not to read prose.
+
+**Why.** The vault specified its schema completely and its prose not at all, and it showed. A survey found **208 distinct H2 headings across roughly ninety content notes**, of which four are structural (`## Sources`, `## Open questions`, and the two stub-hub headings). Every note was inventing its own shape. Worse, about thirty of those headings are named for a subject's relevance to the vault rather than for the subject: "Why this matters for the vault's central claim", "Why she matters here", "Why it belongs in a linguistics vault".
+
+That is the 2026-08-11 decision's failure mode surviving in structural form. That decision changed the prose and never touched the headings, and a heading is not decoration: **a section named "Why this matters here" will be filled with an argument about why it matters here.** `Decipherment/linear-b.md` is the demonstration. The vault's flagship solved script gets 430 words under one content heading, "Why it was solvable", and describes almost nothing about the script itself.
+
+Meanwhile the good shape already existed and had never been written down. The six batch 9 entries had converged on subject-named sections, then `## Child topics`, `## Open questions`, `## Sources`. The skeletons codify what those notes do.
+
+**Rejected: enforcing the skeleton in the checker.** It would fail roughly forty existing notes on day one and hold the build red until legacy prose was rewritten, which inverts the priority: breadth is the program, and the legacy headings are audit work. It would also push the checker toward being a prose linter, which is a different tool with a much worse false-positive rate.
+
+**Rejected: a minimum word count.** The obvious lever, and wrong. It is gameable by padding, which is the exact failure mode the evidentiary standard exists to prevent, and it is wrong for short subjects. The test is instead stated as a question: **does the note answer its own title for a reader who arrived cold?** `Cryptography/kasiski-examination.md` fails that test at 176 words because you cannot perform a Kasiski examination from it; a short identifier note passes at the same length.
+
+**Rejected: rewriting the legacy now.** Recorded as item 8 of the deferred audit in `ROADMAP.md`, with the worst offenders named. Those notes are sourced and accurate; they are shaped wrongly, which is a real but lesser defect than the areas that have no notes at all.
+
+**Consequence.** `Doc` notes are explicitly exempt: `README.md`, `ROADMAP.md`, `STATUS.md` and this file are working documents and are allowed to argue and to address the reader. Everything else opens with a definition, names sections for the subject, attributes claims in the sentence, and marks the vault's own reasoning as the vault's own.
+
 ## 2026-08-12: The checker runs in CI, and the app is not trusted to preserve the vault
 
 **Decided.** `scripts/check-vault.py` runs as a GitHub Action on every push to `main` and on every pull request. The advisory sweeps (`--report`, `--questions`) run in the same job and never fail the build; they are printed so the run log carries the worklist.

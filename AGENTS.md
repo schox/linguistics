@@ -35,6 +35,10 @@ Analysis, interpretation, cross-area synthesis and the vault's own reasoning are
 
 This was learned the hard way; `DECISIONS.md` records the batch that had to be written twice. The failure is seductive because each individual digression is defensible. Judge it at the level of the note: if someone came to this note for its title, does the note answer that?
 
+**Before drafting, read two things**: `CONVENTIONS.md` under `## Drafting`, which is the writing policy, and the `## Body` skeleton in the `types/` file for the type you are about to write. The skeleton is the shape a note of that type takes unless its subject gives a reason to differ. Neither is enforced by the checker, which does not read prose, so both are discipline rather than tooling.
+
+The one that matters most in practice: **name a section for its subject, not for its relevance to this vault.** `## Phonotactics`, not `## Why phonotactics matters here`. A relevance-framed heading gets filled with an argument, which is how the failure above happens even to someone who has read the paragraph warning against it.
+
 `belongs_to` carries the topic hierarchy, chaining from a note to its parent up to the area hub. See `CONVENTIONS.md`.
 
 ## The evidentiary standard

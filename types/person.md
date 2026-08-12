@@ -45,6 +45,33 @@ Otherwise they stay as an author string in the `authors` field of a `Reference` 
 
 Use `worked_at` to link the `Place` notes where they did the relevant work.
 
+## Body
+
+A `Person` note answers: who they were, what they established, and what turns on it. It is a biography only so far as the work requires.
+
+```markdown
+# <Full name>
+
+<Who they were, their dates, and what they are known for.>
+
+## Training and career
+   Where they worked and on what. Link `Place` notes via
+   `worked_at`.
+
+## What they established
+   The contribution, stated as a result rather than as a story.
+   Where credit was disputed, withheld or misassigned, say so
+   with sources: credit is part of the record.
+
+## Key works
+   Link the `Reference` notes.
+
+## Open questions
+## Sources
+```
+
+Not "Why he matters here". A person's standing in the vault is carried by `field`, `belongs_to` and the backlinks; a section arguing for their inclusion is the inclusion test leaking into the prose, and it is the commonest fault in the existing people notes.
+
 ## Living people
 
 Notes on living people stick to documented professional contribution, sourced. No unsourced biographical claim, no health or personal-life detail, no political characterization. If a fact cannot be verified now, leave it out and say so in the note rather than reproducing what you remember.
