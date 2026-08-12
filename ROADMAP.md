@@ -121,7 +121,18 @@ One subfield per batch, taxonomy already in place from each area's `_index.md`. 
 5. **General Linguistics, Historical and comparative.** The comparative method, regular sound change, reconstruction. Decipherment uses candidate relatives constantly (Ventris against Greek, Bauer against Semitic) and the vault has never written down what a relative is or how one is established.
 6. **General Linguistics, Typology and universals.** [WALS 2013](references/wals-2013.md) is already held as a Reference and has never been used. This is where word order, alignment and the morphological typology belong; three starter notes from batch 9 defer to it.
 7. **Computer Languages**, which `DECISIONS.md` previously recommended leaving thin. That recommendation was made under argument-first batching and does not survive the change: a general reference cannot have an area with one note in it.
-8. **Human Languages**, currently seven notes that all exist because a script needed something to point at.
+8. **Human Languages.** The genealogical spine was stubbed on 2026-08-12: 88 notes covering the families and branches named in the area index, plus the topics of the four non-genealogical groupings.
+
+   **The language layer is blocked on a selection principle**, and this is the one open decision left by the taxonomy program. The area index names roughly 199 individual languages. Stubbing all of them is the outcome Andrew ruled out ("we don't want every one that ever existed"); stubbing a hand-picked subset would put an unsourced judgement into the structure, where it is invisible and inherited.
+
+   **[WALS 2013](references/wals-2013.md) is the candidate instrument**, held here since the beginning and never used. Its introduction defines a 100-language sample and a further 100, on the stated principle that a good sample should "maximize both genealogical and areal diversity". Verified 2026-08-12.
+
+   Two things to settle before adopting it:
+
+   - The sample optimizes for typological diversity, not prominence, so it will include languages nobody would call important and omit ones everybody would. It also omits the classical and ancient corpus languages this corpus needs for Decipherment, which would have to be added on a separate and stated basis.
+   - **The list is not conveniently retrievable.** The WALS site serves it through a JavaScript table rather than as a file, and the bulk download URL tried on 2026-08-12 returned 404. The CLDF release is the likely route; see `_data-sources.md`.
+
+   Four `Language` notes are owed for reasons that need no selection principle at all, because the corpus already refers to them: Rapanui, Coptic, Old Persian and Hittite. They are listed among the standalone items below.
 
 Remaining General Linguistics subfields (Sociolinguistics, Psycholinguistics and acquisition, Computational linguistics, Semiotics and philosophy of language, Etymology and lexicography) follow. Computational linguistics should absorb the statistical-language-model note described at the foot of this section.
 

@@ -12,8 +12,14 @@ updated: 2026-08-12
 
 Contact varieties and what they show about language genesis: Tok Pisin, Bislama, Haitian Creole, Kriol, and the substrate and bioprogram debates.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
+Stubbed out on 2026-08-12, one level. Nothing here is written beyond what is listed below.
 
 ## Notes in this subfield
 
-(none yet)
+- [Pidgin](pidgin.md)
+- [Creole](creole.md)
+- [Creolization and the bioprogram debate](creolization-debates.md)
+- [Tok Pisin](tok-pisin.md)
+- [Haitian Creole](haitian-creole.md)
+
+The sociolinguistic treatment of this subject belongs here rather than in General Linguistics, where a second hub of the same title would resolve ambiguously.

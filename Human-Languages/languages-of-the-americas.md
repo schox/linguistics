@@ -12,8 +12,24 @@ updated: 2026-08-12
 
 The families of the Americas, Na-Dene to Cariban, including Mayan, the area's junction with Decipherment.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
+Stubbed out on 2026-08-12, one level. Nothing here is written beyond what is listed below.
 
 ## Notes in this subfield
 
-- [Classic Maya](classic-maya.md)
+- [Na-Dene](na-dene.md)
+- [Algic](algic.md)
+- [Iroquoian](iroquoian.md)
+- [Siouan](siouan.md)
+- [Muskogean](muskogean.md)
+- [Salishan](salishan.md)
+- [Uto-Aztecan](uto-aztecan.md)
+- [Mayan](mayan.md)
+- [Oto-Manguean](oto-manguean.md)
+- [Quechuan](quechuan.md)
+- [Aymaran](aymaran.md)
+- [Arawakan](arawakan.md)
+- [Tupian](tupian.md)
+- [Cariban](cariban.md)
+- [Inuit-Yupik-Unangan](inuit-yupik-unangan.md)
+
+Written: [Classic Maya](classic-maya.md), under Mayan.

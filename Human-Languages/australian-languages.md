@@ -12,8 +12,12 @@ updated: 2026-08-12
 
 Pama-Nyungan and the non-Pama-Nyungan families, contact varieties, documentation and revival, and the structural features that make the continent linguistically distinctive.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
+Stubbed out on 2026-08-12, one level. Nothing here is written beyond what is listed below.
 
 ## Notes in this subfield
 
-(none yet)
+- [Pama-Nyungan](pama-nyungan.md)
+- [Non-Pama-Nyungan](non-pama-nyungan.md)
+- [Australian contact varieties](australian-contact-varieties.md)
+- [Documentation and revival in Australia](australian-language-documentation.md)
+- [Structural features of Australian languages](australian-structural-features.md)

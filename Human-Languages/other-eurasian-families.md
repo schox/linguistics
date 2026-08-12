@@ -12,8 +12,23 @@ updated: 2026-08-12
 
 Uralic, Turkic, Mongolic and Tungusic, Japonic, Koreanic, Kra-Dai, Austroasiatic, Dravidian, the three Caucasian families, and Hurro-Urartian. Also the place where the rejected Altaic grouping is recorded as rejected.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
+Stubbed out on 2026-08-12, one level. Nothing here is written beyond what is listed below.
 
 ## Notes in this subfield
 
-(none yet)
+- [Uralic](uralic.md)
+- [Turkic](turkic.md)
+- [Mongolic](mongolic.md)
+- [Tungusic](tungusic.md)
+- [Japonic](japonic.md)
+- [Koreanic](koreanic.md)
+- [Kra-Dai](kra-dai.md)
+- [Austroasiatic](austroasiatic.md)
+- [Dravidian](dravidian.md)
+- [Kartvelian](kartvelian.md)
+- [Northeast Caucasian](northeast-caucasian.md)
+- [Northwest Caucasian](northwest-caucasian.md)
+- [Hurro-Urartian](hurro-urartian.md)
+- [The Altaic hypothesis](altaic-hypothesis.md)
+
+The three Caucasian families are stubbed separately, because they are three families and not one, which the area index is explicit about.

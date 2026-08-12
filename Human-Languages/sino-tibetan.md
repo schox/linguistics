@@ -12,8 +12,9 @@ updated: 2026-08-12
 
 Sinitic and Tibeto-Burman, including Tangut.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
+Stubbed out on 2026-08-12, one level. Nothing here is written beyond what is listed below.
 
 ## Notes in this subfield
 
-(none yet)
+- [Sinitic](sinitic.md)
+- [Tibeto-Burman](tibeto-burman.md)

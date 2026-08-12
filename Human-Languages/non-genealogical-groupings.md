@@ -12,8 +12,22 @@ updated: 2026-08-12
 
 The groupings that are not families. Each of its members is a subfield in its own right with its own hub: [Sign languages](sign-languages.md), [Pidgins and creoles](pidgins-and-creoles.md), [Constructed languages](constructed-languages.md), [Ancient corpus languages](ancient-corpus-languages.md).
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
+This hub is a pointer rather than a container: the four non-genealogical groupings each have a hub of their own, and the notes sit there.
 
-## Notes in this subfield
+## The four groupings
 
-(none yet)
+Each is a subfield value in its own right, with its own hub:
+
+- [Ancient corpus languages](ancient-corpus-languages.md), the grouping the Decipherment area depends on
+- [Sign languages](sign-languages.md)
+- [Pidgins and creoles](pidgins-and-creoles.md)
+- [Constructed languages](constructed-languages.md)
+
+## Notes carrying this subfield directly
+
+- [Etruscan](etruscan.md)
+- [Sumerian](sumerian.md)
+- [Akkadian](akkadian.md)
+- [Ugaritic](ugaritic.md)
+
+These four carry it as a second value alongside their genealogical one, which is what the field is for: a language can be Semitic and an ancient corpus language at once.

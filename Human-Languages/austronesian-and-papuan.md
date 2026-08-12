@@ -12,8 +12,14 @@ updated: 2026-08-12
 
 Austronesian from Formosa to Rapa Nui, and the Papuan situation, which is an areal problem rather than a single family.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
+Stubbed out on 2026-08-12, one level. Nothing here is written beyond what is listed below.
 
 ## Notes in this subfield
 
-(none yet)
+- [Formosan languages](formosan-languages.md)
+- [Malayo-Polynesian](malayo-polynesian.md)
+- [Oceanic](oceanic.md)
+- [Papuan languages](papuan-languages.md)
+- [The Out-of-Taiwan hypothesis](out-of-taiwan-hypothesis.md)
+
+Papuan is an areal label covering many unrelated families, not a genealogical unit, and its stub says so.

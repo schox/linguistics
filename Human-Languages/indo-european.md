@@ -12,8 +12,20 @@ updated: 2026-08-12
 
 The most thoroughly studied family, from Anatolian to Tocharian, with Proto-Indo-European reconstruction as its methodological showpiece. The family tree at branch level is in this area's `_index.md`.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
+Stubbed out on 2026-08-12, one level. Nothing here is written beyond what is listed below.
 
 ## Notes in this subfield
 
-- [Mycenaean Greek](mycenaean-greek.md)
+- [Germanic](germanic.md)
+- [Italic and Romance](italic-and-romance.md)
+- [Hellenic](hellenic.md)
+- [Celtic](celtic.md)
+- [Balto-Slavic](balto-slavic.md)
+- [Indo-Iranian](indo-iranian.md)
+- [Armenian](armenian.md)
+- [Albanian](albanian.md)
+- [Anatolian](anatolian.md)
+- [Tocharian](tocharian.md)
+- [Proto-Indo-European](proto-indo-european.md)
+
+Written: [Mycenaean Greek](mycenaean-greek.md), under Hellenic.

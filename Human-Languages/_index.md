@@ -180,3 +180,15 @@ Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. All are
 ## Images
 
 (none yet)
+
+## What is stubbed, and what is not
+
+**The genealogical spine is stubbed**, 88 notes added 2026-08-12: the families and branches named in the sections above, plus the topics of the four non-genealogical groupings. Family and branch stubs cite [Glottolog](../references/glottolog.md) as the classification this area adopts, and each records that its `glottocode` is still owed.
+
+**Individual languages are deliberately not stubbed**, beyond the seven already written. The sections above name roughly 199 of them, and stubbing all of them would be the "every language that ever existed" outcome this area is meant to avoid. Which languages earn a note needs a selection principle rather than a judgement call, and the principle is not yet chosen.
+
+**The candidate instrument is WALS.** [WALS 2013](../references/wals-2013.md) is already held here and has never been used. Its introduction, by Comrie, Dryer, Gil and Haspelmath, defines a 100-language sample and a further 100, on the stated ground that "a general desideratum for a good language sample is that it maximize both genealogical and areal diversity". That is a published, citable answer to which languages a linguistics reference should cover, and it is the obvious basis for the language layer.
+
+Two caveats to settle before adopting it. The sample is built for typological survey, so it optimizes for diversity rather than for prominence, and it will omit languages this corpus needs for other reasons, notably the classical and ancient corpus languages that Decipherment turns on. And the sample list itself was not retrievable from the WALS site in a usable form on 2026-08-12; it is served through a JavaScript table rather than as a file.
+
+See `ROADMAP.md`.
