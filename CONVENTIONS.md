@@ -146,7 +146,8 @@ authors: "Shannon, C. E."
 year: 1949
 title: "Communication Theory of Secrecy Systems"
 container: "Bell System Technical Journal 28(4), 656-715"
-ref_type: paper          # paper | book | chapter | website | dataset | course | thesis | corpus
+ref_type: paper          # paper | book | chapter | website | dataset | course
+                         # | thesis | corpus | news | preprint
 doi: "10.1002/j.1538-7305.1949.tb00928.x"
 url: "https://onlinelibrary.wiley.com/doi/10.1002/j.1538-7305.1949.tb00928.x"
 accessed: 2026-08-09
@@ -164,6 +165,46 @@ belongs_to: "[[Cryptography]]"
 **The same applies to Britannica and other tertiary encyclopedias**, which the checker does not enforce because the list is open-ended. The test is not the publisher's reputation but the kind of document: a work of record gets a `Reference` note, a summary of works of record gets a line under `## Sources`. Institutional documentation is different again and can earn a note where it is the primary record of something, as UNESCO's World Heritage entries are for a site's extent and protection status.
 
 **Distinguish what you have read from what you have merely found.** The `status` field on a `Reference` is the reading list. Do not mark something `read` that you have skimmed.
+
+### Source quality, in order of preference
+
+1. **Primary documents and registries.** The paper, the excavation report, the code list, the database record.
+2. **Academic secondary literature.** Monographs, review articles, edited volumes.
+3. **Institutional documentation**, where the institution is the record: UNESCO on a site's protection status, the Unicode Consortium on a script code.
+4. **Tertiary encyclopedias.** Britannica and its kind, cited under `## Sources`, never given a `Reference` note. Wikipedia is the same and is additionally enforced by the checker.
+5. **Press coverage**, under the conditions below.
+
+Prefer higher to lower whenever the higher is reachable. Where a lower tier is used because the higher one could not be reached, say so in the note and record what was tried, so the gap is a stated finding rather than an apparent choice.
+
+### Announcements, and claims that are probably false
+
+Decipherment attracts announcements. The Voynich manuscript is declared solved every few years, and most of those claims do not survive contact with specialists. Some future one will be correct.
+
+Both failure modes are real and neither is acceptable. Ignoring announcements means missing the one that holds; repeating them means becoming a channel for noise. The way through is a distinction:
+
+**A news item is never a source for facts about the script. It is a primary source for the fact that a claim was made.** Who made it, when, where, and on what basis are all checkable, and they are what gets recorded.
+
+So an announcement earns a `Reference` note, with:
+
+- `ref_type: news` or `preprint`, never `paper`, since filing it as a paper lends it standing it has not earned.
+- `claim_status`: `peer-reviewed` | `preprint` | `press-release` | `press-coverage` | `self-published` | `unpublished`.
+- `peer_reviewed`: `true` | `false` | `unknown`.
+
+The checker requires the last two whenever `ref_type` is `news` or `preprint`.
+
+The note then records **what was actually claimed**, and specifically which of the three tasks in `Decipherment/computational-decipherment-three-tasks.md` the work performs. Restoration is not decipherment and cognate search is not decipherment, and the misreporting almost always happens at exactly that seam. Where specialists have responded, cite the response. Where a claim has simply been ignored by the field, say that, because silence is evidence of a kind and is often the whole story.
+
+Write it flatly. "Rao and colleagues argue", "the claim has not been published or reviewed", "no specialist response has been located". Not derision, and not credulity: the record of who claimed what, when.
+
+### Artifacts carry their provenance
+
+Attribution applies to files as much as to sentences. A PDF, a plate scan or a photograph with no recorded origin cannot be checked by a reader, and an unverifiable image is no better than an unsourced claim.
+
+Every file in `attachments/` must be referenced from a note that records where it came from: who made it, when it was retrieved, from what URL or publication, and under what license. Either a `Media` note, whose required fields carry exactly that, or a `## Provenance` section in a note that uses the file.
+
+**The checker enforces this**, unusually for the attribution rules, because it is the one part of them a program can actually verify. It will fail an artifact that no note references, and an artifact whose referencing notes record no origin.
+
+Copyright still applies on top: a scan of an in-copyright book does not belong in a repository with a public remote, however well attributed. Prefer a `Reference` note with a link.
 
 **Attribute contested claims to their proponents.** Much of the decipherment material is disputed, sometimes bitterly. Write "Rao and colleagues argue" and "Farmer, Sproat and Witzel reply", not "the Indus script is writing". Where a debate is live, the note should carry both sides and their sources.
 
@@ -258,7 +299,26 @@ Both are conventions, not checks. `scripts/check-vault.py` validates frontmatter
 
 **Tense.** Present for what is the case, including for dead systems, since the system still has the properties it had: "Linear B has about 87 syllabic signs". Past for events: "Ventris announced the decipherment in 1952". A script or language that is no longer used is extinct in the past tense and describable in the present.
 
-**Voice.** The vault does not address the reader as "you" and does not write as "I". Where the vault itself is doing something, name it: "this vault holds", "the comparison here is". Dagger for extinct languages in prose lists, per `## Style`.
+**Voice and register.** Clear, precise, academic. No hyperbole, no conspiratorial framing, no idiom reached for as ornament. Notes do not address the reader as "you", do not write as "I", and **do not refer to the collection they sit in.** Not "this vault holds", not "the vault's central claim", not "the vault has nothing on that". These files are a container for the work, not a subject in their own right, and a reader who came for phonology has no reason to care about the container's architecture.
+
+Write an absence impersonally instead: "not recorded here", "no source read for this", "word order is not covered". Where a claim is the author's own analysis rather than a sourced finding, label it as analysis; see below. `Doc` notes are exempt, since the repository genuinely is their subject.
+
+Dagger for extinct languages in prose lists, per `## Style`.
+
+### Analysis, opinion and theory
+
+Analysis is wanted. Interpretation, comparison across areas, and theories of what is going on are all legitimate, and a corpus that only paraphrases its sources is worth less than one that reasons about them.
+
+The conditions are what keep it honest, and there are four:
+
+1. **It is typed `Note`, not an entry.** An entry describes its subject. Analysis links to the entries rather than living inside them, and this is the rule the reference layer depends on.
+2. **It says so, in the opening.** The reader learns in the first sentence or two that what follows is argument rather than a reported finding.
+3. **Every fact it rests on is sourced individually.** The reasoning is the author's; the premises are not. An argument built on an unsourced premise is a guess with structure.
+4. **It states what would settle it.** What evidence would confirm the argument, what would refute it, and whether anyone has tested it. Where a literature search found someone who has argued the same thing, say so and cite them; where it found nobody, record that the search was made.
+
+A prior published proponent is **not** required. It was until 2026-08-12, and that bar was too high: it left several observations parked indefinitely because nobody could be found who had written them down, which is a fact about the search rather than about the argument.
+
+What is not permitted is unlabeled inference sitting in an entry as though it were reported. That is the failure the standard exists to prevent, and the distance between it and legitimate analysis is entirely a matter of the four conditions above.
 
 **Link on first mention per note, then stop.** Repeated wikilinks to the same note add nothing to the graph and clutter the sentence. `check-vault.py --report` lists notes that name an existing note without linking it once.
 

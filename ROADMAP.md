@@ -92,9 +92,13 @@ One subfield per batch, taxonomy already in place from each area's `_index.md`. 
 
 Remaining General Linguistics subfields (Sociolinguistics, Psycholinguistics and acquisition, Computational linguistics, Semiotics and philosophy of language, Etymology and lexicography) follow. Computational linguistics should absorb the statistical-language-model note described at the foot of this section.
 
-### Analysis notes, parked
+### Analysis notes, unblocked 2026-08-12
 
-Written while drafting batch 9, then removed from it because an entry describes rather than argues. Each is a note in its own right once the reference layer is further along, and each links to both sides rather than living inside a definition. Recorded here so they are not rediscovered from scratch.
+Written while drafting batch 9, then removed from it because an entry describes rather than argues. Each is a note in its own right, typed `Note`, linking to both sides rather than living inside a definition.
+
+**These were parked pending a prior published proponent for each. That bar was dropped on 2026-08-12**: original analysis is permitted, subject to the four conditions in `CONVENTIONS.md` under `## Drafting` (typed `Note`, labeled as analysis in its opening, every premise sourced, and what would settle it stated). A literature search is still expected first, and finding a proponent is recorded where one exists. Finding none is a fact about the search, not a reason to withhold the argument.
+
+They remain scheduled behind the breadth program, since the reference layer is what they link into. The ordering is unchanged; only the permission is.
 
 - **What Kober did was morphology and phonology without meanings.** Her triplets are inflectional paradigm detection; her grid is a system of contrasts with no values attached. Links [Alice Kober](people/alice-kober.md), [Morphology](General-Linguistics/morphology.md), [Phonology](General-Linguistics/phonology.md), [Linear B](Decipherment/linear-b.md).
 - **The field's standard methods presuppose an informant.** The minimal pair needs to know that two forms mean different things; the grammaticality judgment can only be obtained from an individual speaker. No language in the Decipherment area has one, so all negative evidence is unavailable and corpus-only linguistics works under a strictly weaker evidence base. The exception is Classic Maya, where speakers of related languages existed, and it is also the case that broke.
@@ -102,7 +106,7 @@ Written while drafting batch 9, then removed from it because an entry describes 
 - **Conditional entropy over sign sequences is a weak proxy for grammar.** Constrained ordering is consistent with syntax and is not the same claim, since heraldic sequences, accounting formats and calendars are all strongly ordered. Bears on [is it writing at all?](Decipherment/is-it-writing-at-all.md). Whether anyone has attempted a hierarchy-sensitive test on the Indus corpus is unknown.
 - **Administrative corpora are pragmatically flat.** Almost everything the vault reads is inventory and accounts, which is a survival bias rather than a fact about those societies. A decipherment of such a corpus recovers a register rather than a language.
 
-None of these is sourced beyond the vault's own reasoning, which is why none of them was left in an entry. Each needs someone who has argued it before it becomes a note.
+None of these is sourced beyond the reasoning that produced it, which is why none was left in an entry and why each carries the labeling requirement when written. The premises they rest on are sourced in the notes they link to, and any that are not must be sourced before the argument can stand on them.
 
 ### The superseded plan, still owed
 

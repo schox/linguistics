@@ -286,6 +286,32 @@ Also rejected: re-parenting the existing notes onto their new hubs in the same c
 
 **Consequence.** The note count jumps by 48 with no new content, and the per-area figures in `STATUS.md` now measure structure and content mixed. The stubs make the vault look more finished than it is; each one says "Stub hub" in its body so the graph cannot be mistaken for coverage.
 
+## 2026-08-12: Source quality, announcements, artifact provenance, and permission to argue
+
+**Decided.** Andrew's statement of policy, recorded because four of its consequences change the schema or the checker rather than only the prose.
+
+**Register.** Clear, precise, academic. No hyperbole, no conspiratorial framing, no idiom as ornament. Opinions, interpretations and theories are wanted, grounded in what is known and what is not.
+
+**Notes do not refer to the collection they sit in.** "This vault holds", "the vault's central claim", "the vault has nothing on that": all out. These files are a container for the work, not a subject in their own right, and a reader who came for phonology has no reason to care about the container's architecture. Absences are written impersonally instead ("not recorded here", "no source read for this"). `Doc` notes are exempt, since the repository is genuinely their subject.
+
+This **reverses part of the drafting policy committed the same day**, which had prescribed "this vault holds" as the approved voice for the collection's own actions. 261 instances existed across the content notes; they are swept separately so the mechanical change stays reviewable.
+
+**Source quality is ordered and stated**: primary documents and registries, then academic secondary literature, then institutional documentation where the institution is the record, then tertiary encyclopedias (cited, never given a `Reference` note), then press. Where a lower tier was used because a higher one could not be reached, the note says so and says what was tried.
+
+**Announcements get `Reference` notes, and a schema to keep them honest.** Decipherment attracts claims: the Voynich manuscript is declared solved every few years, most of those claims do not survive specialist contact, and some future one will be correct. Ignoring them means missing the one that holds; repeating them means becoming a channel for noise.
+
+The resolution is a distinction. **A news item is never a source for facts about the script. It is a primary source for the fact that a claim was made.** `ref_type` gains `news` and `preprint`; both require `claim_status` (`peer-reviewed` | `preprint` | `press-release` | `press-coverage` | `self-published` | `unpublished`) and `peer_reviewed` (`true` | `false` | `unknown`), and the checker enforces that. The note records what was actually claimed, which of the three tasks in `computational-decipherment-three-tasks.md` the work performs, and what specialists said, including the case where the field simply ignored it.
+
+**Artifacts carry their provenance, and this one is enforced.** Every file in `attachments/` must be referenced by a note that records where it came from, and `Media` notes now require `credit`, `license`, `source_url` and `retrieved`. Attribution is otherwise a discipline the checker cannot verify; file provenance is the exception, so it is checked. `attachments/` currently holds only `.gitkeep`, so the rule starts clean with nothing grandfathered in.
+
+**Original analysis no longer requires a prior published proponent.** The bar until now was that someone must have argued it in the literature first, which left five observations from batch 9 parked indefinitely. That is a fact about the search rather than about the argument. Analysis is permitted subject to four conditions: typed `Note` rather than an entry, labeled as analysis in its opening, every premise sourced individually, and what would confirm or refute it stated. A literature search is still expected, and a proponent is cited where one is found.
+
+**Rejected.** A `--bibliography` command emitting the union of `cites` across a set of notes, for reference lists in derived work. The data is already in `cites` and can be gathered when an article is actually written; nothing yet needs the tooling, and an unused command is a maintenance cost.
+
+Also rejected: folding news into the existing `website` type. It would have avoided a schema change at the cost of making an announcement indistinguishable from an institutional resource in any Base or filter, which is precisely the distinction the policy exists to draw.
+
+**Consequence.** The checker gained two enforcement points and now fails on an unattributed artifact, which is the first time it has checked anything outside a markdown file. The reversal on self-reference means one sweep across 261 instances in the content notes, and a standing rule that the collection does not narrate itself.
+
 ## 2026-08-12: A drafting policy, and a body skeleton per type
 
 **Decided.** `CONVENTIONS.md` gains a `## Drafting` section, and every type file in `types/` gains a `## Body` skeleton beside its frontmatter template. Guidance, not enforcement: `scripts/check-vault.py` continues to validate frontmatter and the presence of `## Sources`, and continues not to read prose.

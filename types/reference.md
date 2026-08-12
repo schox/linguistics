@@ -33,7 +33,9 @@ A bibliographic entry: one note per source, cited from many. Lives in `reference
 ## Fields
 
 - `authors`: `Surname, Initials; Surname, Initials`. A plain string, not wikilinks. Only seminal authors get a `Person` note, and the link runs the other way via `key_works`.
-- `ref_type`: `paper` | `book` | `chapter` | `website` | `dataset` | `course` | `thesis` | `corpus`.
+- `ref_type`: `paper` | `book` | `chapter` | `website` | `dataset` | `course` | `thesis` | `corpus` | `news` | `preprint`.
+- `claim_status`: **required when `ref_type` is `news` or `preprint`.** `peer-reviewed` | `preprint` | `press-release` | `press-coverage` | `self-published` | `unpublished`.
+- `peer_reviewed`: **required with the same two types.** `true` | `false` | `unknown`. Use `unknown` where it could not be established, not `false`.
 - `status`: the reading list. `unread` | `in-progress` | `read`. Do not mark something read that you have skimmed.
 - `doi` / `url`: prefer a DOI or stable publisher URL.
 - `open_access`: a free copy, where one exists alongside a paywalled version of record. Give both.
@@ -65,3 +67,34 @@ A `Reference` note answers: what the work is, what it establishes, and how to ge
 ```
 
 No `## Child topics`. Where a bibliographic detail could not be verified, say so here rather than guessing: a wrong citation is worse than a missing one, because a reader cannot tell it from a right one. `references/rutter-aegean-prehistory.md` is the worked example of a required field taking a stated proxy.
+
+### Announcements
+
+A `Reference` of `ref_type: news` or `preprint` records a **claim**, not a finding, and its body says so:
+
+```markdown
+# <Author Year>
+
+<Who claimed what, where, and when.>
+
+## The claim
+   What was actually asserted, in the claimant's terms.
+   Which of the three tasks in
+   Decipherment/computational-decipherment-three-tasks.md the
+   work performs: restoration, decipherment proper, or cognate
+   search. Misreporting almost always happens at that seam.
+
+## Standing
+   Published, reviewed, or neither. `claim_status` and
+   `peer_reviewed` carry the same in frontmatter; the prose
+   says how that was established.
+
+## Response
+   What specialists said, cited. Where a claim has simply been
+   ignored by the field, record that: silence is evidence of a
+   kind, and is often the whole of what can be said.
+
+## Sources
+```
+
+Write it flatly, with neither derision nor credulity. The purpose is to know what is being claimed and by whom, so that a correct announcement is not missed among the incorrect ones. See `CONVENTIONS.md`.

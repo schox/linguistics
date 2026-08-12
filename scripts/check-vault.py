@@ -15,6 +15,11 @@ Checks, per markdown file:
   * content notes end with a ## Sources section
   * no Reference note points at Wikipedia (fine as a source in a note,
     never as an entry in the authoritative bibliography)
+  * a Reference of ref_type news or preprint declares claim_status and
+    peer_reviewed, so an announcement cannot be filed as if it were a
+    finding of record
+  * every file in attachments/ is referenced by a note, and that note
+    records where the file came from
   * the note count stated in STATUS.md matches the actual number of notes
   * house style: International English, no em-dashes
 
@@ -94,7 +99,10 @@ REQUIRED = {
     "Note":            REQUIRED_COMMON,
     "Person":          ["field", "belongs_to", "status"],
     "Place":           ["kind", "belongs_to", "status"],
-    "Media":           ["belongs_to", "status"],
+    # Artifacts are attributed like any other claim: an image with no
+    # recorded origin cannot be checked by a reader and cannot be relied on.
+    "Media":           ["belongs_to", "status", "credit", "license",
+                        "source_url", "retrieved"],
     "Reference":       ["authors", "year", "title", "ref_type", "status", "belongs_to"],
     "MOC":             ["area"],
 }
@@ -114,8 +122,18 @@ ENUMS = {
     ("Method", "category"): {"statistical", "combinatorial", "structural",
                              "contextual", "computational"},
     ("Place", "kind"): {"institution", "site", "region", "facility"},
+    # 'news' and 'preprint' exist because decipherment claims are announced
+    # long before, and often instead of, being published. Such an item is not
+    # a source for facts about the script; it is primary evidence that a
+    # claim was made, by whom, and when. Filing it as a paper would lend it
+    # an authority it has not earned.
     ("Reference", "ref_type"): {"paper", "book", "chapter", "website",
-                                "dataset", "course", "thesis", "corpus"},
+                                "dataset", "course", "thesis", "corpus",
+                                "news", "preprint"},
+    ("Reference", "claim_status"): {"peer-reviewed", "preprint",
+                                    "press-release", "press-coverage",
+                                    "self-published", "unpublished"},
+    ("Reference", "peer_reviewed"): {"true", "false", "unknown"},
     ("Reference", "status"): {"unread", "in-progress", "read"},
     ("Concept", "status"): {"open", "draft", "settled"},
     ("Method", "status"): {"open", "draft", "settled"},
@@ -264,6 +282,17 @@ def check(path, vocabs, targets):
         # content notes must cite something
         if ntype in CONTENT and "## Sources" not in raw:
             out.append((rel, 1, f"{ntype} note has no '## Sources' section"))
+
+        # An announcement must declare what kind of claim it is. Decipherment
+        # claims are routinely reported as settled by outlets that did not
+        # check, and the difference between a press release and a reviewed
+        # result is the whole of the vault's defense against repeating them.
+        if ntype == "Reference" and data.get("ref_type") in ("news", "preprint"):
+            for field in ("claim_status", "peer_reviewed"):
+                if not data.get(field):
+                    out.append((rel, 1,
+                                f"ref_type '{data['ref_type']}' requires "
+                                f"'{field}'"))
 
         # references/ is the authoritative bibliography. Wikipedia is a finding
         # aid: welcome under a note's ## Sources, never a Reference of its own.
@@ -576,6 +605,65 @@ def report(files):
     return 0
 
 
+def attachment_provenance(files):
+    """Every artifact must be traceable to where it came from.
+
+    The evidentiary standard applies to files as much as to sentences: a PDF
+    or a plate scan with no recorded origin cannot be checked by a reader and
+    should not be relied on. Prose cannot be enforced, but this can, so it is.
+
+    An artifact passes if some note references it and that note records the
+    origin, either by being a `Media` note (whose required fields carry
+    credit, license, source and retrieval date) or by carrying a
+    `## Provenance` section.
+    """
+    adir = os.path.join(ROOT, "attachments")
+    if not os.path.isdir(adir):
+        return []
+
+    artifacts = {}
+    for dirpath, dirnames, filenames in os.walk(adir):
+        dirnames[:] = [d for d in dirnames if not d.startswith(".")]
+        for name in filenames:
+            if name.startswith("."):          # .gitkeep, .DS_Store
+                continue
+            full = os.path.join(dirpath, name)
+            artifacts[os.path.relpath(full, ROOT)] = []
+    if not artifacts:
+        return []
+
+    for path in files:
+        rel = os.path.relpath(path, ROOT)
+        raw = open(path, encoding="utf-8").read()
+        data, err = parse_frontmatter(raw)
+        if err:
+            continue
+        for target in LINK.findall(raw):
+            target = target.split("#")[0].strip()
+            if not target or "://" in target:
+                continue
+            resolved = os.path.normpath(
+                os.path.join(os.path.dirname(path), target))
+            key = os.path.relpath(resolved, ROOT)
+            if key in artifacts:
+                artifacts[key].append((rel, data, raw))
+
+    out = []
+    for key in sorted(artifacts):
+        refs = artifacts[key]
+        if not refs:
+            out.append((key, 1, "artifact referenced by no note, so nothing "
+                                "records where it came from"))
+        elif not any(d.get("type") == "Media" or "## Provenance" in r
+                     for _, d, r in refs):
+            named = ", ".join(sorted({n for n, _, _ in refs}))
+            out.append((key, 1,
+                        f"no recorded provenance; referenced by {named}. Needs "
+                        "a Media note, or a '## Provenance' section in a "
+                        "referencing note"))
+    return out
+
+
 def status_count(files):
     """STATUS.md states a note count. Check it against reality.
 
@@ -612,6 +700,7 @@ def main():
     problems = []
     for path in files:
         problems.extend(check(path, vocabs, targets))
+    problems.extend(attachment_provenance(files))
     problems.extend(status_count(files))
     for rel, line, msg in problems:
         print(f"{rel}:{line}: {msg}")
