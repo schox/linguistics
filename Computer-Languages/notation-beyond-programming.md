@@ -12,12 +12,14 @@ updated: 2026-08-12
 
 Formal notation outside the programming languages, with APL as the boundary case and Iverson's "notation as a tool of thought" as the framing text.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-Mathematical notation, musical notation, chess and dance notation.
+Stubbed out on 2026-08-12, one level. Nothing here is written beyond what is listed below.
 
 ## Notes in this subfield
 
-(none yet)
+- [Mathematical notation](mathematical-notation.md)
+- [Musical notation](musical-notation.md)
+- [Chess and dance notation](chess-and-dance-notation.md)
+- [APL as a boundary case](apl-as-a-boundary-case.md)
+- [Notation as a tool of thought](notation-as-a-tool-of-thought.md)
+
+Junction with [Writing systems](../General-Linguistics/writing-systems.md): these are notations for domains that are not language, and the typology there does not cover them.

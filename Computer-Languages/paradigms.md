@@ -12,12 +12,18 @@ updated: 2026-08-12
 
 Ways of organizing computation.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-Imperative, procedural, object-oriented, functional, logic, array, concatenative, dataflow, declarative.
+Stubbed out on 2026-08-12, one level. Nothing here is written beyond what is listed below.
 
 ## Notes in this subfield
 
-- [Lisp](lisp.md)
+- [Imperative programming](imperative-programming.md)
+- [Procedural programming](procedural-programming.md)
+- [Object-oriented programming](object-oriented-programming.md)
+- [Functional programming](functional-programming.md)
+- [Logic programming](logic-programming.md)
+- [Array programming](array-programming.md)
+- [Concatenative programming](concatenative-programming.md)
+- [Dataflow programming](dataflow-programming.md)
+- [Declarative programming](declarative-programming.md)
+
+Written: [Lisp](lisp.md), which carries this subfield as its first value.

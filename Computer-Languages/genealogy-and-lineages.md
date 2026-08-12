@@ -12,12 +12,15 @@ updated: 2026-08-12
 
 Descent among programming languages, recorded in the `lineage` field.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-ALGOL descent, Lisp descent, the ML and typed functional line, C and its successors, Smalltalk and message passing, the scripting languages.
+Stubbed out on 2026-08-12, one level. Nothing here is written beyond what is listed below.
 
 ## Notes in this subfield
 
-- [Lisp](lisp.md)
+- [The ALGOL descent](algol-descent.md)
+- [The Lisp descent](lisp-descent.md)
+- [The ML and typed functional line](ml-and-typed-functional.md)
+- [C and its successors](c-and-its-successors.md)
+- [Smalltalk and message passing](smalltalk-and-message-passing.md)
+- [The scripting languages](the-scripting-languages.md)
+
+**Individual languages are deliberately not stubbed here.** The lineages are the spine, as families and branches are in Human Languages, and which particular languages earn notes needs a selection principle rather than a judgement call. [HOPL](../references/hopl.md) is the candidate instrument and is already held. See `ROADMAP.md`.

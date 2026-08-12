@@ -12,12 +12,13 @@ updated: 2026-08-12
 
 The languages that are not for writing programs.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-Markup (SGML, XML, HTML, Markdown), query (SQL, SPARQL, GraphQL, Datalog), configuration (YAML, TOML, JSON), shell, regular expressions, build and schema languages, DSLs.
+Stubbed out on 2026-08-12, one level. Nothing here is written beyond what is listed below.
 
 ## Notes in this subfield
 
-(none yet)
+- [Markup languages](markup-languages.md)
+- [Query languages](query-languages.md)
+- [Configuration languages](configuration-languages.md)
+- [Shell languages](shell-languages.md)
+- [Regular expressions](regular-expressions.md)
+- [Domain-specific languages](domain-specific-languages.md)

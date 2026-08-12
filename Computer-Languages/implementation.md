@@ -12,12 +12,15 @@ updated: 2026-08-12
 
 How a language becomes a running program.
 
-**Stub hub.** This note exists so the taxonomy is visible in the graph before the subfield has content; the breadth program in `ROADMAP.md` fills it in. Notes in this subfield set `belongs_to` here once it has an owner below the area hub.
-
-## Topics owed to this hub
-
-Lexing, parsing (recursive descent, LR, PEG), abstract syntax trees, compilation, interpretation, bytecode and virtual machines, JIT, garbage collection.
+Stubbed out on 2026-08-12, one level. Nothing here is written beyond what is listed below.
 
 ## Notes in this subfield
 
-(none yet)
+- [Lexing](lexing.md)
+- [Parsing algorithms](parsing-algorithms.md)
+- [Abstract syntax trees](abstract-syntax-trees.md)
+- [Compilation](compilation.md)
+- [Interpretation](interpretation.md)
+- [Bytecode and virtual machines](bytecode-and-virtual-machines.md)
+- [Just-in-time compilation](just-in-time-compilation.md)
+- [Garbage collection](garbage-collection.md)

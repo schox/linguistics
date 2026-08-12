@@ -38,7 +38,7 @@ The exact permitted values for the `subfield` field on notes in this area. `scri
 
 ## Subfield hubs
 
-Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. All are stubs awaiting the breadth program in `ROADMAP.md`.
+Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. **All eight are now stubbed out**, 49 topic stubs added 2026-08-12.
 
 - [Paradigms](paradigms.md)
 - [Genealogy and lineages](genealogy-and-lineages.md)
@@ -51,7 +51,13 @@ Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. All are
 
 ## Notes
 
+Written:
+
 - [Lisp](lisp.md), 1958
+
+**49 topic stubs**, added 2026-08-12: Paradigms 9, Genealogy and lineages 6, Formal foundations 6, Implementation 8, Domain and non-general-purpose languages 6, Design and comparative 5, Notation beyond programming 5, History and standardization 4. See each hub for its list. The Formal foundations stubs live here but hang off the hub shared with General Linguistics.
+
+**Individual programming languages are deliberately not stubbed**, beyond Lisp. The six lineages are the spine of this area, exactly as families and branches are in Human Languages, and which particular languages earn notes needs a selection principle rather than a judgement call. [HOPL](../references/hopl.md) is the candidate instrument and is already held, unused. The same open decision covers both areas; see `ROADMAP.md`.
 
 ## Documents
 
