@@ -48,6 +48,7 @@ That is a deliberate trade. The alternative, resolving every open question as it
 
 Nothing here can be moved by more searching.
 
+- **The Ethnologue 200 list**, which is sold rather than published. Without it the popularity half of the Human Languages selection rests on the four languages its free pages name in prose, and the other 47 are coverage judgements. A purchase or an institutional route would convert the largest unsourced judgement in the area into a sourced one. Added 2026-08-13.
 - **Cambridge Core access.** Three volumes in *Elements in Writing in the Ancient World* cover three of the vault's seven undeciphered scripts, and all are paywalled: [Salgarella 2025](references/salgarella-2025.md) on Linear A, [Kelley 2026](references/kelley-2026.md) on Proto-Elamite, [Donnelly 2025](references/donnelly-2025.md) on Cypro-Minoan. An institutional login or the three eBooks would close roughly a dozen open questions. Salgarella's sections 3 and 5 alone would settle the per-site distribution of the Linear A corpus, the longest-standing gap in the vault.
 - **Grammatology's home**: wholly into Decipherment, or split with General Linguistics. Deferred twice now. `Script` notes currently live in `Decipherment/` as a filing convenience, which `DECISIONS.md` records as a convenience and not a claim.
 - **Whether Chomsky and Knuth get `Person` notes.** Chomsky was deliberately left unwritten because his status could not be verified and false death reports circulated in 2024. See the living-people rule in `types/person.md`.
@@ -126,19 +127,18 @@ One subfield per batch, taxonomy already in place from each area's `_index.md`. 
 
    **Two paradigms still have no member**: dataflow has none and declarative has only SQL. Neither instrument names a candidate for dataflow and the gap is recorded on the hub rather than filled by guessing.
 
-   **The same question is still open for Human Languages**, and was not settled by this. WALS remains the candidate instrument there, with the caveats recorded under item 8.
+   **The same question was settled for Human Languages** on 2026-08-13, on the same criterion in its genealogical form. See item 8.
 8. **Human Languages.** The genealogical spine was stubbed on 2026-08-12: 88 notes covering the families and branches named in the area index, plus the topics of the four non-genealogical groupings.
 
-   **The language layer is blocked on a selection principle**, and this is the one open decision left by the taxonomy program. The area index names roughly 199 individual languages. Stubbing all of them is the outcome Andrew ruled out ("we don't want every one that ever existed"); stubbing a hand-picked subset would put an unsourced judgement into the structure, where it is invisible and inherited.
+   ~~**The language layer is blocked on a selection principle.**~~ **Settled 2026-08-13**, see `DECISIONS.md`. Andrew's criterion, the most spoken languages plus one or two from each family, is the same one applied to Computer Languages the day before. 51 languages across 24 families, plus nine isolates retyped from `Concept` to `Language`. The taxonomy program now has no open selection questions.
 
-   **[WALS 2013](references/wals-2013.md) is the candidate instrument**, held here since the beginning and never used. Its introduction defines a 100-language sample and a further 100, on the stated principle that a good sample should "maximize both genealogical and areal diversity". Verified 2026-08-12.
+   **Only four of the 51 rest on sourced speaker numbers.** [Ethnologue 2026](references/ethnologue-2026.md) sells its ranked list, and its free pages name the top four in prose: Mandarin Chinese, Spanish, English and Hindi. The other 47 are coverage judgements made from the area index, and every stub says which of the two it is. Buying the list, or reaching it through an institution, would let the popularity half be done properly, and is the cheapest unblocking purchase in the vault.
 
-   Two things to settle before adopting it:
+   **WALS was passed over here** and is not gone: it optimizes for typological diversity rather than prominence, so it answers a different question, and its sample list was not retrievable in usable form on 2026-08-12. It is still owed as the instrument for item 6 above, which is what it was built for. The CLDF release is the likely retrieval route; see `_data-sources.md`.
 
-   - The sample optimizes for typological diversity, not prominence, so it will include languages nobody would call important and omit ones everybody would. It also omits the classical and ancient corpus languages this corpus needs for Decipherment, which would have to be added on a separate and stated basis.
-   - **The list is not conveniently retrievable.** The WALS site serves it through a JavaScript table rather than as a file, and the bulk download URL tried on 2026-08-12 returned 404. The CLDF release is the likely route; see `_data-sources.md`.
+   ~~Four `Language` notes are owed because the corpus already refers to them: Rapanui, Coptic, Old Persian and Hittite.~~ **Stubbed 2026-08-13** with the rest. They still need writing, and the standalone items below say why each matters.
 
-   Four `Language` notes are owed for reasons that need no selection principle at all, because the corpus already refers to them: Rapanui, Coptic, Old Persian and Hittite. They are listed among the standalone items below.
+   **What the area needs next is writing, not more structure.** 139 of its 161 files are stubs, and the seven written notes are all Decipherment by-products.
 
 Remaining General Linguistics subfields (Sociolinguistics, Psycholinguistics and acquisition, Computational linguistics, Semiotics and philosophy of language, Etymology and lexicography) follow. Computational linguistics should absorb the statistical-language-model note described at the foot of this section.
 
@@ -187,14 +187,14 @@ Leave Computer Languages until Andrew wants it for its own sake. It is the one a
 ## Standalone items, not tied to a phase
 
 - **Linear Elamite** deserves a note. It is not Proto-Elamite, and `Decipherment/proto-elamite.md` states the distinction. Its 21 or 22 inscriptions, most longer than the longest of 4,000 to 5,000 Indus texts, are the cleanest demonstration in the vault that corpus volume and text length are independent variables. No ISO 15924 code, no Unicode block.
-- **A `Language` note for Rapanui.** A real, living, attested language currently mentioned only as an appendage to a script, and the vault's first Austronesian entry.
+- **A `Language` note for Rapanui.** A real, living, attested language currently mentioned only as an appendage to a script, and the vault's first Austronesian entry. **Stubbed 2026-08-13**; it is now one of six Austronesian stubs and still needs writing.
 - **Thomas Young now clearly earns a `Person` note.** He meets two limbs of the inclusion test: discussed in two or more notes, and bridging areas, since the same man worked on optics and physiology. The credit dispute with Champollion is recorded in `people/champollion.md` and would be better balanced by a note of his own.
-- **Coptic, and the Coptic alphabet.** `Copt` 204, blocks U+2C80-U+2CFF and U+102E0-U+102FF, both verified. Whether Coptic is a stage of Egyptian or a language in its own right decides whether that is one note or two.
+- **Coptic, and the Coptic alphabet.** `Copt` 204, blocks U+2C80-U+2CFF and U+102E0-U+102FF, both verified. Whether Coptic is a stage of Egyptian or a language in its own right decides whether that is one note or two. **The language is stubbed as at 2026-08-13**, filed under Afro-Asiatic / Egyptian, which anticipates that question rather than settling it; the script has no note.
 - **Hieratic (`Egyh` 060) and demotic (`Egyd` 070)** have codes and no notes, and demotic is a third of the Rosetta Stone.
 - **Hans Bauer's cryptanalytic background.** Accounts circulate that he did codebreaking for German military intelligence in the First World War and applied statistical method to Ugaritic. If true it is the most direct Cryptography-to-Decipherment link in the vault. It is currently unverified: only a search summary asserts it, Wikipedia's article on Bauer does not mention it, and the retrieved parts of Day 2002 do not cover it. Bauer's *Entzifferung* would settle it.
 - **`Person` notes for Bauer, Dhorme and Virolleaud**, deferred from batch 8 because the most substantive claim about Bauer is the unverified one above.
 - **J. Eric S. Thompson.** The vault now characterizes him at second hand, through his opponents, including the phrase "communist propaganda". He led Maya studies for decades and nothing of his has been read. Under the rule on contested claims this is the least defensible thing in the Decipherment area.
-- **Old Persian** (`Xpeo` 030, block U+103A0-U+103DF) and **Elamite**. Old Persian was the wedge that opened cuneiform and has no note; Behistun is trilingual and the vault covers one of the three languages. This is the most obvious hole left by batch 6.
+- **Old Persian** (`Xpeo` 030, block U+103A0-U+103DF) and **Elamite**. Old Persian was the wedge that opened cuneiform; Behistun is trilingual and the corpus covers one of the three languages. This was the most obvious hole left by batch 6. **Both are stubbed as at 2026-08-13**, Old Persian with the language layer and Elamite by the isolate retyping, so what is owed is now the writing and the Old Persian script note.
 - **Cretan Hieroglyphic**, the third Aegean script of the period and the natural comparison for both Linear A and the Phaistos Disc. Mnamon covers it.
 - **The `wikidata` sweep.** High value as the universal join key, and **not** the cheap job it looks: a Q-number is the most fabricable string in the vault, so it needs real lookups rather than recall.
 - **Two junction notes** still unwritten at the foot of `_junctions.md`, plus a third added after batch 4: corpus destruction as a historical event rather than an accident, which rongorongo showed the existing framing does not cover.

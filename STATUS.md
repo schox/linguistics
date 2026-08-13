@@ -7,7 +7,7 @@ status: living
 
 # Status
 
-Where the project is up to, as at 2026-08-12. Update this when the picture changes; it is the first thing an incoming agent should read after `AGENTS.md`.
+Where the project is up to, as at 2026-08-13. Update this when the picture changes; it is the first thing an incoming agent should read after `AGENTS.md`.
 
 This file is the present tense: what exists, what is thin, what has been established, what is known to be wrong or missing. For what happens next and what is blocked, see `ROADMAP.md`.
 
@@ -17,29 +17,29 @@ The structure is complete and enforced. Five areas, thirteen note types plus `Ty
 
 **The vault is an Obsidian vault as of 2026-08-12**, migrated from Tolaria; `DECISIONS.md` records why and what changed. **The migration is complete and the vault has been seen in the app.** Every note aliases its H1 title (checker-enforced, so title-style wikilinks resolve), every subfield has a `MOC` hub so the whole taxonomy shows in the graph, the eleven Bases in `views/*.base` render and are confirmed against observed rather than documented behavior, the Tolaria `views/*.yml` are gone, `.obsidian/` is committed, and `scripts/check-vault.py` runs in CI on every push. Andrew judged the stub taxonomy in the graph and found it sound: it needs amplification, not re-cutting. The one loose end is Breadcrumbs, installed but not yet pointed at `belongs_to`; see `ROADMAP.md`.
 
-The vault currently holds 743 notes, of which none are subfield hub stubs and 530 are topic stubs so the whole taxonomy is visible in the graph. Decipherment is no longer a skeleton; every other area's content still is, though its shape now shows.
+The vault currently holds 795 notes, of which none are subfield hub stubs and 581 are topic stubs so the whole taxonomy is visible in the graph. Decipherment is no longer a skeleton; every other area's content still is, though its shape now shows.
 
 **This figure is now checked.** `scripts/check-vault.py` fails if it drifts from the actual count, which it had, silently, from 107 to 132 across eight batches.
 
 ## The taxonomy is complete; the writing is not
 
-**As of 2026-08-12 all five areas are stubbed out.** 743 files, of which 530 are taxonomy stubs and 68 are written content notes. Every subfield in every area has its topics named as notes rather than as prose, and no subfield hub is an empty stub any longer.
+**As of 2026-08-12 all five areas are stubbed out**, and as of 2026-08-13 the last open selection question is closed. 795 files, of which 581 are taxonomy stubs and 68 are written content notes. Every subfield in every area has its topics named as notes rather than as prose, and no subfield hub is an empty stub any longer.
 
-That is the intended trade of structure before detail, and it should be read with the ratio in view: **roughly seven notes in ten are placeholders.** A stub says so in its body, asserts nothing about its subject, and is listed by `python3 scripts/check-vault.py --stubs`, which reports 297 carrying a source and 233 still reading "To be researched". The relaxation permitting the second group is temporary and its expiry condition is in `DECISIONS.md`.
+That is the intended trade of structure before detail, and it should be read with the ratio in view: **roughly seven notes in ten are placeholders.** A stub says so in its body, asserts nothing about its subject, and is listed by `python3 scripts/check-vault.py --stubs`, which reports 348 carrying a source and 233 still reading "To be researched". The relaxation permitting the second group is temporary and its expiry condition is in `DECISIONS.md`.
 
-**Two selection questions remain open**, both about which individual entities earn notes. Computer Languages was settled on 2026-08-12 by popularity plus paradigm coverage. **Human Languages was not**: its 88 stubs are families and branches, and there is still no note on Latin, Mandarin or Arabic. `ROADMAP.md` holds it with WALS as the candidate instrument.
+**Both selection questions are now settled**, and they were the same question twice: which individual entities earn notes. Computer Languages was settled on 2026-08-12 by popularity plus paradigm coverage, and **Human Languages on 2026-08-13** by the same criterion in its genealogical form, the most spoken languages plus one or two from each family. 51 languages across 24 families, so Latin, Mandarin Chinese and Modern Standard Arabic now have notes. Only four of the 51 rest on sourced speaker numbers, because the Ethnologue ranking is sold rather than published; the rest are coverage judgements and say so. WALS was passed over here and is still owed as the typology instrument. See `DECISIONS.md`, 2026-08-13.
 
 ## What is deliberately thin
 
 Content. The areas hold their taxonomy and a handful of exemplars, nothing more:
 
 - **General Linguistics**: 10 written notes and 124 topic stubs, across 145 files. The **Levels of analysis** subfield has a `MOC` and six entries (phonetics, phonology, morphology, syntax, semantics, pragmatics); the Chomsky hierarchy and redundancy sit under Formal foundations and Computational linguistics. **Writing systems** has two entries as of 2026-08-12, `script-typology.md` and `orthographic-depth.md`, and is the first subfield worked under the drafting policy. **All ten subfields are stubbed out** as of 2026-08-12, 124 topic stubs in total: the 75 child topics of the six levels entries, each citing the chapter of Anderson et al. 2022 its parent draws on, plus 49 across the other nine subfields. None is written.
-- **Human Languages**: 7 written notes and 88 topic stubs, across 110 files. The genealogical spine, families and branches, was stubbed on 2026-08-12. **Individual languages are deliberately not stubbed**: the area index names about 199 and which of them earn notes needs a selection principle, with WALS the candidate instrument. See the area index and `ROADMAP.md`.
-- **Computer Languages**: 1 written note (Lisp) and 81 stubs, across 90 files. All eight subfields stubbed 2026-08-12, with 32 individual languages selected by popularity plus paradigm coverage from TIOBE and a second longitudinal source. **Human Languages still has no equivalent selection**: its language layer remains open, with WALS the candidate instrument.
+- **Human Languages**: 7 written notes and 139 topic stubs, across 161 files. The genealogical spine, families and branches, was stubbed on 2026-08-12; the language layer followed on 2026-08-13, 51 individual languages across 24 families, and nine isolates were retyped from `Concept` to `Language` in the same change. The area index names about 199 languages, so this is a spread and not a survey. See the area index and `DECISIONS.md`.
+- **Computer Languages**: 1 written note (Lisp) and 81 stubs, across 90 files. All eight subfields stubbed 2026-08-12, with 32 individual languages selected by popularity plus paradigm coverage from TIOBE and a second longitudinal source. Human Languages now has the equivalent selection, made on the same criterion a day later.
 - **Cryptography**: 3 written notes and 185 topic stubs, across 207 files. **All fourteen subfields are stubbed out**, six at two levels and eight at one, completed 2026-08-12. **The area is now more than half the corpus by file count and has three written notes in it.** That is the intended trade of structure before detail, and it is the largest single thing that needs watching. The subfield vocabulary was rebuilt on 2026-08-12 against three published classifications (see the area index); 14 subfields, of which **Cryptanalysis** is the first to be stubbed out in full. The other 13 hold no content note at all.
 - **Decipherment**: 21 written notes and 52 topic stubs, plus the 15 places, 22 people and 55 references that overwhelmingly serve it. The only area whose content preceded its taxonomy: it was stubbed last, on 2026-08-12, filling in around finished work rather than mapping an empty discipline.
 
-The Human Languages notes are worth a caveat: all seven exist because a deciphered script needed a language to point at. The area is currently a by-product of Decipherment rather than a treatment of its own subject.
+The Human Languages notes are worth a caveat: all seven written ones exist because a deciphered script needed a language to point at. The 51 language stubs of 2026-08-13 are the first material there chosen for the area's own sake rather than as a by-product of Decipherment, but they are stubs, so the caveat stands until they are written.
 
 ## How the content was built
 
