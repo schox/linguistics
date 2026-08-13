@@ -35,7 +35,9 @@ It is the counterexample to the intuition that decipherment is one achievement. 
 
 ## Not an isolate
 
-Etruscan was long classified as a language isolate, and much older literature says so. The current mainstream view places it in the **Tyrsenian** family with Raetic and Lemnian, which is a small family rather than no family. The distinction matters for decipherment: an isolate offers no comparative leverage at all, whereas two fragmentary relatives offer very little but not none.
+Etruscan was long classified as a language isolate, and much older literature says so. A widely held view places it in the **Tyrsenian** family with Raetic and Lemnian, which is a small family rather than no family. The distinction matters for decipherment: an isolate offers no comparative leverage at all, whereas two fragmentary relatives offer very little but not none.
+
+**The classification this area adopts does not accept the grouping.** Checked on 2026-08-13, Glottolog has no Tyrsenian languoid at all and treats Etruscan, Raetic and Lemnian as three separate isolates, citing Simona Marchesini 2009 against Helmut Rix: "it is advisable to take a more cautious position with respect to the genealogical relatedness of Rhaetian with Etruscan". The dispute and both sides are set out in [Tyrsenian](tyrsenian.md). The `family` field on this note still reads `Tyrsenian` and has not been changed, because which authority wins where the sources disagree is an open decision rather than a typing error.
 
 ## Corpus
 

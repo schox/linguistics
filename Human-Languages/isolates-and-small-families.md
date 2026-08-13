@@ -12,11 +12,9 @@ updated: 2026-08-12
 
 Languages with no relatives, or almost none: Basque, Sumerian, Elamite, the Tyrsenian family, Ainu, Burushaski. A junction with Decipherment, because an isolate offers no comparative leverage, which is precisely what makes a script recording one hard to read.
 
-Stubbed out on 2026-08-12, one level. Eight of the entries below were written on 2026-08-13 and two are still placeholders.
+**Written out in full on 2026-08-13.** Every entry below is written; this was the first subfield in the area to be completed.
 
 ## Notes in this subfield
-
-Written:
 
 - [Basque](basque.md)
 - [Ainu](ainu.md)
@@ -26,9 +24,6 @@ Written:
 - [Sandawe](sandawe.md)
 - [Zuni](zuni.md)
 - [Kusunda](kusunda.md)
-
-Stubs:
-
 - [Elamite](elamite.md)
 - [Tyrsenian](tyrsenian.md)
 
@@ -39,5 +34,7 @@ Also written: [Sumerian](sumerian.md), an isolate, and [Etruscan](etruscan.md), 
 **How well an isolate is described varies enormously, and the notes say so.** WALS holds 149 datapoints for Basque and 17 for Kusunda, every one of the latter resting on a single sketch from 1970. Where the atlas does not cover a feature the note leaves it unstated rather than filling it, so a thin structure section is a report on the documentation and not on the language.
 
 **"Khoisan" is not a family.** [Hadza](hadza.md) and [Sandawe](sandawe.md) are isolates that share click phonology, which is areal and typological rather than genealogical. WALS codes the two identically on every phonological feature it holds for both, which is exactly the evidence that does not establish a relationship.
+
+**Neither is Tyrsenian, on the classification this area adopts.** Glottolog has no such languoid and files [Etruscan](etruscan.md), Raetic and Lemnian as three isolates, citing Marchesini against Rix. [Tyrsenian](tyrsenian.md) sets out both sides. The consequence for this subfield is that its membership grew rather than shrank: what was described here as one small family plus a set of isolates is, on Glottolog's treatment, isolates all the way down.
 
 Hurro-Urartian is named in this section of the area index and is stubbed under [Other Eurasian families](other-eurasian-families.md) to avoid two notes of the same title.
