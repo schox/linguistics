@@ -55,6 +55,7 @@ PROTECTED = [
     "Easter Island Artefacts",               # Berthin 2024, title
     "Third Programme",                       # the BBC service was named this
     "Centre for Applied Cryptographic Research",   # the Waterloo centre is named this
+    "Palaeohispanic",                        # the scripts and languages are named this in the field
 ]
 
 # Stems are matched WITHOUT a leading \b so prefixed forms are caught too

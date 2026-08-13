@@ -39,6 +39,7 @@ See `_data-sources.md` for how the vault relates to these.
 
 ## Literature
 
+- [Aiestaran et al. 2024](aiestaran-et-al-2024.md), the Hand of Irulegi and the earliest Vasconic epigraphy
 - [Assael et al. 2022 (Ithaca)](assael-2022.md)
 - [Barber 1974](barber-1974.md)
 - [Baroni 2011](baroni-2011.md), writing system typology and the alphabetocentrism debate

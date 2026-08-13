@@ -165,11 +165,15 @@ Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. All are
 
 ## Notes
 
+- [Ainu](ainu.md), Ainu family
 - [Akkadian](akkadian.md) †, Afro-Asiatic / Semitic
+- [Basque](basque.md), isolate
+- [Burushaski](burushaski.md), isolate
 - [Classic Maya](classic-maya.md) †, Mayan / Ch'olan
 - [Egyptian](egyptian.md) †, Afro-Asiatic / Egyptian
 - [Etruscan](etruscan.md) †, Tyrsenian
 - [Mycenaean Greek](mycenaean-greek.md) †, Indo-European / Hellenic
+- [Nivkh](nivkh.md), Nivkh family
 - [Sumerian](sumerian.md) †, isolate
 - [Ugaritic](ugaritic.md) †, Afro-Asiatic / Semitic
 
