@@ -172,10 +172,14 @@ Every subfield has a `MOC` hub, so the taxonomy is visible in the graph. All are
 - [Classic Maya](classic-maya.md) †, Mayan / Ch'olan
 - [Egyptian](egyptian.md) †, Afro-Asiatic / Egyptian
 - [Etruscan](etruscan.md) †, Tyrsenian
+- [Hadza](hadza.md), isolate
+- [Kusunda](kusunda.md), isolate
 - [Mycenaean Greek](mycenaean-greek.md) †, Indo-European / Hellenic
 - [Nivkh](nivkh.md), Nivkh family
+- [Sandawe](sandawe.md), isolate
 - [Sumerian](sumerian.md) †, isolate
 - [Ugaritic](ugaritic.md) †, Afro-Asiatic / Semitic
+- [Zuni](zuni.md), isolate
 
 ## Documents
 
